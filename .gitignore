@@ -1,0 +1,5 @@
+scans/output/
+__pycache__/
+venv/
+.env
+*.sqlite3
