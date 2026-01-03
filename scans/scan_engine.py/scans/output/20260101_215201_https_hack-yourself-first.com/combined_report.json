@@ -1,0 +1,84 @@
+{
+  "scan_metadata": {
+    "target": "https://hack-yourself-first.com",
+    "timestamp": "2026-01-01T21:52:35.728932",
+    "output_dir": "scans/output/20260101_215201_https_hack-yourself-first.com",
+    "phase1_completed": true,
+    "phase2_completed": false
+  },
+  "phase1": {
+    "whatweb": {
+      "status": "completed",
+      "output_file": "scans/output/20260101_215201_https_hack-yourself-first.com/whatweb.txt",
+      "fingerprint": {},
+      "stderr": "/usr/bin/whatweb: unrecognized option `--timeout'\n\u001b[1m\u001b[31mError in processing commandline options - unrecognized option `--timeout'\u001b[0m\n"
+    },
+    "nuclei": {
+      "status": "completed",
+      "output_file": "scans/output/20260101_215201_https_hack-yourself-first.com/nuclei.jsonl",
+      "findings": [
+        {
+          "template": "weak-cipher-suites",
+          "severity": "low",
+          "matcher": "tls-1.0",
+          "type": "ssl",
+          "host": "hack-yourself-first.com",
+          "path": "hack-yourself-first.com:443"
+        },
+        {
+          "template": "weak-cipher-suites",
+          "severity": "low",
+          "matcher": "tls-1.1",
+          "type": "ssl",
+          "host": "hack-yourself-first.com",
+          "path": "hack-yourself-first.com:443"
+        },
+        {
+          "template": "zip-backup-files",
+          "severity": "medium",
+          "matcher": "",
+          "type": "http",
+          "host": "hack-yourself-first.com",
+          "path": "https://hack-yourself-first.com/backup.zip"
+        },
+        {
+          "template": "zip-backup-files",
+          "severity": "medium",
+          "matcher": "",
+          "type": "http",
+          "host": "hack-yourself-first.com",
+          "path": "https://hack-yourself-first.com/database.zip"
+        }
+      ],
+      "summary": {
+        "total_findings": 4,
+        "by_severity": {
+          "low": 2,
+          "medium": 2
+        }
+      }
+    }
+  },
+  "phase2": {
+    "nikto": {
+      "status": "skipped",
+      "reason": "Phase 2 not requested"
+    },
+    "wapiti": {
+      "status": "skipped",
+      "reason": "Phase 2 not requested"
+    },
+    "sqlmap": {
+      "status": "skipped",
+      "reason": "Phase 2 not requested"
+    },
+    "ffuf": {
+      "status": "skipped",
+      "reason": "Phase 2 not requested"
+    },
+    "zap": {
+      "status": "skipped",
+      "reason": "Phase 2 not requested"
+    }
+  }
+}

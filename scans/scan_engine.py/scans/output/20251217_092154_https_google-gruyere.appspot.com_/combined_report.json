@@ -1,0 +1,176 @@
+{
+  "target": "https://google-gruyere.appspot.com/",
+  "timestamp": "2025-12-17T09:21:54.843656",
+  "output_dir": "scans/output/20251217_092154_https_google-gruyere.appspot.com_",
+  "nikto": {
+    "status": "timeout",
+    "output_file": "scans/output/20251217_092154_https_google-gruyere.appspot.com_/nikto.txt",
+    "findings": []
+  },
+  "wapiti": {
+    "status": "completed",
+    "output_file": "scans/output/20251217_092154_https_google-gruyere.appspot.com_/wapiti.json",
+    "vulnerabilities": [],
+    "summary": {
+      "total_vulnerabilities": 0,
+      "types": []
+    }
+  },
+  "sqlmap": {
+    "status": "skipped",
+    "reason": "URL has no query parameters"
+  },
+  "zap": {
+    "status": "error",
+    "message": "ZAP not available"
+  },
+  "ffuf": {
+    "status": "completed",
+    "output_file": "scans/output/20251217_092154_https_google-gruyere.appspot.com_/ffuf.json",
+    "paths": [
+      "https://google-gruyere.appspot.com/ (Status: 200, Length: 11506)",
+      "https://google-gruyere.appspot.com/00 (Status: 200, Length: 359)",
+      "https://google-gruyere.appspot.com/03 (Status: 200, Length: 359)",
+      "https://google-gruyere.appspot.com/02 (Status: 200, Length: 359)",
+      "https://google-gruyere.appspot.com/0 (Status: 200, Length: 359)",
+      "https://google-gruyere.appspot.com/01 (Status: 200, Length: 359)",
+      "https://google-gruyere.appspot.com/10 (Status: 200, Length: 359)",
+      "https://google-gruyere.appspot.com/06 (Status: 200, Length: 359)",
+      "https://google-gruyere.appspot.com/04 (Status: 200, Length: 359)",
+      "https://google-gruyere.appspot.com/07 (Status: 200, Length: 359)",
+      "https://google-gruyere.appspot.com/05 (Status: 200, Length: 359)",
+      "https://google-gruyere.appspot.com/100 (Status: 200, Length: 359)",
+      "https://google-gruyere.appspot.com/1000 (Status: 200, Length: 359)",
+      "https://google-gruyere.appspot.com/1 (Status: 200, Length: 359)",
+      "https://google-gruyere.appspot.com/08 (Status: 200, Length: 359)",
+      "https://google-gruyere.appspot.com/101 (Status: 200, Length: 359)",
+      "https://google-gruyere.appspot.com/1001 (Status: 200, Length: 359)",
+      "https://google-gruyere.appspot.com/09 (Status: 200, Length: 359)",
+      "https://google-gruyere.appspot.com/102 (Status: 200, Length: 359)",
+      "https://google-gruyere.appspot.com/123 (Status: 200, Length: 359)",
+      "https://google-gruyere.appspot.com/12 (Status: 200, Length: 359)",
+      "https://google-gruyere.appspot.com/14 (Status: 200, Length: 359)",
+      "https://google-gruyere.appspot.com/11 (Status: 200, Length: 359)",
+      "https://google-gruyere.appspot.com/15 (Status: 200, Length: 359)",
+      "https://google-gruyere.appspot.com/13 (Status: 200, Length: 359)",
+      "https://google-gruyere.appspot.com/1990 (Status: 200, Length: 359)",
+      "https://google-gruyere.appspot.com/103 (Status: 200, Length: 359)",
+      "https://google-gruyere.appspot.com/1991 (Status: 200, Length: 359)",
+      "https://google-gruyere.appspot.com/1992 (Status: 200, Length: 359)",
+      "https://google-gruyere.appspot.com/1993 (Status: 200, Length: 359)",
+      "https://google-gruyere.appspot.com/1994 (Status: 200, Length: 359)",
+      "https://google-gruyere.appspot.com/1996 (Status: 200, Length: 359)",
+      "https://google-gruyere.appspot.com/1995 (Status: 200, Length: 359)",
+      "https://google-gruyere.appspot.com/1998 (Status: 200, Length: 359)",
+      "https://google-gruyere.appspot.com/1997 (Status: 200, Length: 359)",
+      "https://google-gruyere.appspot.com/2002 (Status: 200, Length: 359)",
+      "https://google-gruyere.appspot.com/2001 (Status: 200, Length: 359)",
+      "https://google-gruyere.appspot.com/20 (Status: 200, Length: 359)",
+      "https://google-gruyere.appspot.com/2003 (Status: 200, Length: 359)",
+      "https://google-gruyere.appspot.com/1999 (Status: 200, Length: 359)",
+      "https://google-gruyere.appspot.com/2 (Status: 200, Length: 359)",
+      "https://google-gruyere.appspot.com/2005 (Status: 200, Length: 359)",
+      "https://google-gruyere.appspot.com/2006 (Status: 200, Length: 359)",
+      "https://google-gruyere.appspot.com/2000 (Status: 200, Length: 359)",
+      "https://google-gruyere.appspot.com/2009 (Status: 200, Length: 359)",
+      "https://google-gruyere.appspot.com/200 (Status: 200, Length: 359)",
+      "https://google-gruyere.appspot.com/2012 (Status: 200, Length: 359)",
+      "https://google-gruyere.appspot.com/2013 (Status: 200, Length: 359)",
+      "https://google-gruyere.appspot.com/2008 (Status: 200, Length: 359)",
+      "https://google-gruyere.appspot.com/2004 (Status: 200, Length: 359)",
+      "https://google-gruyere.appspot.com/2007 (Status: 200, Length: 359)",
+      "https://google-gruyere.appspot.com/2010 (Status: 200, Length: 359)",
+      "https://google-gruyere.appspot.com/2014 (Status: 200, Length: 359)",
+      "https://google-gruyere.appspot.com/21 (Status: 200, Length: 359)",
+      "https://google-gruyere.appspot.com/22 (Status: 200, Length: 359)",
+      "https://google-gruyere.appspot.com/24 (Status: 200, Length: 359)",
+      "https://google-gruyere.appspot.com/2257 (Status: 200, Length: 359)",
+      "https://google-gruyere.appspot.com/3 (Status: 200, Length: 359)",
+      "https://google-gruyere.appspot.com/23 (Status: 200, Length: 359)",
+      "https://google-gruyere.appspot.com/32 (Status: 200, Length: 359)",
+      "https://google-gruyere.appspot.com/30 (Status: 200, Length: 359)",
+      "https://google-gruyere.appspot.com/25 (Status: 200, Length: 359)",
+      "https://google-gruyere.appspot.com/300 (Status: 200, Length: 359)",
+      "https://google-gruyere.appspot.com/2011 (Status: 200, Length: 359)",
+      "https://google-gruyere.appspot.com/400 (Status: 200, Length: 359)",
+      "https://google-gruyere.appspot.com/4 (Status: 200, Length: 359)",
+      "https://google-gruyere.appspot.com/401 (Status: 200, Length: 359)",
+      "https://google-gruyere.appspot.com/403 (Status: 200, Length: 359)",
+      "https://google-gruyere.appspot.com/50 (Status: 200, Length: 359)",
+      "https://google-gruyere.appspot.com/404 (Status: 200, Length: 359)",
+      "https://google-gruyere.appspot.com/5 (Status: 200, Length: 359)",
+      "https://google-gruyere.appspot.com/8 (Status: 200, Length: 359)",
+      "https://google-gruyere.appspot.com/6 (Status: 200, Length: 359)",
+      "https://google-gruyere.appspot.com/64 (Status: 200, Length: 359)",
+      "https://google-gruyere.appspot.com/42 (Status: 200, Length: 359)",
+      "https://google-gruyere.appspot.com/51 (Status: 200, Length: 359)",
+      "https://google-gruyere.appspot.com/7 (Status: 200, Length: 359)",
+      "https://google-gruyere.appspot.com/9 (Status: 200, Length: 359)",
+      "https://google-gruyere.appspot.com/500 (Status: 200, Length: 359)",
+      "https://google-gruyere.appspot.com/96 (Status: 200, Length: 359)",
+      "https://google-gruyere.appspot.com/code (Status: 200, Length: 354)",
+      "https://google-gruyere.appspot.com/favicon.ico (Status: 200, Length: 1150)",
+      "https://google-gruyere.appspot.com/robots.txt (Status: 200, Length: 184)",
+      "https://google-gruyere.appspot.com/start (Status: 200, Length: 681)"
+    ],
+    "stderr": "\n        /'___\\  /'___\\           /'___\\       \n       /\\ \\__/ /\\ \\__/  __  __  /\\ \\__/       \n       \\ \\ ,__\\\\ \\ ,__\\/\\ \\/\\ \\ \\ \\ ,__\\      \n        \\ \\ \\_/ \\ \\ \\_/\\ \\ \\_\\ \\ \\ \\ \\_/      \n         \\ \\_\\   \\ \\_\\  \\ \\____/  \\ \\_\\       \n          \\/_/    \\/_/   \\/___/    \\/_/       \n\n       v2.1.0-dev\n________________________________________________\n\n :: Method           : GET\n :: URL              : https://google-gruyere.appspot.com/FUZZ\n :: Wordlist         : FUZZ: /usr/share/wordlists/dirb/common.txt\n :: Output file      : scans/output/20251217_092154_https_google-gruyere.appspot.com_/ffuf.json\n :: File format      : json\n :: Follow redirects : false\n :: Calibration      : false\n :: Timeout          : 10\n :: Threads          : 40\n :: Matcher          : Response status: 200-299,301,302,307,401,403,405,500\n________________________________________________\n\n\n\u001b[2K[INFO] ------ PAUSING ------\n\n\n\u001b[2Kentering interactive mode\ntype \"help\" for a list of commands, or ENTER to resume.\n\n\u001b[2K> \n\u001b[2K[INFO] ------ RESUMING -----\n\n\n\u001b[2K:: Progress: [0/4614] :: Job [1/1] :: 0 req/sec :: Duration: [0:00:00] :: Errors: 0 ::\n\u001b[2K:: Progress: [40/4614] :: Job [1/1] :: 0 req/sec :: Duration: [0:00:00] :: Errors: 0 ::\n\u001b[2K:: Progress: [40/4614] :: Job [1/1] :: 0 req/sec :: Duration: [0:00:00] :: Errors: 0 ::\n\u001b[2K:: Progress: [40/4614] :: Job [1/1] :: 0 req/sec :: Duration: [0:00:00] :: Errors: 0 ::\n\u001b[2K:: Progress: [40/4614] :: Job [1/1] :: 0 req/sec :: Duration: [0:00:01] :: Errors: 0 ::\n\u001b[2K:: P",
+    "summary": {
+      "total_paths": 84
+    }
+  },
+  "subdomains": {
+    "status": "completed_with_errors",
+    "output_file": "scans/output/20251217_092154_https_google-gruyere.appspot.com_/subdomains.txt",
+    "subdomains": [],
+    "error": "output file missing"
+  },
+  "nuclei": {
+    "status": "completed",
+    "output_file": "scans/output/20251217_092154_https_google-gruyere.appspot.com_/nuclei.jsonl",
+    "findings": [
+      {
+        "template": "weak-cipher-suites",
+        "severity": "low",
+        "matcher": "tls-1.0",
+        "type": "ssl",
+        "host": "google-gruyere.appspot.com",
+        "path": "google-gruyere.appspot.com:443"
+      },
+      {
+        "template": "weak-cipher-suites",
+        "severity": "low",
+        "matcher": "tls-1.1",
+        "type": "ssl",
+        "host": "google-gruyere.appspot.com",
+        "path": "google-gruyere.appspot.com:443"
+      }
+    ],
+    "summary": {
+      "total_findings": 2,
+      "by_severity": {
+        "low": 2,
+        "medium": 0
+      }
+    }
+  },
+  "whatweb": {
+    "status": "completed",
+    "output_file": "scans/output/20251217_092154_https_google-gruyere.appspot.com_/whatweb.txt",
+    "fingerprint": {},
+    "stderr": "\u001b[1m\u001b[31mERROR Opening: https://google-gruyere.appspot.com/ - SSL_connect returned=1 errno=0 peeraddr=142.250.77.116:443 state=error: unexpected eof while reading\u001b[0m\n"
+  },
+  "summary": {
+    "critical": 0,
+    "high": 0,
+    "medium": 0,
+    "low": 2,
+    "nikto_findings": 0,
+    "wapiti_vulns": 0,
+    "sqlmap_status": "skipped",
+    "zap_alerts": 0,
+    "ffuf_paths": 84,
+    "subdomains": 0,
+    "nuclei_findings": 2,
+    "whatweb_raw": ""
+  }
+}

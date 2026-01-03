@@ -1,0 +1,575 @@
+#!/usr/bin/env python3
+"""
+Automated Vulnerability Discovery, Validation & Prioritization Pipeline
+Web Scanning Engine - Integrates Nikto, Wapiti, OWASP ZAP, and SQLMap
+"""
+
+import subprocess
+import json
+import os
+import sys
+import argparse
+import time
+import re
+import requests
+from datetime import datetime
+from pathlib import Path
+from urllib.parse import urlparse, parse_qs
+
+
+# Configuration
+ZAP_PORT = 8090
+ZAP_API_BASE = f"http://127.0.0.1:{ZAP_PORT}"
+
+
+def save_json(path, data):
+    """
+    Save data as JSON to the specified path.
+    
+    Args:
+        path (str): File path to save JSON
+        data (dict): Data to save as JSON
+    """
+    try:
+        with open(path, 'w', encoding='utf-8') as f:
+            json.dump(data, f, indent=2, ensure_ascii=False)
+        print(f"[+] JSON saved to: {path}")
+    except Exception as e:
+        print(f"[-] Error saving JSON to {path}: {e}")
+
+
+def run_command(command, shell=False, capture_output=True, timeout=600):
+    """
+    Execute a shell command and return the result.
+    
+    Args:
+        command (list or str): Command to execute
+        shell (bool): Whether to use shell execution
+        capture_output (bool): Whether to capture stdout/stderr
+        timeout (int): Command timeout in seconds
+        
+    Returns:
+        subprocess.CompletedProcess: Result of command execution
+    """
+    try:
+        if isinstance(command, str) and not shell:
+            command = command.split()
+        
+        result = subprocess.run(
+            command,
+            shell=shell,
+            capture_output=capture_output,
+            text=True,
+            timeout=timeout,
+            check=False
+        )
+        return result
+    except subprocess.TimeoutExpired:
+        print(f"[-] Command timed out: {command}")
+        return None
+    except Exception as e:
+        print(f"[-] Error running command: {e}")
+        return None
+
+
+def create_output_dir(target):
+    """
+    Create a timestamped output directory for scan results.
+    
+    Args:
+        target (str): Target URL
+        
+    Returns:
+        str: Path to created directory
+    """
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    # Sanitize target for directory name
+    target_safe = re.sub(r'[^\w\-_.]', '_', target.replace('://', '_'))
+    dir_name = f"{timestamp}_{target_safe}"
+    output_dir = os.path.join("scans", "output", dir_name)
+    
+    os.makedirs(output_dir, exist_ok=True)
+    print(f"[+] Created output directory: {output_dir}")
+    return output_dir
+
+
+def run_nikto(target, output_dir):
+    """
+    Run Nikto web scanner and parse results.
+    
+    Args:
+        target (str): Target URL
+        output_dir (str): Output directory path
+        
+    Returns:
+        dict: Parsed Nikto results
+    """
+    print(f"\n[+] Running Nikto scan on {target}...")
+    output_file = os.path.join(output_dir, "nikto.txt")
+    
+    # Run Nikto
+    command = ["nikto", "-h", target, "-o", output_file]
+    result = run_command(command, timeout=300)
+    
+    if result is None:
+        return {"status": "error", "message": "Command execution failed"}
+    
+    nikto_results = {
+        "status": "completed" if result.returncode == 0 else "completed_with_errors",
+        "output_file": output_file,
+        "findings": [],
+        "summary": {}
+    }
+    
+    # Parse Nikto output
+    try:
+        if os.path.exists(output_file):
+            with open(output_file, 'r', encoding='utf-8', errors='ignore') as f:
+                content = f.read()
+                
+            # Extract key findings
+            lines = content.split('\n')
+            findings = []
+            for line in lines:
+                if '+ ' in line and ('OSVDB' in line or 'Server:' in line or 'Retrieved' in line):
+                    findings.append(line.strip())
+            
+            nikto_results["findings"] = findings[:50]  # Limit to 50 findings
+            nikto_results["summary"]["total_findings"] = len(findings)
+            nikto_results["summary"]["raw_output"] = content[:5000]  # First 5000 chars
+    except Exception as e:
+        nikto_results["error"] = str(e)
+    
+    print(f"[+] Nikto scan completed. Findings: {len(nikto_results.get('findings', []))}")
+    return nikto_results
+
+
+def run_wapiti(target, output_dir):
+    """
+    Run Wapiti web scanner and parse JSON results.
+    
+    Args:
+        target (str): Target URL
+        output_dir (str): Output directory path
+        
+    Returns:
+        dict: Parsed Wapiti results
+    """
+    print(f"\n[+] Running Wapiti scan on {target}...")
+    output_file = os.path.join(output_dir, "wapiti.json")
+    
+    # Run Wapiti
+    command = ["wapiti", "-u", target, "-f", "json", "-o", output_file]
+    result = run_command(command, timeout=600)
+    
+    if result is None:
+        return {"status": "error", "message": "Command execution failed"}
+    
+    wapiti_results = {
+        "status": "completed" if result.returncode == 0 else "completed_with_errors",
+        "output_file": output_file,
+        "vulnerabilities": []
+    }
+    
+    # Parse Wapiti JSON output
+    try:
+        if os.path.exists(output_file):
+            with open(output_file, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+                
+            # Extract vulnerabilities from Wapiti JSON structure
+            if isinstance(data, dict):
+                vulnerabilities = []
+                for vuln_type, vuln_data in data.items():
+                    if isinstance(vuln_data, list):
+                        for vuln in vuln_data:
+                            if isinstance(vuln, dict):
+                                vulnerabilities.append({
+                                    "type": vuln_type,
+                                    "description": vuln.get("description", ""),
+                                    "parameter": vuln.get("parameter", ""),
+                                    "url": vuln.get("url", "")
+                                })
+                
+                wapiti_results["vulnerabilities"] = vulnerabilities
+                wapiti_results["summary"] = {
+                    "total_vulnerabilities": len(vulnerabilities),
+                    "vulnerability_types": list(set(v.get("type", "") for v in vulnerabilities))
+                }
+    except json.JSONDecodeError:
+        # Try to read as text if JSON parsing fails
+        try:
+            with open(output_file, 'r', encoding='utf-8') as f:
+                content = f.read()
+                wapiti_results["raw_output"] = content[:5000]
+        except:
+            pass
+    except Exception as e:
+        wapiti_results["error"] = str(e)
+    
+    print(f"[+] Wapiti scan completed. Vulnerabilities: {len(wapiti_results.get('vulnerabilities', []))}")
+    return wapiti_results
+
+
+def has_parameters(target):
+    """
+    Check if target URL contains query parameters.
+    
+    Args:
+        target (str): Target URL
+        
+    Returns:
+        bool: True if URL has parameters
+    """
+    try:
+        parsed = urlparse(target)
+        return bool(parse_qs(parsed.query))
+    except:
+        return False
+
+
+def run_sqlmap(target, output_dir):
+    """
+    Run SQLMap in safe mode (only if target has parameters).
+    
+    Args:
+        target (str): Target URL
+        output_dir (str): Output directory path
+        
+    Returns:
+        dict: SQLMap results
+    """
+    print(f"\n[+] Checking if SQLMap should run on {target}...")
+    
+    if not has_parameters(target):
+        print("[!] Target has no parameters, skipping SQLMap scan")
+        return {
+            "status": "skipped",
+            "reason": "No query parameters found in target URL"
+        }
+    
+    print(f"[+] Running SQLMap (safe mode) on {target}...")
+    sqlmap_dir = os.path.join(output_dir, "sqlmap")
+    os.makedirs(sqlmap_dir, exist_ok=True)
+    
+    # Run SQLMap with safe flags
+    command = [
+        "sqlmap",
+        "-u", target,
+        "--batch",
+        "--level=1",
+        "--risk=1",
+        "--output-dir", sqlmap_dir
+    ]
+    
+    result = run_command(command, timeout=600)
+    
+    if result is None:
+        return {"status": "error", "message": "Command execution failed"}
+    
+    sqlmap_results = {
+        "status": "completed" if result.returncode == 0 else "completed_with_errors",
+        "output_dir": sqlmap_dir,
+        "summary": {}
+    }
+    
+    # Try to parse SQLMap output
+    try:
+        # SQLMap saves results in the output directory
+        log_file = os.path.join(sqlmap_dir, "log")
+        if os.path.exists(log_file):
+            with open(log_file, 'r', encoding='utf-8', errors='ignore') as f:
+                content = f.read()
+                sqlmap_results["summary"]["log_preview"] = content[:2000]
+        
+        # Check for any result files
+        if os.path.exists(sqlmap_dir):
+            files = os.listdir(sqlmap_dir)
+            sqlmap_results["summary"]["output_files"] = files
+    except Exception as e:
+        sqlmap_results["error"] = str(e)
+    
+    print(f"[+] SQLMap scan completed")
+    return sqlmap_results
+
+
+def check_zap_running():
+    """
+    Check if ZAP is already running.
+    
+    Returns:
+        bool: True if ZAP is running
+    """
+    try:
+        response = requests.get(f"{ZAP_API_BASE}/JSON/core/view/version/", timeout=5)
+        return response.status_code == 200
+    except:
+        return False
+
+
+def start_zap():
+    """
+    Start OWASP ZAP in daemon mode.
+    
+    Returns:
+        bool: True if ZAP started successfully
+    """
+    if check_zap_running():
+        print("[+] ZAP is already running")
+        return True
+    
+    print("[+] Starting OWASP ZAP in daemon mode...")
+    
+    # Try to find ZAP installation
+    zap_paths = [
+        "/usr/share/zap/zap.sh",
+        "/opt/zap/zap.sh",
+        "zap.sh",
+        "/usr/bin/zap.sh"
+    ]
+    
+    zap_sh = None
+    for path in zap_paths:
+        if os.path.exists(path) or run_command(["which", "zap.sh"]).returncode == 0:
+            zap_sh = "zap.sh"
+            break
+    
+    if not zap_sh:
+        # Try zaproxy
+        if run_command(["which", "zaproxy"]).returncode == 0:
+            zap_sh = "zaproxy"
+        else:
+            print("[-] ZAP not found. Please install OWASP ZAP.")
+            return False
+    
+    command = [zap_sh, "-daemon", "-port", str(ZAP_PORT)]
+    result = run_command(command, timeout=30)
+    
+    # Wait for ZAP to start
+    print("[+] Waiting for ZAP to start...")
+    for i in range(30):
+        time.sleep(2)
+        if check_zap_running():
+            print("[+] ZAP started successfully")
+            return True
+    
+    print("[-] ZAP failed to start")
+    return False
+
+
+def run_zap_baseline(target, output_dir):
+    """
+    Run OWASP ZAP baseline scan via API.
+    
+    Args:
+        target (str): Target URL
+        output_dir (str): Output directory path
+        
+    Returns:
+        dict: ZAP scan results
+    """
+    print(f"\n[+] Running OWASP ZAP baseline scan on {target}...")
+    
+    # Start ZAP if not running
+    if not start_zap():
+        return {"status": "error", "message": "Failed to start ZAP"}
+    
+    zap_results = {
+        "status": "completed",
+        "output_file": None,
+        "vulnerabilities": []
+    }
+    
+    try:
+        # Create a new session
+        session_name = f"scan_{int(time.time())}"
+        requests.get(f"{ZAP_API_BASE}/JSON/core/action/newSession/", 
+                    params={"name": session_name}, timeout=10)
+        
+        # Spider the target
+        print("[+] Starting ZAP spider...")
+        spider_id = requests.get(f"{ZAP_API_BASE}/JSON/spider/action/scan/",
+                                params={"url": target}, timeout=10).json().get("scan")
+        
+        # Wait for spider to complete
+        while True:
+            status = requests.get(f"{ZAP_API_BASE}/JSON/spider/view/status/",
+                                params={"scanId": spider_id}, timeout=10).json().get("status")
+            if int(status) >= 100:
+                break
+            time.sleep(2)
+        
+        print("[+] Spider completed, starting baseline scan...")
+        
+        # Run baseline scan
+        scan_id = requests.get(f"{ZAP_API_BASE}/JSON/ascan/action/scan/",
+                              params={"url": target}, timeout=10).json().get("scan")
+        
+        # Wait for scan to complete
+        while True:
+            status = requests.get(f"{ZAP_API_BASE}/JSON/ascan/view/status/",
+                                params={"scanId": scan_id}, timeout=10).json().get("status")
+            if int(status) >= 100:
+                break
+            time.sleep(5)
+        
+        print("[+] Baseline scan completed, generating report...")
+        
+        # Generate HTML report
+        output_file = os.path.join(output_dir, "zap_report.html")
+        report = requests.get(f"{ZAP_API_BASE}/OTHER/core/other/htmlreport/", timeout=30)
+        
+        with open(output_file, 'w', encoding='utf-8') as f:
+            f.write(report.text)
+        
+        zap_results["output_file"] = output_file
+        
+        # Get alerts summary
+        alerts = requests.get(f"{ZAP_API_BASE}/JSON/core/view/alerts/",
+                             params={"baseurl": target}, timeout=10).json().get("alerts", [])
+        
+        vulnerabilities = []
+        for alert in alerts:
+            vulnerabilities.append({
+                "name": alert.get("name", ""),
+                "risk": alert.get("risk", ""),
+                "confidence": alert.get("confidence", ""),
+                "description": alert.get("description", "")[:200],
+                "url": alert.get("url", "")
+            })
+        
+        zap_results["vulnerabilities"] = vulnerabilities
+        zap_results["summary"] = {
+            "total_alerts": len(vulnerabilities),
+            "high_risk": len([v for v in vulnerabilities if v.get("risk") == "High"]),
+            "medium_risk": len([v for v in vulnerabilities if v.get("risk") == "Medium"]),
+            "low_risk": len([v for v in vulnerabilities if v.get("risk") == "Low"])
+        }
+        
+    except Exception as e:
+        zap_results["status"] = "error"
+        zap_results["error"] = str(e)
+        print(f"[-] ZAP scan error: {e}")
+    
+    print(f"[+] ZAP scan completed. Alerts: {len(zap_results.get('vulnerabilities', []))}")
+    return zap_results
+
+
+def run_all_scanners(target):
+    """
+    Orchestrate all scanners and combine results.
+    
+    Args:
+        target (str): Target URL to scan
+        
+    Returns:
+        dict: Combined results from all scanners
+    """
+    print(f"\n{'='*60}")
+    print(f"Starting comprehensive scan of: {target}")
+    print(f"{'='*60}\n")
+    
+    # Create output directory
+    output_dir = create_output_dir(target)
+    
+    # Run all scanners
+    results = {
+        "target": target,
+        "timestamp": datetime.now().isoformat(),
+        "output_dir": output_dir
+    }
+    
+    # Run Nikto
+    results["nikto"] = run_nikto(target, output_dir)
+    
+    # Run Wapiti
+    results["wapiti"] = run_wapiti(target, output_dir)
+    
+    # Run SQLMap (only if parameters exist)
+    results["sqlmap"] = run_sqlmap(target, output_dir)
+    
+    # Run ZAP
+    results["zap"] = run_zap_baseline(target, output_dir)
+    
+    # Save combined report
+    combined_report_path = os.path.join(output_dir, "combined_report.json")
+    save_json(combined_report_path, results)
+    
+    # Print summary
+    print(f"\n{'='*60}")
+    print("SCAN SUMMARY")
+    print(f"{'='*60}")
+    print(f"Target: {target}")
+    print(f"Output Directory: {output_dir}")
+    print(f"Nikto Findings: {len(results.get('nikto', {}).get('findings', []))}")
+    print(f"Wapiti Vulnerabilities: {len(results.get('wapiti', {}).get('vulnerabilities', []))}")
+    print(f"SQLMap Status: {results.get('sqlmap', {}).get('status', 'unknown')}")
+    print(f"ZAP Alerts: {len(results.get('zap', {}).get('vulnerabilities', []))}")
+    print(f"{'='*60}\n")
+    
+    return results
+
+
+def safety_confirmation():
+    """
+    Request user confirmation before scanning.
+    
+    Returns:
+        bool: True if user confirmed
+    """
+    print("\n" + "!"*60)
+    print("WARNING: Scan only authorized targets.")
+    print("Unauthorized scanning is illegal and unethical.")
+    print("!"*60)
+    
+    confirmation = input("\nType YES to confirm you have permission: ").strip()
+    
+    if confirmation != "YES":
+        print("[-] Scan cancelled. User did not confirm authorization.")
+        return False
+    
+    return True
+
+
+def main():
+    """Main entry point for the scanning engine."""
+    parser = argparse.ArgumentParser(
+        description="Automated Web Vulnerability Scanning Engine",
+        formatter_class=argparse.RawDescriptionHelpFormatter
+    )
+    parser.add_argument(
+        "--target",
+        required=True,
+        help="Target URL to scan (e.g., http://192.168.56.104)"
+    )
+    
+    args = parser.parse_args()
+    target = args.target
+    
+    # Safety confirmation
+    if not safety_confirmation():
+        sys.exit(1)
+    
+    # Run all scanners
+    try:
+        results = run_all_scanners(target)
+        print(f"[+] Scan completed successfully!")
+        print(f"[+] Results saved to: {results['output_dir']}")
+    except KeyboardInterrupt:
+        print("\n[-] Scan interrupted by user")
+        sys.exit(1)
+    except Exception as e:
+        print(f"[-] Fatal error: {e}")
+        sys.exit(1)
+
+
+if __name__ == "__main__":
+    main()
+
+
+
+
+
+
+
+

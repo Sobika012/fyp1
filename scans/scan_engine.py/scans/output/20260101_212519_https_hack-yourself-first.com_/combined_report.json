@@ -1,0 +1,86 @@
+{
+  "scan_metadata": {
+    "target": "https://hack-yourself-first.com/",
+    "timestamp": "2026-01-01T21:26:56.621779",
+    "output_dir": "scans/output/20260101_212519_https_hack-yourself-first.com_",
+    "phase1_completed": true,
+    "phase2_completed": false
+  },
+  "phase1": {
+    "whatweb": {
+      "status": "completed",
+      "output_file": "scans/output/20260101_212519_https_hack-yourself-first.com_/whatweb.txt",
+      "fingerprint": {
+        "raw": "\u001b[1m\u001b[34mhttps://hack-yourself-first.com/\u001b[0m [200 OK] \u001b[1mASP_NET\u001b[0m[\u001b[1m\u001b[32m4.0.30319\u001b[0m][\u001b[0m\u001b[22mMVC5.1\u001b[0m], \u001b[1mBootstrap\u001b[0m, \u001b[1mCookies\u001b[0m[\u001b[0m\u001b[22mASP.NET_SessionId,VisitStart\u001b[0m], \u001b[1mCountry\u001b[0m[\u001b[0m\u001b[22mUNITED STATES\u001b[0m][\u001b[1m\u001b[31mUS\u001b[0m], \u001b[1mGoogle-Analytics\u001b[0m[\u001b[1m\u001b[32mUniversal\u001b[0m][\u001b[1m\u001b[36mUA-43629727-1\u001b[0m], \u001b[1mHTML5\u001b[0m, \u001b[1mHTTPServer\u001b[0m[\u001b[1m\u001b[36mcloudflare\u001b[0m], \u001b[1mHttpOnly\u001b[0m[\u001b[0m\u001b[22mASP.NET_SessionId\u001b[0m], \u001b[1mIP\u001b[0m[\u001b[0m\u001b[22m104.21.89.41\u001b[0m], \u001b[1mJQuery\u001b[0m, \u001b[1mScript\u001b[0m[\u001b[0m\u001b[22mtext/javascript\u001b[0m], \u001b[1mTitle\u001b[0m[\u001b[1m\u001b[33mSupercar Showdown - Supercar Showdown\u001b[0m], \u001b[1mUncommonHeaders\u001b[0m[\u001b[0m\u001b[22mreport-to,x-aspnetmvc-version,cf-cache-status,nel,cf-ray,alt-svc\u001b[0m], \u001b[1mX-Powered-By\u001b[0m[\u001b[0m\u001b[22mASP.NET\u001b[0m], \u001b[1mX-XSS-Protection\u001b[0m[\u001b[0m\u001b[22m0\u001b[0m]",
+        "language": "\u001b[1mX-Powered-By\u001b[0m[\u001b[0m\u001b[22mASP.NET\u001b[0m],"
+      }
+    },
+    "nuclei": {
+      "status": "completed",
+      "output_file": "scans/output/20260101_212519_https_hack-yourself-first.com_/nuclei.jsonl",
+      "findings": [
+        {
+          "template": "weak-cipher-suites",
+          "severity": "low",
+          "matcher": "tls-1.0",
+          "type": "ssl",
+          "host": "hack-yourself-first.com",
+          "path": "hack-yourself-first.com:443"
+        },
+        {
+          "template": "weak-cipher-suites",
+          "severity": "low",
+          "matcher": "tls-1.1",
+          "type": "ssl",
+          "host": "hack-yourself-first.com",
+          "path": "hack-yourself-first.com:443"
+        },
+        {
+          "template": "zip-backup-files",
+          "severity": "medium",
+          "matcher": "",
+          "type": "http",
+          "host": "hack-yourself-first.com",
+          "path": "https://hack-yourself-first.com/backup.zip"
+        },
+        {
+          "template": "zip-backup-files",
+          "severity": "medium",
+          "matcher": "",
+          "type": "http",
+          "host": "hack-yourself-first.com",
+          "path": "https://hack-yourself-first.com/database.zip"
+        }
+      ],
+      "summary": {
+        "total_findings": 4,
+        "by_severity": {
+          "low": 2,
+          "medium": 2
+        }
+      }
+    }
+  },
+  "phase2": {
+    "nikto": {
+      "status": "skipped",
+      "reason": "Phase 2 not requested"
+    },
+    "wapiti": {
+      "status": "skipped",
+      "reason": "Phase 2 not requested"
+    },
+    "sqlmap": {
+      "status": "skipped",
+      "reason": "Phase 2 not requested"
+    },
+    "ffuf": {
+      "status": "skipped",
+      "reason": "Phase 2 not requested"
+    },
+    "zap": {
+      "status": "skipped",
+      "reason": "Phase 2 not requested"
+    }
+  }
+}
