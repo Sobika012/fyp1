@@ -1,0 +1,14 @@
+{
+    "scan_info": {
+        "generated_at": "2026-02-16 22:52:38",
+        "total_findings": 0,
+        "severity_counts": {
+            "CRITICAL": 0,
+            "HIGH": 0,
+            "MEDIUM": 0,
+            "LOW": 0,
+            "INFO": 0
+        }
+    },
+    "findings": []
+}

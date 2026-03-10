@@ -1,0 +1,495 @@
+{
+    "scan_info": {
+        "generated_at": "2026-02-19 20:50:57",
+        "total_findings": 22,
+        "severity_counts": {
+            "CRITICAL": 0,
+            "HIGH": 0,
+            "MEDIUM": 1,
+            "LOW": 0,
+            "INFO": 21
+        }
+    },
+    "findings": [
+        {
+            "tool": "whatweb",
+            "url": "https://demo.testfire.net/",
+            "finding_name": "Technology Detected: Apache",
+            "severity": "INFO",
+            "risk_score": 1,
+            "category": "reconnaissance",
+            "description": "Detected technology: Apache",
+            "timestamp": "2026-02-19 20:48:24",
+            "raw_output": "https://demo.testfire.net/ [200 OK] Apache, Cookies[JSESSIONID], Country[UNITED STATES][US], HTTPServer[Apache-Coyote/1.1], HttpOnly[JSESSIONID], IP[65.61.137.117], Java, Title[Altoro Mutual]"
+        },
+        {
+            "tool": "whatweb",
+            "url": "https://demo.testfire.net/",
+            "finding_name": "Technology Detected: Cookies[JSESSIONID]",
+            "severity": "INFO",
+            "risk_score": 1,
+            "category": "reconnaissance",
+            "description": "Detected technology: Cookies[JSESSIONID]",
+            "timestamp": "2026-02-19 20:48:24",
+            "raw_output": "https://demo.testfire.net/ [200 OK] Apache, Cookies[JSESSIONID], Country[UNITED STATES][US], HTTPServer[Apache-Coyote/1.1], HttpOnly[JSESSIONID], IP[65.61.137.117], Java, Title[Altoro Mutual]"
+        },
+        {
+            "tool": "whatweb",
+            "url": "https://demo.testfire.net/",
+            "finding_name": "Technology Detected: Country[UNITED STATES][US]",
+            "severity": "INFO",
+            "risk_score": 1,
+            "category": "reconnaissance",
+            "description": "Detected technology: Country[UNITED STATES][US]",
+            "timestamp": "2026-02-19 20:48:24",
+            "raw_output": "https://demo.testfire.net/ [200 OK] Apache, Cookies[JSESSIONID], Country[UNITED STATES][US], HTTPServer[Apache-Coyote/1.1], HttpOnly[JSESSIONID], IP[65.61.137.117], Java, Title[Altoro Mutual]"
+        },
+        {
+            "tool": "whatweb",
+            "url": "https://demo.testfire.net/",
+            "finding_name": "Technology Detected: HTTPServer[Apache-Coyote/1.1]",
+            "severity": "INFO",
+            "risk_score": 1,
+            "category": "reconnaissance",
+            "description": "Detected technology: HTTPServer[Apache-Coyote/1.1]",
+            "timestamp": "2026-02-19 20:48:24",
+            "raw_output": "https://demo.testfire.net/ [200 OK] Apache, Cookies[JSESSIONID], Country[UNITED STATES][US], HTTPServer[Apache-Coyote/1.1], HttpOnly[JSESSIONID], IP[65.61.137.117], Java, Title[Altoro Mutual]"
+        },
+        {
+            "tool": "whatweb",
+            "url": "https://demo.testfire.net/",
+            "finding_name": "Technology Detected: HttpOnly[JSESSIONID]",
+            "severity": "INFO",
+            "risk_score": 1,
+            "category": "reconnaissance",
+            "description": "Detected technology: HttpOnly[JSESSIONID]",
+            "timestamp": "2026-02-19 20:48:24",
+            "raw_output": "https://demo.testfire.net/ [200 OK] Apache, Cookies[JSESSIONID], Country[UNITED STATES][US], HTTPServer[Apache-Coyote/1.1], HttpOnly[JSESSIONID], IP[65.61.137.117], Java, Title[Altoro Mutual]"
+        },
+        {
+            "tool": "whatweb",
+            "url": "https://demo.testfire.net/",
+            "finding_name": "Technology Detected: IP[65.61.137.117]",
+            "severity": "INFO",
+            "risk_score": 1,
+            "category": "reconnaissance",
+            "description": "Detected technology: IP[65.61.137.117]",
+            "timestamp": "2026-02-19 20:48:24",
+            "raw_output": "https://demo.testfire.net/ [200 OK] Apache, Cookies[JSESSIONID], Country[UNITED STATES][US], HTTPServer[Apache-Coyote/1.1], HttpOnly[JSESSIONID], IP[65.61.137.117], Java, Title[Altoro Mutual]"
+        },
+        {
+            "tool": "whatweb",
+            "url": "https://demo.testfire.net/",
+            "finding_name": "Technology Detected: Java",
+            "severity": "INFO",
+            "risk_score": 1,
+            "category": "reconnaissance",
+            "description": "Detected technology: Java",
+            "timestamp": "2026-02-19 20:48:24",
+            "raw_output": "https://demo.testfire.net/ [200 OK] Apache, Cookies[JSESSIONID], Country[UNITED STATES][US], HTTPServer[Apache-Coyote/1.1], HttpOnly[JSESSIONID], IP[65.61.137.117], Java, Title[Altoro Mutual]"
+        },
+        {
+            "tool": "whatweb",
+            "url": "https://demo.testfire.net/",
+            "finding_name": "Technology Detected: Title[Altoro Mutual]",
+            "severity": "INFO",
+            "risk_score": 1,
+            "category": "reconnaissance",
+            "description": "Detected technology: Title[Altoro Mutual]",
+            "timestamp": "2026-02-19 20:48:24",
+            "raw_output": "https://demo.testfire.net/ [200 OK] Apache, Cookies[JSESSIONID], Country[UNITED STATES][US], HTTPServer[Apache-Coyote/1.1], HttpOnly[JSESSIONID], IP[65.61.137.117], Java, Title[Altoro Mutual]"
+        },
+        {
+            "tool": "ffuf",
+            "url": "https://demo.testfire.net/admin",
+            "finding_name": "Hidden Resource Discovered",
+            "severity": "MEDIUM",
+            "risk_score": 5,
+            "category": "discovery",
+            "description": "Status: 302 | Size: 0",
+            "timestamp": "2026-02-19 20:49:24",
+            "raw_output": {
+                "input": {
+                    "FFUFHASH": "9d6fe20f",
+                    "FUZZ": "admin"
+                },
+                "position": 527,
+                "status": 302,
+                "length": 0,
+                "words": 1,
+                "lines": 1,
+                "content-type": "",
+                "redirectlocation": "/login.jsp",
+                "scraper": {},
+                "duration": 302984352,
+                "resultfile": "",
+                "url": "https://demo.testfire.net/admin",
+                "host": "demo.testfire.net"
+            }
+        },
+        {
+            "tool": "ffuf",
+            "url": "https://demo.testfire.net/aux",
+            "finding_name": "Hidden Resource Discovered",
+            "severity": "INFO",
+            "risk_score": 1,
+            "category": "discovery",
+            "description": "Status: 200 | Size: 0",
+            "timestamp": "2026-02-19 20:49:24",
+            "raw_output": {
+                "input": {
+                    "FFUFHASH": "9d6fe302",
+                    "FUZZ": "aux"
+                },
+                "position": 770,
+                "status": 200,
+                "length": 0,
+                "words": 1,
+                "lines": 1,
+                "content-type": "",
+                "redirectlocation": "",
+                "scraper": {},
+                "duration": 773203717,
+                "resultfile": "",
+                "url": "https://demo.testfire.net/aux",
+                "host": "demo.testfire.net"
+            }
+        },
+        {
+            "tool": "ffuf",
+            "url": "https://demo.testfire.net/bank",
+            "finding_name": "Hidden Resource Discovered",
+            "severity": "INFO",
+            "risk_score": 1,
+            "category": "discovery",
+            "description": "Status: 302 | Size: 0",
+            "timestamp": "2026-02-19 20:49:24",
+            "raw_output": {
+                "input": {
+                    "FFUFHASH": "9d6fe32c",
+                    "FUZZ": "bank"
+                },
+                "position": 812,
+                "status": 302,
+                "length": 0,
+                "words": 1,
+                "lines": 1,
+                "content-type": "",
+                "redirectlocation": "/login.jsp",
+                "scraper": {},
+                "duration": 308440545,
+                "resultfile": "",
+                "url": "https://demo.testfire.net/bank",
+                "host": "demo.testfire.net"
+            }
+        },
+        {
+            "tool": "ffuf",
+            "url": "https://demo.testfire.net/com3",
+            "finding_name": "Hidden Resource Discovered",
+            "severity": "INFO",
+            "risk_score": 1,
+            "category": "discovery",
+            "description": "Status: 200 | Size: 0",
+            "timestamp": "2026-02-19 20:49:24",
+            "raw_output": {
+                "input": {
+                    "FFUFHASH": "9d6fe490",
+                    "FUZZ": "com3"
+                },
+                "position": 1168,
+                "status": 200,
+                "length": 0,
+                "words": 1,
+                "lines": 1,
+                "content-type": "",
+                "redirectlocation": "",
+                "scraper": {},
+                "duration": 320388530,
+                "resultfile": "",
+                "url": "https://demo.testfire.net/com3",
+                "host": "demo.testfire.net"
+            }
+        },
+        {
+            "tool": "ffuf",
+            "url": "https://demo.testfire.net/com2",
+            "finding_name": "Hidden Resource Discovered",
+            "severity": "INFO",
+            "risk_score": 1,
+            "category": "discovery",
+            "description": "Status: 200 | Size: 0",
+            "timestamp": "2026-02-19 20:49:24",
+            "raw_output": {
+                "input": {
+                    "FFUFHASH": "9d6fe48f",
+                    "FUZZ": "com2"
+                },
+                "position": 1167,
+                "status": 200,
+                "length": 0,
+                "words": 1,
+                "lines": 1,
+                "content-type": "",
+                "redirectlocation": "",
+                "scraper": {},
+                "duration": 718965984,
+                "resultfile": "",
+                "url": "https://demo.testfire.net/com2",
+                "host": "demo.testfire.net"
+            }
+        },
+        {
+            "tool": "ffuf",
+            "url": "https://demo.testfire.net/com1",
+            "finding_name": "Hidden Resource Discovered",
+            "severity": "INFO",
+            "risk_score": 1,
+            "category": "discovery",
+            "description": "Status: 200 | Size: 0",
+            "timestamp": "2026-02-19 20:49:24",
+            "raw_output": {
+                "input": {
+                    "FFUFHASH": "9d6fe48e",
+                    "FUZZ": "com1"
+                },
+                "position": 1166,
+                "status": 200,
+                "length": 0,
+                "words": 1,
+                "lines": 1,
+                "content-type": "",
+                "redirectlocation": "",
+                "scraper": {},
+                "duration": 785577755,
+                "resultfile": "",
+                "url": "https://demo.testfire.net/com1",
+                "host": "demo.testfire.net"
+            }
+        },
+        {
+            "tool": "ffuf",
+            "url": "https://demo.testfire.net/images",
+            "finding_name": "Hidden Resource Discovered",
+            "severity": "INFO",
+            "risk_score": 1,
+            "category": "discovery",
+            "description": "Status: 302 | Size: 0",
+            "timestamp": "2026-02-19 20:49:24",
+            "raw_output": {
+                "input": {
+                    "FFUFHASH": "9d6fe886",
+                    "FUZZ": "images"
+                },
+                "position": 2182,
+                "status": 302,
+                "length": 0,
+                "words": 1,
+                "lines": 1,
+                "content-type": "",
+                "redirectlocation": "/images/",
+                "scraper": {},
+                "duration": 314003713,
+                "resultfile": "",
+                "url": "https://demo.testfire.net/images",
+                "host": "demo.testfire.net"
+            }
+        },
+        {
+            "tool": "ffuf",
+            "url": "https://demo.testfire.net/lpt1",
+            "finding_name": "Hidden Resource Discovered",
+            "severity": "INFO",
+            "risk_score": 1,
+            "category": "discovery",
+            "description": "Status: 200 | Size: 0",
+            "timestamp": "2026-02-19 20:49:24",
+            "raw_output": {
+                "input": {
+                    "FFUFHASH": "9d6fe9fa",
+                    "FUZZ": "lpt1"
+                },
+                "position": 2554,
+                "status": 200,
+                "length": 0,
+                "words": 1,
+                "lines": 1,
+                "content-type": "",
+                "redirectlocation": "",
+                "scraper": {},
+                "duration": 308266995,
+                "resultfile": "",
+                "url": "https://demo.testfire.net/lpt1",
+                "host": "demo.testfire.net"
+            }
+        },
+        {
+            "tool": "ffuf",
+            "url": "https://demo.testfire.net/lpt2",
+            "finding_name": "Hidden Resource Discovered",
+            "severity": "INFO",
+            "risk_score": 1,
+            "category": "discovery",
+            "description": "Status: 200 | Size: 0",
+            "timestamp": "2026-02-19 20:49:24",
+            "raw_output": {
+                "input": {
+                    "FFUFHASH": "9d6fe9fb",
+                    "FUZZ": "lpt2"
+                },
+                "position": 2555,
+                "status": 200,
+                "length": 0,
+                "words": 1,
+                "lines": 1,
+                "content-type": "",
+                "redirectlocation": "",
+                "scraper": {},
+                "duration": 309515847,
+                "resultfile": "",
+                "url": "https://demo.testfire.net/lpt2",
+                "host": "demo.testfire.net"
+            }
+        },
+        {
+            "tool": "ffuf",
+            "url": "https://demo.testfire.net/nul",
+            "finding_name": "Hidden Resource Discovered",
+            "severity": "INFO",
+            "risk_score": 1,
+            "category": "discovery",
+            "description": "Status: 200 | Size: 0",
+            "timestamp": "2026-02-19 20:49:24",
+            "raw_output": {
+                "input": {
+                    "FFUFHASH": "9d6feb41",
+                    "FUZZ": "nul"
+                },
+                "position": 2881,
+                "status": 200,
+                "length": 0,
+                "words": 1,
+                "lines": 1,
+                "content-type": "",
+                "redirectlocation": "",
+                "scraper": {},
+                "duration": 328618230,
+                "resultfile": "",
+                "url": "https://demo.testfire.net/nul",
+                "host": "demo.testfire.net"
+            }
+        },
+        {
+            "tool": "ffuf",
+            "url": "https://demo.testfire.net/pr",
+            "finding_name": "Hidden Resource Discovered",
+            "severity": "INFO",
+            "risk_score": 1,
+            "category": "discovery",
+            "description": "Status: 302 | Size: 0",
+            "timestamp": "2026-02-19 20:49:24",
+            "raw_output": {
+                "input": {
+                    "FFUFHASH": "9d6fecab",
+                    "FUZZ": "pr"
+                },
+                "position": 3243,
+                "status": 302,
+                "length": 0,
+                "words": 1,
+                "lines": 1,
+                "content-type": "",
+                "redirectlocation": "/pr/",
+                "scraper": {},
+                "duration": 323615150,
+                "resultfile": "",
+                "url": "https://demo.testfire.net/pr",
+                "host": "demo.testfire.net"
+            }
+        },
+        {
+            "tool": "ffuf",
+            "url": "https://demo.testfire.net/prn",
+            "finding_name": "Hidden Resource Discovered",
+            "severity": "INFO",
+            "risk_score": 1,
+            "category": "discovery",
+            "description": "Status: 200 | Size: 0",
+            "timestamp": "2026-02-19 20:49:24",
+            "raw_output": {
+                "input": {
+                    "FFUFHASH": "9d6fecdc",
+                    "FUZZ": "prn"
+                },
+                "position": 3292,
+                "status": 200,
+                "length": 0,
+                "words": 1,
+                "lines": 1,
+                "content-type": "",
+                "redirectlocation": "",
+                "scraper": {},
+                "duration": 342749371,
+                "resultfile": "",
+                "url": "https://demo.testfire.net/prn",
+                "host": "demo.testfire.net"
+            }
+        },
+        {
+            "tool": "ffuf",
+            "url": "https://demo.testfire.net/static",
+            "finding_name": "Hidden Resource Discovered",
+            "severity": "INFO",
+            "risk_score": 1,
+            "category": "discovery",
+            "description": "Status: 302 | Size: 0",
+            "timestamp": "2026-02-19 20:49:24",
+            "raw_output": {
+                "input": {
+                    "FFUFHASH": "9d6fef89",
+                    "FUZZ": "static"
+                },
+                "position": 3977,
+                "status": 302,
+                "length": 0,
+                "words": 1,
+                "lines": 1,
+                "content-type": "",
+                "redirectlocation": "/static/",
+                "scraper": {},
+                "duration": 319420760,
+                "resultfile": "",
+                "url": "https://demo.testfire.net/static",
+                "host": "demo.testfire.net"
+            }
+        },
+        {
+            "tool": "ffuf",
+            "url": "https://demo.testfire.net/util",
+            "finding_name": "Hidden Resource Discovered",
+            "severity": "INFO",
+            "risk_score": 1,
+            "category": "discovery",
+            "description": "Status: 302 | Size: 0",
+            "timestamp": "2026-02-19 20:49:24",
+            "raw_output": {
+                "input": {
+                    "FFUFHASH": "9d6fe1116",
+                    "FUZZ": "util"
+                },
+                "position": 4374,
+                "status": 302,
+                "length": 0,
+                "words": 1,
+                "lines": 1,
+                "content-type": "",
+                "redirectlocation": "/util/",
+                "scraper": {},
+                "duration": 309134214,
+                "resultfile": "",
+                "url": "https://demo.testfire.net/util",
+                "host": "demo.testfire.net"
+            }
+        }
+    ]
+}

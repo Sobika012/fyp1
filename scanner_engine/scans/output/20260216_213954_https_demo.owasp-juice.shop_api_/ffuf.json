@@ -1,0 +1,234 @@
+{
+  "commandline": "ffuf -u https://demo.owasp-juice.shop/api/FUZZ -w /usr/share/seclists/Discovery/Web-Content/common.txt -o ffuf_e90fed13d0864b5a86fa85432db30429.json -of json -mc 200,204,301,302,307,401,403 -t 60 -timeout 2 -noninteractive -k -s",
+  "time": "2026-02-16T21:42:46-05:00",
+  "results": [
+    {
+      "input": {
+        "FFUFHASH": "35e2218",
+        "FUZZ": ".hta"
+      },
+      "position": 24,
+      "status": 403,
+      "length": 239,
+      "words": 15,
+      "lines": 8,
+      "content-type": "text/html; charset=iso-8859-1",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 248837576,
+      "resultfile": "",
+      "url": "https://demo.owasp-juice.shop/api/.hta",
+      "host": "demo.owasp-juice.shop"
+    },
+    {
+      "input": {
+        "FFUFHASH": "35e2235",
+        "FUZZ": ".well-known/core"
+      },
+      "position": 53,
+      "status": 403,
+      "length": 239,
+      "words": 15,
+      "lines": 8,
+      "content-type": "text/html; charset=iso-8859-1",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 232244045,
+      "resultfile": "",
+      "url": "https://demo.owasp-juice.shop/api/.well-known/core",
+      "host": "demo.owasp-juice.shop"
+    },
+    {
+      "input": {
+        "FFUFHASH": "35e221a",
+        "FUZZ": ".htpasswd"
+      },
+      "position": 26,
+      "status": 403,
+      "length": 239,
+      "words": 15,
+      "lines": 8,
+      "content-type": "text/html; charset=iso-8859-1",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 275788076,
+      "resultfile": "",
+      "url": "https://demo.owasp-juice.shop/api/.htpasswd",
+      "host": "demo.owasp-juice.shop"
+    },
+    {
+      "input": {
+        "FFUFHASH": "35e2219",
+        "FUZZ": ".htaccess"
+      },
+      "position": 25,
+      "status": 403,
+      "length": 239,
+      "words": 15,
+      "lines": 8,
+      "content-type": "text/html; charset=iso-8859-1",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 268054714,
+      "resultfile": "",
+      "url": "https://demo.owasp-juice.shop/api/.htaccess",
+      "host": "demo.owasp-juice.shop"
+    },
+    {
+      "input": {
+        "FFUFHASH": "35e22136",
+        "FUZZ": "Products"
+      },
+      "position": 310,
+      "status": 200,
+      "length": 13212,
+      "words": 751,
+      "lines": 1,
+      "content-type": "application/json; charset=utf-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 716799062,
+      "resultfile": "",
+      "url": "https://demo.owasp-juice.shop/api/Products",
+      "host": "demo.owasp-juice.shop"
+    },
+    {
+      "input": {
+        "FFUFHASH": "35e223e0",
+        "FUZZ": "cards"
+      },
+      "position": 992,
+      "status": 401,
+      "length": 31,
+      "words": 1,
+      "lines": 1,
+      "content-type": "application/json; charset=utf-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 312576026,
+      "resultfile": "",
+      "url": "https://demo.owasp-juice.shop/api/cards",
+      "host": "demo.owasp-juice.shop"
+    },
+    {
+      "input": {
+        "FFUFHASH": "35e224b1",
+        "FUZZ": "complaints"
+      },
+      "position": 1201,
+      "status": 401,
+      "length": 972,
+      "words": 150,
+      "lines": 50,
+      "content-type": "text/html; charset=utf-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 391672109,
+      "resultfile": "",
+      "url": "https://demo.owasp-juice.shop/api/complaints",
+      "host": "demo.owasp-juice.shop"
+    },
+    {
+      "input": {
+        "FFUFHASH": "35e224fe",
+        "FUZZ": "core"
+      },
+      "position": 1278,
+      "status": 403,
+      "length": 239,
+      "words": 15,
+      "lines": 8,
+      "content-type": "text/html; charset=iso-8859-1",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 287066266,
+      "resultfile": "",
+      "url": "https://demo.owasp-juice.shop/api/core",
+      "host": "demo.owasp-juice.shop"
+    }
+  ],
+  "config": {
+    "autocalibration": false,
+    "autocalibration_keyword": "FUZZ",
+    "autocalibration_perhost": false,
+    "autocalibration_strategies": [
+      "basic"
+    ],
+    "autocalibration_strings": [],
+    "colors": false,
+    "cmdline": "ffuf -u https://demo.owasp-juice.shop/api/FUZZ -w /usr/share/seclists/Discovery/Web-Content/common.txt -o ffuf_e90fed13d0864b5a86fa85432db30429.json -of json -mc 200,204,301,302,307,401,403 -t 60 -timeout 2 -noninteractive -k -s",
+    "configfile": "",
+    "postdata": "",
+    "debuglog": "",
+    "delay": {
+      "value": "0.00"
+    },
+    "dirsearch_compatibility": false,
+    "encoders": [],
+    "extensions": [],
+    "fmode": "or",
+    "follow_redirects": false,
+    "headers": {},
+    "ignorebody": false,
+    "ignore_wordlist_comments": false,
+    "inputmode": "clusterbomb",
+    "cmd_inputnum": 100,
+    "inputproviders": [
+      {
+        "name": "wordlist",
+        "keyword": "FUZZ",
+        "value": "/usr/share/seclists/Discovery/Web-Content/common.txt",
+        "encoders": "",
+        "template": ""
+      }
+    ],
+    "inputshell": "",
+    "json": false,
+    "matchers": {
+      "IsCalibrated": false,
+      "Mutex": {},
+      "Matchers": {
+        "status": {
+          "value": "200,204,301,302,307,401,403"
+        }
+      },
+      "Filters": {},
+      "PerDomainFilters": {}
+    },
+    "mmode": "or",
+    "maxtime": 0,
+    "maxtime_job": 0,
+    "method": "GET",
+    "noninteractive": true,
+    "outputdirectory": "",
+    "outputfile": "ffuf_e90fed13d0864b5a86fa85432db30429.json",
+    "outputformat": "json",
+    "OutputSkipEmptyFile": false,
+    "proxyurl": "",
+    "quiet": true,
+    "rate": 0,
+    "raw": false,
+    "recursion": false,
+    "recursion_depth": 0,
+    "recursion_strategy": "default",
+    "replayproxyurl": "",
+    "requestfile": "",
+    "requestproto": "https",
+    "scraperfile": "",
+    "scrapers": "all",
+    "sni": "",
+    "stop_403": false,
+    "stop_all": false,
+    "stop_errors": false,
+    "threads": 60,
+    "timeout": 2,
+    "url": "https://demo.owasp-juice.shop/api/FUZZ",
+    "verbose": false,
+    "wordlists": [
+      "/usr/share/seclists/Discovery/Web-Content/common.txt"
+    ],
+    "http2": false,
+    "client-cert": "",
+    "client-key": ""
+  }
+}

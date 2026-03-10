@@ -1,0 +1,1029 @@
+{
+  "summary": {
+    "total_findings": 29,
+    "confirmed": 25,
+    "false_positive": 0,
+    "needs_manual_review": 4
+  },
+  "validated_findings": [
+    {
+      "vuln_class": "Other",
+      "original_tool": "ffuf",
+      "severity": "info",
+      "url": "http://testphp.vulnweb.com/CVS/Root",
+      "evidence": "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/CVS/Root | description=Status: 200 | Size: 1 | raw_output={'input': {'FFUFHASH': 'e5051e0', 'FUZZ': 'CVS/Root'}, 'position': 224, ",
+      "validation_status": "confirmed",
+      "validation_reason": "Endpoint exists (HTTP 200).",
+      "confidence_score": 0.45,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "ffuf"
+        ]
+      },
+      "final_severity": "low"
+    },
+    {
+      "vuln_class": "Other",
+      "original_tool": "ffuf",
+      "severity": "info",
+      "url": "http://testphp.vulnweb.com/CVS",
+      "evidence": "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/CVS | description=Status: 301 | Size: 169 | raw_output={'input': {'FFUFHASH': 'e5051dd', 'FUZZ': 'CVS'}, 'position': 221, 'status'",
+      "validation_status": "confirmed",
+      "validation_reason": "Endpoint exists (HTTP 200).",
+      "confidence_score": 0.75,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "ffuf"
+        ]
+      },
+      "final_severity": "medium"
+    },
+    {
+      "vuln_class": "Other",
+      "original_tool": "ffuf",
+      "severity": "info",
+      "url": "http://testphp.vulnweb.com/CVS/Entries",
+      "evidence": "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/CVS/Entries | description=Status: 200 | Size: 1 | raw_output={'input': {'FFUFHASH': 'e5051de', 'FUZZ': 'CVS/Entries'}, 'position':",
+      "validation_status": "confirmed",
+      "validation_reason": "Endpoint exists (HTTP 200).",
+      "confidence_score": 0.45,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "ffuf"
+        ]
+      },
+      "final_severity": "low"
+    },
+    {
+      "vuln_class": "Other",
+      "original_tool": "ffuf",
+      "severity": "info",
+      "url": "http://testphp.vulnweb.com/CVS/Repository",
+      "evidence": "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/CVS/Repository | description=Status: 200 | Size: 8 | raw_output={'input': {'FFUFHASH': 'e5051df', 'FUZZ': 'CVS/Repository'}, 'posi",
+      "validation_status": "confirmed",
+      "validation_reason": "Endpoint exists (HTTP 200).",
+      "confidence_score": 0.45,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "ffuf"
+        ]
+      },
+      "final_severity": "low"
+    },
+    {
+      "vuln_class": "Other",
+      "original_tool": "ffuf",
+      "severity": "medium",
+      "url": "http://testphp.vulnweb.com/admin",
+      "evidence": "finding_name=Hidden Resource Discovered | category=discovery | severity=MEDIUM | url=http://testphp.vulnweb.com/admin | description=Status: 301 | Size: 169 | raw_output={'input': {'FFUFHASH': 'e505120f', 'FUZZ': 'admin'}, 'position': 527, '",
+      "validation_status": "confirmed",
+      "validation_reason": "Endpoint exists (HTTP 200).",
+      "confidence_score": 0.75,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "ffuf"
+        ]
+      },
+      "final_severity": "medium"
+    },
+    {
+      "vuln_class": "Other",
+      "original_tool": "ffuf",
+      "severity": "info",
+      "url": "http://testphp.vulnweb.com/cgi-bin",
+      "evidence": "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/cgi-bin | description=Status: 403 | Size: 276 | raw_output={'input': {'FFUFHASH': 'e5051415', 'FUZZ': 'cgi-bin'}, 'position': 1045",
+      "validation_status": "needs_manual_review",
+      "validation_reason": "Request failed (network/timeout). Cannot validate reachability.",
+      "confidence_score": 0.3,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "ffuf"
+        ]
+      },
+      "final_severity": "low"
+    },
+    {
+      "vuln_class": "Other",
+      "original_tool": "ffuf",
+      "severity": "info",
+      "url": "http://testphp.vulnweb.com/cgi-bin/",
+      "evidence": "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/cgi-bin/ | description=Status: 403 | Size: 276 | raw_output={'input': {'FFUFHASH': 'e5051416', 'FUZZ': 'cgi-bin/'}, 'position': 10",
+      "validation_status": "needs_manual_review",
+      "validation_reason": "Request failed (network/timeout). Cannot validate reachability.",
+      "confidence_score": 0.3,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "ffuf"
+        ]
+      },
+      "final_severity": "low"
+    },
+    {
+      "vuln_class": "Other",
+      "original_tool": "ffuf",
+      "severity": "info",
+      "url": "http://testphp.vulnweb.com/crossdomain.xml",
+      "evidence": "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/crossdomain.xml | description=Status: 200 | Size: 224 | raw_output={'input': {'FFUFHASH': 'e5051533', 'FUZZ': 'crossdomain.xml'}, ",
+      "validation_status": "confirmed",
+      "validation_reason": "Endpoint exists (HTTP 200).",
+      "confidence_score": 0.75,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "ffuf"
+        ]
+      },
+      "final_severity": "medium"
+    },
+    {
+      "vuln_class": "Other",
+      "original_tool": "ffuf",
+      "severity": "info",
+      "url": "http://testphp.vulnweb.com/favicon.ico",
+      "evidence": "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/favicon.ico | description=Status: 200 | Size: 894 | raw_output={'input': {'FFUFHASH': 'e50516ec', 'FUZZ': 'favicon.ico'}, 'positio",
+      "validation_status": "confirmed",
+      "validation_reason": "Endpoint exists (HTTP 200).",
+      "confidence_score": 0.75,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "ffuf"
+        ]
+      },
+      "final_severity": "medium"
+    },
+    {
+      "vuln_class": "Other",
+      "original_tool": "ffuf",
+      "severity": "info",
+      "url": "http://testphp.vulnweb.com/images",
+      "evidence": "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/images | description=Status: 301 | Size: 169 | raw_output={'input': {'FFUFHASH': 'e5051886', 'FUZZ': 'images'}, 'position': 2182, ",
+      "validation_status": "confirmed",
+      "validation_reason": "Endpoint exists (HTTP 200).",
+      "confidence_score": 0.75,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "ffuf"
+        ]
+      },
+      "final_severity": "medium"
+    },
+    {
+      "vuln_class": "Other",
+      "original_tool": "ffuf",
+      "severity": "info",
+      "url": "http://testphp.vulnweb.com/index.php",
+      "evidence": "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/index.php | description=Status: 200 | Size: 4958 | raw_output={'input': {'FFUFHASH': 'e50518a2', 'FUZZ': 'index.php'}, 'position':",
+      "validation_status": "confirmed",
+      "validation_reason": "Endpoint exists (HTTP 200).",
+      "confidence_score": 0.75,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "ffuf"
+        ]
+      },
+      "final_severity": "medium"
+    },
+    {
+      "vuln_class": "Other",
+      "original_tool": "ffuf",
+      "severity": "info",
+      "url": "http://testphp.vulnweb.com/pictures",
+      "evidence": "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/pictures | description=Status: 301 | Size: 169 | raw_output={'input': {'FFUFHASH': 'e5051c46', 'FUZZ': 'pictures'}, 'position': 31",
+      "validation_status": "confirmed",
+      "validation_reason": "Endpoint exists (HTTP 200).",
+      "confidence_score": 0.75,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "ffuf"
+        ]
+      },
+      "final_severity": "medium"
+    },
+    {
+      "vuln_class": "Other",
+      "original_tool": "ffuf",
+      "severity": "info",
+      "url": "http://testphp.vulnweb.com/secured",
+      "evidence": "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/secured | description=Status: 301 | Size: 169 | raw_output={'input': {'FFUFHASH': 'e5051e71', 'FUZZ': 'secured'}, 'position': 3697",
+      "validation_status": "confirmed",
+      "validation_reason": "Endpoint exists (HTTP 200).",
+      "confidence_score": 0.45,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "ffuf"
+        ]
+      },
+      "final_severity": "low"
+    },
+    {
+      "vuln_class": "Other",
+      "original_tool": "ffuf",
+      "severity": "info",
+      "url": "http://testphp.vulnweb.com/vendor",
+      "evidence": "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/vendor | description=Status: 301 | Size: 169 | raw_output={'input': {'FFUFHASH': 'e50511138', 'FUZZ': 'vendor'}, 'position': 4408,",
+      "validation_status": "confirmed",
+      "validation_reason": "Endpoint exists (HTTP 200).",
+      "confidence_score": 0.75,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "ffuf"
+        ]
+      },
+      "final_severity": "medium"
+    },
+    {
+      "vuln_class": "Exposure / Enumeration Issues",
+      "original_tool": "nuclei",
+      "severity": "medium",
+      "url": "http://testphp.vulnweb.com/.idea/workspace.xml",
+      "evidence": "finding_name=Public .idea Folder containing files with sensitive data | category=exposure | severity=MEDIUM | url=http://testphp.vulnweb.com/.idea/workspace.xml | description=Searches for .idea Folder by querying the /.idea and a few other ",
+      "validation_status": "confirmed",
+      "validation_reason": "Accessible sensitive resource (HTTP 200) with exposure indicators.",
+      "confidence_score": 0.85,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "nuclei"
+        ]
+      },
+      "final_severity": "high"
+    },
+    {
+      "vuln_class": "Security Misconfigurations",
+      "original_tool": "nuclei",
+      "severity": "low",
+      "url": "http://testphp.vulnweb.com",
+      "evidence": "finding_name=HTTP Missing Security Headers | category=misconfiguration | severity=LOW | url=http://testphp.vulnweb.com | description=This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n | ",
+      "validation_status": "confirmed",
+      "validation_reason": "Missing common security header(s): x-frame-options, content-security-policy, x-content-type-options.",
+      "confidence_score": 0.75,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "nuclei"
+        ]
+      },
+      "final_severity": "medium"
+    },
+    {
+      "vuln_class": "Security Misconfigurations",
+      "original_tool": "nuclei",
+      "severity": "low",
+      "url": "http://testphp.vulnweb.com",
+      "evidence": "finding_name=HTTP Missing Security Headers | category=misconfiguration | severity=LOW | url=http://testphp.vulnweb.com | description=This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n | ",
+      "validation_status": "confirmed",
+      "validation_reason": "Missing common security header(s): x-frame-options, content-security-policy, x-content-type-options.",
+      "confidence_score": 0.75,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "nuclei"
+        ]
+      },
+      "final_severity": "medium"
+    },
+    {
+      "vuln_class": "Security Misconfigurations",
+      "original_tool": "nuclei",
+      "severity": "low",
+      "url": "http://testphp.vulnweb.com",
+      "evidence": "finding_name=HTTP Missing Security Headers | category=misconfiguration | severity=LOW | url=http://testphp.vulnweb.com | description=This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n | ",
+      "validation_status": "confirmed",
+      "validation_reason": "Missing common security header(s): x-frame-options, content-security-policy, x-content-type-options.",
+      "confidence_score": 0.75,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "nuclei"
+        ]
+      },
+      "final_severity": "medium"
+    },
+    {
+      "vuln_class": "Security Misconfigurations",
+      "original_tool": "nuclei",
+      "severity": "low",
+      "url": "http://testphp.vulnweb.com",
+      "evidence": "finding_name=HTTP Missing Security Headers | category=misconfiguration | severity=LOW | url=http://testphp.vulnweb.com | description=This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n | ",
+      "validation_status": "confirmed",
+      "validation_reason": "Missing common security header(s): x-frame-options, content-security-policy, x-content-type-options.",
+      "confidence_score": 0.75,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "nuclei"
+        ]
+      },
+      "final_severity": "medium"
+    },
+    {
+      "vuln_class": "Security Misconfigurations",
+      "original_tool": "nuclei",
+      "severity": "low",
+      "url": "http://testphp.vulnweb.com",
+      "evidence": "finding_name=HTTP Missing Security Headers | category=misconfiguration | severity=LOW | url=http://testphp.vulnweb.com | description=This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n | ",
+      "validation_status": "confirmed",
+      "validation_reason": "Missing common security header(s): x-frame-options, content-security-policy, x-content-type-options.",
+      "confidence_score": 0.75,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "nuclei"
+        ]
+      },
+      "final_severity": "medium"
+    },
+    {
+      "vuln_class": "Security Misconfigurations",
+      "original_tool": "nuclei",
+      "severity": "low",
+      "url": "http://testphp.vulnweb.com",
+      "evidence": "finding_name=HTTP Missing Security Headers | category=misconfiguration | severity=LOW | url=http://testphp.vulnweb.com | description=This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n | ",
+      "validation_status": "confirmed",
+      "validation_reason": "Missing common security header(s): x-frame-options, content-security-policy, x-content-type-options.",
+      "confidence_score": 0.75,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "nuclei"
+        ]
+      },
+      "final_severity": "medium"
+    },
+    {
+      "vuln_class": "Security Misconfigurations",
+      "original_tool": "nuclei",
+      "severity": "low",
+      "url": "http://testphp.vulnweb.com",
+      "evidence": "finding_name=HTTP Missing Security Headers | category=misconfiguration | severity=LOW | url=http://testphp.vulnweb.com | description=This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n | ",
+      "validation_status": "confirmed",
+      "validation_reason": "Missing common security header(s): x-frame-options, content-security-policy, x-content-type-options.",
+      "confidence_score": 0.75,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "nuclei"
+        ]
+      },
+      "final_severity": "medium"
+    },
+    {
+      "vuln_class": "Security Misconfigurations",
+      "original_tool": "nuclei",
+      "severity": "low",
+      "url": "http://testphp.vulnweb.com",
+      "evidence": "finding_name=HTTP Missing Security Headers | category=misconfiguration | severity=LOW | url=http://testphp.vulnweb.com | description=This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n | ",
+      "validation_status": "confirmed",
+      "validation_reason": "Missing common security header(s): x-frame-options, content-security-policy, x-content-type-options.",
+      "confidence_score": 0.75,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "nuclei"
+        ]
+      },
+      "final_severity": "medium"
+    },
+    {
+      "vuln_class": "Security Misconfigurations",
+      "original_tool": "nuclei",
+      "severity": "low",
+      "url": "http://testphp.vulnweb.com",
+      "evidence": "finding_name=HTTP Missing Security Headers | category=misconfiguration | severity=LOW | url=http://testphp.vulnweb.com | description=This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n | ",
+      "validation_status": "confirmed",
+      "validation_reason": "Missing common security header(s): x-frame-options, content-security-policy, x-content-type-options.",
+      "confidence_score": 0.75,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "nuclei"
+        ]
+      },
+      "final_severity": "medium"
+    },
+    {
+      "vuln_class": "Security Misconfigurations",
+      "original_tool": "nuclei",
+      "severity": "low",
+      "url": "http://testphp.vulnweb.com",
+      "evidence": "finding_name=HTTP Missing Security Headers | category=misconfiguration | severity=LOW | url=http://testphp.vulnweb.com | description=This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n | ",
+      "validation_status": "confirmed",
+      "validation_reason": "Missing common security header(s): x-frame-options, content-security-policy, x-content-type-options.",
+      "confidence_score": 0.75,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "nuclei"
+        ]
+      },
+      "final_severity": "medium"
+    },
+    {
+      "vuln_class": "Security Misconfigurations",
+      "original_tool": "nuclei",
+      "severity": "low",
+      "url": "http://testphp.vulnweb.com",
+      "evidence": "finding_name=HTTP Missing Security Headers | category=misconfiguration | severity=LOW | url=http://testphp.vulnweb.com | description=This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n | ",
+      "validation_status": "confirmed",
+      "validation_reason": "Missing common security header(s): x-frame-options, content-security-policy, x-content-type-options.",
+      "confidence_score": 0.75,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "nuclei"
+        ]
+      },
+      "final_severity": "medium"
+    },
+    {
+      "vuln_class": "Injection (SQLi, Command Injection)",
+      "original_tool": "nuclei",
+      "severity": "info",
+      "url": "http://testphp.vulnweb.com",
+      "evidence": "finding_name=Nginx End-of-Life - Detect | category=reconnaissance | severity=INFO | url=http://testphp.vulnweb.com | description=Detected Nginx versions that have reached End-of-Life (EOL) and no longer receive security updates.\n | raw_outp",
+      "validation_status": "needs_manual_review",
+      "validation_reason": "URL has no query parameters; GET-based injection verification requires a parameterized endpoint.",
+      "confidence_score": 0.35,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "nuclei"
+        ]
+      },
+      "final_severity": "low"
+    },
+    {
+      "vuln_class": "Injection (SQLi, Command Injection)",
+      "original_tool": "nuclei",
+      "severity": "info",
+      "url": "http://testphp.vulnweb.com",
+      "evidence": "finding_name=PHP End-of-Life - Detect | category=reconnaissance | severity=INFO | url=http://testphp.vulnweb.com | description=Detected PHP versions that have reached End-of-Life (EOL) and no longer receive security updates.\n | raw_output={",
+      "validation_status": "needs_manual_review",
+      "validation_reason": "URL has no query parameters; GET-based injection verification requires a parameterized endpoint.",
+      "confidence_score": 0.35,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "nuclei"
+        ]
+      },
+      "final_severity": "low"
+    },
+    {
+      "vuln_class": "Information Disclosure",
+      "original_tool": "whatweb",
+      "severity": "info",
+      "url": "http://testphp.vulnweb.com",
+      "evidence": "finding_name=Technology Detected: ActiveX[D27CDB6E-AE6D-11cf-96B8-444553540000] | category=reconnaissance | severity=INFO | url=http://testphp.vulnweb.com | description=Detected technology: ActiveX[D27CDB6E-AE6D-11cf-96B8-444553540000] | ra",
+      "validation_status": "confirmed",
+      "validation_reason": "Information disclosure via HTTP headers: server, x-powered-by.",
+      "confidence_score": 0.75,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "whatweb"
+        ]
+      },
+      "final_severity": "medium",
+      "evidence_list": [
+        "finding_name=Technology Detected: ActiveX[D27CDB6E-AE6D-11cf-96B8-444553540000] | category=reconnaissance | severity=INFO | url=http://testphp.vulnweb.com | description=Detected technology: ActiveX[D27CDB6E-AE6D-11cf-96B8-444553540000] | ra",
+        "finding_name=Technology Detected: Adobe-Flash | category=reconnaissance | severity=INFO | url=http://testphp.vulnweb.com | description=Detected technology: Adobe-Flash | raw_output=http://testphp.vulnweb.com [200 OK] ActiveX[D27CDB6E-AE6D-1",
+        "finding_name=Technology Detected: Country[UNITED STATES][US] | category=reconnaissance | severity=INFO | url=http://testphp.vulnweb.com | description=Detected technology: Country[UNITED STATES][US] | raw_output=http://testphp.vulnweb.com [2",
+        "finding_name=Technology Detected: Email[wvs@acunetix.com] | category=reconnaissance | severity=INFO | url=http://testphp.vulnweb.com | description=Detected technology: Email[wvs@acunetix.com] | raw_output=http://testphp.vulnweb.com [200 OK]",
+        "finding_name=Technology Detected: HTTPServer[nginx/1.19.0] | category=reconnaissance | severity=INFO | url=http://testphp.vulnweb.com | description=Detected technology: HTTPServer[nginx/1.19.0] | raw_output=http://testphp.vulnweb.com [200 O",
+        "finding_name=Technology Detected: IP[44.228.249.3] | category=reconnaissance | severity=INFO | url=http://testphp.vulnweb.com | description=Detected technology: IP[44.228.249.3] | raw_output=http://testphp.vulnweb.com [200 OK] ActiveX[D27CD",
+        "finding_name=Technology Detected: Object[http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0][clsid:D27CDB6E-AE6D-11cf-96B8-444553540000] | category=reconnaissance | severity=INFO | url=http://testphp.vulnwe",
+        "finding_name=Technology Detected: PHP[5.6.40-38+ubuntu20.04.1+deb.sury.org+1] | category=reconnaissance | severity=INFO | url=http://testphp.vulnweb.com | description=Detected technology: PHP[5.6.40-38+ubuntu20.04.1+deb.sury.org+1] | raw_ou",
+        "finding_name=Technology Detected: Script[text/JavaScript] | category=reconnaissance | severity=INFO | url=http://testphp.vulnweb.com | description=Detected technology: Script[text/JavaScript] | raw_output=http://testphp.vulnweb.com [200 OK]",
+        "finding_name=Technology Detected: Title[Home of Acunetix Art] | category=reconnaissance | severity=INFO | url=http://testphp.vulnweb.com | description=Detected technology: Title[Home of Acunetix Art] | raw_output=http://testphp.vulnweb.com ",
+        "finding_name=Technology Detected: X-Powered-By[PHP/5.6.40-38+ubuntu20.04.1+deb.sury.org+1] | category=reconnaissance | severity=INFO | url=http://testphp.vulnweb.com | description=Detected technology: X-Powered-By[PHP/5.6.40-38+ubuntu20.04.",
+        "finding_name=Technology Detected: nginx[1.19.0] | category=reconnaissance | severity=INFO | url=http://testphp.vulnweb.com | description=Detected technology: nginx[1.19.0] | raw_output=http://testphp.vulnweb.com [200 OK] ActiveX[D27CDB6E-AE"
+      ]
+    }
+  ],
+  "confirmed_findings": [
+    {
+      "vuln_class": "Other",
+      "original_tool": "ffuf",
+      "severity": "info",
+      "url": "http://testphp.vulnweb.com/CVS/Root",
+      "evidence": "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/CVS/Root | description=Status: 200 | Size: 1 | raw_output={'input': {'FFUFHASH': 'e5051e0', 'FUZZ': 'CVS/Root'}, 'position': 224, ",
+      "validation_status": "confirmed",
+      "validation_reason": "Endpoint exists (HTTP 200).",
+      "confidence_score": 0.45,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "ffuf"
+        ]
+      },
+      "final_severity": "low"
+    },
+    {
+      "vuln_class": "Other",
+      "original_tool": "ffuf",
+      "severity": "info",
+      "url": "http://testphp.vulnweb.com/CVS",
+      "evidence": "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/CVS | description=Status: 301 | Size: 169 | raw_output={'input': {'FFUFHASH': 'e5051dd', 'FUZZ': 'CVS'}, 'position': 221, 'status'",
+      "validation_status": "confirmed",
+      "validation_reason": "Endpoint exists (HTTP 200).",
+      "confidence_score": 0.75,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "ffuf"
+        ]
+      },
+      "final_severity": "medium"
+    },
+    {
+      "vuln_class": "Other",
+      "original_tool": "ffuf",
+      "severity": "info",
+      "url": "http://testphp.vulnweb.com/CVS/Entries",
+      "evidence": "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/CVS/Entries | description=Status: 200 | Size: 1 | raw_output={'input': {'FFUFHASH': 'e5051de', 'FUZZ': 'CVS/Entries'}, 'position':",
+      "validation_status": "confirmed",
+      "validation_reason": "Endpoint exists (HTTP 200).",
+      "confidence_score": 0.45,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "ffuf"
+        ]
+      },
+      "final_severity": "low"
+    },
+    {
+      "vuln_class": "Other",
+      "original_tool": "ffuf",
+      "severity": "info",
+      "url": "http://testphp.vulnweb.com/CVS/Repository",
+      "evidence": "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/CVS/Repository | description=Status: 200 | Size: 8 | raw_output={'input': {'FFUFHASH': 'e5051df', 'FUZZ': 'CVS/Repository'}, 'posi",
+      "validation_status": "confirmed",
+      "validation_reason": "Endpoint exists (HTTP 200).",
+      "confidence_score": 0.45,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "ffuf"
+        ]
+      },
+      "final_severity": "low"
+    },
+    {
+      "vuln_class": "Other",
+      "original_tool": "ffuf",
+      "severity": "medium",
+      "url": "http://testphp.vulnweb.com/admin",
+      "evidence": "finding_name=Hidden Resource Discovered | category=discovery | severity=MEDIUM | url=http://testphp.vulnweb.com/admin | description=Status: 301 | Size: 169 | raw_output={'input': {'FFUFHASH': 'e505120f', 'FUZZ': 'admin'}, 'position': 527, '",
+      "validation_status": "confirmed",
+      "validation_reason": "Endpoint exists (HTTP 200).",
+      "confidence_score": 0.75,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "ffuf"
+        ]
+      },
+      "final_severity": "medium"
+    },
+    {
+      "vuln_class": "Other",
+      "original_tool": "ffuf",
+      "severity": "info",
+      "url": "http://testphp.vulnweb.com/crossdomain.xml",
+      "evidence": "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/crossdomain.xml | description=Status: 200 | Size: 224 | raw_output={'input': {'FFUFHASH': 'e5051533', 'FUZZ': 'crossdomain.xml'}, ",
+      "validation_status": "confirmed",
+      "validation_reason": "Endpoint exists (HTTP 200).",
+      "confidence_score": 0.75,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "ffuf"
+        ]
+      },
+      "final_severity": "medium"
+    },
+    {
+      "vuln_class": "Other",
+      "original_tool": "ffuf",
+      "severity": "info",
+      "url": "http://testphp.vulnweb.com/favicon.ico",
+      "evidence": "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/favicon.ico | description=Status: 200 | Size: 894 | raw_output={'input': {'FFUFHASH': 'e50516ec', 'FUZZ': 'favicon.ico'}, 'positio",
+      "validation_status": "confirmed",
+      "validation_reason": "Endpoint exists (HTTP 200).",
+      "confidence_score": 0.75,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "ffuf"
+        ]
+      },
+      "final_severity": "medium"
+    },
+    {
+      "vuln_class": "Other",
+      "original_tool": "ffuf",
+      "severity": "info",
+      "url": "http://testphp.vulnweb.com/images",
+      "evidence": "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/images | description=Status: 301 | Size: 169 | raw_output={'input': {'FFUFHASH': 'e5051886', 'FUZZ': 'images'}, 'position': 2182, ",
+      "validation_status": "confirmed",
+      "validation_reason": "Endpoint exists (HTTP 200).",
+      "confidence_score": 0.75,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "ffuf"
+        ]
+      },
+      "final_severity": "medium"
+    },
+    {
+      "vuln_class": "Other",
+      "original_tool": "ffuf",
+      "severity": "info",
+      "url": "http://testphp.vulnweb.com/index.php",
+      "evidence": "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/index.php | description=Status: 200 | Size: 4958 | raw_output={'input': {'FFUFHASH': 'e50518a2', 'FUZZ': 'index.php'}, 'position':",
+      "validation_status": "confirmed",
+      "validation_reason": "Endpoint exists (HTTP 200).",
+      "confidence_score": 0.75,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "ffuf"
+        ]
+      },
+      "final_severity": "medium"
+    },
+    {
+      "vuln_class": "Other",
+      "original_tool": "ffuf",
+      "severity": "info",
+      "url": "http://testphp.vulnweb.com/pictures",
+      "evidence": "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/pictures | description=Status: 301 | Size: 169 | raw_output={'input': {'FFUFHASH': 'e5051c46', 'FUZZ': 'pictures'}, 'position': 31",
+      "validation_status": "confirmed",
+      "validation_reason": "Endpoint exists (HTTP 200).",
+      "confidence_score": 0.75,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "ffuf"
+        ]
+      },
+      "final_severity": "medium"
+    },
+    {
+      "vuln_class": "Other",
+      "original_tool": "ffuf",
+      "severity": "info",
+      "url": "http://testphp.vulnweb.com/secured",
+      "evidence": "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/secured | description=Status: 301 | Size: 169 | raw_output={'input': {'FFUFHASH': 'e5051e71', 'FUZZ': 'secured'}, 'position': 3697",
+      "validation_status": "confirmed",
+      "validation_reason": "Endpoint exists (HTTP 200).",
+      "confidence_score": 0.45,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "ffuf"
+        ]
+      },
+      "final_severity": "low"
+    },
+    {
+      "vuln_class": "Other",
+      "original_tool": "ffuf",
+      "severity": "info",
+      "url": "http://testphp.vulnweb.com/vendor",
+      "evidence": "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/vendor | description=Status: 301 | Size: 169 | raw_output={'input': {'FFUFHASH': 'e50511138', 'FUZZ': 'vendor'}, 'position': 4408,",
+      "validation_status": "confirmed",
+      "validation_reason": "Endpoint exists (HTTP 200).",
+      "confidence_score": 0.75,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "ffuf"
+        ]
+      },
+      "final_severity": "medium"
+    },
+    {
+      "vuln_class": "Exposure / Enumeration Issues",
+      "original_tool": "nuclei",
+      "severity": "medium",
+      "url": "http://testphp.vulnweb.com/.idea/workspace.xml",
+      "evidence": "finding_name=Public .idea Folder containing files with sensitive data | category=exposure | severity=MEDIUM | url=http://testphp.vulnweb.com/.idea/workspace.xml | description=Searches for .idea Folder by querying the /.idea and a few other ",
+      "validation_status": "confirmed",
+      "validation_reason": "Accessible sensitive resource (HTTP 200) with exposure indicators.",
+      "confidence_score": 0.85,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "nuclei"
+        ]
+      },
+      "final_severity": "high"
+    },
+    {
+      "vuln_class": "Security Misconfigurations",
+      "original_tool": "nuclei",
+      "severity": "low",
+      "url": "http://testphp.vulnweb.com",
+      "evidence": "finding_name=HTTP Missing Security Headers | category=misconfiguration | severity=LOW | url=http://testphp.vulnweb.com | description=This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n | ",
+      "validation_status": "confirmed",
+      "validation_reason": "Missing common security header(s): x-frame-options, content-security-policy, x-content-type-options.",
+      "confidence_score": 0.75,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "nuclei"
+        ]
+      },
+      "final_severity": "medium"
+    },
+    {
+      "vuln_class": "Security Misconfigurations",
+      "original_tool": "nuclei",
+      "severity": "low",
+      "url": "http://testphp.vulnweb.com",
+      "evidence": "finding_name=HTTP Missing Security Headers | category=misconfiguration | severity=LOW | url=http://testphp.vulnweb.com | description=This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n | ",
+      "validation_status": "confirmed",
+      "validation_reason": "Missing common security header(s): x-frame-options, content-security-policy, x-content-type-options.",
+      "confidence_score": 0.75,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "nuclei"
+        ]
+      },
+      "final_severity": "medium"
+    },
+    {
+      "vuln_class": "Security Misconfigurations",
+      "original_tool": "nuclei",
+      "severity": "low",
+      "url": "http://testphp.vulnweb.com",
+      "evidence": "finding_name=HTTP Missing Security Headers | category=misconfiguration | severity=LOW | url=http://testphp.vulnweb.com | description=This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n | ",
+      "validation_status": "confirmed",
+      "validation_reason": "Missing common security header(s): x-frame-options, content-security-policy, x-content-type-options.",
+      "confidence_score": 0.75,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "nuclei"
+        ]
+      },
+      "final_severity": "medium"
+    },
+    {
+      "vuln_class": "Security Misconfigurations",
+      "original_tool": "nuclei",
+      "severity": "low",
+      "url": "http://testphp.vulnweb.com",
+      "evidence": "finding_name=HTTP Missing Security Headers | category=misconfiguration | severity=LOW | url=http://testphp.vulnweb.com | description=This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n | ",
+      "validation_status": "confirmed",
+      "validation_reason": "Missing common security header(s): x-frame-options, content-security-policy, x-content-type-options.",
+      "confidence_score": 0.75,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "nuclei"
+        ]
+      },
+      "final_severity": "medium"
+    },
+    {
+      "vuln_class": "Security Misconfigurations",
+      "original_tool": "nuclei",
+      "severity": "low",
+      "url": "http://testphp.vulnweb.com",
+      "evidence": "finding_name=HTTP Missing Security Headers | category=misconfiguration | severity=LOW | url=http://testphp.vulnweb.com | description=This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n | ",
+      "validation_status": "confirmed",
+      "validation_reason": "Missing common security header(s): x-frame-options, content-security-policy, x-content-type-options.",
+      "confidence_score": 0.75,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "nuclei"
+        ]
+      },
+      "final_severity": "medium"
+    },
+    {
+      "vuln_class": "Security Misconfigurations",
+      "original_tool": "nuclei",
+      "severity": "low",
+      "url": "http://testphp.vulnweb.com",
+      "evidence": "finding_name=HTTP Missing Security Headers | category=misconfiguration | severity=LOW | url=http://testphp.vulnweb.com | description=This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n | ",
+      "validation_status": "confirmed",
+      "validation_reason": "Missing common security header(s): x-frame-options, content-security-policy, x-content-type-options.",
+      "confidence_score": 0.75,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "nuclei"
+        ]
+      },
+      "final_severity": "medium"
+    },
+    {
+      "vuln_class": "Security Misconfigurations",
+      "original_tool": "nuclei",
+      "severity": "low",
+      "url": "http://testphp.vulnweb.com",
+      "evidence": "finding_name=HTTP Missing Security Headers | category=misconfiguration | severity=LOW | url=http://testphp.vulnweb.com | description=This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n | ",
+      "validation_status": "confirmed",
+      "validation_reason": "Missing common security header(s): x-frame-options, content-security-policy, x-content-type-options.",
+      "confidence_score": 0.75,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "nuclei"
+        ]
+      },
+      "final_severity": "medium"
+    },
+    {
+      "vuln_class": "Security Misconfigurations",
+      "original_tool": "nuclei",
+      "severity": "low",
+      "url": "http://testphp.vulnweb.com",
+      "evidence": "finding_name=HTTP Missing Security Headers | category=misconfiguration | severity=LOW | url=http://testphp.vulnweb.com | description=This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n | ",
+      "validation_status": "confirmed",
+      "validation_reason": "Missing common security header(s): x-frame-options, content-security-policy, x-content-type-options.",
+      "confidence_score": 0.75,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "nuclei"
+        ]
+      },
+      "final_severity": "medium"
+    },
+    {
+      "vuln_class": "Security Misconfigurations",
+      "original_tool": "nuclei",
+      "severity": "low",
+      "url": "http://testphp.vulnweb.com",
+      "evidence": "finding_name=HTTP Missing Security Headers | category=misconfiguration | severity=LOW | url=http://testphp.vulnweb.com | description=This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n | ",
+      "validation_status": "confirmed",
+      "validation_reason": "Missing common security header(s): x-frame-options, content-security-policy, x-content-type-options.",
+      "confidence_score": 0.75,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "nuclei"
+        ]
+      },
+      "final_severity": "medium"
+    },
+    {
+      "vuln_class": "Security Misconfigurations",
+      "original_tool": "nuclei",
+      "severity": "low",
+      "url": "http://testphp.vulnweb.com",
+      "evidence": "finding_name=HTTP Missing Security Headers | category=misconfiguration | severity=LOW | url=http://testphp.vulnweb.com | description=This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n | ",
+      "validation_status": "confirmed",
+      "validation_reason": "Missing common security header(s): x-frame-options, content-security-policy, x-content-type-options.",
+      "confidence_score": 0.75,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "nuclei"
+        ]
+      },
+      "final_severity": "medium"
+    },
+    {
+      "vuln_class": "Security Misconfigurations",
+      "original_tool": "nuclei",
+      "severity": "low",
+      "url": "http://testphp.vulnweb.com",
+      "evidence": "finding_name=HTTP Missing Security Headers | category=misconfiguration | severity=LOW | url=http://testphp.vulnweb.com | description=This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n | ",
+      "validation_status": "confirmed",
+      "validation_reason": "Missing common security header(s): x-frame-options, content-security-policy, x-content-type-options.",
+      "confidence_score": 0.75,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "nuclei"
+        ]
+      },
+      "final_severity": "medium"
+    },
+    {
+      "vuln_class": "Information Disclosure",
+      "original_tool": "whatweb",
+      "severity": "info",
+      "url": "http://testphp.vulnweb.com",
+      "evidence": "finding_name=Technology Detected: ActiveX[D27CDB6E-AE6D-11cf-96B8-444553540000] | category=reconnaissance | severity=INFO | url=http://testphp.vulnweb.com | description=Detected technology: ActiveX[D27CDB6E-AE6D-11cf-96B8-444553540000] | ra",
+      "validation_status": "confirmed",
+      "validation_reason": "Information disclosure via HTTP headers: server, x-powered-by.",
+      "confidence_score": 0.75,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "whatweb"
+        ]
+      },
+      "final_severity": "medium",
+      "evidence_list": [
+        "finding_name=Technology Detected: ActiveX[D27CDB6E-AE6D-11cf-96B8-444553540000] | category=reconnaissance | severity=INFO | url=http://testphp.vulnweb.com | description=Detected technology: ActiveX[D27CDB6E-AE6D-11cf-96B8-444553540000] | ra",
+        "finding_name=Technology Detected: Adobe-Flash | category=reconnaissance | severity=INFO | url=http://testphp.vulnweb.com | description=Detected technology: Adobe-Flash | raw_output=http://testphp.vulnweb.com [200 OK] ActiveX[D27CDB6E-AE6D-1",
+        "finding_name=Technology Detected: Country[UNITED STATES][US] | category=reconnaissance | severity=INFO | url=http://testphp.vulnweb.com | description=Detected technology: Country[UNITED STATES][US] | raw_output=http://testphp.vulnweb.com [2",
+        "finding_name=Technology Detected: Email[wvs@acunetix.com] | category=reconnaissance | severity=INFO | url=http://testphp.vulnweb.com | description=Detected technology: Email[wvs@acunetix.com] | raw_output=http://testphp.vulnweb.com [200 OK]",
+        "finding_name=Technology Detected: HTTPServer[nginx/1.19.0] | category=reconnaissance | severity=INFO | url=http://testphp.vulnweb.com | description=Detected technology: HTTPServer[nginx/1.19.0] | raw_output=http://testphp.vulnweb.com [200 O",
+        "finding_name=Technology Detected: IP[44.228.249.3] | category=reconnaissance | severity=INFO | url=http://testphp.vulnweb.com | description=Detected technology: IP[44.228.249.3] | raw_output=http://testphp.vulnweb.com [200 OK] ActiveX[D27CD",
+        "finding_name=Technology Detected: Object[http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0][clsid:D27CDB6E-AE6D-11cf-96B8-444553540000] | category=reconnaissance | severity=INFO | url=http://testphp.vulnwe",
+        "finding_name=Technology Detected: PHP[5.6.40-38+ubuntu20.04.1+deb.sury.org+1] | category=reconnaissance | severity=INFO | url=http://testphp.vulnweb.com | description=Detected technology: PHP[5.6.40-38+ubuntu20.04.1+deb.sury.org+1] | raw_ou",
+        "finding_name=Technology Detected: Script[text/JavaScript] | category=reconnaissance | severity=INFO | url=http://testphp.vulnweb.com | description=Detected technology: Script[text/JavaScript] | raw_output=http://testphp.vulnweb.com [200 OK]",
+        "finding_name=Technology Detected: Title[Home of Acunetix Art] | category=reconnaissance | severity=INFO | url=http://testphp.vulnweb.com | description=Detected technology: Title[Home of Acunetix Art] | raw_output=http://testphp.vulnweb.com ",
+        "finding_name=Technology Detected: X-Powered-By[PHP/5.6.40-38+ubuntu20.04.1+deb.sury.org+1] | category=reconnaissance | severity=INFO | url=http://testphp.vulnweb.com | description=Detected technology: X-Powered-By[PHP/5.6.40-38+ubuntu20.04.",
+        "finding_name=Technology Detected: nginx[1.19.0] | category=reconnaissance | severity=INFO | url=http://testphp.vulnweb.com | description=Detected technology: nginx[1.19.0] | raw_output=http://testphp.vulnweb.com [200 OK] ActiveX[D27CDB6E-AE"
+      ]
+    }
+  ],
+  "manual_review_findings": [
+    {
+      "vuln_class": "Other",
+      "original_tool": "ffuf",
+      "severity": "info",
+      "url": "http://testphp.vulnweb.com/cgi-bin",
+      "evidence": "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/cgi-bin | description=Status: 403 | Size: 276 | raw_output={'input': {'FFUFHASH': 'e5051415', 'FUZZ': 'cgi-bin'}, 'position': 1045",
+      "validation_status": "needs_manual_review",
+      "validation_reason": "Request failed (network/timeout). Cannot validate reachability.",
+      "confidence_score": 0.3,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "ffuf"
+        ]
+      },
+      "final_severity": "low"
+    },
+    {
+      "vuln_class": "Other",
+      "original_tool": "ffuf",
+      "severity": "info",
+      "url": "http://testphp.vulnweb.com/cgi-bin/",
+      "evidence": "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/cgi-bin/ | description=Status: 403 | Size: 276 | raw_output={'input': {'FFUFHASH': 'e5051416', 'FUZZ': 'cgi-bin/'}, 'position': 10",
+      "validation_status": "needs_manual_review",
+      "validation_reason": "Request failed (network/timeout). Cannot validate reachability.",
+      "confidence_score": 0.3,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "ffuf"
+        ]
+      },
+      "final_severity": "low"
+    },
+    {
+      "vuln_class": "Injection (SQLi, Command Injection)",
+      "original_tool": "nuclei",
+      "severity": "info",
+      "url": "http://testphp.vulnweb.com",
+      "evidence": "finding_name=Nginx End-of-Life - Detect | category=reconnaissance | severity=INFO | url=http://testphp.vulnweb.com | description=Detected Nginx versions that have reached End-of-Life (EOL) and no longer receive security updates.\n | raw_outp",
+      "validation_status": "needs_manual_review",
+      "validation_reason": "URL has no query parameters; GET-based injection verification requires a parameterized endpoint.",
+      "confidence_score": 0.35,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "nuclei"
+        ]
+      },
+      "final_severity": "low"
+    },
+    {
+      "vuln_class": "Injection (SQLi, Command Injection)",
+      "original_tool": "nuclei",
+      "severity": "info",
+      "url": "http://testphp.vulnweb.com",
+      "evidence": "finding_name=PHP End-of-Life - Detect | category=reconnaissance | severity=INFO | url=http://testphp.vulnweb.com | description=Detected PHP versions that have reached End-of-Life (EOL) and no longer receive security updates.\n | raw_output={",
+      "validation_status": "needs_manual_review",
+      "validation_reason": "URL has no query parameters; GET-based injection verification requires a parameterized endpoint.",
+      "confidence_score": 0.35,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "nuclei"
+        ]
+      },
+      "final_severity": "low"
+    }
+  ],
+  "rejected_false_positives": []
+}

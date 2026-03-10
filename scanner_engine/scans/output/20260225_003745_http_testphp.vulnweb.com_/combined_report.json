@@ -1,0 +1,884 @@
+{
+    "scan_info": {
+        "generated_at": "2026-02-25 00:40:35",
+        "total_findings": 27,
+        "severity_counts": {
+            "CRITICAL": 0,
+            "HIGH": 0,
+            "MEDIUM": 2,
+            "LOW": 0,
+            "INFO": 25
+        }
+    },
+    "findings": [
+        {
+            "tool": "whatweb",
+            "url": "http://testphp.vulnweb.com/",
+            "finding_name": "Technology Detected: ActiveX[D27CDB6E-AE6D-11cf-96B8-444553540000]",
+            "severity": "INFO",
+            "risk_score": 1,
+            "category": "reconnaissance",
+            "confirmed": false,
+            "description": "Detected technology: ActiveX[D27CDB6E-AE6D-11cf-96B8-444553540000]",
+            "timestamp": "2026-02-25 00:37:55",
+            "raw_output": "http://testphp.vulnweb.com/ [200 OK] ActiveX[D27CDB6E-AE6D-11cf-96B8-444553540000], Adobe-Flash, Country[UNITED STATES][US], Email[wvs@acunetix.com], HTTPServer[nginx/1.19.0], IP[44.228.249.3], Object[http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0][clsid:D27CDB6E-AE6D-11cf-96B8-444553540000], PHP[5.6.40-38+ubuntu20.04.1+deb.sury.org+1], Script[text/JavaScript], Title[Home of Acunetix Art], X-Powered-By[PHP/5.6.40-38+ubuntu20.04.1+deb.sury.org+1], nginx[1.19.0]",
+            "evidence_list": [],
+            "correlation": {
+                "tools": [
+                    "whatweb"
+                ],
+                "tool_count": 1
+            },
+            "sources": [
+                "whatweb"
+            ]
+        },
+        {
+            "tool": "whatweb",
+            "url": "http://testphp.vulnweb.com/",
+            "finding_name": "Technology Detected: Adobe-Flash",
+            "severity": "INFO",
+            "risk_score": 1,
+            "category": "reconnaissance",
+            "confirmed": false,
+            "description": "Detected technology: Adobe-Flash",
+            "timestamp": "2026-02-25 00:37:55",
+            "raw_output": "http://testphp.vulnweb.com/ [200 OK] ActiveX[D27CDB6E-AE6D-11cf-96B8-444553540000], Adobe-Flash, Country[UNITED STATES][US], Email[wvs@acunetix.com], HTTPServer[nginx/1.19.0], IP[44.228.249.3], Object[http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0][clsid:D27CDB6E-AE6D-11cf-96B8-444553540000], PHP[5.6.40-38+ubuntu20.04.1+deb.sury.org+1], Script[text/JavaScript], Title[Home of Acunetix Art], X-Powered-By[PHP/5.6.40-38+ubuntu20.04.1+deb.sury.org+1], nginx[1.19.0]",
+            "evidence_list": [],
+            "correlation": {
+                "tools": [
+                    "whatweb"
+                ],
+                "tool_count": 1
+            },
+            "sources": [
+                "whatweb"
+            ]
+        },
+        {
+            "tool": "whatweb",
+            "url": "http://testphp.vulnweb.com/",
+            "finding_name": "Technology Detected: Country[UNITED STATES][US]",
+            "severity": "INFO",
+            "risk_score": 1,
+            "category": "reconnaissance",
+            "confirmed": false,
+            "description": "Detected technology: Country[UNITED STATES][US]",
+            "timestamp": "2026-02-25 00:37:55",
+            "raw_output": "http://testphp.vulnweb.com/ [200 OK] ActiveX[D27CDB6E-AE6D-11cf-96B8-444553540000], Adobe-Flash, Country[UNITED STATES][US], Email[wvs@acunetix.com], HTTPServer[nginx/1.19.0], IP[44.228.249.3], Object[http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0][clsid:D27CDB6E-AE6D-11cf-96B8-444553540000], PHP[5.6.40-38+ubuntu20.04.1+deb.sury.org+1], Script[text/JavaScript], Title[Home of Acunetix Art], X-Powered-By[PHP/5.6.40-38+ubuntu20.04.1+deb.sury.org+1], nginx[1.19.0]",
+            "evidence_list": [],
+            "correlation": {
+                "tools": [
+                    "whatweb"
+                ],
+                "tool_count": 1
+            },
+            "sources": [
+                "whatweb"
+            ]
+        },
+        {
+            "tool": "whatweb",
+            "url": "http://testphp.vulnweb.com/",
+            "finding_name": "Technology Detected: Email[wvs@acunetix.com]",
+            "severity": "INFO",
+            "risk_score": 1,
+            "category": "reconnaissance",
+            "confirmed": false,
+            "description": "Detected technology: Email[wvs@acunetix.com]",
+            "timestamp": "2026-02-25 00:37:55",
+            "raw_output": "http://testphp.vulnweb.com/ [200 OK] ActiveX[D27CDB6E-AE6D-11cf-96B8-444553540000], Adobe-Flash, Country[UNITED STATES][US], Email[wvs@acunetix.com], HTTPServer[nginx/1.19.0], IP[44.228.249.3], Object[http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0][clsid:D27CDB6E-AE6D-11cf-96B8-444553540000], PHP[5.6.40-38+ubuntu20.04.1+deb.sury.org+1], Script[text/JavaScript], Title[Home of Acunetix Art], X-Powered-By[PHP/5.6.40-38+ubuntu20.04.1+deb.sury.org+1], nginx[1.19.0]",
+            "evidence_list": [],
+            "correlation": {
+                "tools": [
+                    "whatweb"
+                ],
+                "tool_count": 1
+            },
+            "sources": [
+                "whatweb"
+            ]
+        },
+        {
+            "tool": "whatweb",
+            "url": "http://testphp.vulnweb.com/",
+            "finding_name": "Technology Detected: HTTPServer[nginx/1.19.0]",
+            "severity": "INFO",
+            "risk_score": 1,
+            "category": "reconnaissance",
+            "confirmed": false,
+            "description": "Detected technology: HTTPServer[nginx/1.19.0]",
+            "timestamp": "2026-02-25 00:37:55",
+            "raw_output": "http://testphp.vulnweb.com/ [200 OK] ActiveX[D27CDB6E-AE6D-11cf-96B8-444553540000], Adobe-Flash, Country[UNITED STATES][US], Email[wvs@acunetix.com], HTTPServer[nginx/1.19.0], IP[44.228.249.3], Object[http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0][clsid:D27CDB6E-AE6D-11cf-96B8-444553540000], PHP[5.6.40-38+ubuntu20.04.1+deb.sury.org+1], Script[text/JavaScript], Title[Home of Acunetix Art], X-Powered-By[PHP/5.6.40-38+ubuntu20.04.1+deb.sury.org+1], nginx[1.19.0]",
+            "evidence_list": [],
+            "correlation": {
+                "tools": [
+                    "whatweb"
+                ],
+                "tool_count": 1
+            },
+            "sources": [
+                "whatweb"
+            ]
+        },
+        {
+            "tool": "whatweb",
+            "url": "http://testphp.vulnweb.com/",
+            "finding_name": "Technology Detected: IP[44.228.249.3]",
+            "severity": "INFO",
+            "risk_score": 1,
+            "category": "reconnaissance",
+            "confirmed": false,
+            "description": "Detected technology: IP[44.228.249.3]",
+            "timestamp": "2026-02-25 00:37:55",
+            "raw_output": "http://testphp.vulnweb.com/ [200 OK] ActiveX[D27CDB6E-AE6D-11cf-96B8-444553540000], Adobe-Flash, Country[UNITED STATES][US], Email[wvs@acunetix.com], HTTPServer[nginx/1.19.0], IP[44.228.249.3], Object[http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0][clsid:D27CDB6E-AE6D-11cf-96B8-444553540000], PHP[5.6.40-38+ubuntu20.04.1+deb.sury.org+1], Script[text/JavaScript], Title[Home of Acunetix Art], X-Powered-By[PHP/5.6.40-38+ubuntu20.04.1+deb.sury.org+1], nginx[1.19.0]",
+            "evidence_list": [],
+            "correlation": {
+                "tools": [
+                    "whatweb"
+                ],
+                "tool_count": 1
+            },
+            "sources": [
+                "whatweb"
+            ]
+        },
+        {
+            "tool": "whatweb",
+            "url": "http://testphp.vulnweb.com/",
+            "finding_name": "Technology Detected: Object[http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0][clsid:D27CDB6E-AE6D-11cf-96B8-444553540000]",
+            "severity": "INFO",
+            "risk_score": 1,
+            "category": "reconnaissance",
+            "confirmed": false,
+            "description": "Detected technology: Object[http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0][clsid:D27CDB6E-AE6D-11cf-96B8-444553540000]",
+            "timestamp": "2026-02-25 00:37:55",
+            "raw_output": "http://testphp.vulnweb.com/ [200 OK] ActiveX[D27CDB6E-AE6D-11cf-96B8-444553540000], Adobe-Flash, Country[UNITED STATES][US], Email[wvs@acunetix.com], HTTPServer[nginx/1.19.0], IP[44.228.249.3], Object[http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0][clsid:D27CDB6E-AE6D-11cf-96B8-444553540000], PHP[5.6.40-38+ubuntu20.04.1+deb.sury.org+1], Script[text/JavaScript], Title[Home of Acunetix Art], X-Powered-By[PHP/5.6.40-38+ubuntu20.04.1+deb.sury.org+1], nginx[1.19.0]",
+            "evidence_list": [],
+            "correlation": {
+                "tools": [
+                    "whatweb"
+                ],
+                "tool_count": 1
+            },
+            "sources": [
+                "whatweb"
+            ]
+        },
+        {
+            "tool": "whatweb",
+            "url": "http://testphp.vulnweb.com/",
+            "finding_name": "Technology Detected: PHP[5.6.40-38+ubuntu20.04.1+deb.sury.org+1]",
+            "severity": "INFO",
+            "risk_score": 1,
+            "category": "reconnaissance",
+            "confirmed": false,
+            "description": "Detected technology: PHP[5.6.40-38+ubuntu20.04.1+deb.sury.org+1]",
+            "timestamp": "2026-02-25 00:37:55",
+            "raw_output": "http://testphp.vulnweb.com/ [200 OK] ActiveX[D27CDB6E-AE6D-11cf-96B8-444553540000], Adobe-Flash, Country[UNITED STATES][US], Email[wvs@acunetix.com], HTTPServer[nginx/1.19.0], IP[44.228.249.3], Object[http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0][clsid:D27CDB6E-AE6D-11cf-96B8-444553540000], PHP[5.6.40-38+ubuntu20.04.1+deb.sury.org+1], Script[text/JavaScript], Title[Home of Acunetix Art], X-Powered-By[PHP/5.6.40-38+ubuntu20.04.1+deb.sury.org+1], nginx[1.19.0]",
+            "evidence_list": [],
+            "correlation": {
+                "tools": [
+                    "whatweb"
+                ],
+                "tool_count": 1
+            },
+            "sources": [
+                "whatweb"
+            ]
+        },
+        {
+            "tool": "whatweb",
+            "url": "http://testphp.vulnweb.com/",
+            "finding_name": "Technology Detected: Script[text/JavaScript]",
+            "severity": "INFO",
+            "risk_score": 1,
+            "category": "reconnaissance",
+            "confirmed": false,
+            "description": "Detected technology: Script[text/JavaScript]",
+            "timestamp": "2026-02-25 00:37:55",
+            "raw_output": "http://testphp.vulnweb.com/ [200 OK] ActiveX[D27CDB6E-AE6D-11cf-96B8-444553540000], Adobe-Flash, Country[UNITED STATES][US], Email[wvs@acunetix.com], HTTPServer[nginx/1.19.0], IP[44.228.249.3], Object[http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0][clsid:D27CDB6E-AE6D-11cf-96B8-444553540000], PHP[5.6.40-38+ubuntu20.04.1+deb.sury.org+1], Script[text/JavaScript], Title[Home of Acunetix Art], X-Powered-By[PHP/5.6.40-38+ubuntu20.04.1+deb.sury.org+1], nginx[1.19.0]",
+            "evidence_list": [],
+            "correlation": {
+                "tools": [
+                    "whatweb"
+                ],
+                "tool_count": 1
+            },
+            "sources": [
+                "whatweb"
+            ]
+        },
+        {
+            "tool": "whatweb",
+            "url": "http://testphp.vulnweb.com/",
+            "finding_name": "Technology Detected: Title[Home of Acunetix Art]",
+            "severity": "INFO",
+            "risk_score": 1,
+            "category": "reconnaissance",
+            "confirmed": false,
+            "description": "Detected technology: Title[Home of Acunetix Art]",
+            "timestamp": "2026-02-25 00:37:55",
+            "raw_output": "http://testphp.vulnweb.com/ [200 OK] ActiveX[D27CDB6E-AE6D-11cf-96B8-444553540000], Adobe-Flash, Country[UNITED STATES][US], Email[wvs@acunetix.com], HTTPServer[nginx/1.19.0], IP[44.228.249.3], Object[http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0][clsid:D27CDB6E-AE6D-11cf-96B8-444553540000], PHP[5.6.40-38+ubuntu20.04.1+deb.sury.org+1], Script[text/JavaScript], Title[Home of Acunetix Art], X-Powered-By[PHP/5.6.40-38+ubuntu20.04.1+deb.sury.org+1], nginx[1.19.0]",
+            "evidence_list": [],
+            "correlation": {
+                "tools": [
+                    "whatweb"
+                ],
+                "tool_count": 1
+            },
+            "sources": [
+                "whatweb"
+            ]
+        },
+        {
+            "tool": "whatweb",
+            "url": "http://testphp.vulnweb.com/",
+            "finding_name": "Technology Detected: X-Powered-By[PHP/5.6.40-38+ubuntu20.04.1+deb.sury.org+1]",
+            "severity": "INFO",
+            "risk_score": 1,
+            "category": "reconnaissance",
+            "confirmed": false,
+            "description": "Detected technology: X-Powered-By[PHP/5.6.40-38+ubuntu20.04.1+deb.sury.org+1]",
+            "timestamp": "2026-02-25 00:37:55",
+            "raw_output": "http://testphp.vulnweb.com/ [200 OK] ActiveX[D27CDB6E-AE6D-11cf-96B8-444553540000], Adobe-Flash, Country[UNITED STATES][US], Email[wvs@acunetix.com], HTTPServer[nginx/1.19.0], IP[44.228.249.3], Object[http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0][clsid:D27CDB6E-AE6D-11cf-96B8-444553540000], PHP[5.6.40-38+ubuntu20.04.1+deb.sury.org+1], Script[text/JavaScript], Title[Home of Acunetix Art], X-Powered-By[PHP/5.6.40-38+ubuntu20.04.1+deb.sury.org+1], nginx[1.19.0]",
+            "evidence_list": [],
+            "correlation": {
+                "tools": [
+                    "whatweb"
+                ],
+                "tool_count": 1
+            },
+            "sources": [
+                "whatweb"
+            ]
+        },
+        {
+            "tool": "whatweb",
+            "url": "http://testphp.vulnweb.com/",
+            "finding_name": "Technology Detected: nginx[1.19.0]",
+            "severity": "INFO",
+            "risk_score": 1,
+            "category": "reconnaissance",
+            "confirmed": false,
+            "description": "Detected technology: nginx[1.19.0]",
+            "timestamp": "2026-02-25 00:37:55",
+            "raw_output": "http://testphp.vulnweb.com/ [200 OK] ActiveX[D27CDB6E-AE6D-11cf-96B8-444553540000], Adobe-Flash, Country[UNITED STATES][US], Email[wvs@acunetix.com], HTTPServer[nginx/1.19.0], IP[44.228.249.3], Object[http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0][clsid:D27CDB6E-AE6D-11cf-96B8-444553540000], PHP[5.6.40-38+ubuntu20.04.1+deb.sury.org+1], Script[text/JavaScript], Title[Home of Acunetix Art], X-Powered-By[PHP/5.6.40-38+ubuntu20.04.1+deb.sury.org+1], nginx[1.19.0]",
+            "evidence_list": [],
+            "correlation": {
+                "tools": [
+                    "whatweb"
+                ],
+                "tool_count": 1
+            },
+            "sources": [
+                "whatweb"
+            ]
+        },
+        {
+            "tool": "ffuf",
+            "url": "http://testphp.vulnweb.com/CVS",
+            "finding_name": "Hidden Resource Discovered",
+            "severity": "INFO",
+            "risk_score": 1,
+            "category": "discovery",
+            "confirmed": false,
+            "description": "Status: 301 | Size: 169",
+            "timestamp": "2026-02-25 00:38:15",
+            "raw_output": {
+                "input": {
+                    "FFUFHASH": "ae1e6dd",
+                    "FUZZ": "CVS"
+                },
+                "position": 221,
+                "status": 301,
+                "length": 169,
+                "words": 5,
+                "lines": 8,
+                "content-type": "text/html",
+                "redirectlocation": "http://testphp.vulnweb.com/CVS/",
+                "scraper": {},
+                "duration": 360592557,
+                "resultfile": "",
+                "url": "http://testphp.vulnweb.com/CVS",
+                "host": "testphp.vulnweb.com"
+            },
+            "evidence_list": [],
+            "correlation": {
+                "tools": [
+                    "ffuf"
+                ],
+                "tool_count": 1
+            },
+            "sources": [
+                "ffuf"
+            ]
+        },
+        {
+            "tool": "ffuf",
+            "url": "http://testphp.vulnweb.com/CVS/Entries",
+            "finding_name": "Hidden Resource Discovered",
+            "severity": "INFO",
+            "risk_score": 1,
+            "category": "discovery",
+            "confirmed": false,
+            "description": "Status: 200 | Size: 1",
+            "timestamp": "2026-02-25 00:38:15",
+            "raw_output": {
+                "input": {
+                    "FFUFHASH": "ae1e6de",
+                    "FUZZ": "CVS/Entries"
+                },
+                "position": 222,
+                "status": 200,
+                "length": 1,
+                "words": 2,
+                "lines": 1,
+                "content-type": "application/octet-stream",
+                "redirectlocation": "",
+                "scraper": {},
+                "duration": 359891941,
+                "resultfile": "",
+                "url": "http://testphp.vulnweb.com/CVS/Entries",
+                "host": "testphp.vulnweb.com"
+            },
+            "evidence_list": [],
+            "correlation": {
+                "tools": [
+                    "ffuf"
+                ],
+                "tool_count": 1
+            },
+            "sources": [
+                "ffuf"
+            ]
+        },
+        {
+            "tool": "ffuf",
+            "url": "http://testphp.vulnweb.com/CVS/Root",
+            "finding_name": "Hidden Resource Discovered",
+            "severity": "INFO",
+            "risk_score": 1,
+            "category": "discovery",
+            "confirmed": false,
+            "description": "Status: 200 | Size: 1",
+            "timestamp": "2026-02-25 00:38:15",
+            "raw_output": {
+                "input": {
+                    "FFUFHASH": "ae1e6e0",
+                    "FUZZ": "CVS/Root"
+                },
+                "position": 224,
+                "status": 200,
+                "length": 1,
+                "words": 2,
+                "lines": 1,
+                "content-type": "application/octet-stream",
+                "redirectlocation": "",
+                "scraper": {},
+                "duration": 395295521,
+                "resultfile": "",
+                "url": "http://testphp.vulnweb.com/CVS/Root",
+                "host": "testphp.vulnweb.com"
+            },
+            "evidence_list": [],
+            "correlation": {
+                "tools": [
+                    "ffuf"
+                ],
+                "tool_count": 1
+            },
+            "sources": [
+                "ffuf"
+            ]
+        },
+        {
+            "tool": "ffuf",
+            "url": "http://testphp.vulnweb.com/CVS/Repository",
+            "finding_name": "Hidden Resource Discovered",
+            "severity": "INFO",
+            "risk_score": 1,
+            "category": "discovery",
+            "confirmed": false,
+            "description": "Status: 200 | Size: 8",
+            "timestamp": "2026-02-25 00:38:15",
+            "raw_output": {
+                "input": {
+                    "FFUFHASH": "ae1e6df",
+                    "FUZZ": "CVS/Repository"
+                },
+                "position": 223,
+                "status": 200,
+                "length": 8,
+                "words": 1,
+                "lines": 2,
+                "content-type": "application/octet-stream",
+                "redirectlocation": "",
+                "scraper": {},
+                "duration": 395377822,
+                "resultfile": "",
+                "url": "http://testphp.vulnweb.com/CVS/Repository",
+                "host": "testphp.vulnweb.com"
+            },
+            "evidence_list": [],
+            "correlation": {
+                "tools": [
+                    "ffuf"
+                ],
+                "tool_count": 1
+            },
+            "sources": [
+                "ffuf"
+            ]
+        },
+        {
+            "tool": "ffuf",
+            "url": "http://testphp.vulnweb.com/admin",
+            "finding_name": "Hidden Resource Discovered",
+            "severity": "MEDIUM",
+            "risk_score": 5,
+            "category": "discovery",
+            "confirmed": false,
+            "description": "Status: 301 | Size: 169",
+            "timestamp": "2026-02-25 00:38:15",
+            "raw_output": {
+                "input": {
+                    "FFUFHASH": "ae1e620f",
+                    "FUZZ": "admin"
+                },
+                "position": 527,
+                "status": 301,
+                "length": 169,
+                "words": 5,
+                "lines": 8,
+                "content-type": "text/html",
+                "redirectlocation": "http://testphp.vulnweb.com/admin/",
+                "scraper": {},
+                "duration": 397913866,
+                "resultfile": "",
+                "url": "http://testphp.vulnweb.com/admin",
+                "host": "testphp.vulnweb.com"
+            },
+            "evidence_list": [],
+            "correlation": {
+                "tools": [
+                    "ffuf"
+                ],
+                "tool_count": 1
+            },
+            "sources": [
+                "ffuf"
+            ]
+        },
+        {
+            "tool": "ffuf",
+            "url": "http://testphp.vulnweb.com/cgi-bin",
+            "finding_name": "Hidden Resource Discovered",
+            "severity": "INFO",
+            "risk_score": 1,
+            "category": "discovery",
+            "confirmed": false,
+            "description": "Status: 403 | Size: 276",
+            "timestamp": "2026-02-25 00:38:15",
+            "raw_output": {
+                "input": {
+                    "FFUFHASH": "ae1e6415",
+                    "FUZZ": "cgi-bin"
+                },
+                "position": 1045,
+                "status": 403,
+                "length": 276,
+                "words": 20,
+                "lines": 10,
+                "content-type": "text/html; charset=iso-8859-1",
+                "redirectlocation": "",
+                "scraper": {},
+                "duration": 352035593,
+                "resultfile": "",
+                "url": "http://testphp.vulnweb.com/cgi-bin",
+                "host": "testphp.vulnweb.com"
+            },
+            "evidence_list": [],
+            "correlation": {
+                "tools": [
+                    "ffuf"
+                ],
+                "tool_count": 1
+            },
+            "sources": [
+                "ffuf"
+            ]
+        },
+        {
+            "tool": "ffuf",
+            "url": "http://testphp.vulnweb.com/cgi-bin/",
+            "finding_name": "Hidden Resource Discovered",
+            "severity": "INFO",
+            "risk_score": 1,
+            "category": "discovery",
+            "confirmed": false,
+            "description": "Status: 403 | Size: 276",
+            "timestamp": "2026-02-25 00:38:15",
+            "raw_output": {
+                "input": {
+                    "FFUFHASH": "ae1e6416",
+                    "FUZZ": "cgi-bin/"
+                },
+                "position": 1046,
+                "status": 403,
+                "length": 276,
+                "words": 20,
+                "lines": 10,
+                "content-type": "text/html; charset=iso-8859-1",
+                "redirectlocation": "",
+                "scraper": {},
+                "duration": 363129526,
+                "resultfile": "",
+                "url": "http://testphp.vulnweb.com/cgi-bin/",
+                "host": "testphp.vulnweb.com"
+            },
+            "evidence_list": [],
+            "correlation": {
+                "tools": [
+                    "ffuf"
+                ],
+                "tool_count": 1
+            },
+            "sources": [
+                "ffuf"
+            ]
+        },
+        {
+            "tool": "ffuf",
+            "url": "http://testphp.vulnweb.com/crossdomain.xml",
+            "finding_name": "Hidden Resource Discovered",
+            "severity": "INFO",
+            "risk_score": 1,
+            "category": "discovery",
+            "confirmed": false,
+            "description": "Status: 200 | Size: 224",
+            "timestamp": "2026-02-25 00:38:15",
+            "raw_output": {
+                "input": {
+                    "FFUFHASH": "ae1e6533",
+                    "FUZZ": "crossdomain.xml"
+                },
+                "position": 1331,
+                "status": 200,
+                "length": 224,
+                "words": 8,
+                "lines": 5,
+                "content-type": "text/xml",
+                "redirectlocation": "",
+                "scraper": {},
+                "duration": 345965853,
+                "resultfile": "",
+                "url": "http://testphp.vulnweb.com/crossdomain.xml",
+                "host": "testphp.vulnweb.com"
+            },
+            "evidence_list": [],
+            "correlation": {
+                "tools": [
+                    "ffuf"
+                ],
+                "tool_count": 1
+            },
+            "sources": [
+                "ffuf"
+            ]
+        },
+        {
+            "tool": "ffuf",
+            "url": "http://testphp.vulnweb.com/favicon.ico",
+            "finding_name": "Hidden Resource Discovered",
+            "severity": "INFO",
+            "risk_score": 1,
+            "category": "discovery",
+            "confirmed": false,
+            "description": "Status: 200 | Size: 894",
+            "timestamp": "2026-02-25 00:38:15",
+            "raw_output": {
+                "input": {
+                    "FFUFHASH": "ae1e66ec",
+                    "FUZZ": "favicon.ico"
+                },
+                "position": 1772,
+                "status": 200,
+                "length": 894,
+                "words": 2,
+                "lines": 4,
+                "content-type": "image/x-icon",
+                "redirectlocation": "",
+                "scraper": {},
+                "duration": 361138407,
+                "resultfile": "",
+                "url": "http://testphp.vulnweb.com/favicon.ico",
+                "host": "testphp.vulnweb.com"
+            },
+            "evidence_list": [],
+            "correlation": {
+                "tools": [
+                    "ffuf"
+                ],
+                "tool_count": 1
+            },
+            "sources": [
+                "ffuf"
+            ]
+        },
+        {
+            "tool": "ffuf",
+            "url": "http://testphp.vulnweb.com/images",
+            "finding_name": "Hidden Resource Discovered",
+            "severity": "INFO",
+            "risk_score": 1,
+            "category": "discovery",
+            "confirmed": false,
+            "description": "Status: 301 | Size: 169",
+            "timestamp": "2026-02-25 00:38:15",
+            "raw_output": {
+                "input": {
+                    "FFUFHASH": "ae1e6886",
+                    "FUZZ": "images"
+                },
+                "position": 2182,
+                "status": 301,
+                "length": 169,
+                "words": 5,
+                "lines": 8,
+                "content-type": "text/html",
+                "redirectlocation": "http://testphp.vulnweb.com/images/",
+                "scraper": {},
+                "duration": 410586687,
+                "resultfile": "",
+                "url": "http://testphp.vulnweb.com/images",
+                "host": "testphp.vulnweb.com"
+            },
+            "evidence_list": [],
+            "correlation": {
+                "tools": [
+                    "ffuf"
+                ],
+                "tool_count": 1
+            },
+            "sources": [
+                "ffuf"
+            ]
+        },
+        {
+            "tool": "ffuf",
+            "url": "http://testphp.vulnweb.com/index.php",
+            "finding_name": "Hidden Resource Discovered",
+            "severity": "INFO",
+            "risk_score": 1,
+            "category": "discovery",
+            "confirmed": false,
+            "description": "Status: 200 | Size: 4958",
+            "timestamp": "2026-02-25 00:38:15",
+            "raw_output": {
+                "input": {
+                    "FFUFHASH": "ae1e68a2",
+                    "FUZZ": "index.php"
+                },
+                "position": 2210,
+                "status": 200,
+                "length": 4958,
+                "words": 514,
+                "lines": 110,
+                "content-type": "text/html; charset=UTF-8",
+                "redirectlocation": "",
+                "scraper": {},
+                "duration": 340586851,
+                "resultfile": "",
+                "url": "http://testphp.vulnweb.com/index.php",
+                "host": "testphp.vulnweb.com"
+            },
+            "evidence_list": [],
+            "correlation": {
+                "tools": [
+                    "ffuf"
+                ],
+                "tool_count": 1
+            },
+            "sources": [
+                "ffuf"
+            ]
+        },
+        {
+            "tool": "ffuf",
+            "url": "http://testphp.vulnweb.com/pictures",
+            "finding_name": "Hidden Resource Discovered",
+            "severity": "INFO",
+            "risk_score": 1,
+            "category": "discovery",
+            "confirmed": false,
+            "description": "Status: 301 | Size: 169",
+            "timestamp": "2026-02-25 00:38:15",
+            "raw_output": {
+                "input": {
+                    "FFUFHASH": "ae1e6c46",
+                    "FUZZ": "pictures"
+                },
+                "position": 3142,
+                "status": 301,
+                "length": 169,
+                "words": 5,
+                "lines": 8,
+                "content-type": "text/html",
+                "redirectlocation": "http://testphp.vulnweb.com/pictures/",
+                "scraper": {},
+                "duration": 343845998,
+                "resultfile": "",
+                "url": "http://testphp.vulnweb.com/pictures",
+                "host": "testphp.vulnweb.com"
+            },
+            "evidence_list": [],
+            "correlation": {
+                "tools": [
+                    "ffuf"
+                ],
+                "tool_count": 1
+            },
+            "sources": [
+                "ffuf"
+            ]
+        },
+        {
+            "tool": "ffuf",
+            "url": "http://testphp.vulnweb.com/secured",
+            "finding_name": "Hidden Resource Discovered",
+            "severity": "INFO",
+            "risk_score": 1,
+            "category": "discovery",
+            "confirmed": false,
+            "description": "Status: 301 | Size: 169",
+            "timestamp": "2026-02-25 00:38:15",
+            "raw_output": {
+                "input": {
+                    "FFUFHASH": "ae1e6e71",
+                    "FUZZ": "secured"
+                },
+                "position": 3697,
+                "status": 301,
+                "length": 169,
+                "words": 5,
+                "lines": 8,
+                "content-type": "text/html",
+                "redirectlocation": "http://testphp.vulnweb.com/secured/",
+                "scraper": {},
+                "duration": 371139720,
+                "resultfile": "",
+                "url": "http://testphp.vulnweb.com/secured",
+                "host": "testphp.vulnweb.com"
+            },
+            "evidence_list": [],
+            "correlation": {
+                "tools": [
+                    "ffuf"
+                ],
+                "tool_count": 1
+            },
+            "sources": [
+                "ffuf"
+            ]
+        },
+        {
+            "tool": "ffuf",
+            "url": "http://testphp.vulnweb.com/vendor",
+            "finding_name": "Hidden Resource Discovered",
+            "severity": "INFO",
+            "risk_score": 1,
+            "category": "discovery",
+            "confirmed": false,
+            "description": "Status: 301 | Size: 169",
+            "timestamp": "2026-02-25 00:38:15",
+            "raw_output": {
+                "input": {
+                    "FFUFHASH": "ae1e61138",
+                    "FUZZ": "vendor"
+                },
+                "position": 4408,
+                "status": 301,
+                "length": 169,
+                "words": 5,
+                "lines": 8,
+                "content-type": "text/html",
+                "redirectlocation": "http://testphp.vulnweb.com/vendor/",
+                "scraper": {},
+                "duration": 367525942,
+                "resultfile": "",
+                "url": "http://testphp.vulnweb.com/vendor",
+                "host": "testphp.vulnweb.com"
+            },
+            "evidence_list": [],
+            "correlation": {
+                "tools": [
+                    "ffuf"
+                ],
+                "tool_count": 1
+            },
+            "sources": [
+                "ffuf"
+            ]
+        },
+        {
+            "tool": "nuclei",
+            "url": "http://testphp.vulnweb.com/.idea/workspace.xml",
+            "finding_name": "Public .idea Folder containing files with sensitive data",
+            "severity": "MEDIUM",
+            "risk_score": 5,
+            "category": "exposure",
+            "confirmed": false,
+            "description": "Searches for .idea Folder by querying the /.idea and a few other files with sensitive data.",
+            "timestamp": "2026-02-25 00:40:35",
+            "raw_output": {
+                "template": "http/exposures/files/idea-folder-exposure.yaml",
+                "template-id": "idea-folder-exposure",
+                "template-path": "/home/kali/.local/nuclei-templates/http/exposures/files/idea-folder-exposure.yaml",
+                "template-encoded": "aWQ6IGlkZWEtZm9sZGVyLWV4cG9zdXJlCgppbmZvOgogIG5hbWU6IFB1YmxpYyAuaWRlYSBGb2xkZXIgY29udGFpbmluZyBmaWxlcyB3aXRoIHNlbnNpdGl2ZSBkYXRhCiAgYXV0aG9yOiBtYXJ0aW5jb2Rlcy1kZQogIHNldmVyaXR5OiBpbmZvCiAgZGVzY3JpcHRpb246IFNlYXJjaGVzIGZvciAuaWRlYSBGb2xkZXIgYnkgcXVlcnlpbmcgdGhlIC8uaWRlYSBhbmQgYSBmZXcgb3RoZXIgZmlsZXMgd2l0aCBzZW5zaXRpdmUgZGF0YS4KICBtZXRhZGF0YToKICAgIG1heC1yZXF1ZXN0OiAyCiAgdGFnczogcGhwc3Rvcm0samV0YnJhaW5zLGlkZWEsZXhwb3N1cmUsZmlsZXMsdnVsbgoKaHR0cDoKICAtIG1ldGhvZDogR0VUCiAgICBwYXRoOgogICAgICAtICJ7e0Jhc2VVUkx9fS8uaWRlYS9kZXBsb3ltZW50LnhtbCIKICAgICAgLSAie3tCYXNlVVJMfX0vLmlkZWEvd29ya3NwYWNlLnhtbCIKCiAgICBtYXRjaGVycy1jb25kaXRpb246IGFuZAogICAgbWF0Y2hlcnM6CiAgICAgIC0gdHlwZTogc3RhdHVzCiAgICAgICAgc3RhdHVzOgogICAgICAgICAgLSAyMDAKCiAgICAgIC0gdHlwZTogd29yZAogICAgICAgIHdvcmRzOgogICAgICAgICAgLSAiPD94bWwgdmVyc2lvbj0iCiAgICAgICAgICAtICI8cHJvamVjdCB2ZXJzaW9uIgogICAgICAgIHBhcnQ6IGJvZHkKICAgICAgICBjb25kaXRpb246IGFuZAojIGRpZ2VzdDogNDkwYTAwNDYzMDQ0MDIyMDA4OThiODQzNmZjYWMyNmE0OTMxMGI3Y2I1MTA1ZjIzYzQ1OTY2ZTk5ZTU3NjBmOTRiOTgwNjVhOTgyYmI5NjEwMjIwMTQ4MjVkZjQ4OTFjNzdhMmJlODkwOGE0OWIzYjk4NGU1N2YwNDZlZDBjZTMxNzAwMzJmNGJiNGY2OWVhNjlmMzo5MjJjNjQ1OTAyMjI3OThiYjc2MWQ1YjZkOGU3Mjk1MA==",
+                "info": {
+                    "name": "Public .idea Folder containing files with sensitive data",
+                    "author": [
+                        "martincodes-de"
+                    ],
+                    "tags": [
+                        "phpstorm",
+                        "jetbrains",
+                        "idea",
+                        "exposure",
+                        "files",
+                        "vuln"
+                    ],
+                    "description": "Searches for .idea Folder by querying the /.idea and a few other files with sensitive data.",
+                    "severity": "info",
+                    "metadata": {
+                        "max-request": 2
+                    }
+                },
+                "type": "http",
+                "host": "testphp.vulnweb.com",
+                "port": "80",
+                "scheme": "http",
+                "url": "http://testphp.vulnweb.com/",
+                "path": "/",
+                "matched-at": "http://testphp.vulnweb.com/.idea/workspace.xml",
+                "request": "GET /.idea/workspace.xml HTTP/1.1\r\nHost: testphp.vulnweb.com\r\nUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/600.2.5 (KHTML, like Gecko) Version/7.1.2 Safari/537.85.11\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+                "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 12473\r\nAccept-Ranges: bytes\r\nContent-Type: text/xml\r\nDate: Wed, 25 Feb 2026 05:40:25 GMT\r\nEtag: \"4f911ceb-30b9\"\r\nLast-Modified: Fri, 20 Apr 2012 08:23:07 GMT\r\nServer: nginx/1.19.0\r\n\r\n<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"190e5f86-a42c-4cc9-a03a-80ac0d47d6d2\" name=\"Default\" comment=\"\" />\r\n    <ignored path=\"acuart.iws\" />\r\n    <ignored path=\".idea/workspace.xml\" />\r\n    <option name=\"TRACKING_ENABLED\" value=\"true\" />\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"ChangesViewManager\" flattened_view=\"true\" show_ignored=\"false\" />\r\n  <component name=\"CreatePatchCommitExecutor\">\r\n    <option name=\"PATCH_PATH\" value=\"\" />\r\n  </component>\r\n  <component name=\"DaemonCodeAnalyzer\">\r\n    <disable_hints />\r\n  </component>\r\n  <component name=\"FavoritesManager\">\r\n    <favorites_list name=\"acuart\" />\r\n  </component>\r\n  <component name=\"FileEditorManager\">\r\n    <leaf>\r\n      <file leaf-file-name=\"cart.php\" pinned=\"false\" current=\"true\" current-in-tab=\"true\">\r\n        <entry file=\"file://$PROJECT_DIR$/cart.php\">\r\n          <provider selected=\"true\" editor-type-id=\"text-editor\">\r\n            <state line=\"60\" column=\"26\" selection-start=\"2336\" selection-end=\"2336\" vertical-scroll-proportion=\"-0.41645244\">\r\n              <folding>\r\n                <marker date=\"1334906567000\" expanded=\"true\" signature=\"3702:3950\" placeholder=\"...\" />\r\n                <marker date=\"1334906567000\" expanded=\"true\" signature=\"4948:5056\" placeholder=\"...\" />\r\n              </folding>\r\n            </state>\r\n          </provider>\r\n        </entry>\r\n      </file>\r\n    </leaf>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"CHECKOUT_INCLUDE_TAGS\" value=\"false\" />\r\n    <option name=\"UPDATE_CHANGES_POLICY\" value=\"STASH\" />\r\n    <option name=\"LINE_SEPARATORS_CONVERSION\" value=\"ASK\" />\r\n  </component>\r\n  <component name=\"IdeDocumentHistory\">\r\n    <option name=\"changedFiles\">\r\n      <list>\r\n        <option value=\"$PROJECT_DIR$/.htaccess\" />\r\n        <option value=\"$PROJECT_DIR$/cart.php\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"PhpWorkspaceProjectConfiguration\" backward_compatibility_performed=\"true\" />\r\n  <component name=\"ProjectFrameBounds\">\r\n    <option name=\"x\" value=\"-8\" />\r\n    <option name=\"y\" value=\"-8\" />\r\n    <option name=\"width\" value=\"1296\" />\r\n    <option name=\"height\" value=\"1000\" />\r\n  </component>\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"false\">\r\n    <OptionsSetting value=\"true\" id=\"Add\" />\r\n    <OptionsSetting value=\"true\" id=\"Remove\" />\r\n    <OptionsSetting value=\"true\" id=\"Checkout\" />\r\n    <OptionsSetting value=\"true\" id=\"Update\" />\r\n    <OptionsSetting value=\"true\" id=\"Status\" />\r\n    <OptionsSetting value=\"true\" id=\"Edit\" />\r\n    <ConfirmationsSetting value=\"0\" id=\"Add\" />\r\n    <ConfirmationsSetting value=\"0\" id=\"Remove\" />\r\n  </component>\r\n  <component name=\"ProjectReloadState\">\r\n    <option name=\"STATE\" value=\"0\" />\r\n  </component>\r\n  <component name=\"ProjectView\">\r\n    <navigator currentView=\"ProjectPane\" proportions=\"\" version=\"1\" splitterProportion=\"0.5\">\r\n      <flattenPackages />\r\n      <showMembers />\r\n      <showModules />\r\n      <showLibraryContents ProjectPane=\"true\" />\r\n      <hideEmptyPackages />\r\n      <abbreviatePackageNames />\r\n      <autoscrollToSource />\r\n      <autoscrollFromSource />\r\n      <sortByType />\r\n    </navigator>\r\n    <panes>\r\n      <pane id=\"ProjectPane\">\r\n        <subPane>\r\n          <PATH>\r\n            <PATH_ELEMENT>\r\n              <option name=\"myItemId\" value=\"acuart\" />\r\n              <option name=\"myItemType\" value=\"com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode\" />\r\n            </PATH_ELEMENT>\r\n          </PATH>\r\n          <PATH>\r\n            <PATH_ELEMENT>\r\n              <option name=\"myItemId\" value=\"acuart\" />\r\n              <option name=\"myItemType\" value=\"com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode\" />\r\n            </PATH_ELEMENT>\r\n            <PATH_ELEMENT>\r\n              <option name=\"myItemId\" value=\"acuart\" />\r\n              <option name=\"myItemType\" value=\"com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode\" />\r\n            </PATH_ELEMENT>\r\n          </PATH>\r\n        </subPane>\r\n      </pane>\r\n      <pane id=\"Scope\" />\r\n    </panes>\r\n  </component>\r\n  <component name=\"PropertiesComponent\">\r\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\r\n  </component>\r\n  <component name=\"RunManager\">\r\n    <list size=\"0\" />\r\n  </component>\r\n  <component name=\"ShelveChangesManager\" show_recycled=\"false\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <created>1334906472656</created>\r\n      <updated>1334906472656</updated>\r\n    </task>\r\n    <servers />\r\n  </component>\r\n  <component name=\"ToolWindowManager\">\r\n    <frame x=\"-8\" y=\"-8\" width=\"1296\" height=\"1000\" extended-state=\"6\" />\r\n    <editor active=\"true\" />\r\n    <layout>\r\n      <window_info id=\"Data Sources\" active=\"false\" anchor=\"right\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" weight=\"0.33\" sideWeight=\"0.5\" order=\"-1\" side_tool=\"false\" content_ui=\"tabs\" />\r\n      <window_info id=\"Changes\" active=\"false\" anchor=\"bottom\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" weight=\"0.33\" sideWeight=\"0.5\" order=\"-1\" side_tool=\"false\" content_ui=\"tabs\" />\r\n      <window_info id=\"TODO\" active=\"false\" anchor=\"bottom\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" weight=\"0.33\" sideWeight=\"0.5\" order=\"6\" side_tool=\"false\" content_ui=\"tabs\" />\r\n      <window_info id=\"Structure\" active=\"false\" anchor=\"left\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" weight=\"0.25\" sideWeight=\"0.5\" order=\"1\" side_tool=\"true\" content_ui=\"tabs\" />\r\n      <window_info id=\"Project\" active=\"false\" anchor=\"left\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"true\" weight=\"0.20373377\" sideWeight=\"0.5\" order=\"0\" side_tool=\"false\" content_ui=\"tabs\" />\r\n      <window_info id=\"Debug\" active=\"false\" anchor=\"bottom\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" weight=\"0.4\" sideWeight=\"0.5\" order=\"3\" side_tool=\"false\" content_ui=\"tabs\" />\r\n      <window_info id=\"Favorites\" active=\"false\" anchor=\"left\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" weight=\"0.33\" sideWeight=\"0.5\" order=\"-1\" side_tool=\"true\" content_ui=\"tabs\" />\r\n      <window_info id=\"Event Log\" active=\"false\" anchor=\"bottom\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" weight=\"0.33\" sideWeight=\"0.5\" order=\"-1\" side_tool=\"true\" content_ui=\"tabs\" />\r\n      <window_info id=\"Run\" active=\"false\" anchor=\"bottom\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" weight=\"0.33\" sideWeight=\"0.5\" order=\"2\" side_tool=\"false\" content_ui=\"tabs\" />\r\n      <window_info id=\"Version Control\" active=\"false\" anchor=\"bottom\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" weight=\"0.33\" sideWeight=\"0.5\" order=\"-1\" side_tool=\"false\" content_ui=\"tabs\" />\r\n      <window_info id=\"Cvs\" active=\"false\" anchor=\"bottom\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" weight=\"0.25\" sideWeight=\"0.5\" order=\"4\" side_tool=\"false\" content_ui=\"tabs\" />\r\n      <window_info id=\"Message\" active=\"false\" anchor=\"bottom\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" weight=\"0.33\" sideWeight=\"0.5\" order=\"0\" side_tool=\"false\" content_ui=\"tabs\" />\r\n      <window_info id=\"Find\" active=\"false\" anchor=\"bottom\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" weight=\"0.33\" sideWeight=\"0.5\" order=\"1\" side_tool=\"false\" content_ui=\"tabs\" />\r\n      <window_info id=\"Ant Build\" active=\"false\" anchor=\"right\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" weight=\"0.25\" sideWeight=\"0.5\" order=\"1\" side_tool=\"false\" content_ui=\"tabs\" />\r\n      <window_info id=\"Commander\" active=\"false\" anchor=\"right\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" weight=\"0.4\" sideWeight=\"0.5\" order=\"0\" side_tool=\"false\" content_ui=\"tabs\" />\r\n      <window_info id=\"Inspection\" active=\"false\" anchor=\"bottom\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" weight=\"0.4\" sideWeight=\"0.5\" order=\"5\" side_tool=\"false\" content_ui=\"tabs\" />\r\n      <window_info id=\"Hierarchy\" active=\"false\" anchor=\"right\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" weight=\"0.25\" sideWeight=\"0.5\" order=\"2\" side_tool=\"false\" content_ui=\"combo\" />\r\n    </layout>\r\n  </component>\r\n  <component name=\"VcsContentAnnotationSettings\">\r\n    <option name=\"myLimit\" value=\"2678400000\" />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <option name=\"OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT\" value=\"true\" />\r\n    <option name=\"CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT\" value=\"true\" />\r\n    <option name=\"CHECK_NEW_TODO\" value=\"true\" />\r\n    <option name=\"myTodoPanelSettings\">\r\n      <value>\r\n        <are-packages-shown value=\"false\" />\r\n        <are-modules-shown value=\"false\" />\r\n        <flatten-packages value=\"false\" />\r\n        <is-autoscroll-to-source value=\"false\" />\r\n      </value>\r\n    </option>\r\n    <option name=\"PERFORM_UPDATE_IN_BACKGROUND\" value=\"true\" />\r\n    <option name=\"PERFORM_COMMIT_IN_BACKGROUND\" value=\"true\" />\r\n    <option name=\"PERFORM_EDIT_IN_BACKGROUND\" value=\"true\" />\r\n    <option name=\"PERFORM_CHECKOUT_IN_BACKGROUND\" value=\"true\" />\r\n    <option name=\"PERFORM_ADD_REMOVE_IN_BACKGROUND\" value=\"true\" />\r\n    <option name=\"PERFORM_ROLLBACK_IN_BACKGROUND\" value=\"false\" />\r\n    <option name=\"CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND\" value=\"false\" />\r\n    <option name=\"ENABLE_BACKGROUND_PROCESSES\" value=\"false\" />\r\n    <option name=\"CHANGED_ON_SERVER_INTERVAL\" value=\"60\" />\r\n    <option name=\"SHOW_ONLY_CHANGED_IN_SELECTION_DIFF\" value=\"true\" />\r\n    <option name=\"CHECK_COMMIT_MESSAGE_SPELLING\" value=\"true\" />\r\n    <option name=\"DEFAULT_PATCH_EXTENSION\" value=\"patch\" />\r\n    <option name=\"SHORT_DIFF_HORISONTALLY\" value=\"true\" />\r\n    <option name=\"SHORT_DIFF_EXTRA_LINES\" value=\"2\" />\r\n    <option name=\"SOFT_WRAPS_IN_SHORT_DIFF\" value=\"true\" />\r\n    <option name=\"INCLUDE_TEXT_INTO_PATCH\" value=\"false\" />\r\n    <option name=\"INCLUDE_TEXT_INTO_SHELF\" value=\"false\" />\r\n    <option name=\"CREATE_PATCH_EXPAND_DETAILS_DEFAULT\" value=\"true\" />\r\n    <option name=\"FORCE_NON_EMPTY_COMMENT\" value=\"false\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" />\r\n    <option name=\"MAKE_NEW_CHANGELIST_ACTIVE\" value=\"true\" />\r\n    <option name=\"OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT\" value=\"false\" />\r\n    <option name=\"CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT\" value=\"false\" />\r\n    <option name=\"REFORMAT_BEFORE_PROJECT_COMMIT\" value=\"false\" />\r\n    <option name=\"REFORMAT_BEFORE_FILE_COMMIT\" value=\"false\" />\r\n    <option name=\"FILE_HISTORY_DIALOG_COMMENTS_SPLITTER_PROPORTION\" value=\"0.8\" />\r\n    <option name=\"FILE_HISTORY_DIALOG_SPLITTER_PROPORTION\" value=\"0.5\" />\r\n    <option name=\"ACTIVE_VCS_NAME\" />\r\n    <option name=\"UPDATE_GROUP_BY_PACKAGES\" value=\"false\" />\r\n    <option name=\"UPDATE_GROUP_BY_CHANGELIST\" value=\"false\" />\r\n    <option name=\"SHOW_FILE_HISTORY_AS_TREE\" value=\"false\" />\r\n    <option name=\"FILE_HISTORY_SPLITTER_PROPORTION\" value=\"0.6\" />\r\n  </component>\r\n  <component name=\"XDebuggerManager\">\r\n    <breakpoint-manager />\r\n  </component>\r\n  <component name=\"editorHistoryManager\">\r\n    <entry file=\"file://$PROJECT_DIR$/.htaccess\">\r\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\r\n        <state line=\"6\" column=\"0\" selection-start=\"213\" selection-end=\"222\" vertical-scroll-proportion=\"0.124847\">\r\n          <folding />\r\n        </state>\r\n      </provider>\r\n    </entry>\r\n    <entry file=\"file://$PROJECT_DIR$/cart.php\">\r\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\r\n        <state line=\"60\" column=\"26\" selection-start=\"2336\" selection-end=\"2336\" vertical-scroll-proportion=\"-0.41645244\">\r\n          <folding>\r\n            <marker date=\"1334906567000\" expanded=\"true\" signature=\"3702:3950\" placeholder=\"...\" />\r\n            <marker date=\"1334906567000\" expanded=\"true\" signature=\"4948:5056\" placeholder=\"...\" />\r\n          </folding>\r\n        </state>\r\n      </provider>\r\n    </entry>\r\n  </component>\r\n</project>\r\n\r\n",
+                "ip": "44.228.249.3",
+                "timestamp": "2026-02-25T00:40:24.702343605-05:00",
+                "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/600.2.5 (KHTML, like Gecko) Version/7.1.2 Safari/537.85.11' 'http://testphp.vulnweb.com/.idea/workspace.xml'",
+                "matcher-status": true
+            },
+            "evidence_list": [],
+            "correlation": {
+                "tools": [
+                    "nuclei"
+                ],
+                "tool_count": 1
+            },
+            "sources": [
+                "nuclei"
+            ]
+        }
+    ]
+}

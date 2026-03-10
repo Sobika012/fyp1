@@ -1,0 +1,906 @@
+{
+  "scan_info": {
+    "mode": "deep",
+    "target": "http://192.168.56.104/",
+    "generated_at": "2026-02-20 22:47:46",
+    "started_at": "2026-02-20 22:41:03",
+    "total_findings": 15,
+    "recon_count": 8,
+    "discovery_count": 7,
+    "vulnerability_count": 0,
+    "discovered_endpoints": 15,
+    "total_vulnerabilities": 0,
+    "severity_counts": {
+      "CRITICAL": 0,
+      "HIGH": 0,
+      "MEDIUM": 0,
+      "LOW": 0,
+      "INFO": 15
+    }
+  },
+  "discovered_endpoints": [
+    {
+      "tool": "whatweb",
+      "url": "http://192.168.56.104/",
+      "finding_name": "Technology Detected: Apache[2.4.41]",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "reconnaissance",
+      "description": "Detected technology: Apache[2.4.41]",
+      "timestamp": "2026-02-20 22:41:08",
+      "raw_output": "http://192.168.56.104/ [200 OK] Apache[2.4.41], Country[RESERVED][ZZ], HTML5, HTTPServer[Ubuntu Linux][Apache/2.4.41 (Ubuntu)], IP[192.168.56.104], Script, Title[VulnSite Lab Hub], maybe Vulnerable-To-XSS[[\"\", \"alert(1)\"] ]",
+      "type": "discovery",
+      "source": "whatweb"
+    },
+    {
+      "tool": "whatweb",
+      "url": "http://192.168.56.104/",
+      "finding_name": "Technology Detected: Country[RESERVED][ZZ]",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "reconnaissance",
+      "description": "Detected technology: Country[RESERVED][ZZ]",
+      "timestamp": "2026-02-20 22:41:08",
+      "raw_output": "http://192.168.56.104/ [200 OK] Apache[2.4.41], Country[RESERVED][ZZ], HTML5, HTTPServer[Ubuntu Linux][Apache/2.4.41 (Ubuntu)], IP[192.168.56.104], Script, Title[VulnSite Lab Hub], maybe Vulnerable-To-XSS[[\"\", \"alert(1)\"] ]",
+      "type": "discovery",
+      "source": "whatweb"
+    },
+    {
+      "tool": "whatweb",
+      "url": "http://192.168.56.104/",
+      "finding_name": "Technology Detected: HTML5",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "reconnaissance",
+      "description": "Detected technology: HTML5",
+      "timestamp": "2026-02-20 22:41:08",
+      "raw_output": "http://192.168.56.104/ [200 OK] Apache[2.4.41], Country[RESERVED][ZZ], HTML5, HTTPServer[Ubuntu Linux][Apache/2.4.41 (Ubuntu)], IP[192.168.56.104], Script, Title[VulnSite Lab Hub], maybe Vulnerable-To-XSS[[\"\", \"alert(1)\"] ]",
+      "type": "discovery",
+      "source": "whatweb"
+    },
+    {
+      "tool": "whatweb",
+      "url": "http://192.168.56.104/",
+      "finding_name": "Technology Detected: HTTPServer[Ubuntu Linux][Apache/2.4.41 (Ubuntu)]",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "reconnaissance",
+      "description": "Detected technology: HTTPServer[Ubuntu Linux][Apache/2.4.41 (Ubuntu)]",
+      "timestamp": "2026-02-20 22:41:08",
+      "raw_output": "http://192.168.56.104/ [200 OK] Apache[2.4.41], Country[RESERVED][ZZ], HTML5, HTTPServer[Ubuntu Linux][Apache/2.4.41 (Ubuntu)], IP[192.168.56.104], Script, Title[VulnSite Lab Hub], maybe Vulnerable-To-XSS[[\"\", \"alert(1)\"] ]",
+      "type": "discovery",
+      "source": "whatweb"
+    },
+    {
+      "tool": "whatweb",
+      "url": "http://192.168.56.104/",
+      "finding_name": "Technology Detected: IP[192.168.56.104]",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "reconnaissance",
+      "description": "Detected technology: IP[192.168.56.104]",
+      "timestamp": "2026-02-20 22:41:08",
+      "raw_output": "http://192.168.56.104/ [200 OK] Apache[2.4.41], Country[RESERVED][ZZ], HTML5, HTTPServer[Ubuntu Linux][Apache/2.4.41 (Ubuntu)], IP[192.168.56.104], Script, Title[VulnSite Lab Hub], maybe Vulnerable-To-XSS[[\"\", \"alert(1)\"] ]",
+      "type": "discovery",
+      "source": "whatweb"
+    },
+    {
+      "tool": "whatweb",
+      "url": "http://192.168.56.104/",
+      "finding_name": "Technology Detected: Script",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "reconnaissance",
+      "description": "Detected technology: Script",
+      "timestamp": "2026-02-20 22:41:08",
+      "raw_output": "http://192.168.56.104/ [200 OK] Apache[2.4.41], Country[RESERVED][ZZ], HTML5, HTTPServer[Ubuntu Linux][Apache/2.4.41 (Ubuntu)], IP[192.168.56.104], Script, Title[VulnSite Lab Hub], maybe Vulnerable-To-XSS[[\"\", \"alert(1)\"] ]",
+      "type": "discovery",
+      "source": "whatweb"
+    },
+    {
+      "tool": "whatweb",
+      "url": "http://192.168.56.104/",
+      "finding_name": "Technology Detected: Title[VulnSite Lab Hub]",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "reconnaissance",
+      "description": "Detected technology: Title[VulnSite Lab Hub]",
+      "timestamp": "2026-02-20 22:41:08",
+      "raw_output": "http://192.168.56.104/ [200 OK] Apache[2.4.41], Country[RESERVED][ZZ], HTML5, HTTPServer[Ubuntu Linux][Apache/2.4.41 (Ubuntu)], IP[192.168.56.104], Script, Title[VulnSite Lab Hub], maybe Vulnerable-To-XSS[[\"\", \"alert(1)\"] ]",
+      "type": "discovery",
+      "source": "whatweb"
+    },
+    {
+      "tool": "whatweb",
+      "url": "http://192.168.56.104/",
+      "finding_name": "Technology Detected: maybe Vulnerable-To-XSS[[\"\", \"alert(1)\"] ]",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "reconnaissance",
+      "description": "Detected technology: maybe Vulnerable-To-XSS[[\"\", \"alert(1)\"] ]",
+      "timestamp": "2026-02-20 22:41:08",
+      "raw_output": "http://192.168.56.104/ [200 OK] Apache[2.4.41], Country[RESERVED][ZZ], HTML5, HTTPServer[Ubuntu Linux][Apache/2.4.41 (Ubuntu)], IP[192.168.56.104], Script, Title[VulnSite Lab Hub], maybe Vulnerable-To-XSS[[\"\", \"alert(1)\"] ]",
+      "type": "discovery",
+      "source": "whatweb"
+    },
+    {
+      "tool": "ffuf",
+      "url": "http://192.168.56.104/uploads",
+      "finding_name": "Hidden Resource Discovered",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "discovery",
+      "description": "Status: 301 | Size: 318",
+      "timestamp": "2026-02-20 22:42:10",
+      "raw_output": {
+        "input": {
+          "FFUFHASH": "65f6ba4",
+          "FUZZ": "uploads"
+        },
+        "position": 164,
+        "status": 301,
+        "length": 318,
+        "words": 20,
+        "lines": 10,
+        "content-type": "text/html; charset=iso-8859-1",
+        "redirectlocation": "http://192.168.56.104/uploads/",
+        "scraper": {},
+        "duration": 2828660,
+        "resultfile": "",
+        "url": "http://192.168.56.104/uploads",
+        "host": "192.168.56.104"
+      },
+      "type": "discovery",
+      "source": "ffuf",
+      "raw": {
+        "input": {
+          "FFUFHASH": "65f6ba4",
+          "FUZZ": "uploads"
+        },
+        "position": 164,
+        "status": 301,
+        "length": 318,
+        "words": 20,
+        "lines": 10,
+        "content-type": "text/html; charset=iso-8859-1",
+        "redirectlocation": "http://192.168.56.104/uploads/",
+        "scraper": {},
+        "duration": 2828660,
+        "resultfile": "",
+        "url": "http://192.168.56.104/uploads",
+        "host": "192.168.56.104"
+      }
+    },
+    {
+      "tool": "ffuf",
+      "url": "http://192.168.56.104/src",
+      "finding_name": "Hidden Resource Discovered",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "discovery",
+      "description": "Status: 301 | Size: 314",
+      "timestamp": "2026-02-20 22:42:10",
+      "raw_output": {
+        "input": {
+          "FFUFHASH": "65f6b30f",
+          "FUZZ": "src"
+        },
+        "position": 783,
+        "status": 301,
+        "length": 314,
+        "words": 20,
+        "lines": 10,
+        "content-type": "text/html; charset=iso-8859-1",
+        "redirectlocation": "http://192.168.56.104/src/",
+        "scraper": {},
+        "duration": 1549793,
+        "resultfile": "",
+        "url": "http://192.168.56.104/src",
+        "host": "192.168.56.104"
+      },
+      "type": "discovery",
+      "source": "ffuf",
+      "raw": {
+        "input": {
+          "FFUFHASH": "65f6b30f",
+          "FUZZ": "src"
+        },
+        "position": 783,
+        "status": 301,
+        "length": 314,
+        "words": 20,
+        "lines": 10,
+        "content-type": "text/html; charset=iso-8859-1",
+        "redirectlocation": "http://192.168.56.104/src/",
+        "scraper": {},
+        "duration": 1549793,
+        "resultfile": "",
+        "url": "http://192.168.56.104/src",
+        "host": "192.168.56.104"
+      }
+    },
+    {
+      "tool": "ffuf",
+      "url": "http://192.168.56.104/db",
+      "finding_name": "Hidden Resource Discovered",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "discovery",
+      "description": "Status: 301 | Size: 313",
+      "timestamp": "2026-02-20 22:42:10",
+      "raw_output": {
+        "input": {
+          "FFUFHASH": "65f6b350",
+          "FUZZ": "db"
+        },
+        "position": 848,
+        "status": 301,
+        "length": 313,
+        "words": 20,
+        "lines": 10,
+        "content-type": "text/html; charset=iso-8859-1",
+        "redirectlocation": "http://192.168.56.104/db/",
+        "scraper": {},
+        "duration": 2126878,
+        "resultfile": "",
+        "url": "http://192.168.56.104/db",
+        "host": "192.168.56.104"
+      },
+      "type": "discovery",
+      "source": "ffuf",
+      "raw": {
+        "input": {
+          "FFUFHASH": "65f6b350",
+          "FUZZ": "db"
+        },
+        "position": 848,
+        "status": 301,
+        "length": 313,
+        "words": 20,
+        "lines": 10,
+        "content-type": "text/html; charset=iso-8859-1",
+        "redirectlocation": "http://192.168.56.104/db/",
+        "scraper": {},
+        "duration": 2126878,
+        "resultfile": "",
+        "url": "http://192.168.56.104/db",
+        "host": "192.168.56.104"
+      }
+    },
+    {
+      "tool": "ffuf",
+      "url": "http://192.168.56.104/api",
+      "finding_name": "Hidden Resource Discovered",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "discovery",
+      "description": "Status: 301 | Size: 314",
+      "timestamp": "2026-02-20 22:42:10",
+      "raw_output": {
+        "input": {
+          "FFUFHASH": "65f6b402",
+          "FUZZ": "api"
+        },
+        "position": 1026,
+        "status": 301,
+        "length": 314,
+        "words": 20,
+        "lines": 10,
+        "content-type": "text/html; charset=iso-8859-1",
+        "redirectlocation": "http://192.168.56.104/api/",
+        "scraper": {},
+        "duration": 2892729,
+        "resultfile": "",
+        "url": "http://192.168.56.104/api",
+        "host": "192.168.56.104"
+      },
+      "type": "discovery",
+      "source": "ffuf",
+      "raw": {
+        "input": {
+          "FFUFHASH": "65f6b402",
+          "FUZZ": "api"
+        },
+        "position": 1026,
+        "status": 301,
+        "length": 314,
+        "words": 20,
+        "lines": 10,
+        "content-type": "text/html; charset=iso-8859-1",
+        "redirectlocation": "http://192.168.56.104/api/",
+        "scraper": {},
+        "duration": 2892729,
+        "resultfile": "",
+        "url": "http://192.168.56.104/api",
+        "host": "192.168.56.104"
+      }
+    },
+    {
+      "tool": "ffuf",
+      "url": "http://192.168.56.104/javascript",
+      "finding_name": "Hidden Resource Discovered",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "discovery",
+      "description": "Status: 301 | Size: 321",
+      "timestamp": "2026-02-20 22:42:10",
+      "raw_output": {
+        "input": {
+          "FFUFHASH": "65f6b431",
+          "FUZZ": "javascript"
+        },
+        "position": 1073,
+        "status": 301,
+        "length": 321,
+        "words": 20,
+        "lines": 10,
+        "content-type": "text/html; charset=iso-8859-1",
+        "redirectlocation": "http://192.168.56.104/javascript/",
+        "scraper": {},
+        "duration": 2380081,
+        "resultfile": "",
+        "url": "http://192.168.56.104/javascript",
+        "host": "192.168.56.104"
+      },
+      "type": "discovery",
+      "source": "ffuf",
+      "raw": {
+        "input": {
+          "FFUFHASH": "65f6b431",
+          "FUZZ": "javascript"
+        },
+        "position": 1073,
+        "status": 301,
+        "length": 321,
+        "words": 20,
+        "lines": 10,
+        "content-type": "text/html; charset=iso-8859-1",
+        "redirectlocation": "http://192.168.56.104/javascript/",
+        "scraper": {},
+        "duration": 2380081,
+        "resultfile": "",
+        "url": "http://192.168.56.104/javascript",
+        "host": "192.168.56.104"
+      }
+    },
+    {
+      "tool": "ffuf",
+      "url": "http://192.168.56.104/docs",
+      "finding_name": "Hidden Resource Discovered",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "discovery",
+      "description": "Status: 301 | Size: 315",
+      "timestamp": "2026-02-20 22:42:10",
+      "raw_output": {
+        "input": {
+          "FFUFHASH": "65f6b5a",
+          "FUZZ": "docs"
+        },
+        "position": 90,
+        "status": 301,
+        "length": 315,
+        "words": 20,
+        "lines": 10,
+        "content-type": "text/html; charset=iso-8859-1",
+        "redirectlocation": "http://192.168.56.104/docs/",
+        "scraper": {},
+        "duration": 2117236519,
+        "resultfile": "",
+        "url": "http://192.168.56.104/docs",
+        "host": "192.168.56.104"
+      },
+      "type": "discovery",
+      "source": "ffuf",
+      "raw": {
+        "input": {
+          "FFUFHASH": "65f6b5a",
+          "FUZZ": "docs"
+        },
+        "position": 90,
+        "status": 301,
+        "length": 315,
+        "words": 20,
+        "lines": 10,
+        "content-type": "text/html; charset=iso-8859-1",
+        "redirectlocation": "http://192.168.56.104/docs/",
+        "scraper": {},
+        "duration": 2117236519,
+        "resultfile": "",
+        "url": "http://192.168.56.104/docs",
+        "host": "192.168.56.104"
+      }
+    },
+    {
+      "tool": "ffuf",
+      "url": "http://192.168.56.104/server-status",
+      "finding_name": "Hidden Resource Discovered",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "discovery",
+      "description": "Status: 403 | Size: 279",
+      "timestamp": "2026-02-20 22:42:10",
+      "raw_output": {
+        "input": {
+          "FFUFHASH": "65f6b17524",
+          "FUZZ": "server-status"
+        },
+        "position": 95524,
+        "status": 403,
+        "length": 279,
+        "words": 20,
+        "lines": 10,
+        "content-type": "text/html; charset=iso-8859-1",
+        "redirectlocation": "",
+        "scraper": {},
+        "duration": 6042008,
+        "resultfile": "",
+        "url": "http://192.168.56.104/server-status",
+        "host": "192.168.56.104"
+      },
+      "type": "discovery",
+      "source": "ffuf",
+      "raw": {
+        "input": {
+          "FFUFHASH": "65f6b17524",
+          "FUZZ": "server-status"
+        },
+        "position": 95524,
+        "status": 403,
+        "length": 279,
+        "words": 20,
+        "lines": 10,
+        "content-type": "text/html; charset=iso-8859-1",
+        "redirectlocation": "",
+        "scraper": {},
+        "duration": 6042008,
+        "resultfile": "",
+        "url": "http://192.168.56.104/server-status",
+        "host": "192.168.56.104"
+      }
+    }
+  ],
+  "vulnerabilities": [],
+  "all_findings_flat": [
+    {
+      "tool": "whatweb",
+      "url": "http://192.168.56.104/",
+      "finding_name": "Technology Detected: Apache[2.4.41]",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "reconnaissance",
+      "description": "Detected technology: Apache[2.4.41]",
+      "timestamp": "2026-02-20 22:41:08",
+      "raw_output": "http://192.168.56.104/ [200 OK] Apache[2.4.41], Country[RESERVED][ZZ], HTML5, HTTPServer[Ubuntu Linux][Apache/2.4.41 (Ubuntu)], IP[192.168.56.104], Script, Title[VulnSite Lab Hub], maybe Vulnerable-To-XSS[[\"\", \"alert(1)\"] ]",
+      "type": "discovery",
+      "source": "whatweb"
+    },
+    {
+      "tool": "whatweb",
+      "url": "http://192.168.56.104/",
+      "finding_name": "Technology Detected: Country[RESERVED][ZZ]",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "reconnaissance",
+      "description": "Detected technology: Country[RESERVED][ZZ]",
+      "timestamp": "2026-02-20 22:41:08",
+      "raw_output": "http://192.168.56.104/ [200 OK] Apache[2.4.41], Country[RESERVED][ZZ], HTML5, HTTPServer[Ubuntu Linux][Apache/2.4.41 (Ubuntu)], IP[192.168.56.104], Script, Title[VulnSite Lab Hub], maybe Vulnerable-To-XSS[[\"\", \"alert(1)\"] ]",
+      "type": "discovery",
+      "source": "whatweb"
+    },
+    {
+      "tool": "whatweb",
+      "url": "http://192.168.56.104/",
+      "finding_name": "Technology Detected: HTML5",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "reconnaissance",
+      "description": "Detected technology: HTML5",
+      "timestamp": "2026-02-20 22:41:08",
+      "raw_output": "http://192.168.56.104/ [200 OK] Apache[2.4.41], Country[RESERVED][ZZ], HTML5, HTTPServer[Ubuntu Linux][Apache/2.4.41 (Ubuntu)], IP[192.168.56.104], Script, Title[VulnSite Lab Hub], maybe Vulnerable-To-XSS[[\"\", \"alert(1)\"] ]",
+      "type": "discovery",
+      "source": "whatweb"
+    },
+    {
+      "tool": "whatweb",
+      "url": "http://192.168.56.104/",
+      "finding_name": "Technology Detected: HTTPServer[Ubuntu Linux][Apache/2.4.41 (Ubuntu)]",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "reconnaissance",
+      "description": "Detected technology: HTTPServer[Ubuntu Linux][Apache/2.4.41 (Ubuntu)]",
+      "timestamp": "2026-02-20 22:41:08",
+      "raw_output": "http://192.168.56.104/ [200 OK] Apache[2.4.41], Country[RESERVED][ZZ], HTML5, HTTPServer[Ubuntu Linux][Apache/2.4.41 (Ubuntu)], IP[192.168.56.104], Script, Title[VulnSite Lab Hub], maybe Vulnerable-To-XSS[[\"\", \"alert(1)\"] ]",
+      "type": "discovery",
+      "source": "whatweb"
+    },
+    {
+      "tool": "whatweb",
+      "url": "http://192.168.56.104/",
+      "finding_name": "Technology Detected: IP[192.168.56.104]",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "reconnaissance",
+      "description": "Detected technology: IP[192.168.56.104]",
+      "timestamp": "2026-02-20 22:41:08",
+      "raw_output": "http://192.168.56.104/ [200 OK] Apache[2.4.41], Country[RESERVED][ZZ], HTML5, HTTPServer[Ubuntu Linux][Apache/2.4.41 (Ubuntu)], IP[192.168.56.104], Script, Title[VulnSite Lab Hub], maybe Vulnerable-To-XSS[[\"\", \"alert(1)\"] ]",
+      "type": "discovery",
+      "source": "whatweb"
+    },
+    {
+      "tool": "whatweb",
+      "url": "http://192.168.56.104/",
+      "finding_name": "Technology Detected: Script",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "reconnaissance",
+      "description": "Detected technology: Script",
+      "timestamp": "2026-02-20 22:41:08",
+      "raw_output": "http://192.168.56.104/ [200 OK] Apache[2.4.41], Country[RESERVED][ZZ], HTML5, HTTPServer[Ubuntu Linux][Apache/2.4.41 (Ubuntu)], IP[192.168.56.104], Script, Title[VulnSite Lab Hub], maybe Vulnerable-To-XSS[[\"\", \"alert(1)\"] ]",
+      "type": "discovery",
+      "source": "whatweb"
+    },
+    {
+      "tool": "whatweb",
+      "url": "http://192.168.56.104/",
+      "finding_name": "Technology Detected: Title[VulnSite Lab Hub]",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "reconnaissance",
+      "description": "Detected technology: Title[VulnSite Lab Hub]",
+      "timestamp": "2026-02-20 22:41:08",
+      "raw_output": "http://192.168.56.104/ [200 OK] Apache[2.4.41], Country[RESERVED][ZZ], HTML5, HTTPServer[Ubuntu Linux][Apache/2.4.41 (Ubuntu)], IP[192.168.56.104], Script, Title[VulnSite Lab Hub], maybe Vulnerable-To-XSS[[\"\", \"alert(1)\"] ]",
+      "type": "discovery",
+      "source": "whatweb"
+    },
+    {
+      "tool": "whatweb",
+      "url": "http://192.168.56.104/",
+      "finding_name": "Technology Detected: maybe Vulnerable-To-XSS[[\"\", \"alert(1)\"] ]",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "reconnaissance",
+      "description": "Detected technology: maybe Vulnerable-To-XSS[[\"\", \"alert(1)\"] ]",
+      "timestamp": "2026-02-20 22:41:08",
+      "raw_output": "http://192.168.56.104/ [200 OK] Apache[2.4.41], Country[RESERVED][ZZ], HTML5, HTTPServer[Ubuntu Linux][Apache/2.4.41 (Ubuntu)], IP[192.168.56.104], Script, Title[VulnSite Lab Hub], maybe Vulnerable-To-XSS[[\"\", \"alert(1)\"] ]",
+      "type": "discovery",
+      "source": "whatweb"
+    },
+    {
+      "tool": "ffuf",
+      "url": "http://192.168.56.104/uploads",
+      "finding_name": "Hidden Resource Discovered",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "discovery",
+      "description": "Status: 301 | Size: 318",
+      "timestamp": "2026-02-20 22:42:10",
+      "raw_output": {
+        "input": {
+          "FFUFHASH": "65f6ba4",
+          "FUZZ": "uploads"
+        },
+        "position": 164,
+        "status": 301,
+        "length": 318,
+        "words": 20,
+        "lines": 10,
+        "content-type": "text/html; charset=iso-8859-1",
+        "redirectlocation": "http://192.168.56.104/uploads/",
+        "scraper": {},
+        "duration": 2828660,
+        "resultfile": "",
+        "url": "http://192.168.56.104/uploads",
+        "host": "192.168.56.104"
+      },
+      "type": "discovery",
+      "source": "ffuf",
+      "raw": {
+        "input": {
+          "FFUFHASH": "65f6ba4",
+          "FUZZ": "uploads"
+        },
+        "position": 164,
+        "status": 301,
+        "length": 318,
+        "words": 20,
+        "lines": 10,
+        "content-type": "text/html; charset=iso-8859-1",
+        "redirectlocation": "http://192.168.56.104/uploads/",
+        "scraper": {},
+        "duration": 2828660,
+        "resultfile": "",
+        "url": "http://192.168.56.104/uploads",
+        "host": "192.168.56.104"
+      }
+    },
+    {
+      "tool": "ffuf",
+      "url": "http://192.168.56.104/src",
+      "finding_name": "Hidden Resource Discovered",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "discovery",
+      "description": "Status: 301 | Size: 314",
+      "timestamp": "2026-02-20 22:42:10",
+      "raw_output": {
+        "input": {
+          "FFUFHASH": "65f6b30f",
+          "FUZZ": "src"
+        },
+        "position": 783,
+        "status": 301,
+        "length": 314,
+        "words": 20,
+        "lines": 10,
+        "content-type": "text/html; charset=iso-8859-1",
+        "redirectlocation": "http://192.168.56.104/src/",
+        "scraper": {},
+        "duration": 1549793,
+        "resultfile": "",
+        "url": "http://192.168.56.104/src",
+        "host": "192.168.56.104"
+      },
+      "type": "discovery",
+      "source": "ffuf",
+      "raw": {
+        "input": {
+          "FFUFHASH": "65f6b30f",
+          "FUZZ": "src"
+        },
+        "position": 783,
+        "status": 301,
+        "length": 314,
+        "words": 20,
+        "lines": 10,
+        "content-type": "text/html; charset=iso-8859-1",
+        "redirectlocation": "http://192.168.56.104/src/",
+        "scraper": {},
+        "duration": 1549793,
+        "resultfile": "",
+        "url": "http://192.168.56.104/src",
+        "host": "192.168.56.104"
+      }
+    },
+    {
+      "tool": "ffuf",
+      "url": "http://192.168.56.104/db",
+      "finding_name": "Hidden Resource Discovered",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "discovery",
+      "description": "Status: 301 | Size: 313",
+      "timestamp": "2026-02-20 22:42:10",
+      "raw_output": {
+        "input": {
+          "FFUFHASH": "65f6b350",
+          "FUZZ": "db"
+        },
+        "position": 848,
+        "status": 301,
+        "length": 313,
+        "words": 20,
+        "lines": 10,
+        "content-type": "text/html; charset=iso-8859-1",
+        "redirectlocation": "http://192.168.56.104/db/",
+        "scraper": {},
+        "duration": 2126878,
+        "resultfile": "",
+        "url": "http://192.168.56.104/db",
+        "host": "192.168.56.104"
+      },
+      "type": "discovery",
+      "source": "ffuf",
+      "raw": {
+        "input": {
+          "FFUFHASH": "65f6b350",
+          "FUZZ": "db"
+        },
+        "position": 848,
+        "status": 301,
+        "length": 313,
+        "words": 20,
+        "lines": 10,
+        "content-type": "text/html; charset=iso-8859-1",
+        "redirectlocation": "http://192.168.56.104/db/",
+        "scraper": {},
+        "duration": 2126878,
+        "resultfile": "",
+        "url": "http://192.168.56.104/db",
+        "host": "192.168.56.104"
+      }
+    },
+    {
+      "tool": "ffuf",
+      "url": "http://192.168.56.104/api",
+      "finding_name": "Hidden Resource Discovered",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "discovery",
+      "description": "Status: 301 | Size: 314",
+      "timestamp": "2026-02-20 22:42:10",
+      "raw_output": {
+        "input": {
+          "FFUFHASH": "65f6b402",
+          "FUZZ": "api"
+        },
+        "position": 1026,
+        "status": 301,
+        "length": 314,
+        "words": 20,
+        "lines": 10,
+        "content-type": "text/html; charset=iso-8859-1",
+        "redirectlocation": "http://192.168.56.104/api/",
+        "scraper": {},
+        "duration": 2892729,
+        "resultfile": "",
+        "url": "http://192.168.56.104/api",
+        "host": "192.168.56.104"
+      },
+      "type": "discovery",
+      "source": "ffuf",
+      "raw": {
+        "input": {
+          "FFUFHASH": "65f6b402",
+          "FUZZ": "api"
+        },
+        "position": 1026,
+        "status": 301,
+        "length": 314,
+        "words": 20,
+        "lines": 10,
+        "content-type": "text/html; charset=iso-8859-1",
+        "redirectlocation": "http://192.168.56.104/api/",
+        "scraper": {},
+        "duration": 2892729,
+        "resultfile": "",
+        "url": "http://192.168.56.104/api",
+        "host": "192.168.56.104"
+      }
+    },
+    {
+      "tool": "ffuf",
+      "url": "http://192.168.56.104/javascript",
+      "finding_name": "Hidden Resource Discovered",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "discovery",
+      "description": "Status: 301 | Size: 321",
+      "timestamp": "2026-02-20 22:42:10",
+      "raw_output": {
+        "input": {
+          "FFUFHASH": "65f6b431",
+          "FUZZ": "javascript"
+        },
+        "position": 1073,
+        "status": 301,
+        "length": 321,
+        "words": 20,
+        "lines": 10,
+        "content-type": "text/html; charset=iso-8859-1",
+        "redirectlocation": "http://192.168.56.104/javascript/",
+        "scraper": {},
+        "duration": 2380081,
+        "resultfile": "",
+        "url": "http://192.168.56.104/javascript",
+        "host": "192.168.56.104"
+      },
+      "type": "discovery",
+      "source": "ffuf",
+      "raw": {
+        "input": {
+          "FFUFHASH": "65f6b431",
+          "FUZZ": "javascript"
+        },
+        "position": 1073,
+        "status": 301,
+        "length": 321,
+        "words": 20,
+        "lines": 10,
+        "content-type": "text/html; charset=iso-8859-1",
+        "redirectlocation": "http://192.168.56.104/javascript/",
+        "scraper": {},
+        "duration": 2380081,
+        "resultfile": "",
+        "url": "http://192.168.56.104/javascript",
+        "host": "192.168.56.104"
+      }
+    },
+    {
+      "tool": "ffuf",
+      "url": "http://192.168.56.104/docs",
+      "finding_name": "Hidden Resource Discovered",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "discovery",
+      "description": "Status: 301 | Size: 315",
+      "timestamp": "2026-02-20 22:42:10",
+      "raw_output": {
+        "input": {
+          "FFUFHASH": "65f6b5a",
+          "FUZZ": "docs"
+        },
+        "position": 90,
+        "status": 301,
+        "length": 315,
+        "words": 20,
+        "lines": 10,
+        "content-type": "text/html; charset=iso-8859-1",
+        "redirectlocation": "http://192.168.56.104/docs/",
+        "scraper": {},
+        "duration": 2117236519,
+        "resultfile": "",
+        "url": "http://192.168.56.104/docs",
+        "host": "192.168.56.104"
+      },
+      "type": "discovery",
+      "source": "ffuf",
+      "raw": {
+        "input": {
+          "FFUFHASH": "65f6b5a",
+          "FUZZ": "docs"
+        },
+        "position": 90,
+        "status": 301,
+        "length": 315,
+        "words": 20,
+        "lines": 10,
+        "content-type": "text/html; charset=iso-8859-1",
+        "redirectlocation": "http://192.168.56.104/docs/",
+        "scraper": {},
+        "duration": 2117236519,
+        "resultfile": "",
+        "url": "http://192.168.56.104/docs",
+        "host": "192.168.56.104"
+      }
+    },
+    {
+      "tool": "ffuf",
+      "url": "http://192.168.56.104/server-status",
+      "finding_name": "Hidden Resource Discovered",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "discovery",
+      "description": "Status: 403 | Size: 279",
+      "timestamp": "2026-02-20 22:42:10",
+      "raw_output": {
+        "input": {
+          "FFUFHASH": "65f6b17524",
+          "FUZZ": "server-status"
+        },
+        "position": 95524,
+        "status": 403,
+        "length": 279,
+        "words": 20,
+        "lines": 10,
+        "content-type": "text/html; charset=iso-8859-1",
+        "redirectlocation": "",
+        "scraper": {},
+        "duration": 6042008,
+        "resultfile": "",
+        "url": "http://192.168.56.104/server-status",
+        "host": "192.168.56.104"
+      },
+      "type": "discovery",
+      "source": "ffuf",
+      "raw": {
+        "input": {
+          "FFUFHASH": "65f6b17524",
+          "FUZZ": "server-status"
+        },
+        "position": 95524,
+        "status": 403,
+        "length": 279,
+        "words": 20,
+        "lines": 10,
+        "content-type": "text/html; charset=iso-8859-1",
+        "redirectlocation": "",
+        "scraper": {},
+        "duration": 6042008,
+        "resultfile": "",
+        "url": "http://192.168.56.104/server-status",
+        "host": "192.168.56.104"
+      }
+    }
+  ]
+}

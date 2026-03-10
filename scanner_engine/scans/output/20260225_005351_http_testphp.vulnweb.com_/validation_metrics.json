@@ -1,0 +1,14 @@
+{
+  "total_findings": 19,
+  "confirmed": 16,
+  "false_positive": 0,
+  "needs_manual_review": 3,
+  "false_positive_rate": 0.0,
+  "validation_resolution_rate": 0.84,
+  "manual_review_rate": 0.16,
+  "comparison": {
+    "manual_review_rate_before": 1.0,
+    "manual_review_rate_after": 0.16,
+    "manual_review_reduction": 0.84
+  }
+}

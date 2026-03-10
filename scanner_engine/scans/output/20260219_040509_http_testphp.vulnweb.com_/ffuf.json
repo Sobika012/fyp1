@@ -1,0 +1,288 @@
+{
+  "commandline": "ffuf -u http://testphp.vulnweb.com/FUZZ -w /usr/share/seclists/Discovery/Web-Content/common.txt -o ffuf_ffd0d49f62ba47069c0db14d2505c0d7.json -of json -mc 200,204,301,302,307,401,403 -t 30 -timeout 2 -maxtime 60 -noninteractive -k -s",
+  "time": "2026-02-19T04:06:11-05:00",
+  "results": [
+    {
+      "input": {
+        "FFUFHASH": "253c0de",
+        "FUZZ": "CVS/Entries"
+      },
+      "position": 222,
+      "status": 200,
+      "length": 1,
+      "words": 2,
+      "lines": 1,
+      "content-type": "application/octet-stream",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 287409817,
+      "resultfile": "",
+      "url": "http://testphp.vulnweb.com/CVS/Entries",
+      "host": "testphp.vulnweb.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "253c0dd",
+        "FUZZ": "CVS"
+      },
+      "position": 221,
+      "status": 301,
+      "length": 169,
+      "words": 5,
+      "lines": 8,
+      "content-type": "text/html",
+      "redirectlocation": "http://testphp.vulnweb.com/CVS/",
+      "scraper": {},
+      "duration": 288374879,
+      "resultfile": "",
+      "url": "http://testphp.vulnweb.com/CVS",
+      "host": "testphp.vulnweb.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "253c0df",
+        "FUZZ": "CVS/Repository"
+      },
+      "position": 223,
+      "status": 200,
+      "length": 8,
+      "words": 1,
+      "lines": 2,
+      "content-type": "application/octet-stream",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 373580506,
+      "resultfile": "",
+      "url": "http://testphp.vulnweb.com/CVS/Repository",
+      "host": "testphp.vulnweb.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "253c0e0",
+        "FUZZ": "CVS/Root"
+      },
+      "position": 224,
+      "status": 200,
+      "length": 1,
+      "words": 2,
+      "lines": 1,
+      "content-type": "application/octet-stream",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 373297551,
+      "resultfile": "",
+      "url": "http://testphp.vulnweb.com/CVS/Root",
+      "host": "testphp.vulnweb.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "253c020f",
+        "FUZZ": "admin"
+      },
+      "position": 527,
+      "status": 301,
+      "length": 169,
+      "words": 5,
+      "lines": 8,
+      "content-type": "text/html",
+      "redirectlocation": "http://testphp.vulnweb.com/admin/",
+      "scraper": {},
+      "duration": 296473370,
+      "resultfile": "",
+      "url": "http://testphp.vulnweb.com/admin",
+      "host": "testphp.vulnweb.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "253c0416",
+        "FUZZ": "cgi-bin/"
+      },
+      "position": 1046,
+      "status": 403,
+      "length": 276,
+      "words": 20,
+      "lines": 10,
+      "content-type": "text/html; charset=iso-8859-1",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 2606850881,
+      "resultfile": "",
+      "url": "http://testphp.vulnweb.com/cgi-bin/",
+      "host": "testphp.vulnweb.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "253c0415",
+        "FUZZ": "cgi-bin"
+      },
+      "position": 1045,
+      "status": 403,
+      "length": 276,
+      "words": 20,
+      "lines": 10,
+      "content-type": "text/html; charset=iso-8859-1",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 2886638262,
+      "resultfile": "",
+      "url": "http://testphp.vulnweb.com/cgi-bin",
+      "host": "testphp.vulnweb.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "253c0533",
+        "FUZZ": "crossdomain.xml"
+      },
+      "position": 1331,
+      "status": 200,
+      "length": 224,
+      "words": 8,
+      "lines": 5,
+      "content-type": "text/xml",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 292995293,
+      "resultfile": "",
+      "url": "http://testphp.vulnweb.com/crossdomain.xml",
+      "host": "testphp.vulnweb.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "253c06ec",
+        "FUZZ": "favicon.ico"
+      },
+      "position": 1772,
+      "status": 200,
+      "length": 894,
+      "words": 2,
+      "lines": 4,
+      "content-type": "image/x-icon",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 293338984,
+      "resultfile": "",
+      "url": "http://testphp.vulnweb.com/favicon.ico",
+      "host": "testphp.vulnweb.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "253c0886",
+        "FUZZ": "images"
+      },
+      "position": 2182,
+      "status": 301,
+      "length": 169,
+      "words": 5,
+      "lines": 8,
+      "content-type": "text/html",
+      "redirectlocation": "http://testphp.vulnweb.com/images/",
+      "scraper": {},
+      "duration": 993790927,
+      "resultfile": "",
+      "url": "http://testphp.vulnweb.com/images",
+      "host": "testphp.vulnweb.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "253c08a2",
+        "FUZZ": "index.php"
+      },
+      "position": 2210,
+      "status": 200,
+      "length": 4958,
+      "words": 514,
+      "lines": 110,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 999920988,
+      "resultfile": "",
+      "url": "http://testphp.vulnweb.com/index.php",
+      "host": "testphp.vulnweb.com"
+    }
+  ],
+  "config": {
+    "autocalibration": false,
+    "autocalibration_keyword": "FUZZ",
+    "autocalibration_perhost": false,
+    "autocalibration_strategies": [
+      "basic"
+    ],
+    "autocalibration_strings": [],
+    "colors": false,
+    "cmdline": "ffuf -u http://testphp.vulnweb.com/FUZZ -w /usr/share/seclists/Discovery/Web-Content/common.txt -o ffuf_ffd0d49f62ba47069c0db14d2505c0d7.json -of json -mc 200,204,301,302,307,401,403 -t 30 -timeout 2 -maxtime 60 -noninteractive -k -s",
+    "configfile": "",
+    "postdata": "",
+    "debuglog": "",
+    "delay": {
+      "value": "0.00"
+    },
+    "dirsearch_compatibility": false,
+    "encoders": [],
+    "extensions": [],
+    "fmode": "or",
+    "follow_redirects": false,
+    "headers": {},
+    "ignorebody": false,
+    "ignore_wordlist_comments": false,
+    "inputmode": "clusterbomb",
+    "cmd_inputnum": 100,
+    "inputproviders": [
+      {
+        "name": "wordlist",
+        "keyword": "FUZZ",
+        "value": "/usr/share/seclists/Discovery/Web-Content/common.txt",
+        "encoders": "",
+        "template": ""
+      }
+    ],
+    "inputshell": "",
+    "json": false,
+    "matchers": {
+      "IsCalibrated": false,
+      "Mutex": {},
+      "Matchers": {
+        "status": {
+          "value": "200,204,301,302,307,401,403"
+        }
+      },
+      "Filters": {},
+      "PerDomainFilters": {}
+    },
+    "mmode": "or",
+    "maxtime": 60,
+    "maxtime_job": 0,
+    "method": "GET",
+    "noninteractive": true,
+    "outputdirectory": "",
+    "outputfile": "ffuf_ffd0d49f62ba47069c0db14d2505c0d7.json",
+    "outputformat": "json",
+    "OutputSkipEmptyFile": false,
+    "proxyurl": "",
+    "quiet": true,
+    "rate": 0,
+    "raw": false,
+    "recursion": false,
+    "recursion_depth": 0,
+    "recursion_strategy": "default",
+    "replayproxyurl": "",
+    "requestfile": "",
+    "requestproto": "https",
+    "scraperfile": "",
+    "scrapers": "all",
+    "sni": "",
+    "stop_403": false,
+    "stop_all": false,
+    "stop_errors": false,
+    "threads": 30,
+    "timeout": 2,
+    "url": "http://testphp.vulnweb.com/FUZZ",
+    "verbose": false,
+    "wordlists": [
+      "/usr/share/seclists/Discovery/Web-Content/common.txt"
+    ],
+    "http2": false,
+    "client-cert": "",
+    "client-key": ""
+  }
+}

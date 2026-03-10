@@ -1,0 +1,378 @@
+{
+  "commandline": "ffuf -u https://www.vulnhub.com/FUZZ -w /usr/share/seclists/Discovery/Web-Content/common.txt -o ffuf_cb208fe112c0411cb99746c48877a4de.json -of json -mc 200,204,301,302,307,401,403 -t 60 -timeout 2 -noninteractive -k -s",
+  "time": "2026-02-19T20:52:04-05:00",
+  "results": [
+    {
+      "input": {
+        "FFUFHASH": "2539141",
+        "FUZZ": ".well-known/http-opportunistic"
+      },
+      "position": 65,
+      "status": 200,
+      "length": 26,
+      "words": 1,
+      "lines": 1,
+      "content-type": "application/json",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 5936656,
+      "resultfile": "",
+      "url": "https://www.vulnhub.com/.well-known/http-opportunistic",
+      "host": "www.vulnhub.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "253911d2",
+        "FUZZ": "about"
+      },
+      "position": 466,
+      "status": 301,
+      "length": 0,
+      "words": 1,
+      "lines": 1,
+      "content-type": "text/html; charset=utf-8",
+      "redirectlocation": "https://www.vulnhub.com/about/",
+      "scraper": {},
+      "duration": 497812061,
+      "resultfile": "",
+      "url": "https://www.vulnhub.com/about",
+      "host": "www.vulnhub.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "25391370",
+        "FUZZ": "blog"
+      },
+      "position": 880,
+      "status": 301,
+      "length": 0,
+      "words": 1,
+      "lines": 1,
+      "content-type": "text/html; charset=utf-8",
+      "redirectlocation": "https://www.vulnhub.com/blog/",
+      "scraper": {},
+      "duration": 333421378,
+      "resultfile": "",
+      "url": "https://www.vulnhub.com/blog",
+      "host": "www.vulnhub.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "25391437",
+        "FUZZ": "chat"
+      },
+      "position": 1079,
+      "status": 301,
+      "length": 0,
+      "words": 1,
+      "lines": 1,
+      "content-type": "text/html; charset=utf-8",
+      "redirectlocation": "https://www.vulnhub.com/chat/",
+      "scraper": {},
+      "duration": 351079184,
+      "resultfile": "",
+      "url": "https://www.vulnhub.com/chat",
+      "host": "www.vulnhub.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "253914d7",
+        "FUZZ": "contact"
+      },
+      "position": 1239,
+      "status": 301,
+      "length": 0,
+      "words": 1,
+      "lines": 1,
+      "content-type": "text/html; charset=utf-8",
+      "redirectlocation": "https://www.vulnhub.com/contact/",
+      "scraper": {},
+      "duration": 343926122,
+      "resultfile": "",
+      "url": "https://www.vulnhub.com/contact",
+      "host": "www.vulnhub.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "253916e9",
+        "FUZZ": "faq"
+      },
+      "position": 1769,
+      "status": 301,
+      "length": 0,
+      "words": 1,
+      "lines": 1,
+      "content-type": "text/html; charset=utf-8",
+      "redirectlocation": "https://www.vulnhub.com/faq/",
+      "scraper": {},
+      "duration": 346947808,
+      "resultfile": "",
+      "url": "https://www.vulnhub.com/faq",
+      "host": "www.vulnhub.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "25391700",
+        "FUZZ": "feeds"
+      },
+      "position": 1792,
+      "status": 301,
+      "length": 0,
+      "words": 1,
+      "lines": 1,
+      "content-type": "text/html; charset=utf-8",
+      "redirectlocation": "https://www.vulnhub.com/feeds/",
+      "scraper": {},
+      "duration": 347604941,
+      "resultfile": "",
+      "url": "https://www.vulnhub.com/feeds",
+      "host": "www.vulnhub.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "2539196d",
+        "FUZZ": "lab"
+      },
+      "position": 2413,
+      "status": 301,
+      "length": 0,
+      "words": 1,
+      "lines": 1,
+      "content-type": "text/html; charset=utf-8",
+      "redirectlocation": "https://www.vulnhub.com/lab/",
+      "scraper": {},
+      "duration": 348210990,
+      "resultfile": "",
+      "url": "https://www.vulnhub.com/lab",
+      "host": "www.vulnhub.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "25391a58",
+        "FUZZ": "media"
+      },
+      "position": 2648,
+      "status": 301,
+      "length": 824,
+      "words": 25,
+      "lines": 11,
+      "content-type": "text/html; charset=iso-8859-1",
+      "redirectlocation": "https://www.vulnhub.com/media/",
+      "scraper": {},
+      "duration": 347574200,
+      "resultfile": "",
+      "url": "https://www.vulnhub.com/media",
+      "host": "www.vulnhub.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "25391cd0",
+        "FUZZ": "privacy"
+      },
+      "position": 3280,
+      "status": 301,
+      "length": 0,
+      "words": 1,
+      "lines": 1,
+      "content-type": "text/html; charset=utf-8",
+      "redirectlocation": "https://www.vulnhub.com/privacy/",
+      "scraper": {},
+      "duration": 357871111,
+      "resultfile": "",
+      "url": "https://www.vulnhub.com/privacy",
+      "host": "www.vulnhub.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "25391deb",
+        "FUZZ": "resources"
+      },
+      "position": 3563,
+      "status": 301,
+      "length": 0,
+      "words": 1,
+      "lines": 1,
+      "content-type": "text/html; charset=utf-8",
+      "redirectlocation": "https://www.vulnhub.com/resources/",
+      "scraper": {},
+      "duration": 345631368,
+      "resultfile": "",
+      "url": "https://www.vulnhub.com/resources",
+      "host": "www.vulnhub.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "25391e0a",
+        "FUZZ": "robots.txt"
+      },
+      "position": 3594,
+      "status": 200,
+      "length": 1248,
+      "words": 238,
+      "lines": 25,
+      "content-type": "text/plain; charset=utf-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 354499260,
+      "resultfile": "",
+      "url": "https://www.vulnhub.com/robots.txt",
+      "host": "www.vulnhub.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "25391e98",
+        "FUZZ": "server-status"
+      },
+      "position": 3736,
+      "status": 403,
+      "length": 785,
+      "words": 25,
+      "lines": 11,
+      "content-type": "text/html; charset=iso-8859-1",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 355419237,
+      "resultfile": "",
+      "url": "https://www.vulnhub.com/server-status",
+      "host": "www.vulnhub.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "25391ef5",
+        "FUZZ": "single"
+      },
+      "position": 3829,
+      "status": 301,
+      "length": 0,
+      "words": 1,
+      "lines": 1,
+      "content-type": "text/html; charset=utf-8",
+      "redirectlocation": "https://www.vulnhub.com/single/",
+      "scraper": {},
+      "duration": 337915307,
+      "resultfile": "",
+      "url": "https://www.vulnhub.com/single",
+      "host": "www.vulnhub.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "25391f89",
+        "FUZZ": "static"
+      },
+      "position": 3977,
+      "status": 301,
+      "length": 825,
+      "words": 25,
+      "lines": 11,
+      "content-type": "text/html; charset=iso-8859-1",
+      "redirectlocation": "https://www.vulnhub.com/static/",
+      "scraper": {},
+      "duration": 337067201,
+      "resultfile": "",
+      "url": "https://www.vulnhub.com/static",
+      "host": "www.vulnhub.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "253911059",
+        "FUZZ": "timeline"
+      },
+      "position": 4185,
+      "status": 301,
+      "length": 0,
+      "words": 1,
+      "lines": 1,
+      "content-type": "text/html; charset=utf-8",
+      "redirectlocation": "https://www.vulnhub.com/timeline/",
+      "scraper": {},
+      "duration": 402919327,
+      "resultfile": "",
+      "url": "https://www.vulnhub.com/timeline",
+      "host": "www.vulnhub.com"
+    }
+  ],
+  "config": {
+    "autocalibration": false,
+    "autocalibration_keyword": "FUZZ",
+    "autocalibration_perhost": false,
+    "autocalibration_strategies": [
+      "basic"
+    ],
+    "autocalibration_strings": [],
+    "colors": false,
+    "cmdline": "ffuf -u https://www.vulnhub.com/FUZZ -w /usr/share/seclists/Discovery/Web-Content/common.txt -o ffuf_cb208fe112c0411cb99746c48877a4de.json -of json -mc 200,204,301,302,307,401,403 -t 60 -timeout 2 -noninteractive -k -s",
+    "configfile": "",
+    "postdata": "",
+    "debuglog": "",
+    "delay": {
+      "value": "0.00"
+    },
+    "dirsearch_compatibility": false,
+    "encoders": [],
+    "extensions": [],
+    "fmode": "or",
+    "follow_redirects": false,
+    "headers": {},
+    "ignorebody": false,
+    "ignore_wordlist_comments": false,
+    "inputmode": "clusterbomb",
+    "cmd_inputnum": 100,
+    "inputproviders": [
+      {
+        "name": "wordlist",
+        "keyword": "FUZZ",
+        "value": "/usr/share/seclists/Discovery/Web-Content/common.txt",
+        "encoders": "",
+        "template": ""
+      }
+    ],
+    "inputshell": "",
+    "json": false,
+    "matchers": {
+      "IsCalibrated": false,
+      "Mutex": {},
+      "Matchers": {
+        "status": {
+          "value": "200,204,301,302,307,401,403"
+        }
+      },
+      "Filters": {},
+      "PerDomainFilters": {}
+    },
+    "mmode": "or",
+    "maxtime": 0,
+    "maxtime_job": 0,
+    "method": "GET",
+    "noninteractive": true,
+    "outputdirectory": "",
+    "outputfile": "ffuf_cb208fe112c0411cb99746c48877a4de.json",
+    "outputformat": "json",
+    "OutputSkipEmptyFile": false,
+    "proxyurl": "",
+    "quiet": true,
+    "rate": 0,
+    "raw": false,
+    "recursion": false,
+    "recursion_depth": 0,
+    "recursion_strategy": "default",
+    "replayproxyurl": "",
+    "requestfile": "",
+    "requestproto": "https",
+    "scraperfile": "",
+    "scrapers": "all",
+    "sni": "",
+    "stop_403": false,
+    "stop_all": false,
+    "stop_errors": false,
+    "threads": 60,
+    "timeout": 2,
+    "url": "https://www.vulnhub.com/FUZZ",
+    "verbose": false,
+    "wordlists": [
+      "/usr/share/seclists/Discovery/Web-Content/common.txt"
+    ],
+    "http2": false,
+    "client-cert": "",
+    "client-key": ""
+  }
+}

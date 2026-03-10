@@ -1,0 +1,539 @@
+{
+    "scan_info": {
+        "generated_at": "2026-02-19 02:49:06",
+        "total_findings": 26,
+        "severity_counts": {
+            "CRITICAL": 0,
+            "HIGH": 0,
+            "MEDIUM": 1,
+            "LOW": 0,
+            "INFO": 25
+        }
+    },
+    "findings": [
+        {
+            "tool": "whatweb",
+            "url": "http://testphp.vulnweb.com",
+            "finding_name": "Technology Detected: ActiveX[D27CDB6E-AE6D-11cf-96B8-444553540000]",
+            "severity": "INFO",
+            "risk_score": 1,
+            "category": "reconnaissance",
+            "description": "Detected technology: ActiveX[D27CDB6E-AE6D-11cf-96B8-444553540000]",
+            "timestamp": "2026-02-19 02:47:12",
+            "raw_output": "http://testphp.vulnweb.com [200 OK] ActiveX[D27CDB6E-AE6D-11cf-96B8-444553540000], Adobe-Flash, Country[UNITED STATES][US], Email[wvs@acunetix.com], HTTPServer[nginx/1.19.0], IP[44.228.249.3], Object[http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0][clsid:D27CDB6E-AE6D-11cf-96B8-444553540000], PHP[5.6.40-38+ubuntu20.04.1+deb.sury.org+1], Script[text/JavaScript], Title[Home of Acunetix Art], X-Powered-By[PHP/5.6.40-38+ubuntu20.04.1+deb.sury.org+1], nginx[1.19.0]"
+        },
+        {
+            "tool": "whatweb",
+            "url": "http://testphp.vulnweb.com",
+            "finding_name": "Technology Detected: Adobe-Flash",
+            "severity": "INFO",
+            "risk_score": 1,
+            "category": "reconnaissance",
+            "description": "Detected technology: Adobe-Flash",
+            "timestamp": "2026-02-19 02:47:12",
+            "raw_output": "http://testphp.vulnweb.com [200 OK] ActiveX[D27CDB6E-AE6D-11cf-96B8-444553540000], Adobe-Flash, Country[UNITED STATES][US], Email[wvs@acunetix.com], HTTPServer[nginx/1.19.0], IP[44.228.249.3], Object[http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0][clsid:D27CDB6E-AE6D-11cf-96B8-444553540000], PHP[5.6.40-38+ubuntu20.04.1+deb.sury.org+1], Script[text/JavaScript], Title[Home of Acunetix Art], X-Powered-By[PHP/5.6.40-38+ubuntu20.04.1+deb.sury.org+1], nginx[1.19.0]"
+        },
+        {
+            "tool": "whatweb",
+            "url": "http://testphp.vulnweb.com",
+            "finding_name": "Technology Detected: Country[UNITED STATES][US]",
+            "severity": "INFO",
+            "risk_score": 1,
+            "category": "reconnaissance",
+            "description": "Detected technology: Country[UNITED STATES][US]",
+            "timestamp": "2026-02-19 02:47:12",
+            "raw_output": "http://testphp.vulnweb.com [200 OK] ActiveX[D27CDB6E-AE6D-11cf-96B8-444553540000], Adobe-Flash, Country[UNITED STATES][US], Email[wvs@acunetix.com], HTTPServer[nginx/1.19.0], IP[44.228.249.3], Object[http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0][clsid:D27CDB6E-AE6D-11cf-96B8-444553540000], PHP[5.6.40-38+ubuntu20.04.1+deb.sury.org+1], Script[text/JavaScript], Title[Home of Acunetix Art], X-Powered-By[PHP/5.6.40-38+ubuntu20.04.1+deb.sury.org+1], nginx[1.19.0]"
+        },
+        {
+            "tool": "whatweb",
+            "url": "http://testphp.vulnweb.com",
+            "finding_name": "Technology Detected: Email[wvs@acunetix.com]",
+            "severity": "INFO",
+            "risk_score": 1,
+            "category": "reconnaissance",
+            "description": "Detected technology: Email[wvs@acunetix.com]",
+            "timestamp": "2026-02-19 02:47:12",
+            "raw_output": "http://testphp.vulnweb.com [200 OK] ActiveX[D27CDB6E-AE6D-11cf-96B8-444553540000], Adobe-Flash, Country[UNITED STATES][US], Email[wvs@acunetix.com], HTTPServer[nginx/1.19.0], IP[44.228.249.3], Object[http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0][clsid:D27CDB6E-AE6D-11cf-96B8-444553540000], PHP[5.6.40-38+ubuntu20.04.1+deb.sury.org+1], Script[text/JavaScript], Title[Home of Acunetix Art], X-Powered-By[PHP/5.6.40-38+ubuntu20.04.1+deb.sury.org+1], nginx[1.19.0]"
+        },
+        {
+            "tool": "whatweb",
+            "url": "http://testphp.vulnweb.com",
+            "finding_name": "Technology Detected: HTTPServer[nginx/1.19.0]",
+            "severity": "INFO",
+            "risk_score": 1,
+            "category": "reconnaissance",
+            "description": "Detected technology: HTTPServer[nginx/1.19.0]",
+            "timestamp": "2026-02-19 02:47:12",
+            "raw_output": "http://testphp.vulnweb.com [200 OK] ActiveX[D27CDB6E-AE6D-11cf-96B8-444553540000], Adobe-Flash, Country[UNITED STATES][US], Email[wvs@acunetix.com], HTTPServer[nginx/1.19.0], IP[44.228.249.3], Object[http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0][clsid:D27CDB6E-AE6D-11cf-96B8-444553540000], PHP[5.6.40-38+ubuntu20.04.1+deb.sury.org+1], Script[text/JavaScript], Title[Home of Acunetix Art], X-Powered-By[PHP/5.6.40-38+ubuntu20.04.1+deb.sury.org+1], nginx[1.19.0]"
+        },
+        {
+            "tool": "whatweb",
+            "url": "http://testphp.vulnweb.com",
+            "finding_name": "Technology Detected: IP[44.228.249.3]",
+            "severity": "INFO",
+            "risk_score": 1,
+            "category": "reconnaissance",
+            "description": "Detected technology: IP[44.228.249.3]",
+            "timestamp": "2026-02-19 02:47:12",
+            "raw_output": "http://testphp.vulnweb.com [200 OK] ActiveX[D27CDB6E-AE6D-11cf-96B8-444553540000], Adobe-Flash, Country[UNITED STATES][US], Email[wvs@acunetix.com], HTTPServer[nginx/1.19.0], IP[44.228.249.3], Object[http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0][clsid:D27CDB6E-AE6D-11cf-96B8-444553540000], PHP[5.6.40-38+ubuntu20.04.1+deb.sury.org+1], Script[text/JavaScript], Title[Home of Acunetix Art], X-Powered-By[PHP/5.6.40-38+ubuntu20.04.1+deb.sury.org+1], nginx[1.19.0]"
+        },
+        {
+            "tool": "whatweb",
+            "url": "http://testphp.vulnweb.com",
+            "finding_name": "Technology Detected: Object[http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0][clsid:D27CDB6E-AE6D-11cf-96B8-444553540000]",
+            "severity": "INFO",
+            "risk_score": 1,
+            "category": "reconnaissance",
+            "description": "Detected technology: Object[http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0][clsid:D27CDB6E-AE6D-11cf-96B8-444553540000]",
+            "timestamp": "2026-02-19 02:47:12",
+            "raw_output": "http://testphp.vulnweb.com [200 OK] ActiveX[D27CDB6E-AE6D-11cf-96B8-444553540000], Adobe-Flash, Country[UNITED STATES][US], Email[wvs@acunetix.com], HTTPServer[nginx/1.19.0], IP[44.228.249.3], Object[http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0][clsid:D27CDB6E-AE6D-11cf-96B8-444553540000], PHP[5.6.40-38+ubuntu20.04.1+deb.sury.org+1], Script[text/JavaScript], Title[Home of Acunetix Art], X-Powered-By[PHP/5.6.40-38+ubuntu20.04.1+deb.sury.org+1], nginx[1.19.0]"
+        },
+        {
+            "tool": "whatweb",
+            "url": "http://testphp.vulnweb.com",
+            "finding_name": "Technology Detected: PHP[5.6.40-38+ubuntu20.04.1+deb.sury.org+1]",
+            "severity": "INFO",
+            "risk_score": 1,
+            "category": "reconnaissance",
+            "description": "Detected technology: PHP[5.6.40-38+ubuntu20.04.1+deb.sury.org+1]",
+            "timestamp": "2026-02-19 02:47:12",
+            "raw_output": "http://testphp.vulnweb.com [200 OK] ActiveX[D27CDB6E-AE6D-11cf-96B8-444553540000], Adobe-Flash, Country[UNITED STATES][US], Email[wvs@acunetix.com], HTTPServer[nginx/1.19.0], IP[44.228.249.3], Object[http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0][clsid:D27CDB6E-AE6D-11cf-96B8-444553540000], PHP[5.6.40-38+ubuntu20.04.1+deb.sury.org+1], Script[text/JavaScript], Title[Home of Acunetix Art], X-Powered-By[PHP/5.6.40-38+ubuntu20.04.1+deb.sury.org+1], nginx[1.19.0]"
+        },
+        {
+            "tool": "whatweb",
+            "url": "http://testphp.vulnweb.com",
+            "finding_name": "Technology Detected: Script[text/JavaScript]",
+            "severity": "INFO",
+            "risk_score": 1,
+            "category": "reconnaissance",
+            "description": "Detected technology: Script[text/JavaScript]",
+            "timestamp": "2026-02-19 02:47:12",
+            "raw_output": "http://testphp.vulnweb.com [200 OK] ActiveX[D27CDB6E-AE6D-11cf-96B8-444553540000], Adobe-Flash, Country[UNITED STATES][US], Email[wvs@acunetix.com], HTTPServer[nginx/1.19.0], IP[44.228.249.3], Object[http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0][clsid:D27CDB6E-AE6D-11cf-96B8-444553540000], PHP[5.6.40-38+ubuntu20.04.1+deb.sury.org+1], Script[text/JavaScript], Title[Home of Acunetix Art], X-Powered-By[PHP/5.6.40-38+ubuntu20.04.1+deb.sury.org+1], nginx[1.19.0]"
+        },
+        {
+            "tool": "whatweb",
+            "url": "http://testphp.vulnweb.com",
+            "finding_name": "Technology Detected: Title[Home of Acunetix Art]",
+            "severity": "INFO",
+            "risk_score": 1,
+            "category": "reconnaissance",
+            "description": "Detected technology: Title[Home of Acunetix Art]",
+            "timestamp": "2026-02-19 02:47:12",
+            "raw_output": "http://testphp.vulnweb.com [200 OK] ActiveX[D27CDB6E-AE6D-11cf-96B8-444553540000], Adobe-Flash, Country[UNITED STATES][US], Email[wvs@acunetix.com], HTTPServer[nginx/1.19.0], IP[44.228.249.3], Object[http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0][clsid:D27CDB6E-AE6D-11cf-96B8-444553540000], PHP[5.6.40-38+ubuntu20.04.1+deb.sury.org+1], Script[text/JavaScript], Title[Home of Acunetix Art], X-Powered-By[PHP/5.6.40-38+ubuntu20.04.1+deb.sury.org+1], nginx[1.19.0]"
+        },
+        {
+            "tool": "whatweb",
+            "url": "http://testphp.vulnweb.com",
+            "finding_name": "Technology Detected: X-Powered-By[PHP/5.6.40-38+ubuntu20.04.1+deb.sury.org+1]",
+            "severity": "INFO",
+            "risk_score": 1,
+            "category": "reconnaissance",
+            "description": "Detected technology: X-Powered-By[PHP/5.6.40-38+ubuntu20.04.1+deb.sury.org+1]",
+            "timestamp": "2026-02-19 02:47:12",
+            "raw_output": "http://testphp.vulnweb.com [200 OK] ActiveX[D27CDB6E-AE6D-11cf-96B8-444553540000], Adobe-Flash, Country[UNITED STATES][US], Email[wvs@acunetix.com], HTTPServer[nginx/1.19.0], IP[44.228.249.3], Object[http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0][clsid:D27CDB6E-AE6D-11cf-96B8-444553540000], PHP[5.6.40-38+ubuntu20.04.1+deb.sury.org+1], Script[text/JavaScript], Title[Home of Acunetix Art], X-Powered-By[PHP/5.6.40-38+ubuntu20.04.1+deb.sury.org+1], nginx[1.19.0]"
+        },
+        {
+            "tool": "whatweb",
+            "url": "http://testphp.vulnweb.com",
+            "finding_name": "Technology Detected: nginx[1.19.0]",
+            "severity": "INFO",
+            "risk_score": 1,
+            "category": "reconnaissance",
+            "description": "Detected technology: nginx[1.19.0]",
+            "timestamp": "2026-02-19 02:47:12",
+            "raw_output": "http://testphp.vulnweb.com [200 OK] ActiveX[D27CDB6E-AE6D-11cf-96B8-444553540000], Adobe-Flash, Country[UNITED STATES][US], Email[wvs@acunetix.com], HTTPServer[nginx/1.19.0], IP[44.228.249.3], Object[http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0][clsid:D27CDB6E-AE6D-11cf-96B8-444553540000], PHP[5.6.40-38+ubuntu20.04.1+deb.sury.org+1], Script[text/JavaScript], Title[Home of Acunetix Art], X-Powered-By[PHP/5.6.40-38+ubuntu20.04.1+deb.sury.org+1], nginx[1.19.0]"
+        },
+        {
+            "tool": "ffuf",
+            "url": "http://testphp.vulnweb.com/CVS",
+            "finding_name": "Hidden Resource Discovered",
+            "severity": "INFO",
+            "risk_score": 1,
+            "category": "discovery",
+            "description": "Status: 301 | Size: 169",
+            "timestamp": "2026-02-19 02:47:54",
+            "raw_output": {
+                "input": {
+                    "FFUFHASH": "e4bffdd",
+                    "FUZZ": "CVS"
+                },
+                "position": 221,
+                "status": 301,
+                "length": 169,
+                "words": 5,
+                "lines": 8,
+                "content-type": "text/html",
+                "redirectlocation": "http://testphp.vulnweb.com/CVS/",
+                "scraper": {},
+                "duration": 287914839,
+                "resultfile": "",
+                "url": "http://testphp.vulnweb.com/CVS",
+                "host": "testphp.vulnweb.com"
+            }
+        },
+        {
+            "tool": "ffuf",
+            "url": "http://testphp.vulnweb.com/CVS/Root",
+            "finding_name": "Hidden Resource Discovered",
+            "severity": "INFO",
+            "risk_score": 1,
+            "category": "discovery",
+            "description": "Status: 200 | Size: 1",
+            "timestamp": "2026-02-19 02:47:54",
+            "raw_output": {
+                "input": {
+                    "FFUFHASH": "e4bffe0",
+                    "FUZZ": "CVS/Root"
+                },
+                "position": 224,
+                "status": 200,
+                "length": 1,
+                "words": 2,
+                "lines": 1,
+                "content-type": "application/octet-stream",
+                "redirectlocation": "",
+                "scraper": {},
+                "duration": 288334077,
+                "resultfile": "",
+                "url": "http://testphp.vulnweb.com/CVS/Root",
+                "host": "testphp.vulnweb.com"
+            }
+        },
+        {
+            "tool": "ffuf",
+            "url": "http://testphp.vulnweb.com/CVS/Entries",
+            "finding_name": "Hidden Resource Discovered",
+            "severity": "INFO",
+            "risk_score": 1,
+            "category": "discovery",
+            "description": "Status: 200 | Size: 1",
+            "timestamp": "2026-02-19 02:47:54",
+            "raw_output": {
+                "input": {
+                    "FFUFHASH": "e4bffde",
+                    "FUZZ": "CVS/Entries"
+                },
+                "position": 222,
+                "status": 200,
+                "length": 1,
+                "words": 2,
+                "lines": 1,
+                "content-type": "application/octet-stream",
+                "redirectlocation": "",
+                "scraper": {},
+                "duration": 289090869,
+                "resultfile": "",
+                "url": "http://testphp.vulnweb.com/CVS/Entries",
+                "host": "testphp.vulnweb.com"
+            }
+        },
+        {
+            "tool": "ffuf",
+            "url": "http://testphp.vulnweb.com/CVS/Repository",
+            "finding_name": "Hidden Resource Discovered",
+            "severity": "INFO",
+            "risk_score": 1,
+            "category": "discovery",
+            "description": "Status: 200 | Size: 8",
+            "timestamp": "2026-02-19 02:47:54",
+            "raw_output": {
+                "input": {
+                    "FFUFHASH": "e4bffdf",
+                    "FUZZ": "CVS/Repository"
+                },
+                "position": 223,
+                "status": 200,
+                "length": 8,
+                "words": 1,
+                "lines": 2,
+                "content-type": "application/octet-stream",
+                "redirectlocation": "",
+                "scraper": {},
+                "duration": 289549501,
+                "resultfile": "",
+                "url": "http://testphp.vulnweb.com/CVS/Repository",
+                "host": "testphp.vulnweb.com"
+            }
+        },
+        {
+            "tool": "ffuf",
+            "url": "http://testphp.vulnweb.com/admin",
+            "finding_name": "Hidden Resource Discovered",
+            "severity": "MEDIUM",
+            "risk_score": 5,
+            "category": "discovery",
+            "description": "Status: 301 | Size: 169",
+            "timestamp": "2026-02-19 02:47:54",
+            "raw_output": {
+                "input": {
+                    "FFUFHASH": "e4bff20f",
+                    "FUZZ": "admin"
+                },
+                "position": 527,
+                "status": 301,
+                "length": 169,
+                "words": 5,
+                "lines": 8,
+                "content-type": "text/html",
+                "redirectlocation": "http://testphp.vulnweb.com/admin/",
+                "scraper": {},
+                "duration": 293029141,
+                "resultfile": "",
+                "url": "http://testphp.vulnweb.com/admin",
+                "host": "testphp.vulnweb.com"
+            }
+        },
+        {
+            "tool": "ffuf",
+            "url": "http://testphp.vulnweb.com/cgi-bin/",
+            "finding_name": "Hidden Resource Discovered",
+            "severity": "INFO",
+            "risk_score": 1,
+            "category": "discovery",
+            "description": "Status: 403 | Size: 276",
+            "timestamp": "2026-02-19 02:47:54",
+            "raw_output": {
+                "input": {
+                    "FFUFHASH": "e4bff416",
+                    "FUZZ": "cgi-bin/"
+                },
+                "position": 1046,
+                "status": 403,
+                "length": 276,
+                "words": 20,
+                "lines": 10,
+                "content-type": "text/html; charset=iso-8859-1",
+                "redirectlocation": "",
+                "scraper": {},
+                "duration": 281471812,
+                "resultfile": "",
+                "url": "http://testphp.vulnweb.com/cgi-bin/",
+                "host": "testphp.vulnweb.com"
+            }
+        },
+        {
+            "tool": "ffuf",
+            "url": "http://testphp.vulnweb.com/cgi-bin",
+            "finding_name": "Hidden Resource Discovered",
+            "severity": "INFO",
+            "risk_score": 1,
+            "category": "discovery",
+            "description": "Status: 403 | Size: 276",
+            "timestamp": "2026-02-19 02:47:54",
+            "raw_output": {
+                "input": {
+                    "FFUFHASH": "e4bff415",
+                    "FUZZ": "cgi-bin"
+                },
+                "position": 1045,
+                "status": 403,
+                "length": 276,
+                "words": 20,
+                "lines": 10,
+                "content-type": "text/html; charset=iso-8859-1",
+                "redirectlocation": "",
+                "scraper": {},
+                "duration": 282864596,
+                "resultfile": "",
+                "url": "http://testphp.vulnweb.com/cgi-bin",
+                "host": "testphp.vulnweb.com"
+            }
+        },
+        {
+            "tool": "ffuf",
+            "url": "http://testphp.vulnweb.com/crossdomain.xml",
+            "finding_name": "Hidden Resource Discovered",
+            "severity": "INFO",
+            "risk_score": 1,
+            "category": "discovery",
+            "description": "Status: 200 | Size: 224",
+            "timestamp": "2026-02-19 02:47:54",
+            "raw_output": {
+                "input": {
+                    "FFUFHASH": "e4bff533",
+                    "FUZZ": "crossdomain.xml"
+                },
+                "position": 1331,
+                "status": 200,
+                "length": 224,
+                "words": 8,
+                "lines": 5,
+                "content-type": "text/xml",
+                "redirectlocation": "",
+                "scraper": {},
+                "duration": 296556179,
+                "resultfile": "",
+                "url": "http://testphp.vulnweb.com/crossdomain.xml",
+                "host": "testphp.vulnweb.com"
+            }
+        },
+        {
+            "tool": "ffuf",
+            "url": "http://testphp.vulnweb.com/favicon.ico",
+            "finding_name": "Hidden Resource Discovered",
+            "severity": "INFO",
+            "risk_score": 1,
+            "category": "discovery",
+            "description": "Status: 200 | Size: 894",
+            "timestamp": "2026-02-19 02:47:54",
+            "raw_output": {
+                "input": {
+                    "FFUFHASH": "e4bff6ec",
+                    "FUZZ": "favicon.ico"
+                },
+                "position": 1772,
+                "status": 200,
+                "length": 894,
+                "words": 2,
+                "lines": 4,
+                "content-type": "image/x-icon",
+                "redirectlocation": "",
+                "scraper": {},
+                "duration": 295716540,
+                "resultfile": "",
+                "url": "http://testphp.vulnweb.com/favicon.ico",
+                "host": "testphp.vulnweb.com"
+            }
+        },
+        {
+            "tool": "ffuf",
+            "url": "http://testphp.vulnweb.com/images",
+            "finding_name": "Hidden Resource Discovered",
+            "severity": "INFO",
+            "risk_score": 1,
+            "category": "discovery",
+            "description": "Status: 301 | Size: 169",
+            "timestamp": "2026-02-19 02:47:54",
+            "raw_output": {
+                "input": {
+                    "FFUFHASH": "e4bff886",
+                    "FUZZ": "images"
+                },
+                "position": 2182,
+                "status": 301,
+                "length": 169,
+                "words": 5,
+                "lines": 8,
+                "content-type": "text/html",
+                "redirectlocation": "http://testphp.vulnweb.com/images/",
+                "scraper": {},
+                "duration": 295436123,
+                "resultfile": "",
+                "url": "http://testphp.vulnweb.com/images",
+                "host": "testphp.vulnweb.com"
+            }
+        },
+        {
+            "tool": "ffuf",
+            "url": "http://testphp.vulnweb.com/index.php",
+            "finding_name": "Hidden Resource Discovered",
+            "severity": "INFO",
+            "risk_score": 1,
+            "category": "discovery",
+            "description": "Status: 200 | Size: 4958",
+            "timestamp": "2026-02-19 02:47:54",
+            "raw_output": {
+                "input": {
+                    "FFUFHASH": "e4bff8a2",
+                    "FUZZ": "index.php"
+                },
+                "position": 2210,
+                "status": 200,
+                "length": 4958,
+                "words": 514,
+                "lines": 110,
+                "content-type": "text/html; charset=UTF-8",
+                "redirectlocation": "",
+                "scraper": {},
+                "duration": 297916812,
+                "resultfile": "",
+                "url": "http://testphp.vulnweb.com/index.php",
+                "host": "testphp.vulnweb.com"
+            }
+        },
+        {
+            "tool": "ffuf",
+            "url": "http://testphp.vulnweb.com/pictures",
+            "finding_name": "Hidden Resource Discovered",
+            "severity": "INFO",
+            "risk_score": 1,
+            "category": "discovery",
+            "description": "Status: 301 | Size: 169",
+            "timestamp": "2026-02-19 02:47:54",
+            "raw_output": {
+                "input": {
+                    "FFUFHASH": "e4bffc46",
+                    "FUZZ": "pictures"
+                },
+                "position": 3142,
+                "status": 301,
+                "length": 169,
+                "words": 5,
+                "lines": 8,
+                "content-type": "text/html",
+                "redirectlocation": "http://testphp.vulnweb.com/pictures/",
+                "scraper": {},
+                "duration": 304449468,
+                "resultfile": "",
+                "url": "http://testphp.vulnweb.com/pictures",
+                "host": "testphp.vulnweb.com"
+            }
+        },
+        {
+            "tool": "ffuf",
+            "url": "http://testphp.vulnweb.com/secured",
+            "finding_name": "Hidden Resource Discovered",
+            "severity": "INFO",
+            "risk_score": 1,
+            "category": "discovery",
+            "description": "Status: 301 | Size: 169",
+            "timestamp": "2026-02-19 02:47:54",
+            "raw_output": {
+                "input": {
+                    "FFUFHASH": "e4bffe71",
+                    "FUZZ": "secured"
+                },
+                "position": 3697,
+                "status": 301,
+                "length": 169,
+                "words": 5,
+                "lines": 8,
+                "content-type": "text/html",
+                "redirectlocation": "http://testphp.vulnweb.com/secured/",
+                "scraper": {},
+                "duration": 286195646,
+                "resultfile": "",
+                "url": "http://testphp.vulnweb.com/secured",
+                "host": "testphp.vulnweb.com"
+            }
+        },
+        {
+            "tool": "ffuf",
+            "url": "http://testphp.vulnweb.com/vendor",
+            "finding_name": "Hidden Resource Discovered",
+            "severity": "INFO",
+            "risk_score": 1,
+            "category": "discovery",
+            "description": "Status: 301 | Size: 169",
+            "timestamp": "2026-02-19 02:47:54",
+            "raw_output": {
+                "input": {
+                    "FFUFHASH": "e4bff1138",
+                    "FUZZ": "vendor"
+                },
+                "position": 4408,
+                "status": 301,
+                "length": 169,
+                "words": 5,
+                "lines": 8,
+                "content-type": "text/html",
+                "redirectlocation": "http://testphp.vulnweb.com/vendor/",
+                "scraper": {},
+                "duration": 316607391,
+                "resultfile": "",
+                "url": "http://testphp.vulnweb.com/vendor",
+                "host": "testphp.vulnweb.com"
+            }
+        }
+    ]
+}

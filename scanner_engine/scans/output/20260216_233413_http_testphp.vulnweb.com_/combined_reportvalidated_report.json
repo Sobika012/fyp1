@@ -1,0 +1,445 @@
+{
+  "summary": {
+    "total_findings": 29,
+    "confirmed": 8,
+    "false_positive": 7,
+    "needs_manual_review": 14
+  },
+  "validated_findings": [
+    {
+      "vuln_class": "Information Disclosure",
+      "original_tool": "whatweb",
+      "severity": "info",
+      "validation_status": "confirmed",
+      "validation_reason": "Information disclosure via HTTP headers: server, x-powered-by.",
+      "confidence_score": 0.75,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "whatweb"
+        ]
+      },
+      "final_severity": "medium"
+    },
+    {
+      "vuln_class": "Other",
+      "original_tool": "ffuf",
+      "severity": "info",
+      "validation_status": "needs_manual_review",
+      "validation_reason": "Finding could not be confidently classified into a supported vulnerability class.",
+      "confidence_score": 0.4,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "ffuf"
+        ]
+      },
+      "final_severity": "low"
+    },
+    {
+      "vuln_class": "Other",
+      "original_tool": "ffuf",
+      "severity": "info",
+      "validation_status": "needs_manual_review",
+      "validation_reason": "Finding could not be confidently classified into a supported vulnerability class.",
+      "confidence_score": 0.4,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "ffuf"
+        ]
+      },
+      "final_severity": "low"
+    },
+    {
+      "vuln_class": "Other",
+      "original_tool": "ffuf",
+      "severity": "info",
+      "validation_status": "needs_manual_review",
+      "validation_reason": "Finding could not be confidently classified into a supported vulnerability class.",
+      "confidence_score": 0.4,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "ffuf"
+        ]
+      },
+      "final_severity": "low"
+    },
+    {
+      "vuln_class": "Other",
+      "original_tool": "ffuf",
+      "severity": "info",
+      "validation_status": "needs_manual_review",
+      "validation_reason": "Finding could not be confidently classified into a supported vulnerability class.",
+      "confidence_score": 0.4,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "ffuf"
+        ]
+      },
+      "final_severity": "low"
+    },
+    {
+      "vuln_class": "Other",
+      "original_tool": "ffuf",
+      "severity": "medium",
+      "validation_status": "needs_manual_review",
+      "validation_reason": "Finding could not be confidently classified into a supported vulnerability class.",
+      "confidence_score": 0.4,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "ffuf"
+        ]
+      },
+      "final_severity": "low"
+    },
+    {
+      "vuln_class": "Other",
+      "original_tool": "ffuf",
+      "severity": "info",
+      "validation_status": "needs_manual_review",
+      "validation_reason": "Finding could not be confidently classified into a supported vulnerability class.",
+      "confidence_score": 0.4,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "ffuf"
+        ]
+      },
+      "final_severity": "low"
+    },
+    {
+      "vuln_class": "Other",
+      "original_tool": "ffuf",
+      "severity": "info",
+      "validation_status": "needs_manual_review",
+      "validation_reason": "Finding could not be confidently classified into a supported vulnerability class.",
+      "confidence_score": 0.4,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "ffuf"
+        ]
+      },
+      "final_severity": "low"
+    },
+    {
+      "vuln_class": "Other",
+      "original_tool": "ffuf",
+      "severity": "info",
+      "validation_status": "needs_manual_review",
+      "validation_reason": "Finding could not be confidently classified into a supported vulnerability class.",
+      "confidence_score": 0.4,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "ffuf"
+        ]
+      },
+      "final_severity": "low"
+    },
+    {
+      "vuln_class": "Other",
+      "original_tool": "ffuf",
+      "severity": "info",
+      "validation_status": "needs_manual_review",
+      "validation_reason": "Finding could not be confidently classified into a supported vulnerability class.",
+      "confidence_score": 0.4,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "ffuf"
+        ]
+      },
+      "final_severity": "low"
+    },
+    {
+      "vuln_class": "Other",
+      "original_tool": "ffuf",
+      "severity": "info",
+      "validation_status": "needs_manual_review",
+      "validation_reason": "Finding could not be confidently classified into a supported vulnerability class.",
+      "confidence_score": 0.4,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "ffuf"
+        ]
+      },
+      "final_severity": "low"
+    },
+    {
+      "vuln_class": "Other",
+      "original_tool": "ffuf",
+      "severity": "info",
+      "validation_status": "needs_manual_review",
+      "validation_reason": "Finding could not be confidently classified into a supported vulnerability class.",
+      "confidence_score": 0.4,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "ffuf"
+        ]
+      },
+      "final_severity": "low"
+    },
+    {
+      "vuln_class": "Other",
+      "original_tool": "ffuf",
+      "severity": "info",
+      "validation_status": "needs_manual_review",
+      "validation_reason": "Finding could not be confidently classified into a supported vulnerability class.",
+      "confidence_score": 0.4,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "ffuf"
+        ]
+      },
+      "final_severity": "low"
+    },
+    {
+      "vuln_class": "Other",
+      "original_tool": "ffuf",
+      "severity": "info",
+      "validation_status": "needs_manual_review",
+      "validation_reason": "Finding could not be confidently classified into a supported vulnerability class.",
+      "confidence_score": 0.4,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "ffuf"
+        ]
+      },
+      "final_severity": "low"
+    },
+    {
+      "vuln_class": "Other",
+      "original_tool": "ffuf",
+      "severity": "info",
+      "validation_status": "needs_manual_review",
+      "validation_reason": "Finding could not be confidently classified into a supported vulnerability class.",
+      "confidence_score": 0.4,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "ffuf"
+        ]
+      },
+      "final_severity": "low"
+    },
+    {
+      "vuln_class": "Injection (SQLi, Command Injection)",
+      "original_tool": "nuclei",
+      "severity": "info",
+      "validation_status": "false_positive",
+      "validation_reason": "URL has no query parameters; injection verification requires a parameterized endpoint. (Auto-resolved: low confidence)",
+      "confidence_score": 0.35,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "nuclei"
+        ]
+      },
+      "final_severity": "low"
+    },
+    {
+      "vuln_class": "Exposure / Enumeration Issues",
+      "original_tool": "nuclei",
+      "severity": "info",
+      "validation_status": "confirmed",
+      "validation_reason": "Resource is reachable (HTTP 200) and returns content.",
+      "confidence_score": 0.75,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "nuclei"
+        ]
+      },
+      "final_severity": "medium"
+    },
+    {
+      "vuln_class": "Information Disclosure",
+      "original_tool": "nuclei",
+      "severity": "info",
+      "validation_status": "confirmed",
+      "validation_reason": "Information disclosure via HTTP headers: server.",
+      "confidence_score": 0.75,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "nuclei"
+        ]
+      },
+      "final_severity": "medium"
+    },
+    {
+      "vuln_class": "Injection (SQLi, Command Injection)",
+      "original_tool": "nuclei",
+      "severity": "info",
+      "validation_status": "false_positive",
+      "validation_reason": "URL has no query parameters; injection verification requires a parameterized endpoint. (Auto-resolved: low confidence)",
+      "confidence_score": 0.35,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "nuclei"
+        ]
+      },
+      "final_severity": "low"
+    },
+    {
+      "vuln_class": "Injection (SQLi, Command Injection)",
+      "original_tool": "nuclei",
+      "severity": "info",
+      "validation_status": "false_positive",
+      "validation_reason": "URL has no query parameters; injection verification requires a parameterized endpoint. (Auto-resolved: low confidence)",
+      "confidence_score": 0.35,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "nuclei"
+        ]
+      },
+      "final_severity": "low"
+    },
+    {
+      "vuln_class": "Injection (SQLi, Command Injection)",
+      "original_tool": "nuclei",
+      "severity": "info",
+      "validation_status": "false_positive",
+      "validation_reason": "URL has no query parameters; injection verification requires a parameterized endpoint. (Auto-resolved: low confidence)",
+      "confidence_score": 0.35,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "nuclei"
+        ]
+      },
+      "final_severity": "low"
+    },
+    {
+      "vuln_class": "Injection (SQLi, Command Injection)",
+      "original_tool": "nuclei",
+      "severity": "info",
+      "validation_status": "false_positive",
+      "validation_reason": "URL has no query parameters; injection verification requires a parameterized endpoint. (Auto-resolved: low confidence)",
+      "confidence_score": 0.35,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "nuclei"
+        ]
+      },
+      "final_severity": "low"
+    },
+    {
+      "vuln_class": "Injection (SQLi, Command Injection)",
+      "original_tool": "nuclei",
+      "severity": "info",
+      "validation_status": "false_positive",
+      "validation_reason": "URL has no query parameters; injection verification requires a parameterized endpoint. (Auto-resolved: low confidence)",
+      "confidence_score": 0.35,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "nuclei"
+        ]
+      },
+      "final_severity": "low"
+    },
+    {
+      "vuln_class": "Injection (SQLi, Command Injection)",
+      "original_tool": "nuclei",
+      "severity": "info",
+      "validation_status": "false_positive",
+      "validation_reason": "URL has no query parameters; injection verification requires a parameterized endpoint. (Auto-resolved: low confidence)",
+      "confidence_score": 0.35,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "nuclei"
+        ]
+      },
+      "final_severity": "low"
+    },
+    {
+      "vuln_class": "Information Disclosure",
+      "original_tool": "nuclei",
+      "severity": "info",
+      "validation_status": "confirmed",
+      "validation_reason": "Information disclosure via HTTP headers: server, x-powered-by.",
+      "confidence_score": 0.75,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "nuclei"
+        ]
+      },
+      "final_severity": "medium"
+    },
+    {
+      "vuln_class": "TLS / SSL Issues",
+      "original_tool": "nuclei",
+      "severity": "info",
+      "validation_status": "confirmed",
+      "validation_reason": "TLS handshake failed (connection or certificate validation failed).",
+      "confidence_score": 0.85,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "nuclei"
+        ]
+      },
+      "final_severity": "high"
+    },
+    {
+      "vuln_class": "Injection (SQLi, Command Injection)",
+      "original_tool": "sqlmap",
+      "severity": "high",
+      "validation_status": "confirmed",
+      "validation_reason": "Response shows database error patterns after a minimal quote perturbation.",
+      "confidence_score": 0.85,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "sqlmap"
+        ]
+      },
+      "final_severity": "high"
+    },
+    {
+      "vuln_class": "Injection (SQLi, Command Injection)",
+      "original_tool": "sqlmap",
+      "severity": "high",
+      "validation_status": "confirmed",
+      "validation_reason": "Response shows database error patterns after a minimal quote perturbation.",
+      "confidence_score": 0.85,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "sqlmap"
+        ]
+      },
+      "final_severity": "high"
+    },
+    {
+      "vuln_class": "Injection (SQLi, Command Injection)",
+      "original_tool": "sqlmap",
+      "severity": "high",
+      "validation_status": "confirmed",
+      "validation_reason": "Response shows database error patterns after a minimal quote perturbation.",
+      "confidence_score": 0.85,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "sqlmap"
+        ]
+      },
+      "final_severity": "high"
+    }
+  ]
+}

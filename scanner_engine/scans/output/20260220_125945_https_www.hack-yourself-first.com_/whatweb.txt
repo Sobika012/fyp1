@@ -1,0 +1,1 @@
+https://www.hack-yourself-first.com/ [403 Forbidden] Country[UNITED STATES][US], HTML5, HTTPServer[cloudflare], IP[104.21.89.41], Script, Title[Attention Required! | Cloudflare], UncommonHeaders[referrer-policy,report-to,nel,cf-ray,alt-svc], X-Frame-Options[SAMEORIGIN], X-UA-Compatible[IE=Edge]

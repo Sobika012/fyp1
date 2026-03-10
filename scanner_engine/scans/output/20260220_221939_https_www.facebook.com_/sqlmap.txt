@@ -1,0 +1,136 @@
+=== SQLMap Output: GET https://www.facebook.com/privacy/center?entry_point=facebook_page_footer (unknown) ===
+___
+       __H__
+ ___ ___["]_____ ___ ___  {1.9.11#stable}
+|_ -| . [(]     | .'| . |
+|___|_  ["]_|_|_|__,|  _|
+      |_|V...       |_|   https://sqlmap.org
+
+[!] legal disclaimer: Usage of sqlmap for attacking targets without prior mutual consent is illegal. It is the end user's responsibility to obey all applicable local, state and federal laws. Developers assume no liability and are not responsible for any misuse or damage caused by this program
+
+[*] starting @ 22:23:51 /2026-02-20/
+
+[22:23:51] [INFO] fetched random HTTP User-Agent header value 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36' from file '/usr/share/sqlmap/data/txt/user-agents.txt'
+[22:23:51] [INFO] testing connection to the target URL
+[22:23:52] [WARNING] the web server responded with an HTTP error code (400) which could interfere with the results of the tests
+[22:23:52] [INFO] checking if the target is protected by some kind of WAF/IPS
+[22:23:52] [INFO] testing if the target URL content is stable
+[22:23:52] [WARNING] target URL content is not stable (i.e. content differs). sqlmap will base the page comparison on a sequence matcher. If no dynamic nor injectable parameters are detected, or in case of junk results, refer to user's manual paragraph 'Page comparison'
+how do you want to proceed? [(C)ontinue/(s)tring/(r)egex/(q)uit] C
+[22:23:52] [INFO] testing if GET parameter 'entry_point' is dynamic
+[22:23:53] [WARNING] GET parameter 'entry_point' does not appear to be dynamic
+[22:23:53] [WARNING] heuristic (basic) test shows that GET parameter 'entry_point' might not be injectable
+[22:23:53] [INFO] testing for SQL injection on GET parameter 'entry_point'
+[22:23:53] [INFO] testing 'AND boolean-based blind - WHERE or HAVING clause'
+[22:24:36] [INFO] testing 'AND boolean-based blind - WHERE or HAVING clause (subquery - comment)'
+[22:24:46] [INFO] testing 'AND boolean-based blind - WHERE or HAVING clause (comment)'
+[22:24:55] [INFO] testing 'MySQL RLIKE boolean-based blind - WHERE, HAVING, ORDER BY or GROUP BY clause'
+[22:25:10] [INFO] testing 'PostgreSQL AND boolean-based blind - WHERE or HAVING clause (CAST)'
+[22:25:25] [INFO] testing 'Oracle AND boolean-based blind - WHERE or HAVING clause (CTXSYS.DRITHSX.SN)'
+[22:25:37] [INFO] testing 'SQLite AND boolean-based blind - WHERE, HAVING, GROUP BY or HAVING clause (JSON)'
+[22:25:50] [INFO] testing 'Boolean-based blind - Parameter replace (original value)'
+
+=== SQLMap Output: GET https://www.facebook.com/reg?entry_point=login&next=https%3A%2F%2Fwww.facebook.com%2Fads%2Fcreate%2F%3Fnav_source%3Dunknown%26campaign_id%3D402047449186%26placement%3Dpflo%26extra_1%3Dnot-admgr-user (unknown) ===
+___
+       __H__
+ ___ ___[)]_____ ___ ___  {1.9.11#stable}
+|_ -| . [)]     | .'| . |
+|___|_  [,]_|_|_|__,|  _|
+      |_|V...       |_|   https://sqlmap.org
+
+[!] legal disclaimer: Usage of sqlmap for attacking targets without prior mutual consent is illegal. It is the end user's responsibility to obey all applicable local, state and federal laws. Developers assume no liability and are not responsible for any misuse or damage caused by this program
+
+[*] starting @ 22:25:50 /2026-02-20/
+
+[22:25:50] [INFO] fetched random HTTP User-Agent header value 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0' from file '/usr/share/sqlmap/data/txt/user-agents.txt'
+[22:25:51] [INFO] flushing session file
+[22:25:51] [INFO] testing connection to the target URL
+[22:25:51] [WARNING] the web server responded with an HTTP error code (400) which could interfere with the results of the tests
+[22:25:51] [INFO] checking if the target is protected by some kind of WAF/IPS
+[22:25:51] [INFO] testing if the target URL content is stable
+[22:25:52] [WARNING] target URL content is not stable (i.e. content differs). sqlmap will base the page comparison on a sequence matcher. If no dynamic nor injectable parameters are detected, or in case of junk results, refer to user's manual paragraph 'Page comparison'
+how do you want to proceed? [(C)ontinue/(s)tring/(r)egex/(q)uit] C
+[22:25:52] [INFO] testing if GET parameter 'entry_point' is dynamic
+[22:25:52] [WARNING] GET parameter 'entry_point' does not appear to be dynamic
+[22:25:52] [WARNING] heuristic (basic) test shows that GET parameter 'entry_point' might not be injectable
+[22:25:53] [INFO] testing for SQL injection on GET parameter 'entry_point'
+[22:25:53] [INFO] testing 'AND boolean-based blind - WHERE or HAVING clause'
+[22:26:04] [INFO] testing 'AND boolean-based blind - WHERE or HAVING clause (subquery - comment)'
+[22:26:13] [INFO] testing 'AND boolean-based blind - WHERE or HAVING clause (comment)'
+[22:26:20] [INFO] testing 'MySQL RLIKE boolean-based blind - WHERE, HAVING, ORDER BY or GROUP BY clause'
+[22:26:32] [INFO] testing 'PostgreSQL AND boolean-based blind - WHERE or HAVING clause (CAST)'
+[22:26:45] [INFO] testing 'Oracle AND boolean-based blind - WHERE or HAVING clause (CTXSYS.DRITHSX.SN)'
+[22:26:59] [INFO] testing 'SQLite AND boolean-based blind - WHERE, HAVING, GROUP BY or HAVING clause (JSON)'
+[22:27:10] [INFO] testing 'Boolean-based blind - Parameter replace (original value)'
+[22:27:11] [INFO] testing 'Boolean-based blind - Parameter replace (DUAL)'
+[22:27:12] [INFO] testing 'Boolean-based blind - Parameter replace (CASE)'
+[22:27:14] [INFO] testing 'MySQL >= 5.0 boolean-based blind - ORDER BY, GROUP BY clause'
+[22:27:15] [INFO] testing 'PostgreSQL boolean-based blind - ORDER BY, GROUP BY clause'
+[22:27:16] [INFO] testing 'MySQL >= 5.0 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (FLOOR)'
+[22:27:20] [INFO] testing 'MySQL >= 5.1 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (EXTRACTVALUE)'
+[22:27:23] [INFO] testing 'PostgreSQL AND error-based - WHERE or HAVING clause'
+[22:27:28] [INFO] testing 'Microsoft SQL Server/Sybase AND error-based - WHERE or HAVING clause (IN)'
+[22:27:31] [INFO] testing 'Microsoft SQL Server/Sybase AND error-based - WHERE or HAVING clause (CONVERT)'
+[22:27:35] [INFO] testing 'Microsoft SQL Server/Sybase AND error-based - WHERE or HAVING clause (CONCAT)'
+[22:27:39] [INFO] testing 'Oracle AND error-based - WHERE or HAVING clause (XMLType)'
+[22:27:43] [INFO] testing 'Oracle AND error-based - WHERE or HAVING clause (UTL_INADDR.GET_HOST_ADDRESS)'
+[22:27:46] [INFO] testing 'MySQL >= 5.1 error-based - PROCEDURE ANALYSE (EXTRACTVALUE)'
+[22:27:50] [INFO] testing 'MySQL >= 5.0 error-based - Parameter replace (FLOOR)'
+
+=== SQLMap Output: GET https://www.facebook.com/r.php?locale=en_US (unknown) ===
+___
+       __H__
+ ___ ___[']_____ ___ ___  {1.9.11#stable}
+|_ -| . [)]     | .'| . |
+|___|_  [(]_|_|_|__,|  _|
+      |_|V...       |_|   https://sqlmap.org
+
+[!] legal disclaimer: Usage of sqlmap for attacking targets without prior mutual consent is illegal. It is the end user's responsibility to obey all applicable local, state and federal laws. Developers assume no liability and are not responsible for any misuse or damage caused by this program
+
+[*] starting @ 22:27:50 /2026-02-20/
+
+[22:27:50] [INFO] fetched random HTTP User-Agent header value 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0' from file '/usr/share/sqlmap/data/txt/user-agents.txt'
+[22:27:50] [INFO] flushing session file
+[22:27:51] [INFO] testing connection to the target URL
+[22:27:51] [WARNING] the web server responded with an HTTP error code (400) which could interfere with the results of the tests
+[22:27:51] [INFO] checking if the target is protected by some kind of WAF/IPS
+[22:27:51] [INFO] testing if the target URL content is stable
+[22:27:52] [WARNING] target URL content is not stable (i.e. content differs). sqlmap will base the page comparison on a sequence matcher. If no dynamic nor injectable parameters are detected, or in case of junk results, refer to user's manual paragraph 'Page comparison'
+how do you want to proceed? [(C)ontinue/(s)tring/(r)egex/(q)uit] C
+[22:27:52] [INFO] testing if GET parameter 'locale' is dynamic
+[22:27:52] [WARNING] GET parameter 'locale' does not appear to be dynamic
+[22:27:52] [WARNING] heuristic (basic) test shows that GET parameter 'locale' might not be injectable
+[22:27:53] [INFO] testing for SQL injection on GET parameter 'locale'
+[22:27:53] [INFO] testing 'AND boolean-based blind - WHERE or HAVING clause'
+[22:28:04] [INFO] testing 'AND boolean-based blind - WHERE or HAVING clause (subquery - comment)'
+[22:28:13] [INFO] testing 'AND boolean-based blind - WHERE or HAVING clause (comment)'
+[22:28:20] [INFO] testing 'MySQL RLIKE boolean-based blind - WHERE, HAVING, ORDER BY or GROUP BY clause'
+[22:28:32] [INFO] testing 'PostgreSQL AND boolean-based blind - WHERE or HAVING clause (CAST)'
+[22:28:44] [INFO] testing 'Oracle AND boolean-based blind - WHERE or HAVING clause (CTXSYS.DRITHSX.SN)'
+[22:28:56] [INFO] testing 'SQLite AND boolean-based blind - WHERE, HAVING, GROUP BY or HAVING clause (JSON)'
+[22:29:09] [INFO] testing 'Boolean-based blind - Parameter replace (original value)'
+[22:29:10] [INFO] testing 'Boolean-based blind - Parameter replace (DUAL)'
+[22:29:11] [INFO] testing 'Boolean-based blind - Parameter replace (CASE)'
+[22:29:12] [INFO] testing 'MySQL >= 5.0 boolean-based blind - ORDER BY, GROUP BY clause'
+[22:29:13] [INFO] testing 'PostgreSQL boolean-based blind - ORDER BY, GROUP BY clause'
+[22:29:14] [INFO] testing 'MySQL >= 5.0 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (FLOOR)'
+[22:29:18] [INFO] testing 'MySQL >= 5.1 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (EXTRACTVALUE)'
+[22:29:22] [INFO] testing 'PostgreSQL AND error-based - WHERE or HAVING clause'
+[22:29:26] [INFO] testing 'Microsoft SQL Server/Sybase AND error-based - WHERE or HAVING clause (IN)'
+[22:29:30] [INFO] testing 'Microsoft SQL Server/Sybase AND error-based - WHERE or HAVING clause (CONVERT)'
+[22:29:34] [INFO] testing 'Microsoft SQL Server/Sybase AND error-based - WHERE or HAVING clause (CONCAT)'
+
+=== SQLMap Output: GET https://www.facebook.com/help/297947214257999?helpref=uf_share (unknown) ===
+___
+       __H__
+ ___ ___[,]_____ ___ ___  {1.9.11#stable}
+|_ -| . [,]     | .'| . |
+|___|_  [)]_|_|_|__,|  _|
+      |_|V...       |_|   https://sqlmap.org
+
+[!] legal disclaimer: Usage of sqlmap for attacking targets without prior mutual consent is illegal. It is the end user's responsibility to obey all applicable local, state and federal laws. Developers assume no liability and are not responsible for any misuse or damage caused by this program
+
+[*] starting @ 22:29:38 /2026-02-20/
+
+[22:29:38] [INFO] fetched random HTTP User-Agent header value 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.0 Safari/605.1.15' from file '/usr/share/sqlmap/data/txt/user-agents.txt'
+

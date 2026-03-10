@@ -1,5 +1,30 @@
-scans/output/
+# Ignore everything by default
+*
+
+# Allow only these project parts
+!scanner_engine/
+!scanner_engine/**
+!validation/
+!validation/**
+!evaluation/
+!evaluation/**
+!prioritize_findings.py
+!run_pipeline.py
+!api_server.py
+!.gitignore
+
+# Ignore cache/logs even inside allowed folders
 __pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+.venv/
 venv/
+env/
 .env
-*.sqlite3
+.env.*
+*.env
+node_modules/
+.DS_Store
+Thumbs.db

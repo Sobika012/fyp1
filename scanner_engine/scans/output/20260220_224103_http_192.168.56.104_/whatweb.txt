@@ -1,0 +1,1 @@
+http://192.168.56.104/ [200 OK] Apache[2.4.41], Country[RESERVED][ZZ], HTML5, HTTPServer[Ubuntu Linux][Apache/2.4.41 (Ubuntu)], IP[192.168.56.104], Script, Title[VulnSite Lab Hub], maybe Vulnerable-To-XSS[["", "alert(1)"] ]

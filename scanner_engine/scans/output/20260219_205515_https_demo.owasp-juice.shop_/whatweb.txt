@@ -1,0 +1,1 @@
+https://demo.owasp-juice.shop/ [200 OK] Country[GERMANY][DE], HTML5, HTTPServer[Heroku], IP[81.169.145.156], JQuery[2.2.4], Script[module], Title[OWASP Juice Shop], UncommonHeaders[access-control-allow-origin,feature-policy,nel,report-to,reporting-endpoints,x-content-type-options,x-recruiting], Via-Proxy[1.1 heroku-router], X-Frame-Options[SAMEORIGIN]

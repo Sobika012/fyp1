@@ -1,0 +1,89 @@
+=== SQLMap Output: GET https://www.vulnhub.com/?page=12 (get) ===
+___
+       __H__
+ ___ ___["]_____ ___ ___  {1.9.11#stable}
+|_ -| . [']     | .'| . |
+|___|_  [,]_|_|_|__,|  _|
+      |_|V...       |_|   https://sqlmap.org
+
+[!] legal disclaimer: Usage of sqlmap for attacking targets without prior mutual consent is illegal. It is the end user's responsibility to obey all applicable local, state and federal laws. Developers assume no liability and are not responsible for any misuse or damage caused by this program
+
+[*] starting @ 20:20:12 /2026-02-19/
+
+[20:20:12] [INFO] fetched random HTTP User-Agent header value 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:109.0) Gecko/20100101 Firefox/115.0' from file '/usr/share/sqlmap/data/txt/user-agents.txt'
+[20:20:12] [INFO] testing connection to the target URL
+[20:20:13] [INFO] checking if the target is protected by some kind of WAF/IPS
+[20:20:14] [WARNING] reflective value(s) found and filtering out
+[20:20:14] [INFO] testing if the target URL content is stable
+[20:20:15] [INFO] target URL content is stable
+[20:20:15] [INFO] testing if GET parameter 'page' is dynamic
+[20:20:15] [INFO] GET parameter 'page' appears to be dynamic
+[20:20:17] [WARNING] heuristic (basic) test shows that GET parameter 'page' might not be injectable
+[20:20:17] [INFO] testing for SQL injection on GET parameter 'page'
+[20:20:17] [INFO] testing 'AND boolean-based blind - WHERE or HAVING clause'
+[20:20:21] [INFO] testing 'Boolean-based blind - Parameter replace (original value)'
+[20:20:22] [INFO] testing 'MySQL >= 5.1 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (EXTRACTVALUE)'
+[20:20:24] [INFO] testing 'PostgreSQL AND error-based - WHERE or HAVING clause'
+[20:20:26] [INFO] testing 'Microsoft SQL Server/Sybase AND error-based - WHERE or HAVING clause (IN)'
+[20:20:28] [INFO] testing 'Oracle AND error-based - WHERE or HAVING clause (XMLType)'
+[20:20:30] [INFO] testing 'Generic inline queries'
+[20:20:30] [INFO] testing 'PostgreSQL > 8.1 stacked queries (comment)'
+[20:20:31] [INFO] testing 'Microsoft SQL Server/Sybase stacked queries (comment)'
+[20:20:33] [INFO] testing 'Oracle stacked queries (DBMS_PIPE.RECEIVE_MESSAGE - comment)'
+[20:20:35] [INFO] testing 'MySQL >= 5.0.12 AND time-based blind (query SLEEP)'
+[20:20:37] [INFO] testing 'PostgreSQL > 8.1 AND time-based blind'
+[20:20:38] [INFO] testing 'Microsoft SQL Server/Sybase time-based blind (IF)'
+[20:20:40] [INFO] testing 'Oracle AND time-based blind'
+it is recommended to perform only basic UNION tests if there is not at least one other (potential) technique found. Do you want to reduce the number of requests? [Y/n] Y
+[20:20:42] [INFO] testing 'Generic UNION query (NULL) - 1 to 10 columns'
+[20:20:44] [WARNING] GET parameter 'page' does not seem to be injectable
+[20:20:44] [CRITICAL] all tested parameters do not appear to be injectable. Try to increase values for '--level'/'--risk' options if you wish to perform more tests. If you suspect that there is some kind of protection mechanism involved (e.g. WAF) maybe you could try to use option '--tamper' (e.g. '--tamper=space2comment')
+[20:20:44] [WARNING] HTTP error codes detected during run:
+500 (Internal Server Error) - 74 times
+
+[*] ending @ 20:20:44 /2026-02-19/
+
+=== SQLMap Output: GET https://www.vulnhub.com/?q=1 (form-get) ===
+___
+       __H__
+ ___ ___[,]_____ ___ ___  {1.9.11#stable}
+|_ -| . [']     | .'| . |
+|___|_  [']_|_|_|__,|  _|
+      |_|V...       |_|   https://sqlmap.org
+
+[!] legal disclaimer: Usage of sqlmap for attacking targets without prior mutual consent is illegal. It is the end user's responsibility to obey all applicable local, state and federal laws. Developers assume no liability and are not responsible for any misuse or damage caused by this program
+
+[*] starting @ 20:20:45 /2026-02-19/
+
+[20:20:45] [INFO] fetched random HTTP User-Agent header value 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Safari/605.1.15' from file '/usr/share/sqlmap/data/txt/user-agents.txt'
+[20:20:45] [INFO] flushing session file
+[20:20:45] [INFO] testing connection to the target URL
+[20:20:46] [INFO] checking if the target is protected by some kind of WAF/IPS
+[20:20:46] [WARNING] reflective value(s) found and filtering out
+[20:20:46] [INFO] testing if the target URL content is stable
+[20:20:47] [INFO] target URL content is stable
+[20:20:47] [INFO] testing if GET parameter 'q' is dynamic
+[20:20:48] [INFO] GET parameter 'q' appears to be dynamic
+[20:20:49] [WARNING] heuristic (basic) test shows that GET parameter 'q' might not be injectable
+[20:20:49] [INFO] testing for SQL injection on GET parameter 'q'
+[20:20:49] [INFO] testing 'AND boolean-based blind - WHERE or HAVING clause'
+[20:20:53] [INFO] testing 'Boolean-based blind - Parameter replace (original value)'
+[20:20:54] [INFO] testing 'MySQL >= 5.1 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (EXTRACTVALUE)'
+[20:20:56] [INFO] testing 'PostgreSQL AND error-based - WHERE or HAVING clause'
+[20:20:58] [INFO] testing 'Microsoft SQL Server/Sybase AND error-based - WHERE or HAVING clause (IN)'
+[20:21:00] [INFO] testing 'Oracle AND error-based - WHERE or HAVING clause (XMLType)'
+[20:21:02] [INFO] testing 'Generic inline queries'
+[20:21:03] [INFO] testing 'PostgreSQL > 8.1 stacked queries (comment)'
+[20:21:04] [INFO] testing 'Microsoft SQL Server/Sybase stacked queries (comment)'
+[20:21:06] [INFO] testing 'Oracle stacked queries (DBMS_PIPE.RECEIVE_MESSAGE - comment)'
+[20:21:07] [INFO] testing 'MySQL >= 5.0.12 AND time-based blind (query SLEEP)'
+[20:21:09] [INFO] testing 'PostgreSQL > 8.1 AND time-based blind'
+[20:21:11] [INFO] testing 'Microsoft SQL Server/Sybase time-based blind (IF)'
+[20:21:13] [INFO] testing 'Oracle AND time-based blind'
+it is recommended to perform only basic UNION tests if there is not at least one other (potential) technique found. Do you want to reduce the number of requests? [Y/n] Y
+[20:21:15] [INFO] testing 'Generic UNION query (NULL) - 1 to 10 columns'
+[20:21:17] [WARNING] GET parameter 'q' does not seem to be injectable
+[20:21:17] [CRITICAL] all tested parameters do not appear to be injectable. Try to increase values for '--level'/'--risk' options if you wish to perform more tests. If you suspect that there is some kind of protection mechanism involved (e.g. WAF) maybe you could try to use option '--tamper' (e.g. '--tamper=space2comment')
+
+[*] ending @ 20:21:17 /2026-02-19/
+

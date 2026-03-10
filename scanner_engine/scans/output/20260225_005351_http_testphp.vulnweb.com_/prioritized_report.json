@@ -1,0 +1,896 @@
+{
+  "generated_at": "2026-02-26 13:11:37",
+  "input_summary": {
+    "total_findings": 19,
+    "confirmed": 16,
+    "false_positive": 0,
+    "needs_manual_review": 3
+  },
+  "scan_info": {},
+  "prioritization_model": {
+    "priority_score_weights": {
+      "severity": 40,
+      "validation_status": 25,
+      "confidence": 20,
+      "evidence": 15
+    },
+    "risk_score_model": "risk_score = min(100, round(cvss_estimated*10) + exploit_bonus)",
+    "exploit_bonus": {
+      "known": 5,
+      "likely": 2,
+      "unknown": 0
+    },
+    "labels": {
+      "P1": ">=80",
+      "P2": "60-79",
+      "P3": "40-59",
+      "P4": "<40"
+    }
+  },
+  "summary": {
+    "total_prioritized": 19,
+    "dropped_false_positives": 0,
+    "p1": 3,
+    "p2": 0,
+    "p3": 10,
+    "p4": 6
+  },
+  "prioritized_findings": [
+    {
+      "vuln_class": "Injection (SQLi, Command Injection)",
+      "original_tool": "sqlmap",
+      "severity": "high",
+      "url": "http://testphp.vulnweb.com/artists.php?artist=1",
+      "evidence": "finding_name=SQL Injection Confirmed | category=general | severity=CRITICAL | url=http://testphp.vulnweb.com/artists.php?artist=1 | description=Vulnerable Parameter: artist | Backend DBMS: MySQL >= 5.6 | Tested Parameters: artist | HTTP Met",
+      "validation_status": "confirmed",
+      "validation_reason": "Response shows database error patterns after a minimal quote perturbation.",
+      "confidence_score": 0.85,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "sqlmap"
+        ],
+        "correlated_area": "/artists.php"
+      },
+      "final_severity": "high",
+      "evidence_list": [
+        "finding_name=SQL Injection Confirmed | category=general | severity=CRITICAL | url=http://testphp.vulnweb.com/artists.php?artist=1 | description=Vulnerable Parameter: artist | Backend DBMS: MySQL >= 5.6 | Tested Parameters: artist | HTTP Met"
+      ],
+      "finding_id": "F-0016",
+      "priority_score": 77,
+      "priority_label": "P1",
+      "priority_reasons": [
+        "Severity=high (+30)",
+        "Validation=confirmed (+25)",
+        "Confidence=0.85 (+17)",
+        "EvidenceCount=1 (+5)",
+        "CVSS_estimated=9.0",
+        "Exploit=likely (+2)"
+      ],
+      "priority_breakdown": {
+        "severity_points": 30,
+        "status_points": 25,
+        "confidence_points": 17,
+        "evidence_points": 5,
+        "cvss_estimated": 9.0,
+        "exploit_status": "likely",
+        "exploit_bonus": 2,
+        "risk_score": 92
+      },
+      "cvss_estimated": 9.0,
+      "exploit_status": "likely",
+      "risk_score": 92
+    },
+    {
+      "vuln_class": "Injection (SQLi, Command Injection)",
+      "original_tool": "sqlmap",
+      "severity": "high",
+      "url": "http://testphp.vulnweb.com/listproducts.php?cat=4",
+      "evidence": "finding_name=SQL Injection Confirmed | category=general | severity=CRITICAL | url=http://testphp.vulnweb.com/listproducts.php?cat=4 | description=Vulnerable Parameter: cat | Backend DBMS: MySQL >= 5.6 | Tested Parameters: cat | HTTP Method:",
+      "validation_status": "confirmed",
+      "validation_reason": "Response shows database error patterns after a minimal quote perturbation.",
+      "confidence_score": 0.85,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "sqlmap"
+        ],
+        "correlated_area": "/listproducts.php"
+      },
+      "final_severity": "high",
+      "evidence_list": [
+        "finding_name=SQL Injection Confirmed | category=general | severity=CRITICAL | url=http://testphp.vulnweb.com/listproducts.php?cat=4 | description=Vulnerable Parameter: cat | Backend DBMS: MySQL >= 5.6 | Tested Parameters: cat | HTTP Method:"
+      ],
+      "finding_id": "F-0017",
+      "priority_score": 77,
+      "priority_label": "P1",
+      "priority_reasons": [
+        "Severity=high (+30)",
+        "Validation=confirmed (+25)",
+        "Confidence=0.85 (+17)",
+        "EvidenceCount=1 (+5)",
+        "CVSS_estimated=9.0",
+        "Exploit=likely (+2)"
+      ],
+      "priority_breakdown": {
+        "severity_points": 30,
+        "status_points": 25,
+        "confidence_points": 17,
+        "evidence_points": 5,
+        "cvss_estimated": 9.0,
+        "exploit_status": "likely",
+        "exploit_bonus": 2,
+        "risk_score": 92
+      },
+      "cvss_estimated": 9.0,
+      "exploit_status": "likely",
+      "risk_score": 92
+    },
+    {
+      "vuln_class": "Injection (SQLi, Command Injection)",
+      "original_tool": "sqlmap",
+      "severity": "high",
+      "url": "http://testphp.vulnweb.com/search.php?test=query",
+      "evidence": "finding_name=SQL Injection Confirmed | category=general | severity=CRITICAL | url=http://testphp.vulnweb.com/search.php?test=query | description=Vulnerable Parameter: searchFor | Backend DBMS: MySQL >= 5.6 | Tested Parameters: searchFor | H",
+      "validation_status": "confirmed",
+      "validation_reason": "Response shows database error patterns after a minimal quote perturbation.",
+      "confidence_score": 0.85,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "sqlmap"
+        ],
+        "correlated_area": "/search.php"
+      },
+      "final_severity": "high",
+      "evidence_list": [
+        "finding_name=SQL Injection Confirmed | category=general | severity=CRITICAL | url=http://testphp.vulnweb.com/search.php?test=query | description=Vulnerable Parameter: searchFor | Backend DBMS: MySQL >= 5.6 | Tested Parameters: searchFor | H"
+      ],
+      "finding_id": "F-0018",
+      "priority_score": 77,
+      "priority_label": "P1",
+      "priority_reasons": [
+        "Severity=high (+30)",
+        "Validation=confirmed (+25)",
+        "Confidence=0.85 (+17)",
+        "EvidenceCount=1 (+5)",
+        "CVSS_estimated=9.0",
+        "Exploit=likely (+2)"
+      ],
+      "priority_breakdown": {
+        "severity_points": 30,
+        "status_points": 25,
+        "confidence_points": 17,
+        "evidence_points": 5,
+        "cvss_estimated": 9.0,
+        "exploit_status": "likely",
+        "exploit_bonus": 2,
+        "risk_score": 92
+      },
+      "cvss_estimated": 9.0,
+      "exploit_status": "likely",
+      "risk_score": 92
+    },
+    {
+      "vuln_class": "Other",
+      "original_tool": "ffuf",
+      "severity": "info",
+      "url": "http://testphp.vulnweb.com/CVS",
+      "evidence": "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/CVS | description=Status: 301 | Size: 169 | raw_output={'input': {'FFUFHASH': 'f6ec6dd', 'FUZZ': 'CVS'}, 'position': 221, 'status'",
+      "validation_status": "confirmed",
+      "validation_reason": "Endpoint reachable (HTTP 200) with meaningful content (body_len=595).",
+      "confidence_score": 0.75,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "ffuf"
+        ],
+        "correlated_area": "/cvs"
+      },
+      "final_severity": "medium",
+      "evidence_list": [
+        "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/CVS | description=Status: 301 | Size: 169 | raw_output={'input': {'FFUFHASH': 'f6ec6dd', 'FUZZ': 'CVS'}, 'position': 221, 'status'"
+      ],
+      "finding_id": "F-0001",
+      "priority_score": 65,
+      "priority_label": "P3",
+      "priority_reasons": [
+        "Severity=medium (+20)",
+        "Validation=confirmed (+25)",
+        "Confidence=0.75 (+15)",
+        "EvidenceCount=1 (+5)",
+        "CVSS_estimated=5.5",
+        "Exploit=unknown (+0)"
+      ],
+      "priority_breakdown": {
+        "severity_points": 20,
+        "status_points": 25,
+        "confidence_points": 15,
+        "evidence_points": 5,
+        "cvss_estimated": 5.5,
+        "exploit_status": "unknown",
+        "exploit_bonus": 0,
+        "risk_score": 55
+      },
+      "cvss_estimated": 5.5,
+      "exploit_status": "unknown",
+      "risk_score": 55
+    },
+    {
+      "vuln_class": "Other",
+      "original_tool": "ffuf",
+      "severity": "medium",
+      "url": "http://testphp.vulnweb.com/admin",
+      "evidence": "finding_name=Hidden Resource Discovered | category=discovery | severity=MEDIUM | url=http://testphp.vulnweb.com/admin | description=Status: 301 | Size: 169 | raw_output={'input': {'FFUFHASH': 'f6ec620f', 'FUZZ': 'admin'}, 'position': 527, '",
+      "validation_status": "confirmed",
+      "validation_reason": "Endpoint reachable (HTTP 200) with meaningful content (body_len=262).",
+      "confidence_score": 0.75,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "ffuf"
+        ],
+        "correlated_area": "/admin"
+      },
+      "final_severity": "medium",
+      "evidence_list": [
+        "finding_name=Hidden Resource Discovered | category=discovery | severity=MEDIUM | url=http://testphp.vulnweb.com/admin | description=Status: 301 | Size: 169 | raw_output={'input': {'FFUFHASH': 'f6ec620f', 'FUZZ': 'admin'}, 'position': 527, '"
+      ],
+      "finding_id": "F-0005",
+      "priority_score": 65,
+      "priority_label": "P3",
+      "priority_reasons": [
+        "Severity=medium (+20)",
+        "Validation=confirmed (+25)",
+        "Confidence=0.75 (+15)",
+        "EvidenceCount=1 (+5)",
+        "CVSS_estimated=5.5",
+        "Exploit=unknown (+0)"
+      ],
+      "priority_breakdown": {
+        "severity_points": 20,
+        "status_points": 25,
+        "confidence_points": 15,
+        "evidence_points": 5,
+        "cvss_estimated": 5.5,
+        "exploit_status": "unknown",
+        "exploit_bonus": 0,
+        "risk_score": 55
+      },
+      "cvss_estimated": 5.5,
+      "exploit_status": "unknown",
+      "risk_score": 55
+    },
+    {
+      "vuln_class": "Other",
+      "original_tool": "ffuf",
+      "severity": "info",
+      "url": "http://testphp.vulnweb.com/crossdomain.xml",
+      "evidence": "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/crossdomain.xml | description=Status: 200 | Size: 224 | raw_output={'input': {'FFUFHASH': 'f6ec6533', 'FUZZ': 'crossdomain.xml'}, ",
+      "validation_status": "confirmed",
+      "validation_reason": "Endpoint reachable (HTTP 200) with meaningful content (body_len=224).",
+      "confidence_score": 0.75,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "ffuf"
+        ],
+        "correlated_area": "/crossdomain.xml"
+      },
+      "final_severity": "medium",
+      "evidence_list": [
+        "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/crossdomain.xml | description=Status: 200 | Size: 224 | raw_output={'input': {'FFUFHASH': 'f6ec6533', 'FUZZ': 'crossdomain.xml'},"
+      ],
+      "finding_id": "F-0008",
+      "priority_score": 65,
+      "priority_label": "P3",
+      "priority_reasons": [
+        "Severity=medium (+20)",
+        "Validation=confirmed (+25)",
+        "Confidence=0.75 (+15)",
+        "EvidenceCount=1 (+5)",
+        "CVSS_estimated=5.5",
+        "Exploit=unknown (+0)"
+      ],
+      "priority_breakdown": {
+        "severity_points": 20,
+        "status_points": 25,
+        "confidence_points": 15,
+        "evidence_points": 5,
+        "cvss_estimated": 5.5,
+        "exploit_status": "unknown",
+        "exploit_bonus": 0,
+        "risk_score": 55
+      },
+      "cvss_estimated": 5.5,
+      "exploit_status": "unknown",
+      "risk_score": 55
+    },
+    {
+      "vuln_class": "Other",
+      "original_tool": "ffuf",
+      "severity": "info",
+      "url": "http://testphp.vulnweb.com/favicon.ico",
+      "evidence": "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/favicon.ico | description=Status: 200 | Size: 894 | raw_output={'input': {'FFUFHASH': 'f6ec66ec', 'FUZZ': 'favicon.ico'}, 'positio",
+      "validation_status": "confirmed",
+      "validation_reason": "Endpoint reachable (HTTP 200) with meaningful content (body_len=426).",
+      "confidence_score": 0.75,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "ffuf"
+        ],
+        "correlated_area": "/favicon.ico"
+      },
+      "final_severity": "medium",
+      "evidence_list": [
+        "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/favicon.ico | description=Status: 200 | Size: 894 | raw_output={'input': {'FFUFHASH': 'f6ec66ec', 'FUZZ': 'favicon.ico'}, 'positio"
+      ],
+      "finding_id": "F-0009",
+      "priority_score": 65,
+      "priority_label": "P3",
+      "priority_reasons": [
+        "Severity=medium (+20)",
+        "Validation=confirmed (+25)",
+        "Confidence=0.75 (+15)",
+        "EvidenceCount=1 (+5)",
+        "CVSS_estimated=5.5",
+        "Exploit=unknown (+0)"
+      ],
+      "priority_breakdown": {
+        "severity_points": 20,
+        "status_points": 25,
+        "confidence_points": 15,
+        "evidence_points": 5,
+        "cvss_estimated": 5.5,
+        "exploit_status": "unknown",
+        "exploit_bonus": 0,
+        "risk_score": 55
+      },
+      "cvss_estimated": 5.5,
+      "exploit_status": "unknown",
+      "risk_score": 55
+    },
+    {
+      "vuln_class": "Other",
+      "original_tool": "ffuf",
+      "severity": "info",
+      "url": "http://testphp.vulnweb.com/images",
+      "evidence": "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/images | description=Status: 301 | Size: 169 | raw_output={'input': {'FFUFHASH': 'f6ec6886', 'FUZZ': 'images'}, 'position': 2182, ",
+      "validation_status": "confirmed",
+      "validation_reason": "Endpoint reachable (HTTP 200) with meaningful content (body_len=377).",
+      "confidence_score": 0.75,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "ffuf"
+        ],
+        "correlated_area": "/images"
+      },
+      "final_severity": "medium",
+      "evidence_list": [
+        "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/images | description=Status: 301 | Size: 169 | raw_output={'input': {'FFUFHASH': 'f6ec6886', 'FUZZ': 'images'}, 'position': 2182,"
+      ],
+      "finding_id": "F-0010",
+      "priority_score": 65,
+      "priority_label": "P3",
+      "priority_reasons": [
+        "Severity=medium (+20)",
+        "Validation=confirmed (+25)",
+        "Confidence=0.75 (+15)",
+        "EvidenceCount=1 (+5)",
+        "CVSS_estimated=5.5",
+        "Exploit=unknown (+0)"
+      ],
+      "priority_breakdown": {
+        "severity_points": 20,
+        "status_points": 25,
+        "confidence_points": 15,
+        "evidence_points": 5,
+        "cvss_estimated": 5.5,
+        "exploit_status": "unknown",
+        "exploit_bonus": 0,
+        "risk_score": 55
+      },
+      "cvss_estimated": 5.5,
+      "exploit_status": "unknown",
+      "risk_score": 55
+    },
+    {
+      "vuln_class": "Other",
+      "original_tool": "ffuf",
+      "severity": "info",
+      "url": "http://testphp.vulnweb.com/index.php",
+      "evidence": "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/index.php | description=Status: 200 | Size: 4958 | raw_output={'input': {'FFUFHASH': 'f6ec68a2', 'FUZZ': 'index.php'}, 'position':",
+      "validation_status": "confirmed",
+      "validation_reason": "Endpoint reachable (HTTP 200) with meaningful content (body_len=4958).",
+      "confidence_score": 0.75,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "ffuf"
+        ],
+        "correlated_area": "/index.php"
+      },
+      "final_severity": "medium",
+      "evidence_list": [
+        "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/index.php | description=Status: 200 | Size: 4958 | raw_output={'input': {'FFUFHASH': 'f6ec68a2', 'FUZZ': 'index.php'}, 'position':"
+      ],
+      "finding_id": "F-0011",
+      "priority_score": 65,
+      "priority_label": "P3",
+      "priority_reasons": [
+        "Severity=medium (+20)",
+        "Validation=confirmed (+25)",
+        "Confidence=0.75 (+15)",
+        "EvidenceCount=1 (+5)",
+        "CVSS_estimated=5.5",
+        "Exploit=unknown (+0)"
+      ],
+      "priority_breakdown": {
+        "severity_points": 20,
+        "status_points": 25,
+        "confidence_points": 15,
+        "evidence_points": 5,
+        "cvss_estimated": 5.5,
+        "exploit_status": "unknown",
+        "exploit_bonus": 0,
+        "risk_score": 55
+      },
+      "cvss_estimated": 5.5,
+      "exploit_status": "unknown",
+      "risk_score": 55
+    },
+    {
+      "vuln_class": "Other",
+      "original_tool": "ffuf",
+      "severity": "info",
+      "url": "http://testphp.vulnweb.com/pictures",
+      "evidence": "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/pictures | description=Status: 301 | Size: 169 | raw_output={'input': {'FFUFHASH': 'f6ec6c46', 'FUZZ': 'pictures'}, 'position': 31",
+      "validation_status": "confirmed",
+      "validation_reason": "Endpoint reachable (HTTP 200) with meaningful content (body_len=2669).",
+      "confidence_score": 0.75,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "ffuf"
+        ],
+        "correlated_area": "/pictures"
+      },
+      "final_severity": "medium",
+      "evidence_list": [
+        "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/pictures | description=Status: 301 | Size: 169 | raw_output={'input': {'FFUFHASH': 'f6ec6c46', 'FUZZ': 'pictures'}, 'position': 31"
+      ],
+      "finding_id": "F-0012",
+      "priority_score": 65,
+      "priority_label": "P3",
+      "priority_reasons": [
+        "Severity=medium (+20)",
+        "Validation=confirmed (+25)",
+        "Confidence=0.75 (+15)",
+        "EvidenceCount=1 (+5)",
+        "CVSS_estimated=5.5",
+        "Exploit=unknown (+0)"
+      ],
+      "priority_breakdown": {
+        "severity_points": 20,
+        "status_points": 25,
+        "confidence_points": 15,
+        "evidence_points": 5,
+        "cvss_estimated": 5.5,
+        "exploit_status": "unknown",
+        "exploit_bonus": 0,
+        "risk_score": 55
+      },
+      "cvss_estimated": 5.5,
+      "exploit_status": "unknown",
+      "risk_score": 55
+    },
+    {
+      "vuln_class": "Other",
+      "original_tool": "ffuf",
+      "severity": "info",
+      "url": "http://testphp.vulnweb.com/vendor",
+      "evidence": "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/vendor | description=Status: 301 | Size: 169 | raw_output={'input': {'FFUFHASH': 'f6ec61138', 'FUZZ': 'vendor'}, 'position': 4408,",
+      "validation_status": "confirmed",
+      "validation_reason": "Endpoint reachable (HTTP 200) with meaningful content (body_len=268).",
+      "confidence_score": 0.75,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "ffuf"
+        ],
+        "correlated_area": "/vendor"
+      },
+      "final_severity": "medium",
+      "evidence_list": [
+        "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/vendor | description=Status: 301 | Size: 169 | raw_output={'input': {'FFUFHASH': 'f6ec61138', 'FUZZ': 'vendor'}, 'position': 4408,"
+      ],
+      "finding_id": "F-0014",
+      "priority_score": 65,
+      "priority_label": "P3",
+      "priority_reasons": [
+        "Severity=medium (+20)",
+        "Validation=confirmed (+25)",
+        "Confidence=0.75 (+15)",
+        "EvidenceCount=1 (+5)",
+        "CVSS_estimated=5.5",
+        "Exploit=unknown (+0)"
+      ],
+      "priority_breakdown": {
+        "severity_points": 20,
+        "status_points": 25,
+        "confidence_points": 15,
+        "evidence_points": 5,
+        "cvss_estimated": 5.5,
+        "exploit_status": "unknown",
+        "exploit_bonus": 0,
+        "risk_score": 55
+      },
+      "cvss_estimated": 5.5,
+      "exploit_status": "unknown",
+      "risk_score": 55
+    },
+    {
+      "vuln_class": "Information Disclosure",
+      "original_tool": "whatweb",
+      "severity": "info",
+      "url": "http://testphp.vulnweb.com/",
+      "evidence": "finding_name=Technology Detected: ActiveX[D27CDB6E-AE6D-11cf-96B8-444553540000] | category=reconnaissance | severity=INFO | url=http://testphp.vulnweb.com/ | description=Detected technology: ActiveX[D27CDB6E-AE6D-11cf-96B8-444553540000] | r",
+      "validation_status": "confirmed",
+      "validation_reason": "Information disclosure via HTTP headers: server, x-powered-by. Evidence correlation: 2 independent tools reported findings within the same application area (/) (nuclei, whatweb).",
+      "confidence_score": 0.85,
+      "correlation": {
+        "tool_count": 2,
+        "tools": [
+          "nuclei",
+          "whatweb"
+        ]
+      },
+      "final_severity": "high",
+      "evidence_list": [
+        "finding_name=Technology Detected: ActiveX[D27CDB6E-AE6D-11cf-96B8-444553540000] | category=reconnaissance | severity=INFO | url=http://testphp.vulnweb.com/ | description=Detected technology: ActiveX[D27CDB6E-AE6D-11cf-96B8-444553540000] | r"
+      ],
+      "finding_id": "F-0019",
+      "priority_score": 82,
+      "priority_label": "P3",
+      "priority_reasons": [
+        "Severity=high (+30)",
+        "Validation=confirmed (+25)",
+        "Confidence=0.85 (+17)",
+        "EvidenceCount=2 (+10)",
+        "CVSS_estimated=4.0",
+        "Exploit=unknown (+0)"
+      ],
+      "priority_breakdown": {
+        "severity_points": 30,
+        "status_points": 25,
+        "confidence_points": 17,
+        "evidence_points": 10,
+        "cvss_estimated": 4.0,
+        "exploit_status": "unknown",
+        "exploit_bonus": 0,
+        "risk_score": 40
+      },
+      "cvss_estimated": 4.0,
+      "exploit_status": "unknown",
+      "risk_score": 40
+    },
+    {
+      "vuln_class": "Injection (SQLi, Command Injection)",
+      "original_tool": "nuclei",
+      "severity": "info",
+      "url": "http://testphp.vulnweb.com/",
+      "evidence": "finding_name=WAF Detection | category=reconnaissance | severity=INFO | url=http://testphp.vulnweb.com/ | description=A web application firewall was detected. | raw_output={'template': 'http/technologies/waf-detect.yaml', 'template-id': 'waf",
+      "validation_status": "needs_manual_review",
+      "validation_reason": "URL has no query parameters; GET-based injection verification requires a parameterized endpoint. Evidence correlation: 2 independent tools reported findings within the same application area (/) (nuclei, whatweb).",
+      "confidence_score": 0.44999999999999996,
+      "correlation": {
+        "tool_count": 2,
+        "tools": [
+          "nuclei",
+          "whatweb"
+        ],
+        "correlated_area": "/"
+      },
+      "final_severity": "low",
+      "evidence_list": [
+        "finding_name=WAF Detection | category=reconnaissance | severity=INFO | url=http://testphp.vulnweb.com/ | description=A web application firewall was detected. | raw_output={'template': 'http/technologies/waf-detect.yaml', 'template-id': 'waf"
+      ],
+      "finding_id": "F-0015",
+      "priority_score": 39,
+      "priority_label": "P3",
+      "priority_reasons": [
+        "Severity=low (+10)",
+        "Validation=needs_manual_review (+10)",
+        "Confidence=0.45 (+9)",
+        "EvidenceCount=2 (+10)",
+        "CVSS_estimated=4.0",
+        "Exploit=unknown (+0)"
+      ],
+      "priority_breakdown": {
+        "severity_points": 10,
+        "status_points": 10,
+        "confidence_points": 9,
+        "evidence_points": 10,
+        "cvss_estimated": 4.0,
+        "exploit_status": "unknown",
+        "exploit_bonus": 0,
+        "risk_score": 40
+      },
+      "cvss_estimated": 4.0,
+      "exploit_status": "unknown",
+      "risk_score": 40
+    },
+    {
+      "vuln_class": "Other",
+      "original_tool": "ffuf",
+      "severity": "info",
+      "url": "http://testphp.vulnweb.com/CVS/Root",
+      "evidence": "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/CVS/Root | description=Status: 200 | Size: 1 | raw_output={'input': {'FFUFHASH': 'f6ec6e0', 'FUZZ': 'CVS/Root'}, 'position': 224, ",
+      "validation_status": "confirmed",
+      "validation_reason": "Endpoint reachable (HTTP 200) but small body (body_len=1); likely real file/empty response.",
+      "confidence_score": 0.55,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "ffuf"
+        ],
+        "correlated_area": "/cvs"
+      },
+      "final_severity": "low",
+      "evidence_list": [
+        "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/CVS/Root | description=Status: 200 | Size: 1 | raw_output={'input': {'FFUFHASH': 'f6ec6e0', 'FUZZ': 'CVS/Root'}, 'position': 224,"
+      ],
+      "finding_id": "F-0002",
+      "priority_score": 51,
+      "priority_label": "P4",
+      "priority_reasons": [
+        "Severity=low (+10)",
+        "Validation=confirmed (+25)",
+        "Confidence=0.55 (+11)",
+        "EvidenceCount=1 (+5)",
+        "CVSS_estimated=3.0",
+        "Exploit=unknown (+0)"
+      ],
+      "priority_breakdown": {
+        "severity_points": 10,
+        "status_points": 25,
+        "confidence_points": 11,
+        "evidence_points": 5,
+        "cvss_estimated": 3.0,
+        "exploit_status": "unknown",
+        "exploit_bonus": 0,
+        "risk_score": 30
+      },
+      "cvss_estimated": 3.0,
+      "exploit_status": "unknown",
+      "risk_score": 30
+    },
+    {
+      "vuln_class": "Other",
+      "original_tool": "ffuf",
+      "severity": "info",
+      "url": "http://testphp.vulnweb.com/CVS/Entries",
+      "evidence": "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/CVS/Entries | description=Status: 200 | Size: 1 | raw_output={'input': {'FFUFHASH': 'f6ec6de', 'FUZZ': 'CVS/Entries'}, 'position':",
+      "validation_status": "confirmed",
+      "validation_reason": "Endpoint reachable (HTTP 200) but small body (body_len=1); likely real file/empty response.",
+      "confidence_score": 0.55,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "ffuf"
+        ],
+        "correlated_area": "/cvs"
+      },
+      "final_severity": "low",
+      "evidence_list": [
+        "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/CVS/Entries | description=Status: 200 | Size: 1 | raw_output={'input': {'FFUFHASH': 'f6ec6de', 'FUZZ': 'CVS/Entries'}, 'position':"
+      ],
+      "finding_id": "F-0003",
+      "priority_score": 51,
+      "priority_label": "P4",
+      "priority_reasons": [
+        "Severity=low (+10)",
+        "Validation=confirmed (+25)",
+        "Confidence=0.55 (+11)",
+        "EvidenceCount=1 (+5)",
+        "CVSS_estimated=3.0",
+        "Exploit=unknown (+0)"
+      ],
+      "priority_breakdown": {
+        "severity_points": 10,
+        "status_points": 25,
+        "confidence_points": 11,
+        "evidence_points": 5,
+        "cvss_estimated": 3.0,
+        "exploit_status": "unknown",
+        "exploit_bonus": 0,
+        "risk_score": 30
+      },
+      "cvss_estimated": 3.0,
+      "exploit_status": "unknown",
+      "risk_score": 30
+    },
+    {
+      "vuln_class": "Other",
+      "original_tool": "ffuf",
+      "severity": "info",
+      "url": "http://testphp.vulnweb.com/CVS/Repository",
+      "evidence": "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/CVS/Repository | description=Status: 200 | Size: 8 | raw_output={'input': {'FFUFHASH': 'f6ec6df', 'FUZZ': 'CVS/Repository'}, 'posi",
+      "validation_status": "confirmed",
+      "validation_reason": "Endpoint reachable (HTTP 200) but small body (body_len=8); likely real file/empty response.",
+      "confidence_score": 0.55,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "ffuf"
+        ],
+        "correlated_area": "/cvs"
+      },
+      "final_severity": "low",
+      "evidence_list": [
+        "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/CVS/Repository | description=Status: 200 | Size: 8 | raw_output={'input': {'FFUFHASH': 'f6ec6df', 'FUZZ': 'CVS/Repository'}, 'posi"
+      ],
+      "finding_id": "F-0004",
+      "priority_score": 51,
+      "priority_label": "P4",
+      "priority_reasons": [
+        "Severity=low (+10)",
+        "Validation=confirmed (+25)",
+        "Confidence=0.55 (+11)",
+        "EvidenceCount=1 (+5)",
+        "CVSS_estimated=3.0",
+        "Exploit=unknown (+0)"
+      ],
+      "priority_breakdown": {
+        "severity_points": 10,
+        "status_points": 25,
+        "confidence_points": 11,
+        "evidence_points": 5,
+        "cvss_estimated": 3.0,
+        "exploit_status": "unknown",
+        "exploit_bonus": 0,
+        "risk_score": 30
+      },
+      "cvss_estimated": 3.0,
+      "exploit_status": "unknown",
+      "risk_score": 30
+    },
+    {
+      "vuln_class": "Other",
+      "original_tool": "ffuf",
+      "severity": "info",
+      "url": "http://testphp.vulnweb.com/secured",
+      "evidence": "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/secured | description=Status: 301 | Size: 169 | raw_output={'input': {'FFUFHASH': 'f6ec6e71', 'FUZZ': 'secured'}, 'position': 3697",
+      "validation_status": "confirmed",
+      "validation_reason": "Endpoint reachable (HTTP 200) but small body (body_len=0); likely real file/empty response.",
+      "confidence_score": 0.55,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "ffuf"
+        ],
+        "correlated_area": "/secured"
+      },
+      "final_severity": "low",
+      "evidence_list": [
+        "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/secured | description=Status: 301 | Size: 169 | raw_output={'input': {'FFUFHASH': 'f6ec6e71', 'FUZZ': 'secured'}, 'position': 3697"
+      ],
+      "finding_id": "F-0013",
+      "priority_score": 51,
+      "priority_label": "P4",
+      "priority_reasons": [
+        "Severity=low (+10)",
+        "Validation=confirmed (+25)",
+        "Confidence=0.55 (+11)",
+        "EvidenceCount=1 (+5)",
+        "CVSS_estimated=3.0",
+        "Exploit=unknown (+0)"
+      ],
+      "priority_breakdown": {
+        "severity_points": 10,
+        "status_points": 25,
+        "confidence_points": 11,
+        "evidence_points": 5,
+        "cvss_estimated": 3.0,
+        "exploit_status": "unknown",
+        "exploit_bonus": 0,
+        "risk_score": 30
+      },
+      "cvss_estimated": 3.0,
+      "exploit_status": "unknown",
+      "risk_score": 30
+    },
+    {
+      "vuln_class": "Other",
+      "original_tool": "ffuf",
+      "severity": "info",
+      "url": "http://testphp.vulnweb.com/cgi-bin/",
+      "evidence": "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/cgi-bin/ | description=Status: 403 | Size: 276 | raw_output={'input': {'FFUFHASH': 'f6ec6416', 'FUZZ': 'cgi-bin/'}, 'position': 10",
+      "validation_status": "needs_manual_review",
+      "validation_reason": "Request failed (network/timeout). Cannot validate reachability.",
+      "confidence_score": 0.3,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "ffuf"
+        ],
+        "correlated_area": "/cgi-bin"
+      },
+      "final_severity": "low",
+      "evidence_list": [
+        "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/cgi-bin/ | description=Status: 403 | Size: 276 | raw_output={'input': {'FFUFHASH': 'f6ec6416', 'FUZZ': 'cgi-bin/'}, 'position': 10"
+      ],
+      "finding_id": "F-0006",
+      "priority_score": 31,
+      "priority_label": "P4",
+      "priority_reasons": [
+        "Severity=low (+10)",
+        "Validation=needs_manual_review (+10)",
+        "Confidence=0.30 (+6)",
+        "EvidenceCount=1 (+5)",
+        "CVSS_estimated=3.0",
+        "Exploit=unknown (+0)"
+      ],
+      "priority_breakdown": {
+        "severity_points": 10,
+        "status_points": 10,
+        "confidence_points": 6,
+        "evidence_points": 5,
+        "cvss_estimated": 3.0,
+        "exploit_status": "unknown",
+        "exploit_bonus": 0,
+        "risk_score": 30
+      },
+      "cvss_estimated": 3.0,
+      "exploit_status": "unknown",
+      "risk_score": 30
+    },
+    {
+      "vuln_class": "Other",
+      "original_tool": "ffuf",
+      "severity": "info",
+      "url": "http://testphp.vulnweb.com/cgi-bin",
+      "evidence": "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/cgi-bin | description=Status: 403 | Size: 276 | raw_output={'input': {'FFUFHASH': 'f6ec6415', 'FUZZ': 'cgi-bin'}, 'position': 1045",
+      "validation_status": "needs_manual_review",
+      "validation_reason": "Request failed (network/timeout). Cannot validate reachability.",
+      "confidence_score": 0.3,
+      "correlation": {
+        "tool_count": 1,
+        "tools": [
+          "ffuf"
+        ],
+        "correlated_area": "/cgi-bin"
+      },
+      "final_severity": "low",
+      "evidence_list": [
+        "finding_name=Hidden Resource Discovered | category=discovery | severity=INFO | url=http://testphp.vulnweb.com/cgi-bin | description=Status: 403 | Size: 276 | raw_output={'input': {'FFUFHASH': 'f6ec6415', 'FUZZ': 'cgi-bin'}, 'position': 1045"
+      ],
+      "finding_id": "F-0007",
+      "priority_score": 31,
+      "priority_label": "P4",
+      "priority_reasons": [
+        "Severity=low (+10)",
+        "Validation=needs_manual_review (+10)",
+        "Confidence=0.30 (+6)",
+        "EvidenceCount=1 (+5)",
+        "CVSS_estimated=3.0",
+        "Exploit=unknown (+0)"
+      ],
+      "priority_breakdown": {
+        "severity_points": 10,
+        "status_points": 10,
+        "confidence_points": 6,
+        "evidence_points": 5,
+        "cvss_estimated": 3.0,
+        "exploit_status": "unknown",
+        "exploit_bonus": 0,
+        "risk_score": 30
+      },
+      "cvss_estimated": 3.0,
+      "exploit_status": "unknown",
+      "risk_score": 30
+    }
+  ]
+}

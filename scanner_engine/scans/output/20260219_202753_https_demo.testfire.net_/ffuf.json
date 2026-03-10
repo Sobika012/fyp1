@@ -1,0 +1,378 @@
+{
+  "commandline": "ffuf -u https://demo.testfire.net/FUZZ -w /usr/share/seclists/Discovery/Web-Content/common.txt -o ffuf_fe33c4ac5a294fe9a7f0aedd1b4e0ef3.json -of json -mc 200,204,301,302,307,401,403 -t 60 -timeout 2 -noninteractive -k -s",
+  "time": "2026-02-19T20:28:20-05:00",
+  "results": [
+    {
+      "input": {
+        "FFUFHASH": "d727e20f",
+        "FUZZ": "admin"
+      },
+      "position": 527,
+      "status": 302,
+      "length": 0,
+      "words": 1,
+      "lines": 1,
+      "content-type": "",
+      "redirectlocation": "/login.jsp",
+      "scraper": {},
+      "duration": 287589844,
+      "resultfile": "",
+      "url": "https://demo.testfire.net/admin",
+      "host": "demo.testfire.net"
+    },
+    {
+      "input": {
+        "FFUFHASH": "d727e32c",
+        "FUZZ": "bank"
+      },
+      "position": 812,
+      "status": 302,
+      "length": 0,
+      "words": 1,
+      "lines": 1,
+      "content-type": "",
+      "redirectlocation": "/login.jsp",
+      "scraper": {},
+      "duration": 310667964,
+      "resultfile": "",
+      "url": "https://demo.testfire.net/bank",
+      "host": "demo.testfire.net"
+    },
+    {
+      "input": {
+        "FFUFHASH": "d727e302",
+        "FUZZ": "aux"
+      },
+      "position": 770,
+      "status": 200,
+      "length": 0,
+      "words": 1,
+      "lines": 1,
+      "content-type": "",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 787230147,
+      "resultfile": "",
+      "url": "https://demo.testfire.net/aux",
+      "host": "demo.testfire.net"
+    },
+    {
+      "input": {
+        "FFUFHASH": "d727e490",
+        "FUZZ": "com3"
+      },
+      "position": 1168,
+      "status": 200,
+      "length": 0,
+      "words": 1,
+      "lines": 1,
+      "content-type": "",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 289099383,
+      "resultfile": "",
+      "url": "https://demo.testfire.net/com3",
+      "host": "demo.testfire.net"
+    },
+    {
+      "input": {
+        "FFUFHASH": "d727e491",
+        "FUZZ": "com4"
+      },
+      "position": 1169,
+      "status": 200,
+      "length": 0,
+      "words": 1,
+      "lines": 1,
+      "content-type": "",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 289381364,
+      "resultfile": "",
+      "url": "https://demo.testfire.net/com4",
+      "host": "demo.testfire.net"
+    },
+    {
+      "input": {
+        "FFUFHASH": "d727e4bd",
+        "FUZZ": "con"
+      },
+      "position": 1213,
+      "status": 200,
+      "length": 0,
+      "words": 1,
+      "lines": 1,
+      "content-type": "",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 310127895,
+      "resultfile": "",
+      "url": "https://demo.testfire.net/con",
+      "host": "demo.testfire.net"
+    },
+    {
+      "input": {
+        "FFUFHASH": "d727e48e",
+        "FUZZ": "com1"
+      },
+      "position": 1166,
+      "status": 200,
+      "length": 0,
+      "words": 1,
+      "lines": 1,
+      "content-type": "",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 784225785,
+      "resultfile": "",
+      "url": "https://demo.testfire.net/com1",
+      "host": "demo.testfire.net"
+    },
+    {
+      "input": {
+        "FFUFHASH": "d727e48f",
+        "FUZZ": "com2"
+      },
+      "position": 1167,
+      "status": 200,
+      "length": 0,
+      "words": 1,
+      "lines": 1,
+      "content-type": "",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 828072285,
+      "resultfile": "",
+      "url": "https://demo.testfire.net/com2",
+      "host": "demo.testfire.net"
+    },
+    {
+      "input": {
+        "FFUFHASH": "d727e886",
+        "FUZZ": "images"
+      },
+      "position": 2182,
+      "status": 302,
+      "length": 0,
+      "words": 1,
+      "lines": 1,
+      "content-type": "",
+      "redirectlocation": "/images/",
+      "scraper": {},
+      "duration": 305103694,
+      "resultfile": "",
+      "url": "https://demo.testfire.net/images",
+      "host": "demo.testfire.net"
+    },
+    {
+      "input": {
+        "FFUFHASH": "d727e9fb",
+        "FUZZ": "lpt2"
+      },
+      "position": 2555,
+      "status": 200,
+      "length": 0,
+      "words": 1,
+      "lines": 1,
+      "content-type": "",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 302278702,
+      "resultfile": "",
+      "url": "https://demo.testfire.net/lpt2",
+      "host": "demo.testfire.net"
+    },
+    {
+      "input": {
+        "FFUFHASH": "d727e9fa",
+        "FUZZ": "lpt1"
+      },
+      "position": 2554,
+      "status": 200,
+      "length": 0,
+      "words": 1,
+      "lines": 1,
+      "content-type": "",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 306207045,
+      "resultfile": "",
+      "url": "https://demo.testfire.net/lpt1",
+      "host": "demo.testfire.net"
+    },
+    {
+      "input": {
+        "FFUFHASH": "d727eb41",
+        "FUZZ": "nul"
+      },
+      "position": 2881,
+      "status": 200,
+      "length": 0,
+      "words": 1,
+      "lines": 1,
+      "content-type": "",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 311197955,
+      "resultfile": "",
+      "url": "https://demo.testfire.net/nul",
+      "host": "demo.testfire.net"
+    },
+    {
+      "input": {
+        "FFUFHASH": "d727ecab",
+        "FUZZ": "pr"
+      },
+      "position": 3243,
+      "status": 302,
+      "length": 0,
+      "words": 1,
+      "lines": 1,
+      "content-type": "",
+      "redirectlocation": "/pr/",
+      "scraper": {},
+      "duration": 314034750,
+      "resultfile": "",
+      "url": "https://demo.testfire.net/pr",
+      "host": "demo.testfire.net"
+    },
+    {
+      "input": {
+        "FFUFHASH": "d727ecdc",
+        "FUZZ": "prn"
+      },
+      "position": 3292,
+      "status": 200,
+      "length": 0,
+      "words": 1,
+      "lines": 1,
+      "content-type": "",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 306753550,
+      "resultfile": "",
+      "url": "https://demo.testfire.net/prn",
+      "host": "demo.testfire.net"
+    },
+    {
+      "input": {
+        "FFUFHASH": "d727ef89",
+        "FUZZ": "static"
+      },
+      "position": 3977,
+      "status": 302,
+      "length": 0,
+      "words": 1,
+      "lines": 1,
+      "content-type": "",
+      "redirectlocation": "/static/",
+      "scraper": {},
+      "duration": 309215312,
+      "resultfile": "",
+      "url": "https://demo.testfire.net/static",
+      "host": "demo.testfire.net"
+    },
+    {
+      "input": {
+        "FFUFHASH": "d727e1116",
+        "FUZZ": "util"
+      },
+      "position": 4374,
+      "status": 302,
+      "length": 0,
+      "words": 1,
+      "lines": 1,
+      "content-type": "",
+      "redirectlocation": "/util/",
+      "scraper": {},
+      "duration": 303233348,
+      "resultfile": "",
+      "url": "https://demo.testfire.net/util",
+      "host": "demo.testfire.net"
+    }
+  ],
+  "config": {
+    "autocalibration": false,
+    "autocalibration_keyword": "FUZZ",
+    "autocalibration_perhost": false,
+    "autocalibration_strategies": [
+      "basic"
+    ],
+    "autocalibration_strings": [],
+    "colors": false,
+    "cmdline": "ffuf -u https://demo.testfire.net/FUZZ -w /usr/share/seclists/Discovery/Web-Content/common.txt -o ffuf_fe33c4ac5a294fe9a7f0aedd1b4e0ef3.json -of json -mc 200,204,301,302,307,401,403 -t 60 -timeout 2 -noninteractive -k -s",
+    "configfile": "",
+    "postdata": "",
+    "debuglog": "",
+    "delay": {
+      "value": "0.00"
+    },
+    "dirsearch_compatibility": false,
+    "encoders": [],
+    "extensions": [],
+    "fmode": "or",
+    "follow_redirects": false,
+    "headers": {},
+    "ignorebody": false,
+    "ignore_wordlist_comments": false,
+    "inputmode": "clusterbomb",
+    "cmd_inputnum": 100,
+    "inputproviders": [
+      {
+        "name": "wordlist",
+        "keyword": "FUZZ",
+        "value": "/usr/share/seclists/Discovery/Web-Content/common.txt",
+        "encoders": "",
+        "template": ""
+      }
+    ],
+    "inputshell": "",
+    "json": false,
+    "matchers": {
+      "IsCalibrated": false,
+      "Mutex": {},
+      "Matchers": {
+        "status": {
+          "value": "200,204,301,302,307,401,403"
+        }
+      },
+      "Filters": {},
+      "PerDomainFilters": {}
+    },
+    "mmode": "or",
+    "maxtime": 0,
+    "maxtime_job": 0,
+    "method": "GET",
+    "noninteractive": true,
+    "outputdirectory": "",
+    "outputfile": "ffuf_fe33c4ac5a294fe9a7f0aedd1b4e0ef3.json",
+    "outputformat": "json",
+    "OutputSkipEmptyFile": false,
+    "proxyurl": "",
+    "quiet": true,
+    "rate": 0,
+    "raw": false,
+    "recursion": false,
+    "recursion_depth": 0,
+    "recursion_strategy": "default",
+    "replayproxyurl": "",
+    "requestfile": "",
+    "requestproto": "https",
+    "scraperfile": "",
+    "scrapers": "all",
+    "sni": "",
+    "stop_403": false,
+    "stop_all": false,
+    "stop_errors": false,
+    "threads": 60,
+    "timeout": 2,
+    "url": "https://demo.testfire.net/FUZZ",
+    "verbose": false,
+    "wordlists": [
+      "/usr/share/seclists/Discovery/Web-Content/common.txt"
+    ],
+    "http2": false,
+    "client-cert": "",
+    "client-key": ""
+  }
+}

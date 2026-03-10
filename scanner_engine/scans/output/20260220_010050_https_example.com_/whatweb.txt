@@ -1,0 +1,1 @@
+https://example.com/ [200 OK] Allow[GET, HEAD], Country[UNITED STATES][US], HTML5, HTTPServer[cloudflare], IP[104.18.26.120], Title[Example Domain], UncommonHeaders[cf-cache-status,cf-ray]

@@ -1,0 +1,1 @@
+https://www.vulnhub.com/ [200 OK] Bootstrap[4.4.1], Country[UNITED STATES][US], Google-Analytics[Universal][UA-37274599-1], HTML5, HTTPServer[cloudflare], IP[104.21.42.126], JQuery[3.4.1], Script[text/javascript], Title[Vulnerable By Design ~ VulnHub], UncommonHeaders[report-to,nel,cf-cache-status,cf-ray,alt-svc], X-Frame-Options[SAMEORIGIN]

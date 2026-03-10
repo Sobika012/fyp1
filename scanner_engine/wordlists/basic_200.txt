@@ -1,0 +1,16 @@
+admin
+login
+dashboard
+backup
+config
+.env
+.git
+api
+test
+dev
+uploads
+private
+db
+database
+server-status
+robots.txt

@@ -1,0 +1,1848 @@
+{
+  "scan_info": {
+    "mode": "basic",
+    "target": "https://www.vulnhub.com/",
+    "generated_at": "2026-02-20 04:41:52",
+    "started_at": "2026-02-20 04:39:19",
+    "total_findings": 27,
+    "recon_count": 11,
+    "discovery_count": 16,
+    "vulnerability_count": 0,
+    "discovered_endpoints": 27,
+    "total_vulnerabilities": 0,
+    "severity_counts": {
+      "CRITICAL": 0,
+      "HIGH": 0,
+      "MEDIUM": 0,
+      "LOW": 0,
+      "INFO": 27
+    }
+  },
+  "discovered_endpoints": [
+    {
+      "tool": "whatweb",
+      "url": "https://www.vulnhub.com/",
+      "finding_name": "Technology Detected: Bootstrap[4.4.1]",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "reconnaissance",
+      "description": "Detected technology: Bootstrap[4.4.1]",
+      "timestamp": "2026-02-20 04:39:33",
+      "raw_output": "https://www.vulnhub.com/ [200 OK] Bootstrap[4.4.1], Country[RESERVED][ZZ], Google-Analytics[Universal][UA-37274599-1], HTML5, HTTPServer[cloudflare], IP[172.67.162.8], JQuery[3.4.1], Script[text/javascript], Title[Vulnerable By Design ~ VulnHub], UncommonHeaders[report-to,nel,cf-cache-status,cf-ray,alt-svc], X-Frame-Options[SAMEORIGIN]",
+      "type": "discovery",
+      "source": "whatweb"
+    },
+    {
+      "tool": "whatweb",
+      "url": "https://www.vulnhub.com/",
+      "finding_name": "Technology Detected: Country[RESERVED][ZZ]",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "reconnaissance",
+      "description": "Detected technology: Country[RESERVED][ZZ]",
+      "timestamp": "2026-02-20 04:39:33",
+      "raw_output": "https://www.vulnhub.com/ [200 OK] Bootstrap[4.4.1], Country[RESERVED][ZZ], Google-Analytics[Universal][UA-37274599-1], HTML5, HTTPServer[cloudflare], IP[172.67.162.8], JQuery[3.4.1], Script[text/javascript], Title[Vulnerable By Design ~ VulnHub], UncommonHeaders[report-to,nel,cf-cache-status,cf-ray,alt-svc], X-Frame-Options[SAMEORIGIN]",
+      "type": "discovery",
+      "source": "whatweb"
+    },
+    {
+      "tool": "whatweb",
+      "url": "https://www.vulnhub.com/",
+      "finding_name": "Technology Detected: Google-Analytics[Universal][UA-37274599-1]",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "reconnaissance",
+      "description": "Detected technology: Google-Analytics[Universal][UA-37274599-1]",
+      "timestamp": "2026-02-20 04:39:33",
+      "raw_output": "https://www.vulnhub.com/ [200 OK] Bootstrap[4.4.1], Country[RESERVED][ZZ], Google-Analytics[Universal][UA-37274599-1], HTML5, HTTPServer[cloudflare], IP[172.67.162.8], JQuery[3.4.1], Script[text/javascript], Title[Vulnerable By Design ~ VulnHub], UncommonHeaders[report-to,nel,cf-cache-status,cf-ray,alt-svc], X-Frame-Options[SAMEORIGIN]",
+      "type": "discovery",
+      "source": "whatweb"
+    },
+    {
+      "tool": "whatweb",
+      "url": "https://www.vulnhub.com/",
+      "finding_name": "Technology Detected: HTML5",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "reconnaissance",
+      "description": "Detected technology: HTML5",
+      "timestamp": "2026-02-20 04:39:33",
+      "raw_output": "https://www.vulnhub.com/ [200 OK] Bootstrap[4.4.1], Country[RESERVED][ZZ], Google-Analytics[Universal][UA-37274599-1], HTML5, HTTPServer[cloudflare], IP[172.67.162.8], JQuery[3.4.1], Script[text/javascript], Title[Vulnerable By Design ~ VulnHub], UncommonHeaders[report-to,nel,cf-cache-status,cf-ray,alt-svc], X-Frame-Options[SAMEORIGIN]",
+      "type": "discovery",
+      "source": "whatweb"
+    },
+    {
+      "tool": "whatweb",
+      "url": "https://www.vulnhub.com/",
+      "finding_name": "Technology Detected: HTTPServer[cloudflare]",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "reconnaissance",
+      "description": "Detected technology: HTTPServer[cloudflare]",
+      "timestamp": "2026-02-20 04:39:33",
+      "raw_output": "https://www.vulnhub.com/ [200 OK] Bootstrap[4.4.1], Country[RESERVED][ZZ], Google-Analytics[Universal][UA-37274599-1], HTML5, HTTPServer[cloudflare], IP[172.67.162.8], JQuery[3.4.1], Script[text/javascript], Title[Vulnerable By Design ~ VulnHub], UncommonHeaders[report-to,nel,cf-cache-status,cf-ray,alt-svc], X-Frame-Options[SAMEORIGIN]",
+      "type": "discovery",
+      "source": "whatweb"
+    },
+    {
+      "tool": "whatweb",
+      "url": "https://www.vulnhub.com/",
+      "finding_name": "Technology Detected: IP[172.67.162.8]",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "reconnaissance",
+      "description": "Detected technology: IP[172.67.162.8]",
+      "timestamp": "2026-02-20 04:39:33",
+      "raw_output": "https://www.vulnhub.com/ [200 OK] Bootstrap[4.4.1], Country[RESERVED][ZZ], Google-Analytics[Universal][UA-37274599-1], HTML5, HTTPServer[cloudflare], IP[172.67.162.8], JQuery[3.4.1], Script[text/javascript], Title[Vulnerable By Design ~ VulnHub], UncommonHeaders[report-to,nel,cf-cache-status,cf-ray,alt-svc], X-Frame-Options[SAMEORIGIN]",
+      "type": "discovery",
+      "source": "whatweb"
+    },
+    {
+      "tool": "whatweb",
+      "url": "https://www.vulnhub.com/",
+      "finding_name": "Technology Detected: JQuery[3.4.1]",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "reconnaissance",
+      "description": "Detected technology: JQuery[3.4.1]",
+      "timestamp": "2026-02-20 04:39:33",
+      "raw_output": "https://www.vulnhub.com/ [200 OK] Bootstrap[4.4.1], Country[RESERVED][ZZ], Google-Analytics[Universal][UA-37274599-1], HTML5, HTTPServer[cloudflare], IP[172.67.162.8], JQuery[3.4.1], Script[text/javascript], Title[Vulnerable By Design ~ VulnHub], UncommonHeaders[report-to,nel,cf-cache-status,cf-ray,alt-svc], X-Frame-Options[SAMEORIGIN]",
+      "type": "discovery",
+      "source": "whatweb"
+    },
+    {
+      "tool": "whatweb",
+      "url": "https://www.vulnhub.com/",
+      "finding_name": "Technology Detected: Script[text/javascript]",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "reconnaissance",
+      "description": "Detected technology: Script[text/javascript]",
+      "timestamp": "2026-02-20 04:39:33",
+      "raw_output": "https://www.vulnhub.com/ [200 OK] Bootstrap[4.4.1], Country[RESERVED][ZZ], Google-Analytics[Universal][UA-37274599-1], HTML5, HTTPServer[cloudflare], IP[172.67.162.8], JQuery[3.4.1], Script[text/javascript], Title[Vulnerable By Design ~ VulnHub], UncommonHeaders[report-to,nel,cf-cache-status,cf-ray,alt-svc], X-Frame-Options[SAMEORIGIN]",
+      "type": "discovery",
+      "source": "whatweb"
+    },
+    {
+      "tool": "whatweb",
+      "url": "https://www.vulnhub.com/",
+      "finding_name": "Technology Detected: Title[Vulnerable By Design ~ VulnHub]",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "reconnaissance",
+      "description": "Detected technology: Title[Vulnerable By Design ~ VulnHub]",
+      "timestamp": "2026-02-20 04:39:33",
+      "raw_output": "https://www.vulnhub.com/ [200 OK] Bootstrap[4.4.1], Country[RESERVED][ZZ], Google-Analytics[Universal][UA-37274599-1], HTML5, HTTPServer[cloudflare], IP[172.67.162.8], JQuery[3.4.1], Script[text/javascript], Title[Vulnerable By Design ~ VulnHub], UncommonHeaders[report-to,nel,cf-cache-status,cf-ray,alt-svc], X-Frame-Options[SAMEORIGIN]",
+      "type": "discovery",
+      "source": "whatweb"
+    },
+    {
+      "tool": "whatweb",
+      "url": "https://www.vulnhub.com/",
+      "finding_name": "Technology Detected: UncommonHeaders[report-to,nel,cf-cache-status,cf-ray,alt-svc]",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "reconnaissance",
+      "description": "Detected technology: UncommonHeaders[report-to,nel,cf-cache-status,cf-ray,alt-svc]",
+      "timestamp": "2026-02-20 04:39:33",
+      "raw_output": "https://www.vulnhub.com/ [200 OK] Bootstrap[4.4.1], Country[RESERVED][ZZ], Google-Analytics[Universal][UA-37274599-1], HTML5, HTTPServer[cloudflare], IP[172.67.162.8], JQuery[3.4.1], Script[text/javascript], Title[Vulnerable By Design ~ VulnHub], UncommonHeaders[report-to,nel,cf-cache-status,cf-ray,alt-svc], X-Frame-Options[SAMEORIGIN]",
+      "type": "discovery",
+      "source": "whatweb"
+    },
+    {
+      "tool": "whatweb",
+      "url": "https://www.vulnhub.com/",
+      "finding_name": "Technology Detected: X-Frame-Options[SAMEORIGIN]",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "reconnaissance",
+      "description": "Detected technology: X-Frame-Options[SAMEORIGIN]",
+      "timestamp": "2026-02-20 04:39:33",
+      "raw_output": "https://www.vulnhub.com/ [200 OK] Bootstrap[4.4.1], Country[RESERVED][ZZ], Google-Analytics[Universal][UA-37274599-1], HTML5, HTTPServer[cloudflare], IP[172.67.162.8], JQuery[3.4.1], Script[text/javascript], Title[Vulnerable By Design ~ VulnHub], UncommonHeaders[report-to,nel,cf-cache-status,cf-ray,alt-svc], X-Frame-Options[SAMEORIGIN]",
+      "type": "discovery",
+      "source": "whatweb"
+    },
+    {
+      "tool": "ffuf",
+      "url": "https://www.vulnhub.com/.well-known/http-opportunistic",
+      "finding_name": "Hidden Resource Discovered",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "discovery",
+      "description": "Status: 200 | Size: 26",
+      "timestamp": "2026-02-20 04:40:25",
+      "raw_output": {
+        "input": {
+          "FFUFHASH": "2dda341",
+          "FUZZ": ".well-known/http-opportunistic"
+        },
+        "position": 65,
+        "status": 200,
+        "length": 26,
+        "words": 1,
+        "lines": 1,
+        "content-type": "application/json",
+        "redirectlocation": "",
+        "scraper": {},
+        "duration": 16523138,
+        "resultfile": "",
+        "url": "https://www.vulnhub.com/.well-known/http-opportunistic",
+        "host": "www.vulnhub.com"
+      },
+      "type": "discovery",
+      "source": "ffuf",
+      "raw": {
+        "input": {
+          "FFUFHASH": "2dda341",
+          "FUZZ": ".well-known/http-opportunistic"
+        },
+        "position": 65,
+        "status": 200,
+        "length": 26,
+        "words": 1,
+        "lines": 1,
+        "content-type": "application/json",
+        "redirectlocation": "",
+        "scraper": {},
+        "duration": 16523138,
+        "resultfile": "",
+        "url": "https://www.vulnhub.com/.well-known/http-opportunistic",
+        "host": "www.vulnhub.com"
+      }
+    },
+    {
+      "tool": "ffuf",
+      "url": "https://www.vulnhub.com/about",
+      "finding_name": "Hidden Resource Discovered",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "discovery",
+      "description": "Status: 301 | Size: 0",
+      "timestamp": "2026-02-20 04:40:25",
+      "raw_output": {
+        "input": {
+          "FFUFHASH": "2dda31d2",
+          "FUZZ": "about"
+        },
+        "position": 466,
+        "status": 301,
+        "length": 0,
+        "words": 1,
+        "lines": 1,
+        "content-type": "text/html; charset=utf-8",
+        "redirectlocation": "https://www.vulnhub.com/about/",
+        "scraper": {},
+        "duration": 322249985,
+        "resultfile": "",
+        "url": "https://www.vulnhub.com/about",
+        "host": "www.vulnhub.com"
+      },
+      "type": "discovery",
+      "source": "ffuf",
+      "raw": {
+        "input": {
+          "FFUFHASH": "2dda31d2",
+          "FUZZ": "about"
+        },
+        "position": 466,
+        "status": 301,
+        "length": 0,
+        "words": 1,
+        "lines": 1,
+        "content-type": "text/html; charset=utf-8",
+        "redirectlocation": "https://www.vulnhub.com/about/",
+        "scraper": {},
+        "duration": 322249985,
+        "resultfile": "",
+        "url": "https://www.vulnhub.com/about",
+        "host": "www.vulnhub.com"
+      }
+    },
+    {
+      "tool": "ffuf",
+      "url": "https://www.vulnhub.com/blog",
+      "finding_name": "Hidden Resource Discovered",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "discovery",
+      "description": "Status: 301 | Size: 0",
+      "timestamp": "2026-02-20 04:40:25",
+      "raw_output": {
+        "input": {
+          "FFUFHASH": "2dda3370",
+          "FUZZ": "blog"
+        },
+        "position": 880,
+        "status": 301,
+        "length": 0,
+        "words": 1,
+        "lines": 1,
+        "content-type": "text/html; charset=utf-8",
+        "redirectlocation": "https://www.vulnhub.com/blog/",
+        "scraper": {},
+        "duration": 339613258,
+        "resultfile": "",
+        "url": "https://www.vulnhub.com/blog",
+        "host": "www.vulnhub.com"
+      },
+      "type": "discovery",
+      "source": "ffuf",
+      "raw": {
+        "input": {
+          "FFUFHASH": "2dda3370",
+          "FUZZ": "blog"
+        },
+        "position": 880,
+        "status": 301,
+        "length": 0,
+        "words": 1,
+        "lines": 1,
+        "content-type": "text/html; charset=utf-8",
+        "redirectlocation": "https://www.vulnhub.com/blog/",
+        "scraper": {},
+        "duration": 339613258,
+        "resultfile": "",
+        "url": "https://www.vulnhub.com/blog",
+        "host": "www.vulnhub.com"
+      }
+    },
+    {
+      "tool": "ffuf",
+      "url": "https://www.vulnhub.com/chat",
+      "finding_name": "Hidden Resource Discovered",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "discovery",
+      "description": "Status: 301 | Size: 0",
+      "timestamp": "2026-02-20 04:40:25",
+      "raw_output": {
+        "input": {
+          "FFUFHASH": "2dda3437",
+          "FUZZ": "chat"
+        },
+        "position": 1079,
+        "status": 301,
+        "length": 0,
+        "words": 1,
+        "lines": 1,
+        "content-type": "text/html; charset=utf-8",
+        "redirectlocation": "https://www.vulnhub.com/chat/",
+        "scraper": {},
+        "duration": 311439013,
+        "resultfile": "",
+        "url": "https://www.vulnhub.com/chat",
+        "host": "www.vulnhub.com"
+      },
+      "type": "discovery",
+      "source": "ffuf",
+      "raw": {
+        "input": {
+          "FFUFHASH": "2dda3437",
+          "FUZZ": "chat"
+        },
+        "position": 1079,
+        "status": 301,
+        "length": 0,
+        "words": 1,
+        "lines": 1,
+        "content-type": "text/html; charset=utf-8",
+        "redirectlocation": "https://www.vulnhub.com/chat/",
+        "scraper": {},
+        "duration": 311439013,
+        "resultfile": "",
+        "url": "https://www.vulnhub.com/chat",
+        "host": "www.vulnhub.com"
+      }
+    },
+    {
+      "tool": "ffuf",
+      "url": "https://www.vulnhub.com/contact",
+      "finding_name": "Hidden Resource Discovered",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "discovery",
+      "description": "Status: 301 | Size: 0",
+      "timestamp": "2026-02-20 04:40:25",
+      "raw_output": {
+        "input": {
+          "FFUFHASH": "2dda34d7",
+          "FUZZ": "contact"
+        },
+        "position": 1239,
+        "status": 301,
+        "length": 0,
+        "words": 1,
+        "lines": 1,
+        "content-type": "text/html; charset=utf-8",
+        "redirectlocation": "https://www.vulnhub.com/contact/",
+        "scraper": {},
+        "duration": 298228050,
+        "resultfile": "",
+        "url": "https://www.vulnhub.com/contact",
+        "host": "www.vulnhub.com"
+      },
+      "type": "discovery",
+      "source": "ffuf",
+      "raw": {
+        "input": {
+          "FFUFHASH": "2dda34d7",
+          "FUZZ": "contact"
+        },
+        "position": 1239,
+        "status": 301,
+        "length": 0,
+        "words": 1,
+        "lines": 1,
+        "content-type": "text/html; charset=utf-8",
+        "redirectlocation": "https://www.vulnhub.com/contact/",
+        "scraper": {},
+        "duration": 298228050,
+        "resultfile": "",
+        "url": "https://www.vulnhub.com/contact",
+        "host": "www.vulnhub.com"
+      }
+    },
+    {
+      "tool": "ffuf",
+      "url": "https://www.vulnhub.com/faq",
+      "finding_name": "Hidden Resource Discovered",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "discovery",
+      "description": "Status: 301 | Size: 0",
+      "timestamp": "2026-02-20 04:40:25",
+      "raw_output": {
+        "input": {
+          "FFUFHASH": "2dda36e9",
+          "FUZZ": "faq"
+        },
+        "position": 1769,
+        "status": 301,
+        "length": 0,
+        "words": 1,
+        "lines": 1,
+        "content-type": "text/html; charset=utf-8",
+        "redirectlocation": "https://www.vulnhub.com/faq/",
+        "scraper": {},
+        "duration": 291503461,
+        "resultfile": "",
+        "url": "https://www.vulnhub.com/faq",
+        "host": "www.vulnhub.com"
+      },
+      "type": "discovery",
+      "source": "ffuf",
+      "raw": {
+        "input": {
+          "FFUFHASH": "2dda36e9",
+          "FUZZ": "faq"
+        },
+        "position": 1769,
+        "status": 301,
+        "length": 0,
+        "words": 1,
+        "lines": 1,
+        "content-type": "text/html; charset=utf-8",
+        "redirectlocation": "https://www.vulnhub.com/faq/",
+        "scraper": {},
+        "duration": 291503461,
+        "resultfile": "",
+        "url": "https://www.vulnhub.com/faq",
+        "host": "www.vulnhub.com"
+      }
+    },
+    {
+      "tool": "ffuf",
+      "url": "https://www.vulnhub.com/feeds",
+      "finding_name": "Hidden Resource Discovered",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "discovery",
+      "description": "Status: 301 | Size: 0",
+      "timestamp": "2026-02-20 04:40:25",
+      "raw_output": {
+        "input": {
+          "FFUFHASH": "2dda3700",
+          "FUZZ": "feeds"
+        },
+        "position": 1792,
+        "status": 301,
+        "length": 0,
+        "words": 1,
+        "lines": 1,
+        "content-type": "text/html; charset=utf-8",
+        "redirectlocation": "https://www.vulnhub.com/feeds/",
+        "scraper": {},
+        "duration": 332267098,
+        "resultfile": "",
+        "url": "https://www.vulnhub.com/feeds",
+        "host": "www.vulnhub.com"
+      },
+      "type": "discovery",
+      "source": "ffuf",
+      "raw": {
+        "input": {
+          "FFUFHASH": "2dda3700",
+          "FUZZ": "feeds"
+        },
+        "position": 1792,
+        "status": 301,
+        "length": 0,
+        "words": 1,
+        "lines": 1,
+        "content-type": "text/html; charset=utf-8",
+        "redirectlocation": "https://www.vulnhub.com/feeds/",
+        "scraper": {},
+        "duration": 332267098,
+        "resultfile": "",
+        "url": "https://www.vulnhub.com/feeds",
+        "host": "www.vulnhub.com"
+      }
+    },
+    {
+      "tool": "ffuf",
+      "url": "https://www.vulnhub.com/lab",
+      "finding_name": "Hidden Resource Discovered",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "discovery",
+      "description": "Status: 301 | Size: 0",
+      "timestamp": "2026-02-20 04:40:25",
+      "raw_output": {
+        "input": {
+          "FFUFHASH": "2dda396d",
+          "FUZZ": "lab"
+        },
+        "position": 2413,
+        "status": 301,
+        "length": 0,
+        "words": 1,
+        "lines": 1,
+        "content-type": "text/html; charset=utf-8",
+        "redirectlocation": "https://www.vulnhub.com/lab/",
+        "scraper": {},
+        "duration": 322837600,
+        "resultfile": "",
+        "url": "https://www.vulnhub.com/lab",
+        "host": "www.vulnhub.com"
+      },
+      "type": "discovery",
+      "source": "ffuf",
+      "raw": {
+        "input": {
+          "FFUFHASH": "2dda396d",
+          "FUZZ": "lab"
+        },
+        "position": 2413,
+        "status": 301,
+        "length": 0,
+        "words": 1,
+        "lines": 1,
+        "content-type": "text/html; charset=utf-8",
+        "redirectlocation": "https://www.vulnhub.com/lab/",
+        "scraper": {},
+        "duration": 322837600,
+        "resultfile": "",
+        "url": "https://www.vulnhub.com/lab",
+        "host": "www.vulnhub.com"
+      }
+    },
+    {
+      "tool": "ffuf",
+      "url": "https://www.vulnhub.com/media",
+      "finding_name": "Hidden Resource Discovered",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "discovery",
+      "description": "Status: 301 | Size: 824",
+      "timestamp": "2026-02-20 04:40:25",
+      "raw_output": {
+        "input": {
+          "FFUFHASH": "2dda3a58",
+          "FUZZ": "media"
+        },
+        "position": 2648,
+        "status": 301,
+        "length": 824,
+        "words": 25,
+        "lines": 11,
+        "content-type": "text/html; charset=iso-8859-1",
+        "redirectlocation": "https://www.vulnhub.com/media/",
+        "scraper": {},
+        "duration": 297147304,
+        "resultfile": "",
+        "url": "https://www.vulnhub.com/media",
+        "host": "www.vulnhub.com"
+      },
+      "type": "discovery",
+      "source": "ffuf",
+      "raw": {
+        "input": {
+          "FFUFHASH": "2dda3a58",
+          "FUZZ": "media"
+        },
+        "position": 2648,
+        "status": 301,
+        "length": 824,
+        "words": 25,
+        "lines": 11,
+        "content-type": "text/html; charset=iso-8859-1",
+        "redirectlocation": "https://www.vulnhub.com/media/",
+        "scraper": {},
+        "duration": 297147304,
+        "resultfile": "",
+        "url": "https://www.vulnhub.com/media",
+        "host": "www.vulnhub.com"
+      }
+    },
+    {
+      "tool": "ffuf",
+      "url": "https://www.vulnhub.com/privacy",
+      "finding_name": "Hidden Resource Discovered",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "discovery",
+      "description": "Status: 301 | Size: 0",
+      "timestamp": "2026-02-20 04:40:25",
+      "raw_output": {
+        "input": {
+          "FFUFHASH": "2dda3cd0",
+          "FUZZ": "privacy"
+        },
+        "position": 3280,
+        "status": 301,
+        "length": 0,
+        "words": 1,
+        "lines": 1,
+        "content-type": "text/html; charset=utf-8",
+        "redirectlocation": "https://www.vulnhub.com/privacy/",
+        "scraper": {},
+        "duration": 358784737,
+        "resultfile": "",
+        "url": "https://www.vulnhub.com/privacy",
+        "host": "www.vulnhub.com"
+      },
+      "type": "discovery",
+      "source": "ffuf",
+      "raw": {
+        "input": {
+          "FFUFHASH": "2dda3cd0",
+          "FUZZ": "privacy"
+        },
+        "position": 3280,
+        "status": 301,
+        "length": 0,
+        "words": 1,
+        "lines": 1,
+        "content-type": "text/html; charset=utf-8",
+        "redirectlocation": "https://www.vulnhub.com/privacy/",
+        "scraper": {},
+        "duration": 358784737,
+        "resultfile": "",
+        "url": "https://www.vulnhub.com/privacy",
+        "host": "www.vulnhub.com"
+      }
+    },
+    {
+      "tool": "ffuf",
+      "url": "https://www.vulnhub.com/resources",
+      "finding_name": "Hidden Resource Discovered",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "discovery",
+      "description": "Status: 301 | Size: 0",
+      "timestamp": "2026-02-20 04:40:25",
+      "raw_output": {
+        "input": {
+          "FFUFHASH": "2dda3deb",
+          "FUZZ": "resources"
+        },
+        "position": 3563,
+        "status": 301,
+        "length": 0,
+        "words": 1,
+        "lines": 1,
+        "content-type": "text/html; charset=utf-8",
+        "redirectlocation": "https://www.vulnhub.com/resources/",
+        "scraper": {},
+        "duration": 306851789,
+        "resultfile": "",
+        "url": "https://www.vulnhub.com/resources",
+        "host": "www.vulnhub.com"
+      },
+      "type": "discovery",
+      "source": "ffuf",
+      "raw": {
+        "input": {
+          "FFUFHASH": "2dda3deb",
+          "FUZZ": "resources"
+        },
+        "position": 3563,
+        "status": 301,
+        "length": 0,
+        "words": 1,
+        "lines": 1,
+        "content-type": "text/html; charset=utf-8",
+        "redirectlocation": "https://www.vulnhub.com/resources/",
+        "scraper": {},
+        "duration": 306851789,
+        "resultfile": "",
+        "url": "https://www.vulnhub.com/resources",
+        "host": "www.vulnhub.com"
+      }
+    },
+    {
+      "tool": "ffuf",
+      "url": "https://www.vulnhub.com/robots.txt",
+      "finding_name": "Hidden Resource Discovered",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "discovery",
+      "description": "Status: 200 | Size: 1248",
+      "timestamp": "2026-02-20 04:40:25",
+      "raw_output": {
+        "input": {
+          "FFUFHASH": "2dda3e0a",
+          "FUZZ": "robots.txt"
+        },
+        "position": 3594,
+        "status": 200,
+        "length": 1248,
+        "words": 238,
+        "lines": 25,
+        "content-type": "text/plain; charset=utf-8",
+        "redirectlocation": "",
+        "scraper": {},
+        "duration": 285252311,
+        "resultfile": "",
+        "url": "https://www.vulnhub.com/robots.txt",
+        "host": "www.vulnhub.com"
+      },
+      "type": "discovery",
+      "source": "ffuf",
+      "raw": {
+        "input": {
+          "FFUFHASH": "2dda3e0a",
+          "FUZZ": "robots.txt"
+        },
+        "position": 3594,
+        "status": 200,
+        "length": 1248,
+        "words": 238,
+        "lines": 25,
+        "content-type": "text/plain; charset=utf-8",
+        "redirectlocation": "",
+        "scraper": {},
+        "duration": 285252311,
+        "resultfile": "",
+        "url": "https://www.vulnhub.com/robots.txt",
+        "host": "www.vulnhub.com"
+      }
+    },
+    {
+      "tool": "ffuf",
+      "url": "https://www.vulnhub.com/server-status",
+      "finding_name": "Hidden Resource Discovered",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "discovery",
+      "description": "Status: 403 | Size: 785",
+      "timestamp": "2026-02-20 04:40:25",
+      "raw_output": {
+        "input": {
+          "FFUFHASH": "2dda3e98",
+          "FUZZ": "server-status"
+        },
+        "position": 3736,
+        "status": 403,
+        "length": 785,
+        "words": 25,
+        "lines": 11,
+        "content-type": "text/html; charset=iso-8859-1",
+        "redirectlocation": "",
+        "scraper": {},
+        "duration": 299194265,
+        "resultfile": "",
+        "url": "https://www.vulnhub.com/server-status",
+        "host": "www.vulnhub.com"
+      },
+      "type": "discovery",
+      "source": "ffuf",
+      "raw": {
+        "input": {
+          "FFUFHASH": "2dda3e98",
+          "FUZZ": "server-status"
+        },
+        "position": 3736,
+        "status": 403,
+        "length": 785,
+        "words": 25,
+        "lines": 11,
+        "content-type": "text/html; charset=iso-8859-1",
+        "redirectlocation": "",
+        "scraper": {},
+        "duration": 299194265,
+        "resultfile": "",
+        "url": "https://www.vulnhub.com/server-status",
+        "host": "www.vulnhub.com"
+      }
+    },
+    {
+      "tool": "ffuf",
+      "url": "https://www.vulnhub.com/single",
+      "finding_name": "Hidden Resource Discovered",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "discovery",
+      "description": "Status: 301 | Size: 0",
+      "timestamp": "2026-02-20 04:40:25",
+      "raw_output": {
+        "input": {
+          "FFUFHASH": "2dda3ef5",
+          "FUZZ": "single"
+        },
+        "position": 3829,
+        "status": 301,
+        "length": 0,
+        "words": 1,
+        "lines": 1,
+        "content-type": "text/html; charset=utf-8",
+        "redirectlocation": "https://www.vulnhub.com/single/",
+        "scraper": {},
+        "duration": 425379113,
+        "resultfile": "",
+        "url": "https://www.vulnhub.com/single",
+        "host": "www.vulnhub.com"
+      },
+      "type": "discovery",
+      "source": "ffuf",
+      "raw": {
+        "input": {
+          "FFUFHASH": "2dda3ef5",
+          "FUZZ": "single"
+        },
+        "position": 3829,
+        "status": 301,
+        "length": 0,
+        "words": 1,
+        "lines": 1,
+        "content-type": "text/html; charset=utf-8",
+        "redirectlocation": "https://www.vulnhub.com/single/",
+        "scraper": {},
+        "duration": 425379113,
+        "resultfile": "",
+        "url": "https://www.vulnhub.com/single",
+        "host": "www.vulnhub.com"
+      }
+    },
+    {
+      "tool": "ffuf",
+      "url": "https://www.vulnhub.com/static",
+      "finding_name": "Hidden Resource Discovered",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "discovery",
+      "description": "Status: 301 | Size: 825",
+      "timestamp": "2026-02-20 04:40:25",
+      "raw_output": {
+        "input": {
+          "FFUFHASH": "2dda3f89",
+          "FUZZ": "static"
+        },
+        "position": 3977,
+        "status": 301,
+        "length": 825,
+        "words": 25,
+        "lines": 11,
+        "content-type": "text/html; charset=iso-8859-1",
+        "redirectlocation": "https://www.vulnhub.com/static/",
+        "scraper": {},
+        "duration": 322713191,
+        "resultfile": "",
+        "url": "https://www.vulnhub.com/static",
+        "host": "www.vulnhub.com"
+      },
+      "type": "discovery",
+      "source": "ffuf",
+      "raw": {
+        "input": {
+          "FFUFHASH": "2dda3f89",
+          "FUZZ": "static"
+        },
+        "position": 3977,
+        "status": 301,
+        "length": 825,
+        "words": 25,
+        "lines": 11,
+        "content-type": "text/html; charset=iso-8859-1",
+        "redirectlocation": "https://www.vulnhub.com/static/",
+        "scraper": {},
+        "duration": 322713191,
+        "resultfile": "",
+        "url": "https://www.vulnhub.com/static",
+        "host": "www.vulnhub.com"
+      }
+    },
+    {
+      "tool": "ffuf",
+      "url": "https://www.vulnhub.com/timeline",
+      "finding_name": "Hidden Resource Discovered",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "discovery",
+      "description": "Status: 301 | Size: 0",
+      "timestamp": "2026-02-20 04:40:25",
+      "raw_output": {
+        "input": {
+          "FFUFHASH": "2dda31059",
+          "FUZZ": "timeline"
+        },
+        "position": 4185,
+        "status": 301,
+        "length": 0,
+        "words": 1,
+        "lines": 1,
+        "content-type": "text/html; charset=utf-8",
+        "redirectlocation": "https://www.vulnhub.com/timeline/",
+        "scraper": {},
+        "duration": 311243564,
+        "resultfile": "",
+        "url": "https://www.vulnhub.com/timeline",
+        "host": "www.vulnhub.com"
+      },
+      "type": "discovery",
+      "source": "ffuf",
+      "raw": {
+        "input": {
+          "FFUFHASH": "2dda31059",
+          "FUZZ": "timeline"
+        },
+        "position": 4185,
+        "status": 301,
+        "length": 0,
+        "words": 1,
+        "lines": 1,
+        "content-type": "text/html; charset=utf-8",
+        "redirectlocation": "https://www.vulnhub.com/timeline/",
+        "scraper": {},
+        "duration": 311243564,
+        "resultfile": "",
+        "url": "https://www.vulnhub.com/timeline",
+        "host": "www.vulnhub.com"
+      }
+    }
+  ],
+  "vulnerabilities": [],
+  "all_findings_flat": [
+    {
+      "tool": "whatweb",
+      "url": "https://www.vulnhub.com/",
+      "finding_name": "Technology Detected: Bootstrap[4.4.1]",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "reconnaissance",
+      "description": "Detected technology: Bootstrap[4.4.1]",
+      "timestamp": "2026-02-20 04:39:33",
+      "raw_output": "https://www.vulnhub.com/ [200 OK] Bootstrap[4.4.1], Country[RESERVED][ZZ], Google-Analytics[Universal][UA-37274599-1], HTML5, HTTPServer[cloudflare], IP[172.67.162.8], JQuery[3.4.1], Script[text/javascript], Title[Vulnerable By Design ~ VulnHub], UncommonHeaders[report-to,nel,cf-cache-status,cf-ray,alt-svc], X-Frame-Options[SAMEORIGIN]",
+      "type": "discovery",
+      "source": "whatweb"
+    },
+    {
+      "tool": "whatweb",
+      "url": "https://www.vulnhub.com/",
+      "finding_name": "Technology Detected: Country[RESERVED][ZZ]",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "reconnaissance",
+      "description": "Detected technology: Country[RESERVED][ZZ]",
+      "timestamp": "2026-02-20 04:39:33",
+      "raw_output": "https://www.vulnhub.com/ [200 OK] Bootstrap[4.4.1], Country[RESERVED][ZZ], Google-Analytics[Universal][UA-37274599-1], HTML5, HTTPServer[cloudflare], IP[172.67.162.8], JQuery[3.4.1], Script[text/javascript], Title[Vulnerable By Design ~ VulnHub], UncommonHeaders[report-to,nel,cf-cache-status,cf-ray,alt-svc], X-Frame-Options[SAMEORIGIN]",
+      "type": "discovery",
+      "source": "whatweb"
+    },
+    {
+      "tool": "whatweb",
+      "url": "https://www.vulnhub.com/",
+      "finding_name": "Technology Detected: Google-Analytics[Universal][UA-37274599-1]",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "reconnaissance",
+      "description": "Detected technology: Google-Analytics[Universal][UA-37274599-1]",
+      "timestamp": "2026-02-20 04:39:33",
+      "raw_output": "https://www.vulnhub.com/ [200 OK] Bootstrap[4.4.1], Country[RESERVED][ZZ], Google-Analytics[Universal][UA-37274599-1], HTML5, HTTPServer[cloudflare], IP[172.67.162.8], JQuery[3.4.1], Script[text/javascript], Title[Vulnerable By Design ~ VulnHub], UncommonHeaders[report-to,nel,cf-cache-status,cf-ray,alt-svc], X-Frame-Options[SAMEORIGIN]",
+      "type": "discovery",
+      "source": "whatweb"
+    },
+    {
+      "tool": "whatweb",
+      "url": "https://www.vulnhub.com/",
+      "finding_name": "Technology Detected: HTML5",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "reconnaissance",
+      "description": "Detected technology: HTML5",
+      "timestamp": "2026-02-20 04:39:33",
+      "raw_output": "https://www.vulnhub.com/ [200 OK] Bootstrap[4.4.1], Country[RESERVED][ZZ], Google-Analytics[Universal][UA-37274599-1], HTML5, HTTPServer[cloudflare], IP[172.67.162.8], JQuery[3.4.1], Script[text/javascript], Title[Vulnerable By Design ~ VulnHub], UncommonHeaders[report-to,nel,cf-cache-status,cf-ray,alt-svc], X-Frame-Options[SAMEORIGIN]",
+      "type": "discovery",
+      "source": "whatweb"
+    },
+    {
+      "tool": "whatweb",
+      "url": "https://www.vulnhub.com/",
+      "finding_name": "Technology Detected: HTTPServer[cloudflare]",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "reconnaissance",
+      "description": "Detected technology: HTTPServer[cloudflare]",
+      "timestamp": "2026-02-20 04:39:33",
+      "raw_output": "https://www.vulnhub.com/ [200 OK] Bootstrap[4.4.1], Country[RESERVED][ZZ], Google-Analytics[Universal][UA-37274599-1], HTML5, HTTPServer[cloudflare], IP[172.67.162.8], JQuery[3.4.1], Script[text/javascript], Title[Vulnerable By Design ~ VulnHub], UncommonHeaders[report-to,nel,cf-cache-status,cf-ray,alt-svc], X-Frame-Options[SAMEORIGIN]",
+      "type": "discovery",
+      "source": "whatweb"
+    },
+    {
+      "tool": "whatweb",
+      "url": "https://www.vulnhub.com/",
+      "finding_name": "Technology Detected: IP[172.67.162.8]",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "reconnaissance",
+      "description": "Detected technology: IP[172.67.162.8]",
+      "timestamp": "2026-02-20 04:39:33",
+      "raw_output": "https://www.vulnhub.com/ [200 OK] Bootstrap[4.4.1], Country[RESERVED][ZZ], Google-Analytics[Universal][UA-37274599-1], HTML5, HTTPServer[cloudflare], IP[172.67.162.8], JQuery[3.4.1], Script[text/javascript], Title[Vulnerable By Design ~ VulnHub], UncommonHeaders[report-to,nel,cf-cache-status,cf-ray,alt-svc], X-Frame-Options[SAMEORIGIN]",
+      "type": "discovery",
+      "source": "whatweb"
+    },
+    {
+      "tool": "whatweb",
+      "url": "https://www.vulnhub.com/",
+      "finding_name": "Technology Detected: JQuery[3.4.1]",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "reconnaissance",
+      "description": "Detected technology: JQuery[3.4.1]",
+      "timestamp": "2026-02-20 04:39:33",
+      "raw_output": "https://www.vulnhub.com/ [200 OK] Bootstrap[4.4.1], Country[RESERVED][ZZ], Google-Analytics[Universal][UA-37274599-1], HTML5, HTTPServer[cloudflare], IP[172.67.162.8], JQuery[3.4.1], Script[text/javascript], Title[Vulnerable By Design ~ VulnHub], UncommonHeaders[report-to,nel,cf-cache-status,cf-ray,alt-svc], X-Frame-Options[SAMEORIGIN]",
+      "type": "discovery",
+      "source": "whatweb"
+    },
+    {
+      "tool": "whatweb",
+      "url": "https://www.vulnhub.com/",
+      "finding_name": "Technology Detected: Script[text/javascript]",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "reconnaissance",
+      "description": "Detected technology: Script[text/javascript]",
+      "timestamp": "2026-02-20 04:39:33",
+      "raw_output": "https://www.vulnhub.com/ [200 OK] Bootstrap[4.4.1], Country[RESERVED][ZZ], Google-Analytics[Universal][UA-37274599-1], HTML5, HTTPServer[cloudflare], IP[172.67.162.8], JQuery[3.4.1], Script[text/javascript], Title[Vulnerable By Design ~ VulnHub], UncommonHeaders[report-to,nel,cf-cache-status,cf-ray,alt-svc], X-Frame-Options[SAMEORIGIN]",
+      "type": "discovery",
+      "source": "whatweb"
+    },
+    {
+      "tool": "whatweb",
+      "url": "https://www.vulnhub.com/",
+      "finding_name": "Technology Detected: Title[Vulnerable By Design ~ VulnHub]",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "reconnaissance",
+      "description": "Detected technology: Title[Vulnerable By Design ~ VulnHub]",
+      "timestamp": "2026-02-20 04:39:33",
+      "raw_output": "https://www.vulnhub.com/ [200 OK] Bootstrap[4.4.1], Country[RESERVED][ZZ], Google-Analytics[Universal][UA-37274599-1], HTML5, HTTPServer[cloudflare], IP[172.67.162.8], JQuery[3.4.1], Script[text/javascript], Title[Vulnerable By Design ~ VulnHub], UncommonHeaders[report-to,nel,cf-cache-status,cf-ray,alt-svc], X-Frame-Options[SAMEORIGIN]",
+      "type": "discovery",
+      "source": "whatweb"
+    },
+    {
+      "tool": "whatweb",
+      "url": "https://www.vulnhub.com/",
+      "finding_name": "Technology Detected: UncommonHeaders[report-to,nel,cf-cache-status,cf-ray,alt-svc]",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "reconnaissance",
+      "description": "Detected technology: UncommonHeaders[report-to,nel,cf-cache-status,cf-ray,alt-svc]",
+      "timestamp": "2026-02-20 04:39:33",
+      "raw_output": "https://www.vulnhub.com/ [200 OK] Bootstrap[4.4.1], Country[RESERVED][ZZ], Google-Analytics[Universal][UA-37274599-1], HTML5, HTTPServer[cloudflare], IP[172.67.162.8], JQuery[3.4.1], Script[text/javascript], Title[Vulnerable By Design ~ VulnHub], UncommonHeaders[report-to,nel,cf-cache-status,cf-ray,alt-svc], X-Frame-Options[SAMEORIGIN]",
+      "type": "discovery",
+      "source": "whatweb"
+    },
+    {
+      "tool": "whatweb",
+      "url": "https://www.vulnhub.com/",
+      "finding_name": "Technology Detected: X-Frame-Options[SAMEORIGIN]",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "reconnaissance",
+      "description": "Detected technology: X-Frame-Options[SAMEORIGIN]",
+      "timestamp": "2026-02-20 04:39:33",
+      "raw_output": "https://www.vulnhub.com/ [200 OK] Bootstrap[4.4.1], Country[RESERVED][ZZ], Google-Analytics[Universal][UA-37274599-1], HTML5, HTTPServer[cloudflare], IP[172.67.162.8], JQuery[3.4.1], Script[text/javascript], Title[Vulnerable By Design ~ VulnHub], UncommonHeaders[report-to,nel,cf-cache-status,cf-ray,alt-svc], X-Frame-Options[SAMEORIGIN]",
+      "type": "discovery",
+      "source": "whatweb"
+    },
+    {
+      "tool": "ffuf",
+      "url": "https://www.vulnhub.com/.well-known/http-opportunistic",
+      "finding_name": "Hidden Resource Discovered",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "discovery",
+      "description": "Status: 200 | Size: 26",
+      "timestamp": "2026-02-20 04:40:25",
+      "raw_output": {
+        "input": {
+          "FFUFHASH": "2dda341",
+          "FUZZ": ".well-known/http-opportunistic"
+        },
+        "position": 65,
+        "status": 200,
+        "length": 26,
+        "words": 1,
+        "lines": 1,
+        "content-type": "application/json",
+        "redirectlocation": "",
+        "scraper": {},
+        "duration": 16523138,
+        "resultfile": "",
+        "url": "https://www.vulnhub.com/.well-known/http-opportunistic",
+        "host": "www.vulnhub.com"
+      },
+      "type": "discovery",
+      "source": "ffuf",
+      "raw": {
+        "input": {
+          "FFUFHASH": "2dda341",
+          "FUZZ": ".well-known/http-opportunistic"
+        },
+        "position": 65,
+        "status": 200,
+        "length": 26,
+        "words": 1,
+        "lines": 1,
+        "content-type": "application/json",
+        "redirectlocation": "",
+        "scraper": {},
+        "duration": 16523138,
+        "resultfile": "",
+        "url": "https://www.vulnhub.com/.well-known/http-opportunistic",
+        "host": "www.vulnhub.com"
+      }
+    },
+    {
+      "tool": "ffuf",
+      "url": "https://www.vulnhub.com/about",
+      "finding_name": "Hidden Resource Discovered",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "discovery",
+      "description": "Status: 301 | Size: 0",
+      "timestamp": "2026-02-20 04:40:25",
+      "raw_output": {
+        "input": {
+          "FFUFHASH": "2dda31d2",
+          "FUZZ": "about"
+        },
+        "position": 466,
+        "status": 301,
+        "length": 0,
+        "words": 1,
+        "lines": 1,
+        "content-type": "text/html; charset=utf-8",
+        "redirectlocation": "https://www.vulnhub.com/about/",
+        "scraper": {},
+        "duration": 322249985,
+        "resultfile": "",
+        "url": "https://www.vulnhub.com/about",
+        "host": "www.vulnhub.com"
+      },
+      "type": "discovery",
+      "source": "ffuf",
+      "raw": {
+        "input": {
+          "FFUFHASH": "2dda31d2",
+          "FUZZ": "about"
+        },
+        "position": 466,
+        "status": 301,
+        "length": 0,
+        "words": 1,
+        "lines": 1,
+        "content-type": "text/html; charset=utf-8",
+        "redirectlocation": "https://www.vulnhub.com/about/",
+        "scraper": {},
+        "duration": 322249985,
+        "resultfile": "",
+        "url": "https://www.vulnhub.com/about",
+        "host": "www.vulnhub.com"
+      }
+    },
+    {
+      "tool": "ffuf",
+      "url": "https://www.vulnhub.com/blog",
+      "finding_name": "Hidden Resource Discovered",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "discovery",
+      "description": "Status: 301 | Size: 0",
+      "timestamp": "2026-02-20 04:40:25",
+      "raw_output": {
+        "input": {
+          "FFUFHASH": "2dda3370",
+          "FUZZ": "blog"
+        },
+        "position": 880,
+        "status": 301,
+        "length": 0,
+        "words": 1,
+        "lines": 1,
+        "content-type": "text/html; charset=utf-8",
+        "redirectlocation": "https://www.vulnhub.com/blog/",
+        "scraper": {},
+        "duration": 339613258,
+        "resultfile": "",
+        "url": "https://www.vulnhub.com/blog",
+        "host": "www.vulnhub.com"
+      },
+      "type": "discovery",
+      "source": "ffuf",
+      "raw": {
+        "input": {
+          "FFUFHASH": "2dda3370",
+          "FUZZ": "blog"
+        },
+        "position": 880,
+        "status": 301,
+        "length": 0,
+        "words": 1,
+        "lines": 1,
+        "content-type": "text/html; charset=utf-8",
+        "redirectlocation": "https://www.vulnhub.com/blog/",
+        "scraper": {},
+        "duration": 339613258,
+        "resultfile": "",
+        "url": "https://www.vulnhub.com/blog",
+        "host": "www.vulnhub.com"
+      }
+    },
+    {
+      "tool": "ffuf",
+      "url": "https://www.vulnhub.com/chat",
+      "finding_name": "Hidden Resource Discovered",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "discovery",
+      "description": "Status: 301 | Size: 0",
+      "timestamp": "2026-02-20 04:40:25",
+      "raw_output": {
+        "input": {
+          "FFUFHASH": "2dda3437",
+          "FUZZ": "chat"
+        },
+        "position": 1079,
+        "status": 301,
+        "length": 0,
+        "words": 1,
+        "lines": 1,
+        "content-type": "text/html; charset=utf-8",
+        "redirectlocation": "https://www.vulnhub.com/chat/",
+        "scraper": {},
+        "duration": 311439013,
+        "resultfile": "",
+        "url": "https://www.vulnhub.com/chat",
+        "host": "www.vulnhub.com"
+      },
+      "type": "discovery",
+      "source": "ffuf",
+      "raw": {
+        "input": {
+          "FFUFHASH": "2dda3437",
+          "FUZZ": "chat"
+        },
+        "position": 1079,
+        "status": 301,
+        "length": 0,
+        "words": 1,
+        "lines": 1,
+        "content-type": "text/html; charset=utf-8",
+        "redirectlocation": "https://www.vulnhub.com/chat/",
+        "scraper": {},
+        "duration": 311439013,
+        "resultfile": "",
+        "url": "https://www.vulnhub.com/chat",
+        "host": "www.vulnhub.com"
+      }
+    },
+    {
+      "tool": "ffuf",
+      "url": "https://www.vulnhub.com/contact",
+      "finding_name": "Hidden Resource Discovered",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "discovery",
+      "description": "Status: 301 | Size: 0",
+      "timestamp": "2026-02-20 04:40:25",
+      "raw_output": {
+        "input": {
+          "FFUFHASH": "2dda34d7",
+          "FUZZ": "contact"
+        },
+        "position": 1239,
+        "status": 301,
+        "length": 0,
+        "words": 1,
+        "lines": 1,
+        "content-type": "text/html; charset=utf-8",
+        "redirectlocation": "https://www.vulnhub.com/contact/",
+        "scraper": {},
+        "duration": 298228050,
+        "resultfile": "",
+        "url": "https://www.vulnhub.com/contact",
+        "host": "www.vulnhub.com"
+      },
+      "type": "discovery",
+      "source": "ffuf",
+      "raw": {
+        "input": {
+          "FFUFHASH": "2dda34d7",
+          "FUZZ": "contact"
+        },
+        "position": 1239,
+        "status": 301,
+        "length": 0,
+        "words": 1,
+        "lines": 1,
+        "content-type": "text/html; charset=utf-8",
+        "redirectlocation": "https://www.vulnhub.com/contact/",
+        "scraper": {},
+        "duration": 298228050,
+        "resultfile": "",
+        "url": "https://www.vulnhub.com/contact",
+        "host": "www.vulnhub.com"
+      }
+    },
+    {
+      "tool": "ffuf",
+      "url": "https://www.vulnhub.com/faq",
+      "finding_name": "Hidden Resource Discovered",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "discovery",
+      "description": "Status: 301 | Size: 0",
+      "timestamp": "2026-02-20 04:40:25",
+      "raw_output": {
+        "input": {
+          "FFUFHASH": "2dda36e9",
+          "FUZZ": "faq"
+        },
+        "position": 1769,
+        "status": 301,
+        "length": 0,
+        "words": 1,
+        "lines": 1,
+        "content-type": "text/html; charset=utf-8",
+        "redirectlocation": "https://www.vulnhub.com/faq/",
+        "scraper": {},
+        "duration": 291503461,
+        "resultfile": "",
+        "url": "https://www.vulnhub.com/faq",
+        "host": "www.vulnhub.com"
+      },
+      "type": "discovery",
+      "source": "ffuf",
+      "raw": {
+        "input": {
+          "FFUFHASH": "2dda36e9",
+          "FUZZ": "faq"
+        },
+        "position": 1769,
+        "status": 301,
+        "length": 0,
+        "words": 1,
+        "lines": 1,
+        "content-type": "text/html; charset=utf-8",
+        "redirectlocation": "https://www.vulnhub.com/faq/",
+        "scraper": {},
+        "duration": 291503461,
+        "resultfile": "",
+        "url": "https://www.vulnhub.com/faq",
+        "host": "www.vulnhub.com"
+      }
+    },
+    {
+      "tool": "ffuf",
+      "url": "https://www.vulnhub.com/feeds",
+      "finding_name": "Hidden Resource Discovered",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "discovery",
+      "description": "Status: 301 | Size: 0",
+      "timestamp": "2026-02-20 04:40:25",
+      "raw_output": {
+        "input": {
+          "FFUFHASH": "2dda3700",
+          "FUZZ": "feeds"
+        },
+        "position": 1792,
+        "status": 301,
+        "length": 0,
+        "words": 1,
+        "lines": 1,
+        "content-type": "text/html; charset=utf-8",
+        "redirectlocation": "https://www.vulnhub.com/feeds/",
+        "scraper": {},
+        "duration": 332267098,
+        "resultfile": "",
+        "url": "https://www.vulnhub.com/feeds",
+        "host": "www.vulnhub.com"
+      },
+      "type": "discovery",
+      "source": "ffuf",
+      "raw": {
+        "input": {
+          "FFUFHASH": "2dda3700",
+          "FUZZ": "feeds"
+        },
+        "position": 1792,
+        "status": 301,
+        "length": 0,
+        "words": 1,
+        "lines": 1,
+        "content-type": "text/html; charset=utf-8",
+        "redirectlocation": "https://www.vulnhub.com/feeds/",
+        "scraper": {},
+        "duration": 332267098,
+        "resultfile": "",
+        "url": "https://www.vulnhub.com/feeds",
+        "host": "www.vulnhub.com"
+      }
+    },
+    {
+      "tool": "ffuf",
+      "url": "https://www.vulnhub.com/lab",
+      "finding_name": "Hidden Resource Discovered",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "discovery",
+      "description": "Status: 301 | Size: 0",
+      "timestamp": "2026-02-20 04:40:25",
+      "raw_output": {
+        "input": {
+          "FFUFHASH": "2dda396d",
+          "FUZZ": "lab"
+        },
+        "position": 2413,
+        "status": 301,
+        "length": 0,
+        "words": 1,
+        "lines": 1,
+        "content-type": "text/html; charset=utf-8",
+        "redirectlocation": "https://www.vulnhub.com/lab/",
+        "scraper": {},
+        "duration": 322837600,
+        "resultfile": "",
+        "url": "https://www.vulnhub.com/lab",
+        "host": "www.vulnhub.com"
+      },
+      "type": "discovery",
+      "source": "ffuf",
+      "raw": {
+        "input": {
+          "FFUFHASH": "2dda396d",
+          "FUZZ": "lab"
+        },
+        "position": 2413,
+        "status": 301,
+        "length": 0,
+        "words": 1,
+        "lines": 1,
+        "content-type": "text/html; charset=utf-8",
+        "redirectlocation": "https://www.vulnhub.com/lab/",
+        "scraper": {},
+        "duration": 322837600,
+        "resultfile": "",
+        "url": "https://www.vulnhub.com/lab",
+        "host": "www.vulnhub.com"
+      }
+    },
+    {
+      "tool": "ffuf",
+      "url": "https://www.vulnhub.com/media",
+      "finding_name": "Hidden Resource Discovered",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "discovery",
+      "description": "Status: 301 | Size: 824",
+      "timestamp": "2026-02-20 04:40:25",
+      "raw_output": {
+        "input": {
+          "FFUFHASH": "2dda3a58",
+          "FUZZ": "media"
+        },
+        "position": 2648,
+        "status": 301,
+        "length": 824,
+        "words": 25,
+        "lines": 11,
+        "content-type": "text/html; charset=iso-8859-1",
+        "redirectlocation": "https://www.vulnhub.com/media/",
+        "scraper": {},
+        "duration": 297147304,
+        "resultfile": "",
+        "url": "https://www.vulnhub.com/media",
+        "host": "www.vulnhub.com"
+      },
+      "type": "discovery",
+      "source": "ffuf",
+      "raw": {
+        "input": {
+          "FFUFHASH": "2dda3a58",
+          "FUZZ": "media"
+        },
+        "position": 2648,
+        "status": 301,
+        "length": 824,
+        "words": 25,
+        "lines": 11,
+        "content-type": "text/html; charset=iso-8859-1",
+        "redirectlocation": "https://www.vulnhub.com/media/",
+        "scraper": {},
+        "duration": 297147304,
+        "resultfile": "",
+        "url": "https://www.vulnhub.com/media",
+        "host": "www.vulnhub.com"
+      }
+    },
+    {
+      "tool": "ffuf",
+      "url": "https://www.vulnhub.com/privacy",
+      "finding_name": "Hidden Resource Discovered",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "discovery",
+      "description": "Status: 301 | Size: 0",
+      "timestamp": "2026-02-20 04:40:25",
+      "raw_output": {
+        "input": {
+          "FFUFHASH": "2dda3cd0",
+          "FUZZ": "privacy"
+        },
+        "position": 3280,
+        "status": 301,
+        "length": 0,
+        "words": 1,
+        "lines": 1,
+        "content-type": "text/html; charset=utf-8",
+        "redirectlocation": "https://www.vulnhub.com/privacy/",
+        "scraper": {},
+        "duration": 358784737,
+        "resultfile": "",
+        "url": "https://www.vulnhub.com/privacy",
+        "host": "www.vulnhub.com"
+      },
+      "type": "discovery",
+      "source": "ffuf",
+      "raw": {
+        "input": {
+          "FFUFHASH": "2dda3cd0",
+          "FUZZ": "privacy"
+        },
+        "position": 3280,
+        "status": 301,
+        "length": 0,
+        "words": 1,
+        "lines": 1,
+        "content-type": "text/html; charset=utf-8",
+        "redirectlocation": "https://www.vulnhub.com/privacy/",
+        "scraper": {},
+        "duration": 358784737,
+        "resultfile": "",
+        "url": "https://www.vulnhub.com/privacy",
+        "host": "www.vulnhub.com"
+      }
+    },
+    {
+      "tool": "ffuf",
+      "url": "https://www.vulnhub.com/resources",
+      "finding_name": "Hidden Resource Discovered",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "discovery",
+      "description": "Status: 301 | Size: 0",
+      "timestamp": "2026-02-20 04:40:25",
+      "raw_output": {
+        "input": {
+          "FFUFHASH": "2dda3deb",
+          "FUZZ": "resources"
+        },
+        "position": 3563,
+        "status": 301,
+        "length": 0,
+        "words": 1,
+        "lines": 1,
+        "content-type": "text/html; charset=utf-8",
+        "redirectlocation": "https://www.vulnhub.com/resources/",
+        "scraper": {},
+        "duration": 306851789,
+        "resultfile": "",
+        "url": "https://www.vulnhub.com/resources",
+        "host": "www.vulnhub.com"
+      },
+      "type": "discovery",
+      "source": "ffuf",
+      "raw": {
+        "input": {
+          "FFUFHASH": "2dda3deb",
+          "FUZZ": "resources"
+        },
+        "position": 3563,
+        "status": 301,
+        "length": 0,
+        "words": 1,
+        "lines": 1,
+        "content-type": "text/html; charset=utf-8",
+        "redirectlocation": "https://www.vulnhub.com/resources/",
+        "scraper": {},
+        "duration": 306851789,
+        "resultfile": "",
+        "url": "https://www.vulnhub.com/resources",
+        "host": "www.vulnhub.com"
+      }
+    },
+    {
+      "tool": "ffuf",
+      "url": "https://www.vulnhub.com/robots.txt",
+      "finding_name": "Hidden Resource Discovered",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "discovery",
+      "description": "Status: 200 | Size: 1248",
+      "timestamp": "2026-02-20 04:40:25",
+      "raw_output": {
+        "input": {
+          "FFUFHASH": "2dda3e0a",
+          "FUZZ": "robots.txt"
+        },
+        "position": 3594,
+        "status": 200,
+        "length": 1248,
+        "words": 238,
+        "lines": 25,
+        "content-type": "text/plain; charset=utf-8",
+        "redirectlocation": "",
+        "scraper": {},
+        "duration": 285252311,
+        "resultfile": "",
+        "url": "https://www.vulnhub.com/robots.txt",
+        "host": "www.vulnhub.com"
+      },
+      "type": "discovery",
+      "source": "ffuf",
+      "raw": {
+        "input": {
+          "FFUFHASH": "2dda3e0a",
+          "FUZZ": "robots.txt"
+        },
+        "position": 3594,
+        "status": 200,
+        "length": 1248,
+        "words": 238,
+        "lines": 25,
+        "content-type": "text/plain; charset=utf-8",
+        "redirectlocation": "",
+        "scraper": {},
+        "duration": 285252311,
+        "resultfile": "",
+        "url": "https://www.vulnhub.com/robots.txt",
+        "host": "www.vulnhub.com"
+      }
+    },
+    {
+      "tool": "ffuf",
+      "url": "https://www.vulnhub.com/server-status",
+      "finding_name": "Hidden Resource Discovered",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "discovery",
+      "description": "Status: 403 | Size: 785",
+      "timestamp": "2026-02-20 04:40:25",
+      "raw_output": {
+        "input": {
+          "FFUFHASH": "2dda3e98",
+          "FUZZ": "server-status"
+        },
+        "position": 3736,
+        "status": 403,
+        "length": 785,
+        "words": 25,
+        "lines": 11,
+        "content-type": "text/html; charset=iso-8859-1",
+        "redirectlocation": "",
+        "scraper": {},
+        "duration": 299194265,
+        "resultfile": "",
+        "url": "https://www.vulnhub.com/server-status",
+        "host": "www.vulnhub.com"
+      },
+      "type": "discovery",
+      "source": "ffuf",
+      "raw": {
+        "input": {
+          "FFUFHASH": "2dda3e98",
+          "FUZZ": "server-status"
+        },
+        "position": 3736,
+        "status": 403,
+        "length": 785,
+        "words": 25,
+        "lines": 11,
+        "content-type": "text/html; charset=iso-8859-1",
+        "redirectlocation": "",
+        "scraper": {},
+        "duration": 299194265,
+        "resultfile": "",
+        "url": "https://www.vulnhub.com/server-status",
+        "host": "www.vulnhub.com"
+      }
+    },
+    {
+      "tool": "ffuf",
+      "url": "https://www.vulnhub.com/single",
+      "finding_name": "Hidden Resource Discovered",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "discovery",
+      "description": "Status: 301 | Size: 0",
+      "timestamp": "2026-02-20 04:40:25",
+      "raw_output": {
+        "input": {
+          "FFUFHASH": "2dda3ef5",
+          "FUZZ": "single"
+        },
+        "position": 3829,
+        "status": 301,
+        "length": 0,
+        "words": 1,
+        "lines": 1,
+        "content-type": "text/html; charset=utf-8",
+        "redirectlocation": "https://www.vulnhub.com/single/",
+        "scraper": {},
+        "duration": 425379113,
+        "resultfile": "",
+        "url": "https://www.vulnhub.com/single",
+        "host": "www.vulnhub.com"
+      },
+      "type": "discovery",
+      "source": "ffuf",
+      "raw": {
+        "input": {
+          "FFUFHASH": "2dda3ef5",
+          "FUZZ": "single"
+        },
+        "position": 3829,
+        "status": 301,
+        "length": 0,
+        "words": 1,
+        "lines": 1,
+        "content-type": "text/html; charset=utf-8",
+        "redirectlocation": "https://www.vulnhub.com/single/",
+        "scraper": {},
+        "duration": 425379113,
+        "resultfile": "",
+        "url": "https://www.vulnhub.com/single",
+        "host": "www.vulnhub.com"
+      }
+    },
+    {
+      "tool": "ffuf",
+      "url": "https://www.vulnhub.com/static",
+      "finding_name": "Hidden Resource Discovered",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "discovery",
+      "description": "Status: 301 | Size: 825",
+      "timestamp": "2026-02-20 04:40:25",
+      "raw_output": {
+        "input": {
+          "FFUFHASH": "2dda3f89",
+          "FUZZ": "static"
+        },
+        "position": 3977,
+        "status": 301,
+        "length": 825,
+        "words": 25,
+        "lines": 11,
+        "content-type": "text/html; charset=iso-8859-1",
+        "redirectlocation": "https://www.vulnhub.com/static/",
+        "scraper": {},
+        "duration": 322713191,
+        "resultfile": "",
+        "url": "https://www.vulnhub.com/static",
+        "host": "www.vulnhub.com"
+      },
+      "type": "discovery",
+      "source": "ffuf",
+      "raw": {
+        "input": {
+          "FFUFHASH": "2dda3f89",
+          "FUZZ": "static"
+        },
+        "position": 3977,
+        "status": 301,
+        "length": 825,
+        "words": 25,
+        "lines": 11,
+        "content-type": "text/html; charset=iso-8859-1",
+        "redirectlocation": "https://www.vulnhub.com/static/",
+        "scraper": {},
+        "duration": 322713191,
+        "resultfile": "",
+        "url": "https://www.vulnhub.com/static",
+        "host": "www.vulnhub.com"
+      }
+    },
+    {
+      "tool": "ffuf",
+      "url": "https://www.vulnhub.com/timeline",
+      "finding_name": "Hidden Resource Discovered",
+      "severity": "INFO",
+      "risk_score": 1,
+      "category": "discovery",
+      "description": "Status: 301 | Size: 0",
+      "timestamp": "2026-02-20 04:40:25",
+      "raw_output": {
+        "input": {
+          "FFUFHASH": "2dda31059",
+          "FUZZ": "timeline"
+        },
+        "position": 4185,
+        "status": 301,
+        "length": 0,
+        "words": 1,
+        "lines": 1,
+        "content-type": "text/html; charset=utf-8",
+        "redirectlocation": "https://www.vulnhub.com/timeline/",
+        "scraper": {},
+        "duration": 311243564,
+        "resultfile": "",
+        "url": "https://www.vulnhub.com/timeline",
+        "host": "www.vulnhub.com"
+      },
+      "type": "discovery",
+      "source": "ffuf",
+      "raw": {
+        "input": {
+          "FFUFHASH": "2dda31059",
+          "FUZZ": "timeline"
+        },
+        "position": 4185,
+        "status": 301,
+        "length": 0,
+        "words": 1,
+        "lines": 1,
+        "content-type": "text/html; charset=utf-8",
+        "redirectlocation": "https://www.vulnhub.com/timeline/",
+        "scraper": {},
+        "duration": 311243564,
+        "resultfile": "",
+        "url": "https://www.vulnhub.com/timeline",
+        "host": "www.vulnhub.com"
+      }
+    }
+  ]
+}

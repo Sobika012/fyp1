@@ -1,0 +1,3384 @@
+{
+  "commandline": "ffuf -u https://example.com/FUZZ -w /usr/share/seclists/Discovery/Web-Content/common.txt -o ffuf_ea827305291b481395d34e958970b24c.json -of json -mc 200,204,301,302,307,401,403 -t 60 -timeout 2 -noninteractive -k -s",
+  "time": "2026-02-20T01:01:02-05:00",
+  "results": [
+    {
+      "input": {
+        "FFUFHASH": "eeaa4ec5",
+        "FUZZ": "shopper"
+      },
+      "position": 3781,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 9606119,
+      "resultfile": "",
+      "url": "https://example.com/shopper",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa4f0d",
+        "FUZZ": "skip"
+      },
+      "position": 3853,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 24646746,
+      "resultfile": "",
+      "url": "https://example.com/skip",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa4f63",
+        "FUZZ": "squirrel"
+      },
+      "position": 3939,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 14218320,
+      "resultfile": "",
+      "url": "https://example.com/squirrel",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa4f9d",
+        "FUZZ": "stow"
+      },
+      "position": 3997,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 34307470,
+      "resultfile": "",
+      "url": "https://example.com/stow",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa4fb7",
+        "FUZZ": "submitter"
+      },
+      "position": 4023,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 33540686,
+      "resultfile": "",
+      "url": "https://example.com/submitter",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa4fda",
+        "FUZZ": "swajax1"
+      },
+      "position": 4058,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 18963932,
+      "resultfile": "",
+      "url": "https://example.com/swajax1",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa41003",
+        "FUZZ": "tar.gz"
+      },
+      "position": 4099,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 9115130,
+      "resultfile": "",
+      "url": "https://example.com/tar.gz",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa41038",
+        "FUZZ": "text-base"
+      },
+      "position": 4152,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 22761641,
+      "resultfile": "",
+      "url": "https://example.com/text-base",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa41055",
+        "FUZZ": "tienda"
+      },
+      "position": 4181,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 11156863,
+      "resultfile": "",
+      "url": "https://example.com/tienda",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa4105d",
+        "FUZZ": "tips"
+      },
+      "position": 4189,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 22476511,
+      "resultfile": "",
+      "url": "https://example.com/tips",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa41062",
+        "FUZZ": "tmp"
+      },
+      "position": 4194,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 22015041,
+      "resultfile": "",
+      "url": "https://example.com/tmp",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa41086",
+        "FUZZ": "tpl"
+      },
+      "position": 4230,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 19956785,
+      "resultfile": "",
+      "url": "https://example.com/tpl",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa4106e",
+        "FUZZ": "token/introspect"
+      },
+      "position": 4206,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 23059814,
+      "resultfile": "",
+      "url": "https://example.com/token/introspect",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa41078",
+        "FUZZ": "topic"
+      },
+      "position": 4216,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 22520599,
+      "resultfile": "",
+      "url": "https://example.com/topic",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa4105e",
+        "FUZZ": "title"
+      },
+      "position": 4190,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 22455192,
+      "resultfile": "",
+      "url": "https://example.com/title",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa41064",
+        "FUZZ": "tmps"
+      },
+      "position": 4196,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 24753728,
+      "resultfile": "",
+      "url": "https://example.com/tmps",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa41067",
+        "FUZZ": "to"
+      },
+      "position": 4199,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 24417108,
+      "resultfile": "",
+      "url": "https://example.com/to",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa4104a",
+        "FUZZ": "threads"
+      },
+      "position": 4170,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 22647052,
+      "resultfile": "",
+      "url": "https://example.com/threads",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa41089",
+        "FUZZ": "trac"
+      },
+      "position": 4233,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 15599144,
+      "resultfile": "",
+      "url": "https://example.com/trac",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa4109a",
+        "FUZZ": "training"
+      },
+      "position": 4250,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 17005770,
+      "resultfile": "",
+      "url": "https://example.com/training",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa41098",
+        "FUZZ": "trailer"
+      },
+      "position": 4248,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 15770700,
+      "resultfile": "",
+      "url": "https://example.com/trailer",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa41088",
+        "FUZZ": "tr"
+      },
+      "position": 4232,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 28147991,
+      "resultfile": "",
+      "url": "https://example.com/tr",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa410cf",
+        "FUZZ": "ui_config.properties"
+      },
+      "position": 4303,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 43385534,
+      "resultfile": "",
+      "url": "https://example.com/ui_config.properties",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa410bb",
+        "FUZZ": "twitter"
+      },
+      "position": 4283,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 15805900,
+      "resultfile": "",
+      "url": "https://example.com/twitter",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa410db",
+        "FUZZ": "unreg"
+      },
+      "position": 4315,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 13268435,
+      "resultfile": "",
+      "url": "https://example.com/unreg",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa410fa",
+        "FUZZ": "us"
+      },
+      "position": 4346,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 33553702,
+      "resultfile": "",
+      "url": "https://example.com/us",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa41100",
+        "FUZZ": "userapp"
+      },
+      "position": 4352,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 34129664,
+      "resultfile": "",
+      "url": "https://example.com/userapp",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa410f0",
+        "FUZZ": "uploadedimages"
+      },
+      "position": 4336,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 34579002,
+      "resultfile": "",
+      "url": "https://example.com/uploadedimages",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa41104",
+        "FUZZ": "userdir"
+      },
+      "position": 4356,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 14559729,
+      "resultfile": "",
+      "url": "https://example.com/userdir",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa4110e",
+        "FUZZ": "usernote"
+      },
+      "position": 4366,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 12338546,
+      "resultfile": "",
+      "url": "https://example.com/usernote",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa4111e",
+        "FUZZ": "v2"
+      },
+      "position": 4382,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 41426115,
+      "resultfile": "",
+      "url": "https://example.com/v2",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa41106",
+        "FUZZ": "userimages"
+      },
+      "position": 4358,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 45853811,
+      "resultfile": "",
+      "url": "https://example.com/userimages",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa4110a",
+        "FUZZ": "userlogin"
+      },
+      "position": 4362,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 46268139,
+      "resultfile": "",
+      "url": "https://example.com/userlogin",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa4112e",
+        "FUZZ": "vbseocp"
+      },
+      "position": 4398,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 33445989,
+      "resultfile": "",
+      "url": "https://example.com/vbseocp",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa41121",
+        "FUZZ": "v4"
+      },
+      "position": 4385,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 46347892,
+      "resultfile": "",
+      "url": "https://example.com/v4",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa4111d",
+        "FUZZ": "v1/client_configs"
+      },
+      "position": 4381,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 49352392,
+      "resultfile": "",
+      "url": "https://example.com/v1/client_configs",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa41115",
+        "FUZZ": "usuarios"
+      },
+      "position": 4373,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 49667436,
+      "resultfile": "",
+      "url": "https://example.com/usuarios",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa4111b",
+        "FUZZ": "v"
+      },
+      "position": 4379,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 49755618,
+      "resultfile": "",
+      "url": "https://example.com/v",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa41120",
+        "FUZZ": "v3"
+      },
+      "position": 4384,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 49048898,
+      "resultfile": "",
+      "url": "https://example.com/v3",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa4112f",
+        "FUZZ": "vcss"
+      },
+      "position": 4399,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 45845905,
+      "resultfile": "",
+      "url": "https://example.com/vcss",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa41148",
+        "FUZZ": "view_cart"
+      },
+      "position": 4424,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 38764570,
+      "resultfile": "",
+      "url": "https://example.com/view_cart",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa4114f",
+        "FUZZ": "viewonline"
+      },
+      "position": 4431,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 24202318,
+      "resultfile": "",
+      "url": "https://example.com/viewonline",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa4114d",
+        "FUZZ": "viewforum"
+      },
+      "position": 4429,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 26425933,
+      "resultfile": "",
+      "url": "https://example.com/viewforum",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa4111a",
+        "FUZZ": "utils"
+      },
+      "position": 4378,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 26299522,
+      "resultfile": "",
+      "url": "https://example.com/utils",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa41146",
+        "FUZZ": "view"
+      },
+      "position": 4422,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 22601038,
+      "resultfile": "",
+      "url": "https://example.com/view",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa41117",
+        "FUZZ": "utilities"
+      },
+      "position": 4375,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 26579820,
+      "resultfile": "",
+      "url": "https://example.com/utilities",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa41143",
+        "FUZZ": "vid"
+      },
+      "position": 4419,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 25793225,
+      "resultfile": "",
+      "url": "https://example.com/vid",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa41155",
+        "FUZZ": "viewvc"
+      },
+      "position": 4437,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 27142447,
+      "resultfile": "",
+      "url": "https://example.com/viewvc",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa41144",
+        "FUZZ": "video"
+      },
+      "position": 4420,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 25320761,
+      "resultfile": "",
+      "url": "https://example.com/video",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa41182",
+        "FUZZ": "weather"
+      },
+      "position": 4482,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 28745479,
+      "resultfile": "",
+      "url": "https://example.com/weather",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa41156",
+        "FUZZ": "vip"
+      },
+      "position": 4438,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 19038305,
+      "resultfile": "",
+      "url": "https://example.com/vip",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa4115f",
+        "FUZZ": "vm"
+      },
+      "position": 4447,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 30495092,
+      "resultfile": "",
+      "url": "https://example.com/vm",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa4115b",
+        "FUZZ": "visitormessage"
+      },
+      "position": 4443,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 34709831,
+      "resultfile": "",
+      "url": "https://example.com/visitormessage",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa4116d",
+        "FUZZ": "vsadmin"
+      },
+      "position": 4461,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 13372611,
+      "resultfile": "",
+      "url": "https://example.com/vsadmin",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa41165",
+        "FUZZ": "vote"
+      },
+      "position": 4453,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 13918560,
+      "resultfile": "",
+      "url": "https://example.com/vote",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa4116b",
+        "FUZZ": "vpn"
+      },
+      "position": 4459,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 13535254,
+      "resultfile": "",
+      "url": "https://example.com/vpn",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa41193",
+        "FUZZ": "webapps"
+      },
+      "position": 4499,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 20681186,
+      "resultfile": "",
+      "url": "https://example.com/webapps",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa4117a",
+        "FUZZ": "warez"
+      },
+      "position": 4474,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 25870586,
+      "resultfile": "",
+      "url": "https://example.com/warez",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa41194",
+        "FUZZ": "webb"
+      },
+      "position": 4500,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 56025915,
+      "resultfile": "",
+      "url": "https://example.com/webb",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa4117b",
+        "FUZZ": "warn"
+      },
+      "position": 4475,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 25907010,
+      "resultfile": "",
+      "url": "https://example.com/warn",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa41176",
+        "FUZZ": "wallpapers"
+      },
+      "position": 4470,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 29026347,
+      "resultfile": "",
+      "url": "https://example.com/wallpapers",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa41196",
+        "FUZZ": "webboard"
+      },
+      "position": 4502,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 26472865,
+      "resultfile": "",
+      "url": "https://example.com/webboard",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa41186",
+        "FUZZ": "web-inf"
+      },
+      "position": 4486,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 20921549,
+      "resultfile": "",
+      "url": "https://example.com/web-inf",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa4119e",
+        "FUZZ": "webchat"
+      },
+      "position": 4510,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 31093208,
+      "resultfile": "",
+      "url": "https://example.com/webchat",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa41183",
+        "FUZZ": "web"
+      },
+      "position": 4483,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 28140822,
+      "resultfile": "",
+      "url": "https://example.com/web",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa411a8",
+        "FUZZ": "webinar"
+      },
+      "position": 4520,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 18841010,
+      "resultfile": "",
+      "url": "https://example.com/webinar",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa4118d",
+        "FUZZ": "webaccess"
+      },
+      "position": 4493,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 30200870,
+      "resultfile": "",
+      "url": "https://example.com/webaccess",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa41185",
+        "FUZZ": "web-console"
+      },
+      "position": 4485,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 21057721,
+      "resultfile": "",
+      "url": "https://example.com/web-console",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa411a1",
+        "FUZZ": "webdav"
+      },
+      "position": 4513,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 30657705,
+      "resultfile": "",
+      "url": "https://example.com/webdav",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa411ac",
+        "FUZZ": "webmail"
+      },
+      "position": 4524,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 12043331,
+      "resultfile": "",
+      "url": "https://example.com/webmail",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa411a5",
+        "FUZZ": "webfm_send"
+      },
+      "position": 4517,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 26881947,
+      "resultfile": "",
+      "url": "https://example.com/webfm_send",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa411a0",
+        "FUZZ": "webdata"
+      },
+      "position": 4512,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 23080343,
+      "resultfile": "",
+      "url": "https://example.com/webdata",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa411bb",
+        "FUZZ": "webstat"
+      },
+      "position": 4539,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 37692381,
+      "resultfile": "",
+      "url": "https://example.com/webstat",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa411ce",
+        "FUZZ": "whitepaper"
+      },
+      "position": 4558,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 19657770,
+      "resultfile": "",
+      "url": "https://example.com/whitepaper",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa411be",
+        "FUZZ": "webtrends"
+      },
+      "position": 4542,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 36180551,
+      "resultfile": "",
+      "url": "https://example.com/webtrends",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa411b4",
+        "FUZZ": "webservice"
+      },
+      "position": 4532,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 47611682,
+      "resultfile": "",
+      "url": "https://example.com/webservice",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa411c4",
+        "FUZZ": "weekly"
+      },
+      "position": 4548,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 33760560,
+      "resultfile": "",
+      "url": "https://example.com/weekly",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa411c6",
+        "FUZZ": "wellcome"
+      },
+      "position": 4550,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 34630103,
+      "resultfile": "",
+      "url": "https://example.com/wellcome",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa411d6",
+        "FUZZ": "wide_search"
+      },
+      "position": 4566,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 62174962,
+      "resultfile": "",
+      "url": "https://example.com/wide_search",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa411b6",
+        "FUZZ": "webshop"
+      },
+      "position": 4534,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 33765307,
+      "resultfile": "",
+      "url": "https://example.com/webshop",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa411dd",
+        "FUZZ": "win"
+      },
+      "position": 4573,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 27293331,
+      "resultfile": "",
+      "url": "https://example.com/win",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa411d2",
+        "FUZZ": "wholesale"
+      },
+      "position": 4562,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 52340430,
+      "resultfile": "",
+      "url": "https://example.com/wholesale",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa411e6",
+        "FUZZ": "wml"
+      },
+      "position": 4582,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 36415237,
+      "resultfile": "",
+      "url": "https://example.com/wml",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa411f5",
+        "FUZZ": "wow"
+      },
+      "position": 4597,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 22654903,
+      "resultfile": "",
+      "url": "https://example.com/wow",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa411ee",
+        "FUZZ": "workplace"
+      },
+      "position": 4590,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 23788800,
+      "resultfile": "",
+      "url": "https://example.com/workplace",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa411df",
+        "FUZZ": "windows"
+      },
+      "position": 4575,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 51658484,
+      "resultfile": "",
+      "url": "https://example.com/windows",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa411d0",
+        "FUZZ": "who"
+      },
+      "position": 4560,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 65263301,
+      "resultfile": "",
+      "url": "https://example.com/who",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa411d8",
+        "FUZZ": "widgets"
+      },
+      "position": 4568,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 64815161,
+      "resultfile": "",
+      "url": "https://example.com/widgets",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa411e2",
+        "FUZZ": "wireless"
+      },
+      "position": 4578,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 47676063,
+      "resultfile": "",
+      "url": "https://example.com/wireless",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa411ec",
+        "FUZZ": "workflowtasks"
+      },
+      "position": 4588,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 47698247,
+      "resultfile": "",
+      "url": "https://example.com/workflowtasks",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa411f3",
+        "FUZZ": "worldpayreturn"
+      },
+      "position": 4595,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 22489480,
+      "resultfile": "",
+      "url": "https://example.com/worldpayreturn",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa411f4",
+        "FUZZ": "worldwide"
+      },
+      "position": 4596,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 13345542,
+      "resultfile": "",
+      "url": "https://example.com/worldwide",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa411e7",
+        "FUZZ": "wolthuis"
+      },
+      "position": 4583,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 45611496,
+      "resultfile": "",
+      "url": "https://example.com/wolthuis",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa4120a",
+        "FUZZ": "wp-rdf"
+      },
+      "position": 4618,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 34452687,
+      "resultfile": "",
+      "url": "https://example.com/wp-rdf",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa411fa",
+        "FUZZ": "wp-blog-header"
+      },
+      "position": 4602,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 16503111,
+      "resultfile": "",
+      "url": "https://example.com/wp-blog-header",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa411f7",
+        "FUZZ": "wp-admin"
+      },
+      "position": 4599,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 24536870,
+      "resultfile": "",
+      "url": "https://example.com/wp-admin",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa4120b",
+        "FUZZ": "wp-register"
+      },
+      "position": 4619,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 33882662,
+      "resultfile": "",
+      "url": "https://example.com/wp-register",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa411e0",
+        "FUZZ": "wink"
+      },
+      "position": 4576,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 41496825,
+      "resultfile": "",
+      "url": "https://example.com/wink",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa411f1",
+        "FUZZ": "workshops"
+      },
+      "position": 4593,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 23363004,
+      "resultfile": "",
+      "url": "https://example.com/workshops",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa411dc",
+        "FUZZ": "will"
+      },
+      "position": 4572,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 38770210,
+      "resultfile": "",
+      "url": "https://example.com/will",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa411e9",
+        "FUZZ": "wordpress"
+      },
+      "position": 4585,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 17865964,
+      "resultfile": "",
+      "url": "https://example.com/wordpress",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa41206",
+        "FUZZ": "wp-load"
+      },
+      "position": 4614,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 11267108,
+      "resultfile": "",
+      "url": "https://example.com/wp-load",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa41204",
+        "FUZZ": "wp-includes"
+      },
+      "position": 4612,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 11718009,
+      "resultfile": "",
+      "url": "https://example.com/wp-includes",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa4120c",
+        "FUZZ": "wp-rss"
+      },
+      "position": 4620,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 10102203,
+      "resultfile": "",
+      "url": "https://example.com/wp-rss",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa411ff",
+        "FUZZ": "wp-cron"
+      },
+      "position": 4607,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 11651346,
+      "resultfile": "",
+      "url": "https://example.com/wp-cron",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa4120e",
+        "FUZZ": "wp-settings"
+      },
+      "position": 4622,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 21719575,
+      "resultfile": "",
+      "url": "https://example.com/wp-settings",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa4121c",
+        "FUZZ": "wss"
+      },
+      "position": 4636,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 37919131,
+      "resultfile": "",
+      "url": "https://example.com/wss",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa41224",
+        "FUZZ": "www-sql"
+      },
+      "position": 4644,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 16095047,
+      "resultfile": "",
+      "url": "https://example.com/www-sql",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa4122b",
+        "FUZZ": "wwwroot"
+      },
+      "position": 4651,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 27489636,
+      "resultfile": "",
+      "url": "https://example.com/wwwroot",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa41226",
+        "FUZZ": "www2"
+      },
+      "position": 4646,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 29692345,
+      "resultfile": "",
+      "url": "https://example.com/www2",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa41228",
+        "FUZZ": "wwwboard"
+      },
+      "position": 4648,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 29699336,
+      "resultfile": "",
+      "url": "https://example.com/wwwboard",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa4121f",
+        "FUZZ": "wt"
+      },
+      "position": 4639,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 29420176,
+      "resultfile": "",
+      "url": "https://example.com/wt",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa4122a",
+        "FUZZ": "wwwlog"
+      },
+      "position": 4650,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 28471209,
+      "resultfile": "",
+      "url": "https://example.com/wwwlog",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa41231",
+        "FUZZ": "wysiwygpro"
+      },
+      "position": 4657,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 26650868,
+      "resultfile": "",
+      "url": "https://example.com/wysiwygpro",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa41220",
+        "FUZZ": "wtai"
+      },
+      "position": 4640,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 29540403,
+      "resultfile": "",
+      "url": "https://example.com/wtai",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa4122d",
+        "FUZZ": "wwwstats"
+      },
+      "position": 4653,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 24728028,
+      "resultfile": "",
+      "url": "https://example.com/wwwstats",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa41211",
+        "FUZZ": "wp-trackback"
+      },
+      "position": 4625,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 41541393,
+      "resultfile": "",
+      "url": "https://example.com/wp-trackback",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa41212",
+        "FUZZ": "wpau-backup"
+      },
+      "position": 4626,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 39117295,
+      "resultfile": "",
+      "url": "https://example.com/wpau-backup",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa4121a",
+        "FUZZ": "ws_ftp"
+      },
+      "position": 4634,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 38283077,
+      "resultfile": "",
+      "url": "https://example.com/ws_ftp",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa41232",
+        "FUZZ": "x"
+      },
+      "position": 4658,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 19873381,
+      "resultfile": "",
+      "url": "https://example.com/x",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa41234",
+        "FUZZ": "xajax_js"
+      },
+      "position": 4660,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 32931365,
+      "resultfile": "",
+      "url": "https://example.com/xajax_js",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa41236",
+        "FUZZ": "xbox"
+      },
+      "position": 4662,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 32516272,
+      "resultfile": "",
+      "url": "https://example.com/xbox",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa411e5",
+        "FUZZ": "wizmysqladmin"
+      },
+      "position": 4581,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 39885349,
+      "resultfile": "",
+      "url": "https://example.com/wizmysqladmin",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa41238",
+        "FUZZ": "xcart"
+      },
+      "position": 4664,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 33264220,
+      "resultfile": "",
+      "url": "https://example.com/xcart",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa41243",
+        "FUZZ": "xmlfiles"
+      },
+      "position": 4675,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 33138344,
+      "resultfile": "",
+      "url": "https://example.com/xmlfiles",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa41245",
+        "FUZZ": "xmlrpc"
+      },
+      "position": 4677,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 31092366,
+      "resultfile": "",
+      "url": "https://example.com/xmlrpc",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa41222",
+        "FUZZ": "wwhelp"
+      },
+      "position": 4642,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 30797687,
+      "resultfile": "",
+      "url": "https://example.com/wwhelp",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa4123a",
+        "FUZZ": "xdb"
+      },
+      "position": 4666,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 33090588,
+      "resultfile": "",
+      "url": "https://example.com/xdb",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa41223",
+        "FUZZ": "www"
+      },
+      "position": 4643,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 31145026,
+      "resultfile": "",
+      "url": "https://example.com/www",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa41248",
+        "FUZZ": "xsl"
+      },
+      "position": 4680,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 43001388,
+      "resultfile": "",
+      "url": "https://example.com/xsl",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa41233",
+        "FUZZ": "xajax"
+      },
+      "position": 4659,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 27037216,
+      "resultfile": "",
+      "url": "https://example.com/xajax",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa41252",
+        "FUZZ": "yearly"
+      },
+      "position": 4690,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 39817927,
+      "resultfile": "",
+      "url": "https://example.com/yearly",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa41244",
+        "FUZZ": "xmlimporter"
+      },
+      "position": 4676,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 20824550,
+      "resultfile": "",
+      "url": "https://example.com/xmlimporter",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa41257",
+        "FUZZ": "youtube"
+      },
+      "position": 4695,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 26217006,
+      "resultfile": "",
+      "url": "https://example.com/youtube",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa41255",
+        "FUZZ": "yonetici"
+      },
+      "position": 4693,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 26607715,
+      "resultfile": "",
+      "url": "https://example.com/yonetici",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa41249",
+        "FUZZ": "xslt"
+      },
+      "position": 4681,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 50737152,
+      "resultfile": "",
+      "url": "https://example.com/xslt",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa41251",
+        "FUZZ": "year"
+      },
+      "position": 4689,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 35501342,
+      "resultfile": "",
+      "url": "https://example.com/year",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa41230",
+        "FUZZ": "wysiwyg"
+      },
+      "position": 4656,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 26578345,
+      "resultfile": "",
+      "url": "https://example.com/wysiwyg",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa41250",
+        "FUZZ": "yahoo"
+      },
+      "position": 4688,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 35315529,
+      "resultfile": "",
+      "url": "https://example.com/yahoo",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa41225",
+        "FUZZ": "www1"
+      },
+      "position": 4645,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 16464910,
+      "resultfile": "",
+      "url": "https://example.com/www1",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa4123d",
+        "FUZZ": "xhtml"
+      },
+      "position": 4669,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 16776010,
+      "resultfile": "",
+      "url": "https://example.com/xhtml",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa4121d",
+        "FUZZ": "wstat"
+      },
+      "position": 4637,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 36363343,
+      "resultfile": "",
+      "url": "https://example.com/wstat",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa4124d",
+        "FUZZ": "xyz"
+      },
+      "position": 4685,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 44323758,
+      "resultfile": "",
+      "url": "https://example.com/xyz",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa41258",
+        "FUZZ": "yshop"
+      },
+      "position": 4696,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 26214382,
+      "resultfile": "",
+      "url": "https://example.com/yshop",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa41247",
+        "FUZZ": "xn"
+      },
+      "position": 4679,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 44839837,
+      "resultfile": "",
+      "url": "https://example.com/xn",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa41266",
+        "FUZZ": "zh_TW"
+      },
+      "position": 4710,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 27002469,
+      "resultfile": "",
+      "url": "https://example.com/zh_TW",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa41263",
+        "FUZZ": "zh-cn"
+      },
+      "position": 4707,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 27791231,
+      "resultfile": "",
+      "url": "https://example.com/zh-cn",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa4125d",
+        "FUZZ": "zboard"
+      },
+      "position": 4701,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 30484001,
+      "resultfile": "",
+      "url": "https://example.com/zboard",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa41268",
+        "FUZZ": "zip"
+      },
+      "position": 4712,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 30810197,
+      "resultfile": "",
+      "url": "https://example.com/zip",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa4125a",
+        "FUZZ": "yui"
+      },
+      "position": 4698,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 30729128,
+      "resultfile": "",
+      "url": "https://example.com/yui",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa41259",
+        "FUZZ": "yt"
+      },
+      "position": 4697,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 30469776,
+      "resultfile": "",
+      "url": "https://example.com/yt",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa41267",
+        "FUZZ": "zimbra"
+      },
+      "position": 4711,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 31046961,
+      "resultfile": "",
+      "url": "https://example.com/zimbra",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa41262",
+        "FUZZ": "zh"
+      },
+      "position": 4706,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 50882651,
+      "resultfile": "",
+      "url": "https://example.com/zh",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa41272",
+        "FUZZ": "~administrator"
+      },
+      "position": 4722,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 18639676,
+      "resultfile": "",
+      "url": "https://example.com/~administrator",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa41273",
+        "FUZZ": "~amanda"
+      },
+      "position": 4723,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 19923322,
+      "resultfile": "",
+      "url": "https://example.com/~amanda",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa41264",
+        "FUZZ": "zh-tw"
+      },
+      "position": 4708,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 32817200,
+      "resultfile": "",
+      "url": "https://example.com/zh-tw",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa4125f",
+        "FUZZ": "zend"
+      },
+      "position": 4703,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 28849392,
+      "resultfile": "",
+      "url": "https://example.com/zend",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa41261",
+        "FUZZ": "zeus"
+      },
+      "position": 4705,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 28342958,
+      "resultfile": "",
+      "url": "https://example.com/zeus",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa41265",
+        "FUZZ": "zh_CN"
+      },
+      "position": 4709,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 26591082,
+      "resultfile": "",
+      "url": "https://example.com/zh_CN",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa41284",
+        "FUZZ": "~test"
+      },
+      "position": 4740,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 26355906,
+      "resultfile": "",
+      "url": "https://example.com/~test",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa41287",
+        "FUZZ": "~webmaster"
+      },
+      "position": 4743,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 26731460,
+      "resultfile": "",
+      "url": "https://example.com/~webmaster",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa41288",
+        "FUZZ": "~www"
+      },
+      "position": 4744,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 26726055,
+      "resultfile": "",
+      "url": "https://example.com/~www",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa41283",
+        "FUZZ": "~sysadmin"
+      },
+      "position": 4739,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 26188765,
+      "resultfile": "",
+      "url": "https://example.com/~sysadmin",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa41274",
+        "FUZZ": "~apache"
+      },
+      "position": 4724,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 13441955,
+      "resultfile": "",
+      "url": "https://example.com/~apache",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa41278",
+        "FUZZ": "~http"
+      },
+      "position": 4728,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 29929076,
+      "resultfile": "",
+      "url": "https://example.com/~http",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa41289",
+        "FUZZ": "dns-query?dns=q80BAAABAAAAAAAAA3d3dwdleGFtcGxlA2NvbQAAAQAB"
+      },
+      "position": 4745,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 16674342,
+      "resultfile": "",
+      "url": "https://example.com/dns-query?dns=q80BAAABAAAAAAAAA3d3dwdleGFtcGxlA2NvbQAAAQAB",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa4127f",
+        "FUZZ": "~operator"
+      },
+      "position": 4735,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 12673668,
+      "resultfile": "",
+      "url": "https://example.com/~operator",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa4128a",
+        "FUZZ": "dns-query?name=google.com&type=A"
+      },
+      "position": 4746,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 12991491,
+      "resultfile": "",
+      "url": "https://example.com/dns-query?name=google.com&type=A",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa4126b",
+        "FUZZ": "zoeken"
+      },
+      "position": 4715,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 32326695,
+      "resultfile": "",
+      "url": "https://example.com/zoeken",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa41271",
+        "FUZZ": "~admin"
+      },
+      "position": 4721,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 31220806,
+      "resultfile": "",
+      "url": "https://example.com/~admin",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa41285",
+        "FUZZ": "~tmp"
+      },
+      "position": 4741,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 59386193,
+      "resultfile": "",
+      "url": "https://example.com/~tmp",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa4126c",
+        "FUZZ": "zoom"
+      },
+      "position": 4716,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 22666734,
+      "resultfile": "",
+      "url": "https://example.com/zoom",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa41275",
+        "FUZZ": "~bin"
+      },
+      "position": 4725,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 14142779,
+      "resultfile": "",
+      "url": "https://example.com/~bin",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa41277",
+        "FUZZ": "~guest"
+      },
+      "position": 4727,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 30917220,
+      "resultfile": "",
+      "url": "https://example.com/~guest",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa41276",
+        "FUZZ": "~ftp"
+      },
+      "position": 4726,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 23469517,
+      "resultfile": "",
+      "url": "https://example.com/~ftp",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa4126d",
+        "FUZZ": "zope"
+      },
+      "position": 4717,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 32601136,
+      "resultfile": "",
+      "url": "https://example.com/zope",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa41281",
+        "FUZZ": "~sys"
+      },
+      "position": 4737,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 15937166,
+      "resultfile": "",
+      "url": "https://example.com/~sys",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa4127a",
+        "FUZZ": "~log"
+      },
+      "position": 4730,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 17803689,
+      "resultfile": "",
+      "url": "https://example.com/~log",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa41280",
+        "FUZZ": "~root"
+      },
+      "position": 4736,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 16357314,
+      "resultfile": "",
+      "url": "https://example.com/~root",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa41286",
+        "FUZZ": "~user"
+      },
+      "position": 4742,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 17028297,
+      "resultfile": "",
+      "url": "https://example.com/~user",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa41282",
+        "FUZZ": "~sysadm"
+      },
+      "position": 4738,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 15860304,
+      "resultfile": "",
+      "url": "https://example.com/~sysadm",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa4127e",
+        "FUZZ": "~nobody"
+      },
+      "position": 4734,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 16988422,
+      "resultfile": "",
+      "url": "https://example.com/~nobody",
+      "host": "example.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "eeaa4127b",
+        "FUZZ": "~logs"
+      },
+      "position": 4731,
+      "status": 403,
+      "length": 4515,
+      "words": 620,
+      "lines": 94,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 19346465,
+      "resultfile": "",
+      "url": "https://example.com/~logs",
+      "host": "example.com"
+    }
+  ],
+  "config": {
+    "autocalibration": false,
+    "autocalibration_keyword": "FUZZ",
+    "autocalibration_perhost": false,
+    "autocalibration_strategies": [
+      "basic"
+    ],
+    "autocalibration_strings": [],
+    "colors": false,
+    "cmdline": "ffuf -u https://example.com/FUZZ -w /usr/share/seclists/Discovery/Web-Content/common.txt -o ffuf_ea827305291b481395d34e958970b24c.json -of json -mc 200,204,301,302,307,401,403 -t 60 -timeout 2 -noninteractive -k -s",
+    "configfile": "",
+    "postdata": "",
+    "debuglog": "",
+    "delay": {
+      "value": "0.00"
+    },
+    "dirsearch_compatibility": false,
+    "encoders": [],
+    "extensions": [],
+    "fmode": "or",
+    "follow_redirects": false,
+    "headers": {},
+    "ignorebody": false,
+    "ignore_wordlist_comments": false,
+    "inputmode": "clusterbomb",
+    "cmd_inputnum": 100,
+    "inputproviders": [
+      {
+        "name": "wordlist",
+        "keyword": "FUZZ",
+        "value": "/usr/share/seclists/Discovery/Web-Content/common.txt",
+        "encoders": "",
+        "template": ""
+      }
+    ],
+    "inputshell": "",
+    "json": false,
+    "matchers": {
+      "IsCalibrated": false,
+      "Mutex": {},
+      "Matchers": {
+        "status": {
+          "value": "200,204,301,302,307,401,403"
+        }
+      },
+      "Filters": {},
+      "PerDomainFilters": {}
+    },
+    "mmode": "or",
+    "maxtime": 0,
+    "maxtime_job": 0,
+    "method": "GET",
+    "noninteractive": true,
+    "outputdirectory": "",
+    "outputfile": "ffuf_ea827305291b481395d34e958970b24c.json",
+    "outputformat": "json",
+    "OutputSkipEmptyFile": false,
+    "proxyurl": "",
+    "quiet": true,
+    "rate": 0,
+    "raw": false,
+    "recursion": false,
+    "recursion_depth": 0,
+    "recursion_strategy": "default",
+    "replayproxyurl": "",
+    "requestfile": "",
+    "requestproto": "https",
+    "scraperfile": "",
+    "scrapers": "all",
+    "sni": "",
+    "stop_403": false,
+    "stop_all": false,
+    "stop_errors": false,
+    "threads": 60,
+    "timeout": 2,
+    "url": "https://example.com/FUZZ",
+    "verbose": false,
+    "wordlists": [
+      "/usr/share/seclists/Discovery/Web-Content/common.txt"
+    ],
+    "http2": false,
+    "client-cert": "",
+    "client-key": ""
+  }
+}

@@ -1,0 +1,504 @@
+{
+  "commandline": "ffuf -u http://testphp.vulnweb.com/FUZZ -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -o ffuf_ea7018342dcf45aeb0fbcb53f37c6562.json -of json -mc 200,204,301,302,307,401,403 -t 60 -timeout 2 -noninteractive -k -s",
+  "time": "2026-02-19T21:19:08-05:00",
+  "results": [
+    {
+      "input": {
+        "FFUFHASH": "2f0671",
+        "FUZZ": "# directory-list-2.3-medium.txt"
+      },
+      "position": 1,
+      "status": 200,
+      "length": 4958,
+      "words": 514,
+      "lines": 110,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 270495342,
+      "resultfile": "",
+      "url": "http://testphp.vulnweb.com/# directory-list-2.3-medium.txt",
+      "host": "testphp.vulnweb.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "2f0678",
+        "FUZZ": "# or send a letter to Creative Commons, 171 Second Street,"
+      },
+      "position": 8,
+      "status": 200,
+      "length": 4958,
+      "words": 514,
+      "lines": 110,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 271813827,
+      "resultfile": "",
+      "url": "http://testphp.vulnweb.com/# or send a letter to Creative Commons, 171 Second Street,",
+      "host": "testphp.vulnweb.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "2f0673",
+        "FUZZ": "# Copyright 2007 James Fisher"
+      },
+      "position": 3,
+      "status": 200,
+      "length": 4958,
+      "words": 514,
+      "lines": 110,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 273347244,
+      "resultfile": "",
+      "url": "http://testphp.vulnweb.com/# Copyright 2007 James Fisher",
+      "host": "testphp.vulnweb.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "2f0676",
+        "FUZZ": "# Attribution-Share Alike 3.0 License. To view a copy of this"
+      },
+      "position": 6,
+      "status": 200,
+      "length": 4958,
+      "words": 514,
+      "lines": 110,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 275492630,
+      "resultfile": "",
+      "url": "http://testphp.vulnweb.com/# Attribution-Share Alike 3.0 License. To view a copy of this",
+      "host": "testphp.vulnweb.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "2f0672",
+        "FUZZ": "#"
+      },
+      "position": 2,
+      "status": 200,
+      "length": 4958,
+      "words": 514,
+      "lines": 110,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 276639070,
+      "resultfile": "",
+      "url": "http://testphp.vulnweb.com/#",
+      "host": "testphp.vulnweb.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "2f067e",
+        "FUZZ": ""
+      },
+      "position": 14,
+      "status": 200,
+      "length": 4958,
+      "words": 514,
+      "lines": 110,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 281953558,
+      "resultfile": "",
+      "url": "http://testphp.vulnweb.com/",
+      "host": "testphp.vulnweb.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "2f0679",
+        "FUZZ": "# Suite 300, San Francisco, California, 94105, USA."
+      },
+      "position": 9,
+      "status": 200,
+      "length": 4958,
+      "words": 514,
+      "lines": 110,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 282428074,
+      "resultfile": "",
+      "url": "http://testphp.vulnweb.com/# Suite 300, San Francisco, California, 94105, USA.",
+      "host": "testphp.vulnweb.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "2f0677",
+        "FUZZ": "# license, visit http://creativecommons.org/licenses/by-sa/3.0/"
+      },
+      "position": 7,
+      "status": 200,
+      "length": 4958,
+      "words": 514,
+      "lines": 110,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 282914577,
+      "resultfile": "",
+      "url": "http://testphp.vulnweb.com/# license, visit http://creativecommons.org/licenses/by-sa/3.0/",
+      "host": "testphp.vulnweb.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "2f0674",
+        "FUZZ": "#"
+      },
+      "position": 4,
+      "status": 200,
+      "length": 4958,
+      "words": 514,
+      "lines": 110,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 282923669,
+      "resultfile": "",
+      "url": "http://testphp.vulnweb.com/#",
+      "host": "testphp.vulnweb.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "2f0675",
+        "FUZZ": "# This work is licensed under the Creative Commons"
+      },
+      "position": 5,
+      "status": 200,
+      "length": 4958,
+      "words": 514,
+      "lines": 110,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 283180503,
+      "resultfile": "",
+      "url": "http://testphp.vulnweb.com/# This work is licensed under the Creative Commons",
+      "host": "testphp.vulnweb.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "2f06710",
+        "FUZZ": "images"
+      },
+      "position": 16,
+      "status": 301,
+      "length": 169,
+      "words": 5,
+      "lines": 8,
+      "content-type": "text/html",
+      "redirectlocation": "http://testphp.vulnweb.com/images/",
+      "scraper": {},
+      "duration": 284182960,
+      "resultfile": "",
+      "url": "http://testphp.vulnweb.com/images",
+      "host": "testphp.vulnweb.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "2f067a",
+        "FUZZ": "#"
+      },
+      "position": 10,
+      "status": 200,
+      "length": 4958,
+      "words": 514,
+      "lines": 110,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 285254177,
+      "resultfile": "",
+      "url": "http://testphp.vulnweb.com/#",
+      "host": "testphp.vulnweb.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "2f067c",
+        "FUZZ": "# on at least 2 different hosts"
+      },
+      "position": 12,
+      "status": 200,
+      "length": 4958,
+      "words": 514,
+      "lines": 110,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 283646786,
+      "resultfile": "",
+      "url": "http://testphp.vulnweb.com/# on at least 2 different hosts",
+      "host": "testphp.vulnweb.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "2f067b",
+        "FUZZ": "# Priority ordered case-sensitive list, where entries were found"
+      },
+      "position": 11,
+      "status": 200,
+      "length": 4958,
+      "words": 514,
+      "lines": 110,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 284158131,
+      "resultfile": "",
+      "url": "http://testphp.vulnweb.com/# Priority ordered case-sensitive list, where entries were found",
+      "host": "testphp.vulnweb.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "2f067d",
+        "FUZZ": "#"
+      },
+      "position": 13,
+      "status": 200,
+      "length": 4958,
+      "words": 514,
+      "lines": 110,
+      "content-type": "text/html; charset=UTF-8",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 290068380,
+      "resultfile": "",
+      "url": "http://testphp.vulnweb.com/#",
+      "host": "testphp.vulnweb.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "2f06723",
+        "FUZZ": "cgi-bin"
+      },
+      "position": 35,
+      "status": 403,
+      "length": 276,
+      "words": 20,
+      "lines": 10,
+      "content-type": "text/html; charset=iso-8859-1",
+      "redirectlocation": "",
+      "scraper": {},
+      "duration": 292777310,
+      "resultfile": "",
+      "url": "http://testphp.vulnweb.com/cgi-bin",
+      "host": "testphp.vulnweb.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "2f067103",
+        "FUZZ": "admin"
+      },
+      "position": 259,
+      "status": 301,
+      "length": 169,
+      "words": 5,
+      "lines": 8,
+      "content-type": "text/html",
+      "redirectlocation": "http://testphp.vulnweb.com/admin/",
+      "scraper": {},
+      "duration": 278099335,
+      "resultfile": "",
+      "url": "http://testphp.vulnweb.com/admin",
+      "host": "testphp.vulnweb.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "2f0671d1",
+        "FUZZ": "pictures"
+      },
+      "position": 465,
+      "status": 301,
+      "length": 169,
+      "words": 5,
+      "lines": 8,
+      "content-type": "text/html",
+      "redirectlocation": "http://testphp.vulnweb.com/pictures/",
+      "scraper": {},
+      "duration": 285800938,
+      "resultfile": "",
+      "url": "http://testphp.vulnweb.com/pictures",
+      "host": "testphp.vulnweb.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "2f0675c9",
+        "FUZZ": "vendor"
+      },
+      "position": 1481,
+      "status": 301,
+      "length": 169,
+      "words": 5,
+      "lines": 8,
+      "content-type": "text/html",
+      "redirectlocation": "http://testphp.vulnweb.com/vendor/",
+      "scraper": {},
+      "duration": 283348591,
+      "resultfile": "",
+      "url": "http://testphp.vulnweb.com/vendor",
+      "host": "testphp.vulnweb.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "2f0678e7",
+        "FUZZ": "Templates"
+      },
+      "position": 2279,
+      "status": 301,
+      "length": 169,
+      "words": 5,
+      "lines": 8,
+      "content-type": "text/html",
+      "redirectlocation": "http://testphp.vulnweb.com/Templates/",
+      "scraper": {},
+      "duration": 282983026,
+      "resultfile": "",
+      "url": "http://testphp.vulnweb.com/Templates",
+      "host": "testphp.vulnweb.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "2f067f89",
+        "FUZZ": "Flash"
+      },
+      "position": 3977,
+      "status": 301,
+      "length": 169,
+      "words": 5,
+      "lines": 8,
+      "content-type": "text/html",
+      "redirectlocation": "http://testphp.vulnweb.com/Flash/",
+      "scraper": {},
+      "duration": 272150249,
+      "resultfile": "",
+      "url": "http://testphp.vulnweb.com/Flash",
+      "host": "testphp.vulnweb.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "2f0671875",
+        "FUZZ": "CVS"
+      },
+      "position": 6261,
+      "status": 301,
+      "length": 169,
+      "words": 5,
+      "lines": 8,
+      "content-type": "text/html",
+      "redirectlocation": "http://testphp.vulnweb.com/CVS/",
+      "scraper": {},
+      "duration": 277146778,
+      "resultfile": "",
+      "url": "http://testphp.vulnweb.com/CVS",
+      "host": "testphp.vulnweb.com"
+    },
+    {
+      "input": {
+        "FFUFHASH": "2f06720dc",
+        "FUZZ": "AJAX"
+      },
+      "position": 8412,
+      "status": 301,
+      "length": 169,
+      "words": 5,
+      "lines": 8,
+      "content-type": "text/html",
+      "redirectlocation": "http://testphp.vulnweb.com/AJAX/",
+      "scraper": {},
+      "duration": 278001672,
+      "resultfile": "",
+      "url": "http://testphp.vulnweb.com/AJAX",
+      "host": "testphp.vulnweb.com"
+    }
+  ],
+  "config": {
+    "autocalibration": false,
+    "autocalibration_keyword": "FUZZ",
+    "autocalibration_perhost": false,
+    "autocalibration_strategies": [
+      "basic"
+    ],
+    "autocalibration_strings": [],
+    "colors": false,
+    "cmdline": "ffuf -u http://testphp.vulnweb.com/FUZZ -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -o ffuf_ea7018342dcf45aeb0fbcb53f37c6562.json -of json -mc 200,204,301,302,307,401,403 -t 60 -timeout 2 -noninteractive -k -s",
+    "configfile": "",
+    "postdata": "",
+    "debuglog": "",
+    "delay": {
+      "value": "0.00"
+    },
+    "dirsearch_compatibility": false,
+    "encoders": [],
+    "extensions": [],
+    "fmode": "or",
+    "follow_redirects": false,
+    "headers": {},
+    "ignorebody": false,
+    "ignore_wordlist_comments": false,
+    "inputmode": "clusterbomb",
+    "cmd_inputnum": 100,
+    "inputproviders": [
+      {
+        "name": "wordlist",
+        "keyword": "FUZZ",
+        "value": "/usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt",
+        "encoders": "",
+        "template": ""
+      }
+    ],
+    "inputshell": "",
+    "json": false,
+    "matchers": {
+      "IsCalibrated": false,
+      "Mutex": {},
+      "Matchers": {
+        "status": {
+          "value": "200,204,301,302,307,401,403"
+        }
+      },
+      "Filters": {},
+      "PerDomainFilters": {}
+    },
+    "mmode": "or",
+    "maxtime": 0,
+    "maxtime_job": 0,
+    "method": "GET",
+    "noninteractive": true,
+    "outputdirectory": "",
+    "outputfile": "ffuf_ea7018342dcf45aeb0fbcb53f37c6562.json",
+    "outputformat": "json",
+    "OutputSkipEmptyFile": false,
+    "proxyurl": "",
+    "quiet": true,
+    "rate": 0,
+    "raw": false,
+    "recursion": false,
+    "recursion_depth": 0,
+    "recursion_strategy": "default",
+    "replayproxyurl": "",
+    "requestfile": "",
+    "requestproto": "https",
+    "scraperfile": "",
+    "scrapers": "all",
+    "sni": "",
+    "stop_403": false,
+    "stop_all": false,
+    "stop_errors": false,
+    "threads": 60,
+    "timeout": 2,
+    "url": "http://testphp.vulnweb.com/FUZZ",
+    "verbose": false,
+    "wordlists": [
+      "/usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt"
+    ],
+    "http2": false,
+    "client-cert": "",
+    "client-key": ""
+  }
+}
