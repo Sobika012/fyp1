@@ -256,9 +256,18 @@ def get_result(scan_id: str):
         raise HTTPException(status_code=404, detail="result not ready")
     return json.loads(combined.read_text(encoding="utf-8"))
 
+@app.get("/api/scans/{scan_id}/validated-result")
+def get_validated_result(scan_id: str):
+    scan_dir = scan_dir_from_id(scan_id)
+    validated = scan_dir / "validated_report.json"
+    if not validated.exists():
+        raise HTTPException(status_code=404, detail="validated result not ready")
+    return json.loads(validated.read_text(encoding="utf-8"))
+
 @app.get("/api/scans/{scan_id}/metrics")
 def get_metrics(scan_id: str):
     p = scan_dir(scan_id) / "validation_metrics.json"
     if not p.exists():
         raise HTTPException(status_code=404, detail="metrics not ready")
     return json.loads(p.read_text(encoding="utf-8"))
+                                                       
