@@ -8,13 +8,15 @@ venv/
 env/
 
 # Scan outputs and logs
-scans/output/
-scan_*.log
+scans/
+**/scan_*.log
 *.log
 
 # Raw tool output files
 ffuf_*.json
 nuclei_*.jsonl
+nuclei_*.json
+nuclei_*.txt
 *.jsonl
 
 # OS/editor files
